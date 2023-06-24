@@ -32,4 +32,4 @@
 
 * Last updated 25 Apr 2023, 05:20:52*
 
-![Recipe: healthy](https://img.shields.io/badge/tag-healthy-blue.svg) ![Recipe: protein-rich](https://img.shields.io/badge/tag-protein-rich-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: tricky](https://img.shields.io/badge/tag-tricky-blue.svg)
+![Recipe: healthy](https://img.shields.io/badge/tag-healthy-blue.svg) ![Recipe: protein](https://img.shields.io/badge/tag-protein-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: tricky](https://img.shields.io/badge/tag-tricky-blue.svg)
