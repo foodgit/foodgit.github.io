@@ -1,6 +1,6 @@
 # [Template] Recipe Title
 
-![A pretty hamburger and chips]{main.jpg}
+{main.jpg}
 
 Put a short description of the recipe here.  Maybe add a photo or drawing.
 
@@ -9,6 +9,7 @@ Put a short description of the recipe here.  Maybe add a photo or drawing.
 Ingredients can be divided into component parts, like sauce, filling, pastry, dough, etc.
 
 ## Ingredient component 1 (ie. Sauce)
+
 -   1 cup ut orci quis augue placerat dapibus
 -   2 to 3 pellentesque consectetur mauris quis tincidunt laoreet
 -   1 tbsp. porttitor felis id ex hendrerit, nec euismod dui efficitur)
@@ -17,6 +18,7 @@ Ingredients can be divided into component parts, like sauce, filling, pastry, do
 -   Maecenas dictum nisi
 
 ## Ingredient component 2 (ie. Pastry)
+
 -   1kg Vivamus a orci non tortor ullamcorper
 -   1 cup placerat dui dignissim
 -   1 tsp. viverra porta
