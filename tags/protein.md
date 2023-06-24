@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Hommus](../recipes/hommus.md)|2023-06-24|[![](https://img.shields.io/badge/tag-healthy-ad1215)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-427cd)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-8a534c)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-91514)](../tags/tricky.md)|
+|[Hommus](../recipes/hommus.md)|2023-06-25|[![](https://img.shields.io/badge/tag-healthy-5b6ac0)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-9fef19)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-95446)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-cb29b)](../tags/tricky.md)|
