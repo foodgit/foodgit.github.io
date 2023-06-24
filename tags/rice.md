@@ -1,0 +1,7 @@
+# Pages tagged `rice`
+
+|Recipe Title|Last Updated|Tags
+|:---|:---|:---|
+|[Coconut Saffron Rice](../recipes/coconutsaffronrice.md)|2023-06-24|[![](https://img.shields.io/badge/tag-Thai-6984a1)](../tags/Thai.md) [![](https://img.shields.io/badge/tag-expensive-bb15fd)](../tags/expensive.md) [![](https://img.shields.io/badge/tag-rice-f6b493)](../tags/rice.md) [![](https://img.shields.io/badge/tag-sides-e4f90)](../tags/sides.md) [![](https://img.shields.io/badge/tag-stovetop-eadebe)](../tags/stovetop.md)|
+|[Rice Pudding](../recipes/ricepudding.md)|2023-06-25|[![](https://img.shields.io/badge/tag-dairy-8f457a)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-28ab17)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-4e6ea)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-f6b493)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-4d8aaa)](../tags/rice_cooker.md)|
+|[Baked Rice Custard](../recipes/bakedricecustard.md)|2023-06-25|[![](https://img.shields.io/badge/tag-baked-6685b7)](../tags/baked.md) [![](https://img.shields.io/badge/tag-dairy-8f457a)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-28ab17)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-rice-f6b493)](../tags/rice.md)|

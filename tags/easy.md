@@ -1,0 +1,7 @@
+# Pages tagged `easy`
+
+|Recipe Title|Last Updated|Tags
+|:---|:---|:---|
+|[Rice Pudding](../recipes/ricepudding.md)|2023-06-25|[![](https://img.shields.io/badge/tag-dairy-8f457a)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-28ab17)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-4e6ea)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-f6b493)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-4d8aaa)](../tags/rice_cooker.md)|
+|[Frozen Lasagna (a la Airfryer)](../recipes/lasagnaairfryer.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Italian-5b6ac0)](../tags/Italian.md) [![](https://img.shields.io/badge/tag-airfryer-13fda6)](../tags/airfryer.md) [![](https://img.shields.io/badge/tag-easy-4e6ea)](../tags/easy.md) [![](https://img.shields.io/badge/tag-reheating-95446)](../tags/reheating.md)|
+|[Rissoles](../recipes/rissoles.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Aussie-1433c8)](../tags/Aussie.md) [![](https://img.shields.io/badge/tag-beef-b6c680)](../tags/beef.md) [![](https://img.shields.io/badge/tag-easy-4e6ea)](../tags/easy.md) [![](https://img.shields.io/badge/tag-family-af803c)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-e2596)](../tags/fried.md)|

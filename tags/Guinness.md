@@ -1,0 +1,5 @@
+# Pages tagged `Guinness`
+
+|Recipe Title|Last Updated|Tags
+|:---|:---|:---|
+|[Beef & Guinness Casserole](../recipes/beefandguinnesscasserole.md)|2023-06-24|[![](https://img.shields.io/badge/tag-Guinness-8ce73b)](../tags/Guinness.md) [![](https://img.shields.io/badge/tag-Irish-8344b1)](../tags/Irish.md) [![](https://img.shields.io/badge/tag-amazing-9fef19)](../tags/amazing.md) [![](https://img.shields.io/badge/tag-baked-6685b7)](../tags/baked.md) [![](https://img.shields.io/badge/tag-beef-b6c680)](../tags/beef.md) [![](https://img.shields.io/badge/tag-casserole-1d5152)](../tags/casserole.md) [![](https://img.shields.io/badge/tag-large_quantity-659a8f)](../tags/large_quantity.md) [![](https://img.shields.io/badge/tag-long_cook_time-3a4f8e)](../tags/long_cook_time.md) [![](https://img.shields.io/badge/tag-long_prep_time-cb29b)](../tags/long_prep_time.md) [![](https://img.shields.io/badge/tag-messy-427cd)](../tags/messy.md) [![](https://img.shields.io/badge/tag-tricky-91514)](../tags/tricky.md)|

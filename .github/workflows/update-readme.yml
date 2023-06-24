@@ -1,0 +1,29 @@
+name: update-readme
+
+on:
+#  push:
+#    branches: [ "main" ]
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+      - name: install dependencies
+        run: pip install loguru
+      - name: Recreate README.md TOC
+        run: python scripts/update_readme.py
+      - name: Commit files
+        run: |
+          git config --local user.name "fexofenadine"
+          git add README.md
+          git add tags/*
+          git commit -a -m "Updated TOC"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true

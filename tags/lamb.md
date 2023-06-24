@@ -1,0 +1,5 @@
+# Pages tagged `lamb`
+
+|Recipe Title|Last Updated|Tags
+|:---|:---|:---|
+|[Lamb Chop Casserole](../recipes/lambchopcasserole.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Aussie-1433c8)](../tags/Aussie.md) [![](https://img.shields.io/badge/tag-baked-6685b7)](../tags/baked.md) [![](https://img.shields.io/badge/tag-battered-f05668)](../tags/battered.md) [![](https://img.shields.io/badge/tag-casserole-1d5152)](../tags/casserole.md) [![](https://img.shields.io/badge/tag-family-af803c)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-e2596)](../tags/fried.md) [![](https://img.shields.io/badge/tag-lamb-f1d19f)](../tags/lamb.md)|
