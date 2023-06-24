@@ -20,7 +20,7 @@ jobs:
         run: python scripts/generate_markdown_recipes.py
       - name: Commit markdown changes
         run: |
-          git config --local user.name "fexofenadine"
+          git config --global user.name "fexofenadine"
           git add recipes/*.md
           git commit -a -m "Recreated recipes from stubs"
       - name: Push markdown changes
