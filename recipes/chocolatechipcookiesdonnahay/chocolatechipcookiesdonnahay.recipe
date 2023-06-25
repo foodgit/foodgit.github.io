@@ -4,10 +4,10 @@
 
 - 180g unsalted butter, softened
 - ¾ cup (135g) brown sugar
-- 1 teaspoon vanilla extract
+- 1 tsp vanilla extract
 - 2 eggs
 - 2 cups (300g) plain (all-purpose) flour, sifted
-- 1 teaspoon baking powder, sifted
+- 1 tsp baking powder, sifted
 - 150g dark chocolate, chopped
 
 ## Method
