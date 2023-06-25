@@ -33,7 +33,6 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
     except:
         return 0
 
-
 def badges2kv(text):
     testpat = r'\/([a-zA-Z]+-[a-zA-Z_]+-[a-zA-Z]+)'
 
@@ -41,10 +40,8 @@ def badges2kv(text):
     #return {b.split('-')[0]:b.split('-')[1] for b in badges}
     return [(b.split('-')[0], b.split('-')[1]) for b in badges]
 
-
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
     return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
-
 
 def random_hex_color():
     """generates a string for a random hex color"""
@@ -81,11 +78,9 @@ tag_badges_map = {tag_name:make_badge(label=tag_name, color = random_hex_color()
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
     
-    
 TOC = sorted(TOC, key=lambda x:x['last_modified_ts'])[::-1]
 
 header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
-#header= "|Recipe Title|Last Modified|Tags\n|:---|:---|:---|\n"
 recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
