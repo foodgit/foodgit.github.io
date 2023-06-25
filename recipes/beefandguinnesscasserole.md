@@ -24,13 +24,9 @@
 
 1.   ### Prepare the beef
     
-    <img src="beefandguinnesscasserole/images/2.jpg" width="33%" align="right" />
+<img src="beefandguinnesscasserole/images/2.jpg" width="33%" align="right" /> Preheat the oven to fan 170°C. Toss the beef in the seasoned flour to coat, shaking off any excess. In a large casserole dish, heat the oil and melt 3 tablespoons of the butter over a high heat. Add the beef to the pan and quickly brown in batches.
     
-    Preheat the oven to fan 170°C. Toss the beef in the seasoned flour to coat, shaking off any excess. In a large casserole dish, heat the oil and melt 3 tablespoons of the butter over a high heat. Add the beef to the pan and quickly brown in batches.
-    
-    <img src="beefandguinnesscasserole/images/3.jpg" width="33%" align="right" />
-    
-    Be careful not to crowd the pan as the beef will stew instead of sear and caramelize. Remove the seared beef to a plate. Reduce the heat to low and add 100ml of the beef stock to deglaze, scraping the residue off the base to save the caramelized flavor. Stir in the tomato puree and then turn the heat off.
+<img src="beefandguinnesscasserole/images/3.jpg" width="33%" align="right" /> Be careful not to crowd the pan as the beef will stew instead of sear and caramelize. Remove the seared beef to a plate. Reduce the heat to low and add 100ml of the beef stock to deglaze, scraping the residue off the base to save the caramelized flavor. Stir in the tomato puree and then turn the heat off.
 
 2. ### Saute the onions
     
