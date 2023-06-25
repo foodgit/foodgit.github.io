@@ -21,9 +21,13 @@ for recipe_stub in list(all_recipe_stubs):
     #   pure markdown image, no styling
     #   recipe_body = recipe_body.replace("{"+image_file+"}", "![]("+image_dir_new+image_file+")")
     #   try html styling instead
-        image_path=image_dir_new.replace("./","")+image_file  
+        image_path=image_dir_new.replace("./","")+image_file
+        if image_file == "main.jpg":
+            image_width="50%"
+        else:
+            image_width="33%"
     #    recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\"https://github.com/fexofenadine/gitfood/raw/main/recipes/"+image_path+"\" width=\"50%\" align=\"right\" />")
-        recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\""+image_path+"\" width=\"50%\" align=\"right\" />")
+        recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\""+image_path+"\" width=\""+image_width+"\" align=\"right\" />")
     tag_file="./"+recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-2]+"/tags.txt"
     tags=list()
     formatted_tags=list()
