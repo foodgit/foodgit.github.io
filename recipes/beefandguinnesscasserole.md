@@ -20,10 +20,10 @@
 
 ## Method
 
-1.   #### Prepare the beef
+1. ### Prepare the beef
 
-    Preheat the oven to fan 170°C.
-
+    Preheat the oven to fan 170°C. 
+    
     Toss the beef in the seasoned flour to coat, shaking off any excess. In a large casserole dish, heat the oil and melt 3 tablespoons of the butter over a high heat. Add the beef to the pan and quickly brown in batches. Be careful not to crowd the pan as the beef will stew instead of sear and caramelize. Remove the seared beef to a plate. Reduce the heat to low and add 100ml of the beef stock to deglaze, scraping the residue off the base to save the caramelized flavor. Stir in the tomato puree and then turn the heat off.
 
 2. ### Saute the onions
@@ -32,9 +32,7 @@
 
 3. ### Combine and braise
 
-    Add the meat, onions, carrots and celery to the casserole dish with the Guinness and remaining stock. Add the thyme sprigs and stir all together to ensure everything is well distributed. Bring the casserole to the boil over a
-high heat, then cover and braise in the oven for 3 hours, checking periodically that it’s not drying out and adding more stock (or water) if necessary. Check the meat with a skewer or knife to see if it’s tender; it should be soft and
-easily come apart. Season to taste.
+    Add the meat, onions, carrots and celery to the casserole dish with the Guinness and remaining stock. Add the thyme sprigs and stir all together to ensure everything is well distributed. Bring the casserole to the boil over a high heat, then cover and braise in the oven for 3 hours, checking periodically that it’s not drying out and adding more stock (or water) if necessary. Check the meat with a skewer or knife to see if it’s tender; it should be soft and easily come apart. Season to taste.
 
 4. ### Optional
 
