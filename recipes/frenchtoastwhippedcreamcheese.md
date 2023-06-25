@@ -42,7 +42,7 @@ Serves 4-5
 *Last updated 21 Jan 2023, 11:52:22*
 
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_frenchtoastwhippedcreamcheese/count.svg" height="20" align="right" />
 

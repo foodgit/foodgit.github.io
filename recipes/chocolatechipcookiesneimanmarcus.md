@@ -27,7 +27,7 @@
 
 *Last updated 17 Jun 2023, 16:50:16*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesneimanmarcus/count.svg" height="20" align="right" />
 

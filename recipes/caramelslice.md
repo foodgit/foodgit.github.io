@@ -45,7 +45,7 @@
 
 *Last updated 28 Jul 2022, 13:06:22*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_caramelslice/count.svg" height="20" align="right" />
 

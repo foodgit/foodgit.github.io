@@ -17,7 +17,7 @@ Use butter to cook them in (all this butter !!!). A tablespoon full for each one
 
 *Last updated 11 Sept 2021, 11:53:57*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_piklets/count.svg" height="20" align="right" />
 

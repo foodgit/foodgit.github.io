@@ -31,7 +31,7 @@ Place into a large bowl:
 
 *Last updated 14 Aug 2021, 12:16:49*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" height="20" align="right" />
 

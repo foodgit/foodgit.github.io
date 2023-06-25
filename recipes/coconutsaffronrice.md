@@ -28,7 +28,7 @@
 
 *Last updated 25 Jun 2023, 10:17:20*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" height="20" align="right" />
 

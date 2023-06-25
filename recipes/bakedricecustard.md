@@ -26,7 +26,7 @@
 *Last updated 15 Apr 2023, 23:37:57*
 
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_bakedricecustard/count.svg" height="20" align="right" />
 

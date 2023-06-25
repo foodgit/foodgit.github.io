@@ -27,7 +27,7 @@
 
 *Last updated 11 Sept 2021, 11:55:10*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_rockcakes/count.svg" height="20" align="right" />
 

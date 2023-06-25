@@ -10,7 +10,7 @@
 
 *Last updated 3 Jan 2023, 22:16:38*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_lasagnaairfryer/count.svg" height="20" align="right" />
 

@@ -32,7 +32,7 @@
 
 * Last updated 25 Apr 2023, 05:20:52*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" height="20" align="right" />
 

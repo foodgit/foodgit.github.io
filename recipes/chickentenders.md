@@ -26,7 +26,7 @@
 
 *Last updated 1 Jun 2023, 20:11:43*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" height="20" align="right" />
 

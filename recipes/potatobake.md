@@ -20,7 +20,7 @@
 
 *Last updated 24 Oct 2020, 19:44:12*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" height="20" align="right" />
 

@@ -26,7 +26,7 @@ Yum!
 
 *Last updated 17 Jun 2023, 17:17:27*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_pastabake/count.svg" height="20" align="right" />
 

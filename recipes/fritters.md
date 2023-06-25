@@ -25,7 +25,7 @@ Add your choice of stuff to go in & fry a tablespoon size in a combination of ol
 
 * Last updated 14 Aug 2021, 12:14:11*
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_fritters/count.svg" height="20" align="right" />
 

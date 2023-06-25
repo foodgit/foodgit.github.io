@@ -64,7 +64,7 @@ To thicken for use in other recipes later, reduce heat to 140°C and partially u
 *Last updated 25 Jun 2023, 19:55:09*
 
 
-<img src="logo.png" width="20%" align="right" />
+<img src="../logo.png" width="20%" align="right" />
 
 <img src="https://profile-counter.glitch.me/fexofenadine_beefandguinnesscasserole/count.svg" height="20" align="right" />
 
