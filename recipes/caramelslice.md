@@ -22,8 +22,6 @@
 - 200g dark chocolate, chopped
 - 1 tbsp vegetable oil
 
-
-
 ## Method
 
 <img src="caramelslice/images/1.jpg" width="33%" align="right" />
@@ -32,11 +30,11 @@
 
 2. While the base is cooking, make the caramel filling.
     
-    Place the butter, condensed milk and golden syrup, in a medium saucepan over medium heat. Whisk until the butter is melted and cook, whisking frequently, for 5–7 minutes or until the mixture has thickened slightly (see tip). 
-    
-    Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold.
+    Place the butter, condensed milk and golden syrup, in a medium saucepan over medium heat. Whisk until the butter is melted and cook, whisking frequently, for 5–7 minutes or until the mixture has thickened slightly (see tip). .
 
     <img src="caramelslice/images/5.jpg" width="33%" align="right" />
+    
+    Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold
 
 3. To make the chocolate topping, place the chocolate and oil in a heatproof bowl over a saucepan of simmering water, and stir until melted and smooth. Pour the chocolate over the caramel mixture and spread evenly. Refrigerate for 30 minutes, or until firm. Using a warm knife, cut into slices or squares to serve. Makes 20 squares
 
