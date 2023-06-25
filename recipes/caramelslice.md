@@ -1,6 +1,6 @@
-# Caramel Slice
-
 <img src="caramelslice/images/main.jpg" width="50%" align="right" />
+
+# Caramel Slice
 
 ## Ingredients
 
