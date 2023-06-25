@@ -1,10 +1,6 @@
 name: update-recipes
 
 on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - recipes/**
   workflow_dispatch:
 
 
