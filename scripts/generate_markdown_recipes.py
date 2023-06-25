@@ -23,7 +23,7 @@ for recipe_stub in list(all_recipe_stubs):
     #   try html styling instead
         image_path=image_dir_new.replace("./","")+image_file
         if image_file == "main.jpg":
-            image_width="50%"
+            image_width="60%"
         else:
             image_width="25%"
     #    recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\"https://github.com/fexofenadine/gitfood/raw/main/recipes/"+image_path+"\" width=\"50%\" align=\"right\" />")
