@@ -30,7 +30,7 @@ for recipe_stub in list(all_recipe_stubs):
         if os.path.isfile(tag_file):
             with open(tag_file) as f:
                 tags = f.read().splitlines()
-                if tags == "":
+                if not tags:
                     tags=[ "none" ]
     except:
         tags=[ "none" ]
