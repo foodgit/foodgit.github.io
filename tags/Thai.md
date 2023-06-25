@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Coconut Saffron Rice](../recipes/coconutsaffronrice.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Thai-1754e4)](../tags/Thai.md) [![](https://img.shields.io/badge/tag-expensive-208450)](../tags/expensive.md) [![](https://img.shields.io/badge/tag-rice-af803c)](../tags/rice.md) [![](https://img.shields.io/badge/tag-sides-c6d429)](../tags/sides.md) [![](https://img.shields.io/badge/tag-stovetop-e4f90)](../tags/stovetop.md)|
+|[Coconut Saffron Rice](../recipes/coconutsaffronrice.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Thai-8ce73b)](../tags/Thai.md) [![](https://img.shields.io/badge/tag-expensive-8344b1)](../tags/expensive.md) [![](https://img.shields.io/badge/tag-rice-28ab17)](../tags/rice.md) [![](https://img.shields.io/badge/tag-sides-1754e4)](../tags/sides.md) [![](https://img.shields.io/badge/tag-stovetop-3a4f8e)](../tags/stovetop.md)|
