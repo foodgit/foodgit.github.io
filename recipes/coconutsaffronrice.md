@@ -2,17 +2,17 @@
 
 ## Ingredients
 
-- 1/4 teaspoon saffron threads
-- 1 tablespoon Sauvignon Blanc room temperature
-- 2 teaspoons peanut oil
+- 1/4 tsp saffron threads
+- 1 tbsp Sauvignon Blanc, or substitute white vinegar, room temperature 
+- 2 tsp peanut oil
 - 2 cups uncooked white basmati rice
 - 1 3/4 cup coconut milk
 - 2 cups water
-- 2 to 3 tablespoons dry shredded coconut
-- 1 teaspoon sea salt
-- 1 teaspoon agave nectar (or 1/2 teaspoon of sugar)
-- 1/2 teaspoon turmeric
-- 1/4 teaspoon cumin
+- 2 to 3 tbsp dry shredded coconut
+- 1 tsp sea salt
+- 1 tsp agave nectar (or 1/2 teaspoon of sugar)
+- 1/2 tsp turmeric
+- 1/4 tsp cumin
 
 ## Method
 
@@ -26,6 +26,6 @@
 
 - While hot, mix rice with finely chopped carrots, mint, and mango, then chill in the refrigerator for a great whole grain summer salad.
 
-*Last updated 27 Mar 2023, 10:17:20*
+*Last updated 25 Jun 2023, 10:17:20*
 
 ![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: stovetop](https://img.shields.io/badge/tag-stovetop-blue.svg) ![Recipe: expensive](https://img.shields.io/badge/tag-expensive-blue.svg) ![Recipe: Thai](https://img.shields.io/badge/tag-Thai-blue.svg)
