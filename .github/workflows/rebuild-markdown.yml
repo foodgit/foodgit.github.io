@@ -7,7 +7,6 @@ on:
 #      - recipes/**
   workflow_dispatch:
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +17,7 @@ jobs:
         run: pip install loguru
       - name: Rebuild markdown recipes
         run: python scripts/generate_markdown_recipes.py
-        - name: setup git config
+      - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
