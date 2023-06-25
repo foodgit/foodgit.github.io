@@ -30,6 +30,10 @@ for recipe_stub in list(all_recipe_stubs):
         if os.path.isfile(tag_file):
             with open(tag_file) as f:
                 tags = f.read().splitlines()
+                if tags == "":
+                    tags=[ "none" ]
+    except:
+        tags=[ "none" ]
     finally:
         f.close()
     for tag in list(tags):
