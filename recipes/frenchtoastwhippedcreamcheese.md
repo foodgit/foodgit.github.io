@@ -36,4 +36,4 @@
 
 *Last updated 21 Jan 2023, 11:52:22*
 
-![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: breakfast](https://img.shields.io/badge/tag-breakfast-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: large_quantity](https://img.shields.io/badge/tag-large_quantity-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg)
+![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: breakfast](https://img.shields.io/badge/tag-breakfast-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: large_quantity](https://img.shields.io/badge/tag-large_quantity-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg) ![Recipe: mine](https://img.shields.io/badge/tag-mine-blue.svg)
