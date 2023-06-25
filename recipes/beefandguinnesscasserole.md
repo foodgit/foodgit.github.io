@@ -8,15 +8,15 @@
 - 2 tbsp plain white flour, seasoned with sea salt and cracked black pepper
 - 1 tbsp olive or vegetable oil
 - 4 tbsp butter
-
-<img src="beefandguinnesscasserole/images/1.jpg" width="33%" align="right" />
-
 - 500ml good quality beef stock
 - 1 tbsp tomato puree
 - 4 large onions, peeled and sliced coarsely
 - 225g carrots, peeled and sliced
 - 225g celery, roughly chopped
 - 500ml Guinness (I used extra stout, not draught). Any stout should do
+
+<img src="beefandguinnesscasserole/images/1.jpg" width="33%" align="right" />
+
 - 5 thyme sprigs
 - A few springs of flat leaf parsley or a small bay leaf, to garnish
 - Sea salt and cracked black pepper
@@ -62,6 +62,7 @@ To thicken for use in other recipes later, reduce heat to 140°C and partially u
 - baked potatoes
 
 *Last updated 25 Jun 2023, 19:55:09*
+
 
 <img src="https://profile-counter.glitch.me/fexofenadine_beefandguinnesscasserole/count.svg" height="20" align="right" />
 
