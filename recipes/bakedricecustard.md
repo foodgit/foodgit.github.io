@@ -6,9 +6,9 @@
 - ⅓ cup (75g) caster sugar
 - ½ tsp vanilla extract
 - 2 cups (500ml) milk
-- 300 ml cream
+- 300ml cream
 - ⅓ cup (50g) raisins
-- 1½ cups cold cooked white medium-grain rice
+- 1½ cups cold, cooked, white medium-grain rice
 - 1 tsp ground cinnamon
 
 ## Method
@@ -24,6 +24,7 @@
 5. Bake a further 20 minutes. Serve warm or cold.
 
 *Last updated 15 Apr 2023, 23:37:57*
+
 
 <img src="https://profile-counter.glitch.me/fexofenadine_bakedricecustard/count.svg" height="20" align="right" />
 
