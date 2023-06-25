@@ -78,7 +78,10 @@ tag_badges_map = {tag_name:make_badge(label=tag_name, color = random_hex_color()
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
     
-TOC = sorted(TOC, key=lambda x:x['last_modified_ts'])[::-1]
+try:
+    TOC = sorted(TOC, key=lambda x:x['last_modified_ts'])[::-1]
+except:
+    pass
 
 header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
 recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
