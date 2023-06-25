@@ -1,6 +1,6 @@
 # Chicken Tenders
 
-<img src="chickentenders/images/main.jpg" width="60%" align="right" />
+<img src="chickentenders/images/main.jpg" width="55%" align="right" />
 
 ## Ingredients
 
