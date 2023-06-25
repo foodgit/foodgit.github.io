@@ -1,6 +1,6 @@
 # [Template] Recipe Title
 
-![A pretty hamburger and chips]<img src="template/images/main.jpg" width="50%" align="right" />
+<img src="template/images/main.jpg" width="55%" align="right" />
 
 Put a short description of the recipe here.  Maybe add a photo or drawing.
 
@@ -9,6 +9,7 @@ Put a short description of the recipe here.  Maybe add a photo or drawing.
 Ingredients can be divided into component parts, like sauce, filling, pastry, dough, etc.
 
 ## Ingredient component 1 (ie. Sauce)
+
 -   1 cup ut orci quis augue placerat dapibus
 -   2 to 3 pellentesque consectetur mauris quis tincidunt laoreet
 -   1 tbsp. porttitor felis id ex hendrerit, nec euismod dui efficitur)
@@ -17,6 +18,7 @@ Ingredients can be divided into component parts, like sauce, filling, pastry, do
 -   Maecenas dictum nisi
 
 ## Ingredient component 2 (ie. Pastry)
+
 -   1kg Vivamus a orci non tortor ullamcorper
 -   1 cup placerat dui dignissim
 -   1 tsp. viverra porta
@@ -85,5 +87,9 @@ Nullam pellentesque in urna in hendrerit. Quisque lorem nunc, ultricies vel bibe
 # Afterthoughts
 
 Did you think this was a good recipe? Did it take too long to prepare, did it taste good? Were there too many dishes to wash afterward? Would you make it again, or is there a better thing we should try?
+
+*Last updated 15 Apr 2023, 23:37:57*
+
+<img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" height="20" align="right" />
 
 ![Recipe: American](https://img.shields.io/badge/tag-American-blue.svg) ![Recipe: fast_food](https://img.shields.io/badge/tag-fast_food-blue.svg) ![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg)
