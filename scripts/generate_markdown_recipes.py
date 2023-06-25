@@ -32,6 +32,8 @@ for recipe_stub in list(all_recipe_stubs):
                 tags = f.read().splitlines()
                 if not tags:
                     tags=[ "none" ]
+        else:
+            tags=[ "none" ]            
     except:
         tags=[ "none" ]
     finally:
