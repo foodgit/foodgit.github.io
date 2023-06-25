@@ -25,10 +25,16 @@
 
 - A very basic recipe & I find that eating them on the day of making is best cause they stale quickly, but if any are left put into an airtight container.
 
-*Last updated 11 Sept 2021, 11:55:10*
-
-<img src="../logo.png" width="20%" align="right" />
-
-<img src="https://profile-counter.glitch.me/fexofenadine_rockcakes/count.svg" height="20" align="right" />
-
+*Last updated 11 Sept 2021, 11:55:10*&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="../logo.png" width="33%" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="https://profile-counter.glitch.me/fexofenadine_rockcakes/count.svg" height="20" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: family](https://img.shields.io/badge/tag-family-blue.svg)

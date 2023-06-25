@@ -25,10 +25,16 @@
 
 4. Bake for 8 to 10 minutes in the preheated oven. For crispier cookies, bake 2 minutes longer. Remove from baking sheets to cool on wire racks.
 
-*Last updated 17 Jun 2023, 16:50:16*
-
-<img src="../logo.png" width="20%" align="right" />
-
-<img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesneimanmarcus/count.svg" height="20" align="right" />
-
+*Last updated 17 Jun 2023, 16:50:16*&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="../logo.png" width="33%" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesneimanmarcus/count.svg" height="20" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: chocolate](https://img.shields.io/badge/tag-chocolate-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg)

@@ -30,10 +30,16 @@
 
 7. Scrape the hommus into a serving bowl or platter, and use a spoon to create nice swooshes on top. Top with garnishes of your choice, and serve. Leftover hommus keeps well in the refrigerator, covered, for up to 1 week.
 
-* Last updated 25 Apr 2023, 05:20:52*
-
-<img src="../logo.png" width="20%" align="right" />
-
-<img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" height="20" align="right" />
-
+* Last updated 25 Apr 2023, 05:20:52*&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="../logo.png" width="33%" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" height="20" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ![Recipe: healthy](https://img.shields.io/badge/tag-healthy-blue.svg) ![Recipe: protein](https://img.shields.io/badge/tag-protein-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: tricky](https://img.shields.io/badge/tag-tricky-blue.svg)

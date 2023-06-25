@@ -24,10 +24,16 @@
 
 2. cook 6 mins, flip, further 6 mins
 
-*Last updated 1 Jun 2023, 20:11:43*
-
-<img src="../logo.png" width="20%" align="right" />
-
-<img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" height="20" align="right" />
-
+*Last updated 1 Jun 2023, 20:11:43*&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="../logo.png" width="33%" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" height="20" align="right" />&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 ![Recipe: chicken](https://img.shields.io/badge/tag-chicken-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: airfryer](https://img.shields.io/badge/tag-airfryer-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: battered](https://img.shields.io/badge/tag-battered-blue.svg) ![Recipe: crumbed](https://img.shields.io/badge/tag-crumbed-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg) ![Recipe: mine](https://img.shields.io/badge/tag-mine-blue.svg)
