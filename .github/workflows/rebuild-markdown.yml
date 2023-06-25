@@ -21,14 +21,24 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
+      - name: Check if there are any changes
+        id: verify_diff1
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit markdown changes
+        if: steps.verify_diff1.outputs.changed == 'true'
         run: |
           git add recipes/*.md
           git commit -a -m "Recreated recipes from stubs"
       - name: Recreate README.md TOC
         run: python scripts/update_readme.py
+      - name: Check if there are any changes
+        id: verify_diff2
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit TOC changes
+        if: steps.verify_diff2.outputs.changed == 'true'
         run: |
           git add README.md
           git add tags/*
-          git commit -a -m "Regenerated README.md TOC"rebuld
+          git commit -a -m "Regenerated README.md TOC"
