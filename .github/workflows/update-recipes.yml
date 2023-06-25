@@ -20,6 +20,7 @@ jobs:
         run: python scripts/generate_markdown_recipes.py
       - name: Commit markdown changes
         run: |
+          git config --global user.email "fexofenadine@users.noreply.github.com"
           git config --global user.name "fexofenadine"
           git add recipes/*.md
           git commit -a -m "Recreated recipes from stubs"
@@ -32,10 +33,11 @@ jobs:
         run: python scripts/update_readme.py
       - name: Commit TOC changes
         run: |
-          git config --local user.name "fexofenadine"
+          git config --global user.email "fexofenadine@users.noreply.github.com"
+          git config --global user.name "fexofenadine"
           git add README.md
           git add tags/*
-          git commit -a -m "Regenerated readme.md TOC"
+          git commit -a -m "Regenerated README.md TOC"
       - name: Push TOC changes
         uses: ad-m/github-push-action@master
         with:
