@@ -4,7 +4,7 @@ GitFood is a personal recipe repository framework built around Markdown-based re
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Test 3](recipes/test.md)|N/A||
+|[Test 4](recipes/test.md)|N/A||
 |[Hommus](recipes/hommus.md)|2023-06-25|[![](https://img.shields.io/badge/tag-healthy-237124)](./tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-29c88d)](./tags/messy.md) [![](https://img.shields.io/badge/tag-protein-9ab3df)](./tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-4a7017)](./tags/tricky.md)|
 |[Chocolate Chip Cookies (Donna Hay Style)](recipes/chocolatechipcookiesdonnahay.md)|2023-06-25|[![](https://img.shields.io/badge/tag-baked-84f8cf)](./tags/baked.md) [![](https://img.shields.io/badge/tag-chocolate-3bf9ab)](./tags/chocolate.md) [![](https://img.shields.io/badge/tag-dessert-e2851f)](./tags/dessert.md)|
 |[Pasta Bake](recipes/pastabake.md)|2023-06-25|[![](https://img.shields.io/badge/tag-baked-84f8cf)](./tags/baked.md) [![](https://img.shields.io/badge/tag-beef-33b5de)](./tags/beef.md) [![](https://img.shields.io/badge/tag-pasta-d93385)](./tags/pasta.md) [![](https://img.shields.io/badge/tag-sides-945e60)](./tags/sides.md)|
