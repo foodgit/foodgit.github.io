@@ -1,7 +1,7 @@
 <img src="beefandguinnesscasserole/images/main.jpg" width="60%" align="right" />
 
 # Beef & Guinness Casserole
-
+ 
 ## Ingredients
 
 - 1.5kg stew beef, trimmed and cut into around 4 cm pieces
