@@ -11,7 +11,7 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
     fmt = "%as"
     if timestamp:
         fmt="%at"
-    cmd = f"git log --pretty=format:{fmt}__%ae --".split() # straight killin me here...
+    cmd = f"git log --pretty=format:{fmt}__%ae --".split()
     cmd += [str(fpath)]
     if verbose:
         logger.debug(cmd)
@@ -28,7 +28,10 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
             logger.debug(outv)
         except:
             pass
-    return outv
+    try:
+        return outv
+    except:
+        return 0
 
 
 def badges2kv(text):
