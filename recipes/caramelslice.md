@@ -45,6 +45,8 @@
 
 *Last updated 28 Jul 2022, 13:06:22*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_caramelslice/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_caramelslice/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> 

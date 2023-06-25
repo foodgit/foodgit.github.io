@@ -42,6 +42,8 @@ Serves 4-5
 *Last updated 21 Jan 2023, 11:52:22*
 
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_frenchtoastwhippedcreamcheese/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_frenchtoastwhippedcreamcheese/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> 

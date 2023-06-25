@@ -31,6 +31,8 @@ Place into a large bowl:
 
 *Last updated 14 Aug 2021, 12:16:49*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Aussie-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Aussie-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> 

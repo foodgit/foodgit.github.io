@@ -48,5 +48,6 @@ for recipe_stub in list(all_recipe_stubs):
     with open(recipe_file_name,'w') as f:
         f.write(recipe_body)
     with open(recipe_file_name, "a") as f:
-        f.write('\n\n|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|\n:----|----:\n')
-        f.write(taglinks+'|<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_'+recipe_stub.split("/")[-2]+'/count.svg" width="50%" />')
+        f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
+        f.write('\n\n<img src="https://profile-counter.glitch.me/fexofenadine_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
+        f.write('\n\n'+taglinks)

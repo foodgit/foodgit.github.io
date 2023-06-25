@@ -64,6 +64,8 @@ To thicken for use in other recipes later, reduce heat to 140°C and partially u
 *Last updated 25 Jun 2023, 19:55:09*
 
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-casserole-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-Guinness-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_cook_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-Irish-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_beefandguinnesscasserole/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_beefandguinnesscasserole/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-casserole-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-Guinness-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_cook_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-Irish-blue.svg" /> 

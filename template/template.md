@@ -90,6 +90,8 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 *Last updated 15 Apr 2023, 23:37:57*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-American-blue.svg" /> <img src="https://img.shields.io/badge/tag-fast_food-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-American-blue.svg" /> <img src="https://img.shields.io/badge/tag-fast_food-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> 

@@ -28,6 +28,8 @@
 
 *Last updated 25 Jun 2023, 10:17:20*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-expensive-blue.svg" /> <img src="https://img.shields.io/badge/tag-Thai-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-expensive-blue.svg" /> <img src="https://img.shields.io/badge/tag-Thai-blue.svg" /> 

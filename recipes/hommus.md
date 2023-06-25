@@ -32,6 +32,8 @@
 
 * Last updated 25 Apr 2023, 05:20:52*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> <img src="https://img.shields.io/badge/tag-protein-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> <img src="https://img.shields.io/badge/tag-protein-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> 

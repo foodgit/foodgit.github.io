@@ -10,6 +10,8 @@
 
 *Last updated 3 Jan 2023, 22:16:38*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-reheating-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_lasagnaairfryer/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_lasagnaairfryer/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-reheating-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> 

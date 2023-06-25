@@ -20,6 +20,8 @@
 
 *Last updated 24 Oct 2020, 19:44:12*
 
-|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
-:----|----:
-<img src="https://img.shields.io/badge/tag-potato-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-savoury-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" width="50%" />
+<img src="../images/logo_sm.png" width="40%" />
+
+<img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" width="20%" align="right" />
+
+<img src="https://img.shields.io/badge/tag-potato-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-savoury-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> 
