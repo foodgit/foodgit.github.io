@@ -1,4 +1,4 @@
-name: update-recipes
+name: Update Recipes and TOC
 
 on:
 #  push:

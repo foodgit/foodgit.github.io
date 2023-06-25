@@ -1,4 +1,4 @@
-name: Rebuild Markdown Files
+name: Rebuild Markdown Files [bot]
 
 on:
   push:
