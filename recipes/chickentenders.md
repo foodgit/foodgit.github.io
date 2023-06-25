@@ -1,4 +1,4 @@
-<img src="chickentenders/images/main.jpg" width="50%" align="right" />
+<img src="chickentenders/images/main.jpg" width="60%" align="right" />
 
 # Chicken Tenders
 
