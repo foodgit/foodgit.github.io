@@ -31,7 +31,7 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
     try:
         return outv
     except:
-        return 0
+        return "N/A"
 
 def badges2kv(text):
     testpat = r'\/([a-zA-Z]+-[a-zA-Z_]+-[a-zA-Z]+)'
