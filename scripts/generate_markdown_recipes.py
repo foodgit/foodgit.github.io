@@ -23,9 +23,9 @@ for recipe_stub in list(all_recipe_stubs):
     #   try html styling instead
         image_path=image_dir_new.replace("./","")+image_file
         if image_file == "main.jpg":
-            image_width="60%"
+            image_width="55%"
         else:
-            image_width="25%"
+            image_width="33%"
     #    recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\"https://github.com/fexofenadine/gitfood/raw/main/recipes/"+image_path+"\" width=\"50%\" align=\"right\" />")
         recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\""+image_path+"\" width=\""+image_width+"\" align=\"right\" />")
     tag_file="./"+recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-2]+"/tags.txt"
