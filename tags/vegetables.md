@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Fritters](../recipes/fritters.md)|2023-06-25|[![](https://img.shields.io/badge/tag-chicken-b6c680)](../tags/chicken.md) [![](https://img.shields.io/badge/tag-family-5c1fef)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-1433c8)](../tags/fried.md) [![](https://img.shields.io/badge/tag-ham-4e6ea)](../tags/ham.md) [![](https://img.shields.io/badge/tag-lamp-28ab17)](../tags/lamp.md) [![](https://img.shields.io/badge/tag-leftovers-8f457a)](../tags/leftovers.md) [![](https://img.shields.io/badge/tag-vegetables-f6b493)](../tags/vegetables.md)|
+|[Fritters](../recipes/fritters.md)|2023-06-25|[![](https://img.shields.io/badge/tag-chicken-f1d19f)](../tags/chicken.md) [![](https://img.shields.io/badge/tag-family-9ab3df)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-5c1fef)](../tags/fried.md) [![](https://img.shields.io/badge/tag-ham-b6c680)](../tags/ham.md) [![](https://img.shields.io/badge/tag-lamp-4e6ea)](../tags/lamp.md) [![](https://img.shields.io/badge/tag-leftovers-28ab17)](../tags/leftovers.md) [![](https://img.shields.io/badge/tag-vegetables-8f457a)](../tags/vegetables.md)|
