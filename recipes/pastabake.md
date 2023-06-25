@@ -5,7 +5,7 @@
 - 500g mince
 - 1 onion chopped
 - Can crushed tomatoes
-- 2 tablespoons of tomatoe paste
+- 2 tablespoons of tomato paste
 - About a cup beef stock
 - Salt & pepper
 - grated carrot & zucchini in for extra nutrients
