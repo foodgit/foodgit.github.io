@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Pasta Bake](../recipes/pastabake.md)|2023-06-25|[![](https://img.shields.io/badge/tag-baked-5c1fef)](../tags/baked.md) [![](https://img.shields.io/badge/tag-beef-e2596)](../tags/beef.md) [![](https://img.shields.io/badge/tag-cheesey-062ab)](../tags/cheesey.md) [![](https://img.shields.io/badge/tag-pasta-eadebe)](../tags/pasta.md) [![](https://img.shields.io/badge/tag-sides-10cdd6)](../tags/sides.md)|
+|[Pasta Bake](../recipes/pastabake.md)|2023-06-26|[![](https://img.shields.io/badge/tag-baked-5c1fef)](../tags/baked.md) [![](https://img.shields.io/badge/tag-beef-e2596)](../tags/beef.md) [![](https://img.shields.io/badge/tag-cheesey-062ab)](../tags/cheesey.md) [![](https://img.shields.io/badge/tag-pasta-eadebe)](../tags/pasta.md) [![](https://img.shields.io/badge/tag-sides-10cdd6)](../tags/sides.md)|
