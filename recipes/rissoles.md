@@ -29,16 +29,8 @@ Place into a large bowl:
 
 9. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles- yum!
 
-*Last updated 14 Aug 2021, 12:16:49*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: easy](https://img.shields.io/badge/tag-easy-blue.svg) ![Recipe: Aussie](https://img.shields.io/badge/tag-Aussie-blue.svg) ![Recipe: family](https://img.shields.io/badge/tag-family-blue.svg)
+*Last updated 14 Aug 2021, 12:16:49*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Aussie-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" width="50%" />

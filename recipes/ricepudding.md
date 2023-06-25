@@ -23,16 +23,8 @@
 
 7. When cold, cover with plastic wrap and store for up to 4 days.
 
-*Last updated 24 Oct 2020, 20:02:33*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_ricepudding/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: rice_cooker](https://img.shields.io/badge/tag-rice_cooker-blue.svg) ![Recipe: easy](https://img.shields.io/badge/tag-easy-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg)
+*Last updated 24 Oct 2020, 20:02:33*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-rice_cooker-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_ricepudding/count.svg" width="50%" />

@@ -26,16 +26,8 @@
 
 - While hot, mix rice with finely chopped carrots, mint, and mango, then chill in the refrigerator for a great whole grain summer salad.
 
-*Last updated 25 Jun 2023, 10:17:20*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: stovetop](https://img.shields.io/badge/tag-stovetop-blue.svg) ![Recipe: expensive](https://img.shields.io/badge/tag-expensive-blue.svg) ![Recipe: Thai](https://img.shields.io/badge/tag-Thai-blue.svg)
+*Last updated 25 Jun 2023, 10:17:20*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-expensive-blue.svg" /> <img src="https://img.shields.io/badge/tag-Thai-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" width="50%" />

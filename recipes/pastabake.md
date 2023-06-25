@@ -24,16 +24,8 @@
 5. Cook in moderately hot oven until cheese melts & turns a golden brown colour.
 Yum!
 
-*Last updated 17 Jun 2023, 17:17:27*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_pastabake/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg) ![Recipe: pasta](https://img.shields.io/badge/tag-pasta-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: cheesey](https://img.shields.io/badge/tag-cheesey-blue.svg)
+*Last updated 17 Jun 2023, 17:17:27*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_pastabake/count.svg" width="50%" />

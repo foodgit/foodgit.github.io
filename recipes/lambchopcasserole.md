@@ -19,16 +19,8 @@
 
 3. Cover & slow cook - till cooked!!!
 
-*Last updated 15 Apr 2023, 23:37:57*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_lambchopcasserole/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: lamb](https://img.shields.io/badge/tag-lamb-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: battered](https://img.shields.io/badge/tag-battered-blue.svg) ![Recipe: Aussie](https://img.shields.io/badge/tag-Aussie-blue.svg) ![Recipe: family](https://img.shields.io/badge/tag-family-blue.svg) ![Recipe: casserole](https://img.shields.io/badge/tag-casserole-blue.svg)
+*Last updated 15 Apr 2023, 23:37:57*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-lamb-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-battered-blue.svg" /> <img src="https://img.shields.io/badge/tag-Aussie-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> <img src="https://img.shields.io/badge/tag-casserole-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_lambchopcasserole/count.svg" width="50%" />

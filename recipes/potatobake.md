@@ -18,16 +18,8 @@
 
 4. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
 
-*Last updated 24 Oct 2020, 19:44:12*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: potato](https://img.shields.io/badge/tag-potato-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg) ![Recipe: savoury](https://img.shields.io/badge/tag-savoury-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: cheesey](https://img.shields.io/badge/tag-cheesey-blue.svg)
+*Last updated 24 Oct 2020, 19:44:12*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-potato-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-savoury-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" width="50%" />

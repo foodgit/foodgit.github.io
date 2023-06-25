@@ -16,16 +16,8 @@
 
 2. Roll 2 tablespoonfuls of the mixture into balls, place on baking trays lined with non-stick baking paper and press to flatten. Bake for 12–15 minutes or until golden. Allow to cool on the trays. Makes 12.
 
-*Last updated 3 May 2023, 13:26:40*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesdonnahay/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: chocolate](https://img.shields.io/badge/tag-chocolate-blue.svg)
+*Last updated 3 May 2023, 13:26:40*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesdonnahay/count.svg" width="50%" />

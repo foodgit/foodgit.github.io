@@ -38,13 +38,15 @@ for recipe_stub in list(all_recipe_stubs):
         tags=[ "none" ]
     finally:
         f.close()
+    taglinks=""
     for tag in list(tags):
-        formatted_tags=formatted_tags+["![Recipe: "+tag+"](https://img.shields.io/badge/tag-"+tag+"-blue.svg)"]
+        #formatted_tags=formatted_tags+["![Recipe: "+tag+"](https://img.shields.io/badge/tag-"+tag+"-blue.svg)"]
+        taglinks=taglinks+'<img src="https://img.shields.io/badge/tag-'+tag+'-blue.svg" /> '
     #replace {tag} with formatted tag images, no longer required
     #recipe_body = recipe_body.replace("{tags}", ' '.join(formatted_tags))
     recipe_file_name=recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
     with open(recipe_file_name,'w') as f:
         f.write(recipe_body)
     with open(recipe_file_name, "a") as f:
-        f.write('&nbsp;\n&nbsp;\n&nbsp;\n&nbsp;\n<img src="../logo.png" width="33%" align="right" />&nbsp;\n&nbsp;\n&nbsp;\n&nbsp;\n<img src="https://profile-counter.glitch.me/fexofenadine_'+recipe_stub.split("/")[-2]+'/count.svg" height="20" align="right" />&nbsp;\n&nbsp;\n&nbsp;\n&nbsp;\n')
-        f.write(' '.join(formatted_tags))
+        f.write('\n\n|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|\n:----|----:\n')
+        f.write(taglinks+'|<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_'+recipe_stub.split("/")[-2]+'/count.svg" width="50%" />')

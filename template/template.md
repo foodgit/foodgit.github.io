@@ -88,16 +88,8 @@ Nullam pellentesque in urna in hendrerit. Quisque lorem nunc, ultricies vel bibe
 
 Did you think this was a good recipe? Did it take too long to prepare, did it taste good? Were there too many dishes to wash afterward? Would you make it again, or is there a better thing we should try?
 
-*Last updated 15 Apr 2023, 23:37:57*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: American](https://img.shields.io/badge/tag-American-blue.svg) ![Recipe: fast_food](https://img.shields.io/badge/tag-fast_food-blue.svg) ![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg)
+*Last updated 15 Apr 2023, 23:37:57*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-American-blue.svg" /> <img src="https://img.shields.io/badge/tag-fast_food-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" width="50%" />

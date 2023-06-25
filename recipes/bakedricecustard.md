@@ -24,16 +24,8 @@
 5. Bake a further 20 minutes. Serve warm or cold.
 
 *Last updated 15 Apr 2023, 23:37:57*
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_bakedricecustard/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg)
+
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_bakedricecustard/count.svg" width="50%" />

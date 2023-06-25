@@ -1,6 +1,6 @@
-# Chicken Tenders
-
 <img src="chickentenders/images/main.jpg" width="55%" align="right" />
+
+# Chicken Tenders
 
 ## Ingredients
 
@@ -24,16 +24,8 @@
 
 2. cook 6 mins, flip, further 6 mins
 
-*Last updated 1 Jun 2023, 20:11:43*&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="../logo.png" width="33%" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-<img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" height="20" align="right" />&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-![Recipe: chicken](https://img.shields.io/badge/tag-chicken-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: airfryer](https://img.shields.io/badge/tag-airfryer-blue.svg) ![Recipe: messy](https://img.shields.io/badge/tag-messy-blue.svg) ![Recipe: battered](https://img.shields.io/badge/tag-battered-blue.svg) ![Recipe: crumbed](https://img.shields.io/badge/tag-crumbed-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg) ![Recipe: mine](https://img.shields.io/badge/tag-mine-blue.svg)
+*Last updated 1 Jun 2023, 20:11:43*
+
+|<div style="width:150px">&nbsp;</div>|<div style="width:50px">&nbsp;</div>|
+:----|----:
+<img src="https://img.shields.io/badge/tag-chicken-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-battered-blue.svg" /> <img src="https://img.shields.io/badge/tag-crumbed-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> |<img src="../images/logo_sm.png" width="50%" /><br /><img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" width="50%" />
