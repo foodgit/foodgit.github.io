@@ -1,10 +1,10 @@
 name: Rebuild Markdown Files
 
 on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - recipes/**
+#  push:
+#    branches: [ "main" ]
+#    paths:
+#      - recipes/**
   workflow_dispatch:
 
 jobs:
