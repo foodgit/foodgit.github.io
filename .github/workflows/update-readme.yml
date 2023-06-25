@@ -1,4 +1,4 @@
-name: update-readme
+name: Update Readme TOC
 
 on:
 #  push:
