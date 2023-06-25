@@ -1,0 +1,35 @@
+name: Rebuild Markdown Files
+
+on:
+#  push:
+#    branches: [ "main" ]
+#    paths:
+#      - recipes/**
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+      - name: install dependencies
+        run: pip install loguru
+      - name: Rebuild markdown recipes
+        run: python scripts/generate_markdown_recipes.py
+        - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Commit markdown changes
+        run: |
+          git add recipes/*.md
+          git commit -a -m "Recreated recipes from stubs"
+      - name: Recreate README.md TOC
+        run: python scripts/update_readme.py
+      - name: Commit TOC changes
+        run: |
+          git add README.md
+          git add tags/*
+          git commit -a -m "Regenerated README.md TOC"rebuld
