@@ -97,14 +97,12 @@ if not readme:
 
 with open('README.md','w') as f:
     f.write(readme)
-    
-    
+       
 # overriding it this way is ugly but whatever
 tag_badges_map = {tag_name:make_badge(label=tag_name, color = random_hex_color(), root='..') for tag_name in unq_tags}
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
-    
-    
+   
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['last_modified_ts'])[::-1]
