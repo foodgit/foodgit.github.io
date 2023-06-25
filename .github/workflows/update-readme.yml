@@ -18,7 +18,8 @@ jobs:
         run: python scripts/update_readme.py
       - name: Commit files
         run: |
-          git config --local user.name "fexofenadine"
+          git config --global user.email "fexofenadine@users.noreply.github.com"
+          git config --global user.name "fexofenadine"
           git add README.md
           git add tags/*
           git commit -a -m "Updated TOC"
