@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Frozen Lasagna (a la Airfryer)](../recipes/lasagnaairfryer.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Italian-bb15fd)](../tags/Italian.md) [![](https://img.shields.io/badge/tag-airfryer-e4f90)](../tags/airfryer.md) [![](https://img.shields.io/badge/tag-easy-b6c680)](../tags/easy.md) [![](https://img.shields.io/badge/tag-mine-427cd)](../tags/mine.md) [![](https://img.shields.io/badge/tag-reheating-eadebe)](../tags/reheating.md)|
+|[Frozen Lasagna (a la Airfryer)](../recipes/lasagnaairfryer.md)|2023-06-25|[![](https://img.shields.io/badge/tag-Italian-91514)](../tags/Italian.md) [![](https://img.shields.io/badge/tag-airfryer-1754e4)](../tags/airfryer.md) [![](https://img.shields.io/badge/tag-cheesey-062ab)](../tags/cheesey.md) [![](https://img.shields.io/badge/tag-easy-f1d19f)](../tags/easy.md) [![](https://img.shields.io/badge/tag-mine-9fef19)](../tags/mine.md) [![](https://img.shields.io/badge/tag-reheating-6984a1)](../tags/reheating.md)|
