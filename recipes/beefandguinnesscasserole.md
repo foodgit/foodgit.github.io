@@ -1,6 +1,6 @@
-# Beef & Guinness Casserole
-
 <img src="beefandguinnesscasserole/images/main.jpg" width="55%" align="right" />
+
+# Beef & Guinness Casserole
 
 ## Ingredients
 
