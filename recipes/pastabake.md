@@ -26,6 +26,8 @@ Yum!
 
 *Last updated 17 Jun 2023, 17:17:27*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_pastabake/count.svg" height="20" align="right" />
 
 ![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg) ![Recipe: pasta](https://img.shields.io/badge/tag-pasta-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: cheesey](https://img.shields.io/badge/tag-cheesey-blue.svg)

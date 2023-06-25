@@ -28,6 +28,8 @@
 
 *Last updated 25 Jun 2023, 10:17:20*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_coconutsaffronrice/count.svg" height="20" align="right" />
 
 ![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: sides](https://img.shields.io/badge/tag-sides-blue.svg) ![Recipe: stovetop](https://img.shields.io/badge/tag-stovetop-blue.svg) ![Recipe: expensive](https://img.shields.io/badge/tag-expensive-blue.svg) ![Recipe: Thai](https://img.shields.io/badge/tag-Thai-blue.svg)

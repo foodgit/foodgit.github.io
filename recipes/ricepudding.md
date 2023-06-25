@@ -25,6 +25,8 @@
 
 *Last updated 24 Oct 2020, 20:02:33*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_ricepudding/count.svg" height="20" align="right" />
 
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: rice](https://img.shields.io/badge/tag-rice-blue.svg) ![Recipe: rice_cooker](https://img.shields.io/badge/tag-rice_cooker-blue.svg) ![Recipe: easy](https://img.shields.io/badge/tag-easy-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg)

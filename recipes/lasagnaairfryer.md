@@ -10,6 +10,8 @@
 
 *Last updated 3 Jan 2023, 22:16:38*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_lasagnaairfryer/count.svg" height="20" align="right" />
 
 ![Recipe: airfryer](https://img.shields.io/badge/tag-airfryer-blue.svg) ![Recipe: reheating](https://img.shields.io/badge/tag-reheating-blue.svg) ![Recipe: easy](https://img.shields.io/badge/tag-easy-blue.svg) ![Recipe: Italian](https://img.shields.io/badge/tag-Italian-blue.svg) ![Recipe: mine](https://img.shields.io/badge/tag-mine-blue.svg) ![Recipe: cheesey](https://img.shields.io/badge/tag-cheesey-blue.svg)

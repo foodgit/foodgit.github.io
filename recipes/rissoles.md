@@ -31,6 +31,8 @@ Place into a large bowl:
 
 *Last updated 14 Aug 2021, 12:16:49*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_rissoles/count.svg" height="20" align="right" />
 
 ![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: easy](https://img.shields.io/badge/tag-easy-blue.svg) ![Recipe: Aussie](https://img.shields.io/badge/tag-Aussie-blue.svg) ![Recipe: family](https://img.shields.io/badge/tag-family-blue.svg)

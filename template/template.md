@@ -90,6 +90,8 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 *Last updated 15 Apr 2023, 23:37:57*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" height="20" align="right" />
 
 ![Recipe: American](https://img.shields.io/badge/tag-American-blue.svg) ![Recipe: fast_food](https://img.shields.io/badge/tag-fast_food-blue.svg) ![Recipe: beef](https://img.shields.io/badge/tag-beef-blue.svg)

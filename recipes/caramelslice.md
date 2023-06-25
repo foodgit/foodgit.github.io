@@ -45,6 +45,8 @@
 
 *Last updated 28 Jul 2022, 13:06:22*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_caramelslice/count.svg" height="20" align="right" />
 
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: chocolate](https://img.shields.io/badge/tag-chocolate-blue.svg) ![Recipe: dairy](https://img.shields.io/badge/tag-dairy-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: long_prep_time](https://img.shields.io/badge/tag-long_prep_time-blue.svg) ![Recipe: amazing](https://img.shields.io/badge/tag-amazing-blue.svg)

@@ -18,6 +18,8 @@
 
 *Last updated 3 May 2023, 13:26:40*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_chocolatechipcookiesdonnahay/count.svg" height="20" align="right" />
 
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: baked](https://img.shields.io/badge/tag-baked-blue.svg) ![Recipe: chocolate](https://img.shields.io/badge/tag-chocolate-blue.svg)

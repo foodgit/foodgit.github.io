@@ -17,6 +17,8 @@ Use butter to cook them in (all this butter !!!). A tablespoon full for each one
 
 *Last updated 11 Sept 2021, 11:53:57*
 
+<img src="logo.png" width="20%" align="right" />
+
 <img src="https://profile-counter.glitch.me/fexofenadine_piklets/count.svg" height="20" align="right" />
 
 ![Recipe: dessert](https://img.shields.io/badge/tag-dessert-blue.svg) ![Recipe: fried](https://img.shields.io/badge/tag-fried-blue.svg) ![Recipe: family](https://img.shields.io/badge/tag-family-blue.svg)
