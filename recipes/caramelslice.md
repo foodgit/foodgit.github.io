@@ -31,11 +31,9 @@
 1. Preheat oven to 180°C (350°F). Place the flour, coconut, butter and sugar in a bowl and mix to combine. Using the back of a spoon, press the mixture into the base of a lightly greased 20cm x 30cm tin lined with non-stick baking paper and bake for 15–20 minutes or until golden.
 
 2. While the base is cooking, make the caramel filling.
-	
+    
     Place the butter, condensed milk and golden syrup, in a medium saucepan over medium heat. Whisk until the butter is melted and cook, whisking frequently, for 5–7 minutes or until the mixture has thickened slightly (see tip). 
-
-    <img src="caramelslice/images/4.jpg" width="33%" align="right" />
-
+    
     Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold.
 
     <img src="caramelslice/images/5.jpg" width="33%" align="right" />
