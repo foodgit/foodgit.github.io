@@ -24,7 +24,10 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
         if author_email != 'action@github.com':
             break
     if verbose:
-        logger.debug(outv)
+        try:
+            logger.debug(outv)
+        except:
+            pass
     return outv
 
 
