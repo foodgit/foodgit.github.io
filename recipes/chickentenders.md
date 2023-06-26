@@ -28,6 +28,6 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_chickentenders/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_chickentenders/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-chicken-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-battered-blue.svg" /> <img src="https://img.shields.io/badge/tag-crumbed-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> 

@@ -29,6 +29,6 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_rockcakes/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_rockcakes/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> 

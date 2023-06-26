@@ -12,6 +12,6 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_lasagnaairfryer/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_lasagnaairfryer/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-reheating-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-reheating-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-Italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> 

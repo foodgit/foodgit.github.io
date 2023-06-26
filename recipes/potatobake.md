@@ -22,6 +22,6 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_potatobake/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_potatobake/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-potato-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-savoury-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> 

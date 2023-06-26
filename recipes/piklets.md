@@ -19,6 +19,6 @@ Use butter to cook them in (all this butter !!!). A tablespoon full for each one
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_piklets/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_piklets/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> 

@@ -35,6 +35,6 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_hommus/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_hommus/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> <img src="https://img.shields.io/badge/tag-protein-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> 

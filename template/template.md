@@ -92,6 +92,6 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/fexofenadine_template/count.svg" width="20%" align="right" />
+<img src="https://profile-counter.glitch.me/gitfood_template/count.svg" width="20%" align="right" />
 
 <img src="https://img.shields.io/badge/tag-American-blue.svg" /> <img src="https://img.shields.io/badge/tag-fast_food-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> 
