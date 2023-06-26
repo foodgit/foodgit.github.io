@@ -3,12 +3,12 @@
 ## Ingredients
 
 - 500g mince
-- 1 onion chopped
+- 1 onion, chopped
 - Can crushed tomatoes
-- 2 tablespoons of tomato paste
+- 2 tbsp of tomato paste
 - About a cup beef stock
 - Salt & pepper
-- Grated carrot & zucchini in for extra nutrients
+- Grated carrot & zucchini, for extra nutrients
 - Grated tasty cheese
 
 ## Method
@@ -25,6 +25,7 @@
 Yum!
 
 *Last updated 17 Jun 2023, 17:17:27*
+
 
 <img src="../images/logo_sm.png" width="40%" />
 
