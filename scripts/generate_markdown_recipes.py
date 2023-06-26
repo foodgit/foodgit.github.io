@@ -49,5 +49,5 @@ for recipe_stub in list(all_recipe_stubs):
         f.write(recipe_body)
     with open(recipe_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
-        f.write('\n\n<img src="https://profile-counter.glitch.me/fexofenadine_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
+        f.write('\n\n<img src="https://profile-counter.glitch.me/gitfood_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
         f.write('\n\n'+taglinks)
