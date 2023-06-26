@@ -2,6 +2,10 @@
 
 gitFOOD is a personal recipe repository framework built around Markdown-based recipe documents
 
+It's primary goal is to allow easy submission of recipes, that are easy to make look pleasant and are widely accessible to anyone with internet access.  Recipes are created with very simple text files, and a bot automatically embeds your photos and links to other similarly-themed recipes.
+
+As a bonus for using Git, we get source control (notably the ability to see old versions of documents), automation, speed, and potential to produce many delivery methods to users (think native phone app, a pretty, polished website, or even PDFs (recipe books!))
+
 {TOC}
 
 <img src="https://profile-counter.glitch.me/gitfood_toc/count.svg" height="20" align="right" />
