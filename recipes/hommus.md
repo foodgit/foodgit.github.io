@@ -30,7 +30,8 @@
 
 7. Scrape the hommus into a serving bowl or platter, and use a spoon to create nice swooshes on top. Top with garnishes of your choice, and serve. Leftover hommus keeps well in the refrigerator, covered, for up to 1 week.
 
-* Last updated 25 Apr 2023, 05:20:52*
+*Last updated 25 Apr 2023, 05:20:52*
+
 
 <img src="../images/logo_sm.png" width="40%" />
 
