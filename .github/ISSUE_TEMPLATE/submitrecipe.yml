@@ -5,9 +5,10 @@ labels: [Recipe, new]
 assignees:
   - fexofenadine, foodgit
 body:
-- type: markdown
+  - type: markdown
     attributes:
-      value: Thanks for taking the time to submit a recipe to gitFOOD! Dont worry too much if you make a mistake, it can be fixed later. Please try to fill it out as much detail as possible :)
+      value: |
+        Thanks for taking the time to submit a recipe to gitFOOD! Dont worry too much if you make a mistake, it can be fixed later. Please try to fill it out as much detail as possible :)
   - type: input
     id: Name
     attributes:
