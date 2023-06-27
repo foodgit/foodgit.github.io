@@ -107,22 +107,22 @@ body:
     validations:
       required: false
       
-- type: textarea
-  attributes:
-    label: Main image
-    description: |
-      What photo would you like displayed at the top of your recipe?
+  - type: textarea
+    attributes:
+      label: Main image
+      description: |
+        What photo would you like displayed at the top of your recipe?
 
-      Tip: Click this area to highlight it and then drag an image file in.
-  validations:
-    required: false
+        Tip: Click this area to highlight it and then drag an image file in.
+    validations:
+      required: false
     
- - type: textarea
-  attributes:
-    label: Additional images
-    description: |
-      What other photos would you like displayed throughout your recipe? Any progress shots or photos that help illustrate preparation steps?
+   - type: textarea
+    attributes:
+      label: Additional images
+      description: |
+        What other photos would you like displayed throughout your recipe? Any progress shots or photos that help illustrate preparation steps?
 
-      Tip: Click this area to highlight it and then drag image files in.
-  validations:
-    required: false   
+        Tip: Click this area to highlight it and then drag image files in.
+    validations:
+      required: false   
