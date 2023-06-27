@@ -22,7 +22,6 @@ body:
     attributes:
       label: Ingredients
       description: Add a list of ingredients your recipe needs (line separated).
-      render: shell
     validations:
       required: true
       
@@ -31,7 +30,6 @@ body:
     attributes:
       label: Method
       description: Add the instructions for pretparing and cooking your recipe here your recipe. Hit enter twice between steps.
-      render: shell
     validations:
       required: true
       
@@ -40,7 +38,6 @@ body:
     attributes:
       label: Tips
       description: Add a list of tips to keep in mind to help make things better or easier! Hit enter twice between tips.
-      render: shell
     validations:
       required: true
            
@@ -102,7 +99,6 @@ body:
     id: tags
     attributes:
       label: Additional tags
-      description: Add any additional tags that help categorize your recipe here.
-      render: shell
+      description: Add any additional tags that help categorize your recipe here (comma separated).
     validations:
       required: true
