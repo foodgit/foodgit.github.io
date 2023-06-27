@@ -4,11 +4,13 @@ title: "[Recipe]: Recipe Name"
 labels: [Recipe]
 assignees:
   - fexofenadine, foodgit
+  
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to submit a recipe to gitFOOD! Dont worry too much if you make a mistake, it can be fixed later. Please try to fill it out as much detail as possible :)
+        
   - type: input
     id: Name
     attributes:
@@ -39,7 +41,7 @@ body:
       label: Tips
       description: Add a list of tips to keep in mind to help make things better or easier! Hit enter twice between tips.
     validations:
-      required: true
+      required: false
            
   - type: dropdown
     id: Level
@@ -77,6 +79,7 @@ body:
           required: false
         - label: rice_cooker
           required: false
+          
   - type: checkboxes
     id: meal_type
     attributes:
@@ -95,10 +98,11 @@ body:
           required: false
         - label: sides
           required: false
+          
   - type: input
     id: tags
     attributes:
       label: Additional tags
       description: Add any additional tags that help categorize your recipe here (comma separated).
     validations:
-      required: true
+      required: false
