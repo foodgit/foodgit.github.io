@@ -61,23 +61,23 @@ body:
       label: How is this cooked?
       description: Which method do you use to cook this dish? You can select more than one.
       options:
-        - label: baked
+        - label: Baked
           required: false
-        - label: fried
+        - label: Fried
           required: false
-        - label: grilled
+        - label: Grilled
           required: false
-        - label: stovetop
+        - label: Stovetop
           required: false
-          label: airfryer
+          label: Airfryer
           required: false
-        - label: boiled
+        - label: Boiled
           required: false
-        - label: poached
+        - label: Poached
           required: false
-        - label: braised
+        - label: Braised
           required: false
-        - label: rice cooker
+        - label: Rice Cooker
           required: false
           
   - type: checkboxes
@@ -86,17 +86,17 @@ body:
       label: What category of meal is this?
       description: What type of dish is this? When is best to have it? You can select more than one.
       options:
-        - label: breakfast
+        - label: Breakfast
           required: false
-        - label: lunch
+        - label: Lunch
           required: false
-        - label: dinner
+        - label: Dinner
           required: false
-        - label: dessert
+        - label: Dessert
           required: false
-          label: snack
+          label: Snack
           required: false
-        - label: sides
+        - label: Sides
           required: false
           
   - type: input
