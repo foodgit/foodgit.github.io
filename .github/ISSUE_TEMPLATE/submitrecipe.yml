@@ -3,7 +3,7 @@ description: Recipe Submission
 title: "[Recipe]: New Submission"
 labels: [Recipe]
 assignees:
-  - fexofenadine, foodgit
+  - fexofenadine
   
 body:
   - type: markdown
