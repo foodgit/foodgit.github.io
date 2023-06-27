@@ -1,7 +1,7 @@
-name: Submit_Recipe
+name: Submit New Recipe
 description: Recipe Submission
 title: "[Recipe]: Recipe Name"
-labels: [Recipe, new]
+labels: [Recipe]
 assignees:
   - fexofenadine, foodgit
 body:
