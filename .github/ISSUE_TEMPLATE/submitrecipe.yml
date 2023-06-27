@@ -77,7 +77,7 @@ body:
           required: false
         - label: braised
           required: false
-        - label: rice_cooker
+        - label: rice cooker
           required: false
           
   - type: checkboxes
