@@ -1,1 +1,108 @@
+name: Submit_Recipe
+description: Recipe Submission
+title: "[Recipe]: Recipe Name"
+labels: [Recipe, new]
+assignees:
+  - fexofenadine, foodgit
+body:
+- type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a recipe to gitFOOD! Dont worry too much if you make a mistake, it can be fixed later. Please try to fill it out as much detail as possible :)
+  - type: input
+    id: Name
+    attributes:
+      label: Title of Recipe
+      description: What is the name of this recipe?
+    validations:
+      required: true
 
+  - type: textarea
+    id: ingredients
+    attributes:
+      label: Ingredients
+      description: Add a list of ingredients your recipe needs (line separated).
+      render: shell
+    validations:
+      required: true
+      
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: Add the instructions for pretparing and cooking your recipe here your recipe. Hit enter twice between steps.
+      render: shell
+    validations:
+      required: true
+      
+  - type: textarea
+    id: tips
+    attributes:
+      label: Tips
+      description: Add a list of tips to keep in mind to help make things better or easier! Hit enter twice between tips.
+      render: shell
+    validations:
+      required: true
+           
+  - type: dropdown
+    id: Level
+    attributes:
+      label: What difficulty level is this recipe?
+      description: What level of cooking skill do you think this recipe requires?
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: cooking_method
+    attributes:
+      label: How is this cooked?
+      description: Which method do you use to cook this dish? You can select more than one.
+      options:
+        - label: baked
+          required: false
+        - label: fried
+          required: false
+        - label: grilled
+          required: false
+        - label: stovetop
+          required: false
+          label: airfryer
+          required: false
+        - label: boiled
+          required: false
+        - label: poached
+          required: false
+        - label: braised
+          required: false
+        - label: rice_cooker
+          required: false
+  - type: checkboxes
+    id: meal_type
+    attributes:
+      label: What category of meal is this?
+      description: What type of dish is this? When is best to have it? You can select more than one.
+      options:
+        - label: breakfast
+          required: false
+        - label: lunch
+          required: false
+        - label: dinner
+          required: false
+        - label: dessert
+          required: false
+          label: snack
+          required: false
+        - label: sides
+          required: false
+  - type: input
+    id: tags
+    attributes:
+      label: Additional tags
+      description: Add any additional tags that help categorize your recipe here.
+      render: shell
+    validations:
+      required: true
