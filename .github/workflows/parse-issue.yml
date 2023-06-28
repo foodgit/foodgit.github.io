@@ -20,4 +20,4 @@ jobs:
       run: echo "${{ env.ISSUE_BODY }}"
     
     - name: Output recipe title
-      run: awk '$0=="### Title of Recipe"{getline; getline; print}' ${{ env.ISSUE_BODY }}
+      run: awk '$0=="### Title of Recipe"{getline; getline; print}' "${{ env.ISSUE_BODY }}"
