@@ -22,5 +22,5 @@ jobs:
     
     - name: Create file from issue body
       run: |
-        filename=echo "${{ env.RECIPE_TITLE }}.raw" | awk '{print tolower($0)}'
+        filename=echo "${{ env.RECIPE_TITLE }}.raw" | awk '{print tolower($0)} | sed 's/ //g'' #lowercase & no spaces
         echo "$filename"
