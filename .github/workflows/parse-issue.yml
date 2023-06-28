@@ -24,11 +24,24 @@ jobs:
         mkdir -p "./submissions/${recipename}/images"
         touch "./submissions/${recipename}/images/.placeholder"
         echo "${{ env.ISSUE_BODY }}" > "./submissions/${recipename}/${recipename}.raw"
-    - name: Commit submitted recipe changes
-      run: |
-        git add submissions/*
-        git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: ${{ github.head_ref }}
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Check if there are any changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+      - name: Commit submitted recipe changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git add submissions/*
+          git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.head_ref }}
