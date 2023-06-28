@@ -23,5 +23,6 @@ jobs:
     - name: Create file from issue body
       run: |
         #filename="$(echo -e "${filename}" | tr -d '[:space:]')"
-        echo "${env.RECIPE_TITLE,,}"
-
+        filename=${{ env.RECIPE_TITLE }}
+        echo $filename
+        echo ${filename,,}
