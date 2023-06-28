@@ -24,12 +24,12 @@ jobs:
       - name: Add new submissions to git
         run: |
           git add submissions
-      - name: Check if there are any changes
-        id: verify_diff
-        run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+    #   - name: Check if there are any changes
+    #     id: verify_diff
+    #     run: |
+    #       git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit markdown changes
-        if: steps.verify_diff.outputs.changed == 'true'
+        # if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git commit -a -m "Processed new recipe from submitted issue template"
       - name: Push changes
