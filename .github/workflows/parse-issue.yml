@@ -36,7 +36,7 @@ jobs:
         git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
     - name: Commit submitted recipe additions
       run: |
-        git add submissions/*
+        git add *
         git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
     - name: Push changes
       uses: ad-m/github-push-action@master
