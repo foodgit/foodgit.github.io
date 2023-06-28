@@ -24,5 +24,5 @@ jobs:
       run: |
         #lowercase & no spaces
         filename="$(echo -e "${{ env.RECIPE_TITLE }}" | awk '{print tolower($0))"
-        filename="$(echo -e "${filename}" | tr -d '[:space:]')"
+        #filename="$(echo -e "${filename}" | tr -d '[:space:]')"
         echo "$filename"
