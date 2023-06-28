@@ -1,12 +1,12 @@
 name: parse_recipe
 
 on:
-    issues:
-      types: [labeled]
+  issues:
+    types: [labeled]
   
-  env:
-    ISSUE_TITLE: ${{ github.event.issue.title }}
-    ISSUE_BODY: ${{ github.event.issue.body }}
+env:
+  ISSUE_TITLE: ${{ github.event.issue.title }}
+  ISSUE_BODY: ${{ github.event.issue.body }}
 
 jobs:
   build:
