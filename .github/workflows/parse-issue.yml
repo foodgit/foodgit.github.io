@@ -16,10 +16,10 @@ jobs:
     - name: Output submission title
       run: echo "${{ env.ISSUE_TITLE }}"
 
-    - name: Output recipe contents
+    - name: Output recipe body
       run: echo "${{ env.ISSUE_BODY }}"
     
     - name: Output recipe title
       run: |
-        echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}' 
-        # sed -n '/^### Title of Recipe$/{n;p;n;p}'
+        env.RECIPE_TITLE = echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}' 
+        echo "${{ env.RECIPE_TITLE }}"
