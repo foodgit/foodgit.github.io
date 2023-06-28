@@ -21,7 +21,7 @@ for recipe_stub in list(all_recipe_stubs):
         if image_file == "main.jpg":
             image_width="55%"
         else:
-            image_width="33%"
+            image_width="35%"
         recipe_body = recipe_body.replace("{"+image_file+"}", "<img src=\""+image_path+"\" width=\""+image_width+"\" align=\"right\" />")
     tag_file="./"+recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-2]+"/tags.txt"
     tags=list()
