@@ -1,0 +1,20 @@
+name: parse_issue
+on:
+  issues:
+    types: [labeled]
+
+env:
+  ISSUE_TITLE: ${{ github.event.issue.title }}
+  ISSUE_BODY: ${{ github.event.issue.body }}
+  
+jobs:
+  display_issue_info:
+    if: ${{ github.event.label.name == 'approved' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Output submission title
+      run: echo env.ISSUE_TITLE
+
+    - name: Output recipe contents
+      run: echo env.ISSUE_BODY
