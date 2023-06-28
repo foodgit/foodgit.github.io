@@ -26,3 +26,13 @@ jobs:
         mkdir "submissions/${recipename}"
         mkdir "submissions/${recipename}/images"
         echo "${{ env.ISSUE_BODY }}" > "submissions/${recipename}/${recipename}.raw"
+#    - name: Commit submitted recipe changes
+#      if: steps.verify_diff2.outputs.changed == 'true'
+#      run: |
+#        git add README.md
+#        git add tags/*
+#        git commit -a -m "Created raw recipe submission for ${{ env.RECIPE_TITLE }}"
+#    - name: Push changes
+#      uses: ad-m/github-push-action@master
+#      with:
+#        branch: ${{ github.head_ref }}
