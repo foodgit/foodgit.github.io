@@ -22,7 +22,7 @@ jobs:
         recipename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')        
         recipename="$(echo -e "${recipename,,}" | tr -d '[:space:]')"
         mkdir -p "./submissions/${recipename}/images"
-        echo "${{ env.ISSUE_BODY }}" > "submissions/${recipename}/${recipename}.raw"
+        echo "${{ env.ISSUE_BODY }}" > "./submissions/${recipename}/${recipename}.raw"
 #    - name: Commit submitted recipe changes
 #      if: steps.verify_diff2.outputs.changed == 'true'
 #      run: |
