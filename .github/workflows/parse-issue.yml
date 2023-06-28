@@ -17,7 +17,7 @@ jobs:
     - name: Output submission details
       run: |
         echo "Submission title: ${{ env.ISSUE_TITLE }}"
-        echo "Recipe title: ${{ env.ISSUE_TITLE }}"
+        echo "Recipe title: ${{ env.RECIPE_TITLE }}"
         echo "Issue body: ${{ env.ISSUE_BODY }}"
     
     - name: Create file from issue body
