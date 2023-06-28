@@ -22,6 +22,8 @@ jobs:
     - name: Output recipe title
       run: |
         title=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
-        echo "RECIPE_TITLE=$title" >> "$GITHUB_ENV"
+        #echo "RECIPE_TITLE=$title" >> "$GITHUB_ENV"
         echo "local: $title"
-        echo "environment: ${{ env.RECIPE_TITLE }}"
+    - name: access recipe title
+      run: |
+        echo "accessing: $title"
