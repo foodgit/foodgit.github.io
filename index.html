@@ -5,6 +5,13 @@
       text-align: center;
       color: light-grey;
     }
+    .vertically-centered {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
     .bottom-right {
       position: absolute;
       bottom: 40px;
@@ -22,13 +29,15 @@
     <link rel="icon" type="image/x-icon" href="images/gf_icon_sm.png">
   </head>
   <body style="background-color:#1c87c9;color: #0e3e5d8e;">
-    <div class="container">
-      <h1>
-        <a href="https://github.com/fexofenadine/gitfood">
-          <img src="images/logo_lg.png" style="width:100%;" />
-        </a>
-        <div class="top-left">welcome to</div>
-      </h1>
+    <div class="vertically-centered">
+        <div class="container">
+        <h1>
+          <a href="https://github.com/fexofenadine/gitfood">
+            <img src="images/logo_lg.png" style="width:100%;" />
+          </a>
+          <div class="top-left">welcome to</div>
+        </h1>
+      </div>
     </div>
   </body>
 </html>
