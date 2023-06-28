@@ -22,8 +22,6 @@ jobs:
     
     - name: Create file from issue body
       run: |
-        #lowercase & no spaces
-        filename="$(echo "${{ env.RECIPE_TITLE }}" | awk '{print tolower($0)}')"
         #filename="$(echo -e "${filename}" | tr -d '[:space:]')"
-        echo -e "${filename}"
-        echo "${{ env.RECIPE_TITLE }}" | awk '{print tolower($0)}'
+        echo "${env.RECIPE_TITLE,,}"
+
