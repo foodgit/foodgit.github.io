@@ -22,13 +22,14 @@ jobs:
         recipename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')        
         recipename="$(echo -e "${recipename,,}" | tr -d '[:space:]')"
         mkdir -p "./submissions/${recipename}/images"
+        touch "./submissions/${recipename}/images/.placeholder"
         echo "${{ env.ISSUE_BODY }}" > "./submissions/${recipename}/${recipename}.raw"
-#    - name: Commit submitted recipe changes
-#      if: steps.verify_diff2.outputs.changed == 'true'
-#      run: |
-#        git add submissions/*
-#        git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
-#    - name: Push changes
-#      uses: ad-m/github-push-action@master
-#      with:
-#        branch: ${{ github.head_ref }}
+    - name: Commit submitted recipe changes
+      if: steps.verify_diff2.outputs.changed == 'true'
+      run: |
+        git add submissions/*
+        git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: ${{ github.head_ref }}
