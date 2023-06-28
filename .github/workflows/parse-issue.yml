@@ -25,7 +25,6 @@ jobs:
         touch "./submissions/${recipename}/images/.placeholder"
         echo "${{ env.ISSUE_BODY }}" > "./submissions/${recipename}/${recipename}.raw"
     - name: Commit submitted recipe changes
-      if: steps.verify_diff2.outputs.changed == 'true'
       run: |
         git add submissions/*
         git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
