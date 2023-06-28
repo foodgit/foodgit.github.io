@@ -6,6 +6,7 @@ on:
 env:
   ISSUE_TITLE: ${{ github.event.issue.title }}
   ISSUE_BODY: ${{ github.event.issue.body }}
+  RECIPE_TITLE: $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
   
 jobs:
   display_issue_info:
@@ -26,4 +27,4 @@ jobs:
         echo "local: $title"
     - name: access recipe title
       run: |
-        echo "accessing: $title"
+        echo "environment: ${{ env.RECIPE_TITLE }}"
