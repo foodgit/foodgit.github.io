@@ -5,6 +5,15 @@
       text-align: center;
       color: light-grey;
     }
+    .box_gradient {
+      color:#0e1e2ddd
+      background-color: #3366cc;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#3366cc), to(#000000)); /* Chrome, Safari 4+ */
+      background-image: -webkit-linear-gradient(top, #3366cc, #000000); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+      background-image:    -moz-linear-gradient(top, #3366cc, #000000); /* Firefox 3.6-15 */
+      background-image:      -o-linear-gradient(top, #3366cc, #000000); /* Opera 11.10-12.00 */
+      background-image:         linear-gradient(to bottom, #3366cc, #000000); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    }
     .vertically-centered {
       margin: 0;
       position: absolute;
@@ -28,7 +37,7 @@
     <title>gitFOOD</title>
     <link rel="icon" type="image/x-icon" href="images/gf_icon_sm.png">
   </head>
-  <body style="color: #0e1e2ddd;background:linear-gradient(to bottom, #3366cc 0%, #000000 100%);">
+  <body class="box_gradient");">
     <div class="vertically-centered">
         <div class="container">
         <h1>
