@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Output submission title
-      run: echo "${{ env.ISSUE_TITLE }}
+      run: echo "${{ env.ISSUE_TITLE }}"
 
     - name: Output recipe contents
-      run: echo "${{ env.ISSUE_BODY }}
+      run: echo "${{ env.ISSUE_BODY }}"
