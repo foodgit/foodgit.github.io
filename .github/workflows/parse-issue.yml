@@ -11,8 +11,8 @@ jobs:
   display_issue_info:
     if: ${{ github.event.label.name == 'approved' }}
     runs-on: ubuntu-latest
-#    env:
-#      RECIPE_TITLE: $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
+    env:
+      RECIPE_TITLE: $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
     steps:
     - name: Output submission details
       run: |
@@ -21,6 +21,8 @@ jobs:
     
     - name: Create file from issue body
       run: |
-        filename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')        
-        filename="$(echo -e "${filename,,}" | tr -d '[:space:]')"
-        echo "${filename}"
+        recipename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')        
+        recipename="$(echo -e "${recipename,,}" | tr -d '[:space:]')"
+        mkdir "submissions/${recipename}"
+        mkdir "submissions/${recipename}/images"
+        echo "${{ env.ISSUE_BODY }}" > "submissions/${recipename}/${recipename}.raw"
