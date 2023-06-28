@@ -14,15 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Output submission title
-      run: echo "${{ env.ISSUE_TITLE }}"
-
-    - name: Output recipe body
-      run: echo "${{ env.ISSUE_BODY }}"
+    - name: Output submission details
+      run: |
+        echo "Submission title: ${{ env.ISSUE_TITLE }}"
+        echo "Recipe title: ${{ env.ISSUE_TITLE }}"
+        echo "Issue body: ${{ env.ISSUE_BODY }}"
     
     - name: Create file from issue body
       run: |
         #filename="$(echo -e "${filename}" | tr -d '[:space:]')"
-        filename=${{ env.RECIPE_TITLE }}
-        echo $filename
-        echo ${filename,,}
+        filename="${{ env.RECIPE_TITLE }}"
+        echo "${filename}"
+        echo "${filename,,}"
