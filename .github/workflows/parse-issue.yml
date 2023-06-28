@@ -20,11 +20,7 @@ jobs:
     - name: Output recipe body
       run: echo "${{ env.ISSUE_BODY }}"
     
-    - name: Output recipe title
+    - name: Create file from issue body
       run: |
-        title=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
-        #echo "RECIPE_TITLE=$title" >> "$GITHUB_ENV"
-        echo "local: $title"
-    - name: access recipe title
-      run: |
-        echo "environment: ${{ env.RECIPE_TITLE }}"
+        filename=echo "${{ env.RECIPE_TITLE }}.raw" | awk '{print tolower($0)}'
+        echo "$filename"
