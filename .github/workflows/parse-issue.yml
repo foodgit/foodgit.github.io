@@ -22,7 +22,7 @@ jobs:
     - name: Create file from issue body
       run: |
         echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}'
-#        filename="$(echo -e "${filename}" | tr -d '[:space:]')"
         filename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
         echo "${filename}"
         echo "${filename,,}"
+#        filename="$(echo -e "${filename}" | tr -d '[:space:]')"
