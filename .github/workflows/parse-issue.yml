@@ -20,4 +20,6 @@ jobs:
       run: echo "${{ env.ISSUE_BODY }}"
     
     - name: Output recipe title
-      run: awk '$0=="### Title of Recipe"{getline; getline; print}' "${{ env.ISSUE_BODY }}"
+      run: |
+        echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}' 
+        # sed -n '/^### Title of Recipe$/{n;p;n;p}'
