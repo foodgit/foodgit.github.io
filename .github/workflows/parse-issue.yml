@@ -11,8 +11,6 @@ jobs:
   display_issue_info:
     if: ${{ github.event.label.name == 'approved' }}
     runs-on: ubuntu-latest
-    env:
-      RECIPE_TITLE: $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')
     steps:
     - name: Output submission details
       run: |
@@ -29,9 +27,8 @@ jobs:
 #    - name: Commit submitted recipe changes
 #      if: steps.verify_diff2.outputs.changed == 'true'
 #      run: |
-#        git add README.md
-#        git add tags/*
-#        git commit -a -m "Created raw recipe submission for ${{ env.RECIPE_TITLE }}"
+#        git add submissions/*
+#        git commit -a -m "Created raw recipe submission for $(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')"
 #    - name: Push changes
 #      uses: ad-m/github-push-action@master
 #      with:
