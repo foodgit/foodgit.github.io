@@ -21,9 +21,9 @@ jobs:
       run: |
         recipename=$(echo "${{ env.ISSUE_BODY }}" | awk '$0=="### Title of Recipe"{getline; getline; print}')        
         recipename="$(echo -e "${recipename,,}" | tr -d '[:space:]')"
-        mkdir -p "/submissions/${recipename}/images"
-        touch "/submissions/${recipename}/images/.placeholder"
-        echo "${{ env.ISSUE_BODY }}" > "/submissions/${recipename}/${recipename}.raw"
+        mkdir -p "submissions/${recipename}/images"
+        touch "submissions/${recipename}/images/.placeholder"
+        echo "${{ env.ISSUE_BODY }}" > "submissions/${recipename}/${recipename}.raw"
 
     - uses: actions/checkout@v3
     - name: setup git config
