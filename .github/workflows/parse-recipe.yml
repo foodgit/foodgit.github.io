@@ -23,7 +23,7 @@ jobs:
           git config user.email "<>"
       - name: Add new submissions to git
         run: |
-          git add submissions/*
+          git add submissions
       - name: Check if there are any changes
         id: verify_diff
         run: |
