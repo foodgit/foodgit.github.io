@@ -15,6 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v2
+      - name: Install dependencies
+        run: pip install requests
       - name: Call python issue submission parser
         run: python scripts/parse_submission.py  "${{ env.ISSUE_TITLE }}" "${{ env.ISSUE_BODY }}"
       - name: setup git config
@@ -24,12 +26,7 @@ jobs:
       - name: Add new submissions to git
         run: |
           git add submissions
-    #   - name: Check if there are any changes
-    #     id: verify_diff
-    #     run: |
-    #       git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit markdown changes
-        # if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git commit -a -m "Processed new recipe from submitted issue template"
       - name: Push changes
