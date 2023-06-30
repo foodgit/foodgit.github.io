@@ -14,7 +14,7 @@ def get_image(image):
 
 script_name = sys.argv[0]
 # take raw text or file path as argument
-if sys.argv[1][3:]=="###":
+if sys.argv[1][:3]=="###":
     issue_body = sys.argv[1]
 else:
     with open(sys.argv[1]) as f:
