@@ -1,6 +1,6 @@
 casserole
 beef
-Guinness
+guinness
 tricky
 messy
 long_cook_time
@@ -8,4 +8,4 @@ long_prep_time
 baked
 large_quantity
 amazing
-Irish
+irish

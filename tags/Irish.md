@@ -1,5 +1,0 @@
-# Pages tagged `Irish`
-
-|Recipe Title|Last Updated|Tags
-|:---|:---|:---|
-|[Beef & Guinness Casserole](../recipes/beefandguinnesscasserole.md)|2023-06-28|[![](https://img.shields.io/badge/tag-Guinness-6984a1)](../tags/Guinness.md) [![](https://img.shields.io/badge/tag-Irish-bb15fd)](../tags/Irish.md) [![](https://img.shields.io/badge/tag-amazing-659a8f)](../tags/amazing.md) [![](https://img.shields.io/badge/tag-baked-9ab3df)](../tags/baked.md) [![](https://img.shields.io/badge/tag-beef-1754e4)](../tags/beef.md) [![](https://img.shields.io/badge/tag-casserole-13fda6)](../tags/casserole.md) [![](https://img.shields.io/badge/tag-large_quantity-cb29b)](../tags/large_quantity.md) [![](https://img.shields.io/badge/tag-long_cook_time-eadebe)](../tags/long_cook_time.md) [![](https://img.shields.io/badge/tag-long_prep_time-91514)](../tags/long_prep_time.md) [![](https://img.shields.io/badge/tag-messy-8f457a)](../tags/messy.md) [![](https://img.shields.io/badge/tag-tricky-b7439e)](../tags/tricky.md)|

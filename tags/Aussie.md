@@ -1,6 +1,0 @@
-# Pages tagged `Aussie`
-
-|Recipe Title|Last Updated|Tags
-|:---|:---|:---|
-|[Lamb Chop Casserole](../recipes/lambchopcasserole.md)|2023-06-28|[![](https://img.shields.io/badge/tag-Aussie-10cdd6)](../tags/Aussie.md) [![](https://img.shields.io/badge/tag-baked-9ab3df)](../tags/baked.md) [![](https://img.shields.io/badge/tag-battered-e4f90)](../tags/battered.md) [![](https://img.shields.io/badge/tag-casserole-13fda6)](../tags/casserole.md) [![](https://img.shields.io/badge/tag-family-1d5152)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-af803c)](../tags/fried.md) [![](https://img.shields.io/badge/tag-lamb-f1d19f)](../tags/lamb.md)|
-|[Rissoles](../recipes/rissoles.md)|2023-06-28|[![](https://img.shields.io/badge/tag-Aussie-10cdd6)](../tags/Aussie.md) [![](https://img.shields.io/badge/tag-beef-1754e4)](../tags/beef.md) [![](https://img.shields.io/badge/tag-easy-208450)](../tags/easy.md) [![](https://img.shields.io/badge/tag-family-1d5152)](../tags/family.md) [![](https://img.shields.io/badge/tag-fried-af803c)](../tags/fried.md)|

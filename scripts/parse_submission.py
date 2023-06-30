@@ -13,11 +13,14 @@ def get_image(image):
         del response
 
 script_name = sys.argv[0]
-issue_title = sys.argv[1]
-issue_body = sys.argv[2]
+# take raw text or file path as argument
+if sys.argv[1][3:]=="###":
+    issue_body = sys.argv[1]
+else:
+    with open(sys.argv[1]) as f:
+        issue_body = f.read()
 
 print("Parsing issue with python script")
-print("Issue title: "+issue_title)
 recipe_title=issue_body.split("### ")[1].split("\n")[2]
 friendly_title=recipe_title.strip().replace(" ","").lower()
 print("Recipe title: "+recipe_title)
@@ -27,17 +30,16 @@ output_file = Path("submissions/"+friendly_title+"/images/.placeholder")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text("placeholder text")
 
-output_file = Path("submissions/"+friendly_title+"/"+friendly_title+".raw")
+recipe_file_name="submissions/"+friendly_title+"/"+friendly_title+".raw"
+output_file = Path(recipe_file_name)
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(issue_body)
 
-recipe_file_name="submissions/"+friendly_title+"/"+friendly_title+".raw"
 
-with open(recipe_file_name,'r') as f:
-    body = f.read()
-    f.close()
 
-image_links=re.findall(r'!\[[^\]]*\]\((.*?)\s*?\s*\)', body)
+
+
+image_links=re.findall(r'!\[[^\]]*\]\((.*?)\s*?\s*\)', issue_body)
 
 if image_links:
     images=[]
@@ -54,7 +56,18 @@ if image_links:
             "url":image_link
         }
         images.append(image)
-        get_image(image)
-# for image in images:
-#     print("downloaded "+image["name"]) 
-        
+        #get_image(image)
+
+with open(recipe_file_name,'r') as f:
+    body_lines = f.readlines()
+read_nextline=False
+tags=[]
+for line in body_lines:
+    if line[:6]=="- [X] ":
+        tag=line[6:].strip().lower()
+        tags.append(tag)
+        print(tag)
+
+additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower().replace(", ",",").replace(" ","_").split(",")
+with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
+    f.write('\n'.join(map(str, tags+additional_tags)))

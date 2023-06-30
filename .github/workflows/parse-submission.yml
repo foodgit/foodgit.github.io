@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
       - name: Call python issue submission parser
-        run: python scripts/parse_submission.py  "${{ env.ISSUE_TITLE }}" "${{ env.ISSUE_BODY }}"
+        run: python scripts/parse_submission.py "${{ env.ISSUE_BODY }}"
       - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"

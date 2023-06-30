@@ -2,6 +2,6 @@ lamb
 baked
 fried
 battered
-Aussie
+aussie
 family
 casserole
