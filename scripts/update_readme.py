@@ -88,7 +88,7 @@ except:
     pass
 
 header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))}|{make_badges(d['tags'])}|" for d in TOC]
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -113,7 +113,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['last_modified_ts'])[::-1]
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))}|{make_badges(d['tags'])}|" for d in pages]
+    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# Pages tagged `{tag}`\n\n"
         page_str += header + '\n'.join(recs)
