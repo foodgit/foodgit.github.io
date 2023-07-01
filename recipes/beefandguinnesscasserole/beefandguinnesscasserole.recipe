@@ -38,7 +38,8 @@
 >
 > To thicken for use in other recipes later, reduce heat to 140°C and partially uncover lid. Cook a further 1 hour to reduce liquid, and make beef extra tender.
 > 
-# Leftover Casserole Uses
+
+## Leftover Casserole Uses
 
 - pies
 - pasties
