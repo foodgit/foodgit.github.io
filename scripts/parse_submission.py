@@ -109,4 +109,8 @@ with open("submissions/"+friendly_title+"/"+friendly_title+".recipe", 'w') as f:
     f.write(formatted_output)
 #print("\n".join(output))
 
+if Path("recipes/"+friendly_title).exists():
+        shutil.rmtree("recipes/"+friendly_title)
 shutil.copytree("submissions/"+friendly_title , "recipes/"+friendly_title ,ignore=shutil.ignore_patterns("*.raw"))
+
+exec(open("scripts/generate_markdown_recipes.py").read())
