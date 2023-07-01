@@ -26,6 +26,7 @@ jobs:
       - name: Add new submissions to git
         run: |
           git add submissions
+          git add recipes
       - name: Commit markdown changes
         run: |
           git commit -a -m "Processed new recipe from submitted issue template"
