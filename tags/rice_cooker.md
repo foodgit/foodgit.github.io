@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Rice Pudding](../recipes/ricepudding.md)|2023-07-01|[![](https://img.shields.io/badge/tag-dairy-f05668)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-1d5152)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-9fef19)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-af803c)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-659a8f)](../tags/rice_cooker.md)|
+|[Rice Pudding](../recipes/ricepudding.md)|2023-07-01|[![](https://img.shields.io/badge/tag-dairy-5c1fef)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-1433c8)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-208450)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-6685b7)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-d5a11)](../tags/rice_cooker.md)|
