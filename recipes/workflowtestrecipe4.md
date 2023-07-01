@@ -1,20 +1,22 @@
-# Workflow Test Recipe 4 <img src="workflowtestrecipe4/images/main.jpg" width="55%" align="right" />
+ <img src="workflowtestrecipe4/images/main.jpg" width="55%" align="right" />
+
+# Workflow Test Recipe 4
 
 ## Ingredients:
 
 - ingredient 1
 - ingredient 2
-- ingredient 3
+- ingredient 3 <img src="workflowtestrecipe4/images/1.jpg" width="35%" align="right" />
 - ingredient 4
- <img src="workflowtestrecipe4/images/1.jpg" width="35%" align="right" />
+
 ## Method:
 
 > step numero uno
 > 
 > step numero dos
-> 
+>  <img src="workflowtestrecipe4/images/2.jpg" width="35%" align="right" />
 > step numero tres
- <img src="workflowtestrecipe4/images/2.jpg" width="35%" align="right" />
+
 ## Tips:
 
 > handy hint 1

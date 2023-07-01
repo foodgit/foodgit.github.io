@@ -1,20 +1,22 @@
-# Workflow Test Recipe 4 {main.jpg}
+ {main.jpg}
+
+# Workflow Test Recipe 4
 
 ## Ingredients:
 
 - ingredient 1
 - ingredient 2
-- ingredient 3
+- ingredient 3 {1.jpg}
 - ingredient 4
- {1.jpg}
+
 ## Method:
 
 > step numero uno
 > 
 > step numero dos
-> 
+>  {2.jpg}
 > step numero tres
- {2.jpg}
+
 ## Tips:
 
 > handy hint 1
