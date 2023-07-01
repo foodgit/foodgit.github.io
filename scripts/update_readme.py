@@ -3,6 +3,8 @@ import random
 import re
 import subprocess
 import time
+import datetime
+import os
 from collections import defaultdict
 from loguru import logger
 
@@ -12,27 +14,37 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
     fmt = "%as"
     if timestamp:
         fmt="%at"
-    cmd = f"git log --pretty=format:{fmt}__%ae --".split()
-    cmd += [str(fpath)]
-    if verbose:
-        logger.debug(cmd)
-    response = subprocess.run(cmd, capture_output=True)
-    commits = response.stdout.decode()
-    logger.debug(response)
-    commits = commits.split()
-    for c in commits:
-        outv, author_email = c.split('__')
-        if author_email != 'action@github.com':
-            break
-    if verbose:
-        try:
-            logger.debug(outv)
-        except:
-            pass
-    try:
-        return outv
-    except:
-        return "N/A"
+    # cmd = f"git log --pretty=format:{fmt}__%ae --".split()
+    # cmd += [str(fpath)]
+    # if verbose:
+    #     logger.debug(cmd)
+    # response = subprocess.run(cmd, capture_output=True)
+    # commits = response.stdout.decode()
+    # logger.debug(response)
+    # commits = commits.split()
+    # for c in commits:
+    #     outv, author_email = c.split('__')
+    #     if author_email != 'action@github.com':
+    #         break
+    # if verbose:
+    #     try:
+    #         logger.debug(outv)
+    #     except:
+    #         pass
+    # try:
+    #     return outv
+    # except:
+    #     return "N/A"
+
+    t = os.path.getmtime(fpath)
+    if timestamp:
+        outv=datetime.datetime.fromtimestamp(t)
+  
+    else:
+        outv=time.strftime('%Y-%m-%d', time.gmtime(t))
+    #print(outv)
+    return outv
+
 
 def badges2kv(text):
     testpat = r'\/([a-zA-Z]+-[a-zA-Z_]+-[a-zA-Z]+)'
@@ -65,9 +77,9 @@ for fpath in list(md_files):
                 badge_meta = badges2kv(text)
                 d_ = {'fpath':fpath}
                 d_['title'] = header[2:].strip()
-                #d_['last_modified'] = get_last_modified_date(fpath)
+                d_['last_modified'] = get_last_modified_date(fpath)
                 d_['last_modified_ts'] = get_last_modified_date(fpath, timestamp=True)
-                d_['last_modified']=time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))
+                #d_['last_modified']=time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))
                 d_['n_char'] = len(text)
                 d_['tags'] = [v for k,v in badge_meta if k =='tag']
                 d_['tags'].sort()
