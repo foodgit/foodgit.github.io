@@ -109,4 +109,4 @@ with open("submissions/"+friendly_title+"/"+friendly_title+".recipe", 'w') as f:
     f.write(formatted_output)
 #print("\n".join(output))
 
-shutil.copytree("submissions/"+friendly_title , "submissions/"+friendly_title ,ignore=shutil.ignore_patterns("*.raw"))
+shutil.copytree("submissions/"+friendly_title , "recipes/"+friendly_title ,ignore=shutil.ignore_patterns("*.raw"))
