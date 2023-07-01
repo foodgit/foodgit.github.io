@@ -22,7 +22,7 @@ jobs:
         run: |
           git config --global user.email "fexofenadine@users.noreply.github.com"
           git config --global user.name "fexofenadine"
-          git add recipes/*.md
+          git add recipes
           git commit -a -m "Recreated recipes from stubs"
       - name: Push markdown changes
         uses: ad-m/github-push-action@master
