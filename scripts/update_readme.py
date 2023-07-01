@@ -65,8 +65,9 @@ for fpath in list(md_files):
                 badge_meta = badges2kv(text)
                 d_ = {'fpath':fpath}
                 d_['title'] = header[2:].strip()
-                d_['last_modified'] = get_last_modified_date(fpath)
+                #d_['last_modified'] = get_last_modified_date(fpath)
                 d_['last_modified_ts'] = get_last_modified_date(fpath, timestamp=True)
+                d_['last_modified']=time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))
                 d_['n_char'] = len(text)
                 d_['tags'] = [v for k,v in badge_meta if k =='tag']
                 d_['tags'].sort()
@@ -87,7 +88,7 @@ except:
     pass
 
 header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{time.strftime('%Y-%m-%d', time.gmtime(d['last_modified_ts']))}|{make_badges(d['tags'])}|" for d in TOC]
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
