@@ -4,7 +4,7 @@
 
 ## Ingredients:
 
-- 1.5kg stew beef, trimmed and cut into around 4 cm pieces
+- 1.5kg stew beef, trimmed and cut into around 4 cm piecez
 - 2 tbsp plain white flour, seasoned with sea salt and cracked black pepper
 - 1 tbsp olive or vegetable oil <img src="workflowcasseroletest/images/1.jpg" width="35%" align="right" />
 - 4 tbsp butter
