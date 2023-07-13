@@ -1,4 +1,5 @@
-import os, glob, shutil
+import os, glob, shutil, filecmp
+from pathlib import Path
 
 content_dir='./recipes'
 all_recipe_stubs=[ "./template/template/template.recipe" ]
@@ -44,10 +45,24 @@ for recipe_stub in list(all_recipe_stubs):
         taglinks=taglinks+'<img src="https://img.shields.io/badge/tag-'+tag+'-blue.svg" /> '
     #replace {tag} with formatted tag images, no longer required
     #recipe_body = recipe_body.replace("{tags}", ' '.join(formatted_tags))
+    temp_file_name="working/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
     recipe_file_name=recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
-    with open(recipe_file_name,'w') as f:
-        f.write(recipe_body)
-    with open(recipe_file_name, "a") as f:
+    
+    output_file = Path(temp_file_name)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
+    output_file.write_text(recipe_body)
+
+    # with open(temp_file_name,'w') as f:
+    #     f.write(recipe_body)
+    with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
         f.write('\n\n<img src="https://profile-counter.glitch.me/gitfood_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
         f.write('\n\n'+taglinks)
+
+    identical=filecmp.cmp(temp_file_name,recipe_file_name)
+    if not identical:
+        print(recipe_file_name+" has been updated. Replacing with new version.")
+        shutil.copyfile(temp_file_name, recipe_file_name)
+    else:
+        print(recipe_file_name+" has not been modified.")
+shutil.rmtree("working")

@@ -7,7 +7,7 @@
 - ingredient 1
 - ingredient 2
 - ingredient 3 <img src="workflowtestrecipe4/images/1.jpg" width="35%" align="right" />
-- ingredient 4
+- ingredient 5
 
 ## Method:
 
