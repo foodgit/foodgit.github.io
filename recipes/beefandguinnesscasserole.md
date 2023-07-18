@@ -15,7 +15,7 @@
 - 225g celery, roughly chopped
 - 500ml Guinness (I used extra stout, not draught). Any stout should do
 - 5 thyme sprigs
-- A few springs of flat leaf parsley or a small bay leaf, to garnish
+- A few sprigs of flat leaf parsley or a small bay leaf, to garnish
 - Sea salt and cracked black pepper
 
 ## Method
