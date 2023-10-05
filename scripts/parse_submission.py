@@ -89,9 +89,10 @@ tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
 tips_text="> ".join(("\n"+tips_text.lstrip()).splitlines(True))
 out_tips="## Tips:\n"+tips_text+"\n"
 
-if images:
-    output=["\n",out_title, out_ingredients, out_method, out_tips]
-else:
+try:
+    if images:
+        output=["\n",out_title, out_ingredients, out_method, out_tips]
+except:
     output=[out_title, out_ingredients, out_method, out_tips]
 formatted_output="\n".join(output)
 
