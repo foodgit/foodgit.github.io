@@ -105,16 +105,33 @@ else:
 formatted_output="\n".join(output)
 
 numlines = formatted_output.count('\n')
-numimages = len(images)
-image_spacing=ceil(numlines / numimages)
-lines=formatted_output.splitlines()
-if images:
+
+try:
+    images
+except NameError:
+    print("no images attached")
+else:
+    print("embedding images")
+    numimages = len(images)
+    image_spacing=ceil(numlines / numimages)
+    lines=formatted_output.splitlines()
     print("embedding image tags")
     i=0
     for image in images:
         lines[i*image_spacing]=lines[i*image_spacing]+" "+image["tag"]
         i=i+1
     formatted_output="\n".join(lines)
+    
+#numimages = len(images)
+#image_spacing=ceil(numlines / numimages)
+#lines=formatted_output.splitlines()
+#if images:
+#    print("embedding image tags")
+#    i=0
+#    for image in images:
+#        lines[i*image_spacing]=lines[i*image_spacing]+" "+image["tag"]
+#        i=i+1
+#    formatted_output="\n".join(lines)
 
 print("saving submissions/"+friendly_title+"/"+friendly_title+".recipe")
 with open("submissions/"+friendly_title+"/"+friendly_title+".recipe", 'w') as f:
