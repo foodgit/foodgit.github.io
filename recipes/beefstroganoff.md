@@ -27,6 +27,10 @@
 > 1. Add beef back in (including plate juices). Simmer for 1 minute, the remove from stove immediately.
 > 1. Serve over rice or pasta.
 
+## Tips:
+
+> _No response_
+
 
 <img src="../images/logo_sm.png" width="40%" />
 
