@@ -94,7 +94,7 @@ body:
           required: false
         - label: Dessert
           required: false
-          label: Snack
+        - label: Snack
           required: false
         - label: Sides
           required: false
