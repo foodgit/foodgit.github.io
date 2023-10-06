@@ -59,7 +59,13 @@ for recipe_stub in list(all_recipe_stubs):
         f.write('\n\n<img src="https://profile-counter.glitch.me/gitfood_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
         f.write('\n\n'+taglinks)
 
-    identical=filecmp.cmp(temp_file_name,recipe_file_name)
+    try:
+        identical=filecmp.cmp(temp_file_name,recipe_file_name)
+    except FileNotFoundError:
+        print("New recipe found! Creating "+recipe_file_name)
+        shutil.copyfile(temp_file_name, recipe_file_name)
+    except:
+        print("something went wrong comparing temp file with destination")
     if not identical:
         print(recipe_file_name+" has been updated. Replacing with new version.")
         shutil.copyfile(temp_file_name, recipe_file_name)
