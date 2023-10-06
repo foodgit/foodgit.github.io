@@ -2,5 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Hommus](../recipes/hommus.md)|2023-10-06|[![](https://img.shields.io/badge/tag-healthy-bb15fd)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-9fef19)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-062ab)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-eadebe)](../tags/tricky.md)|
-|[Workflow Test Recipe 4](../recipes/workflowtestrecipe4.md)|2023-10-06|[![](https://img.shields.io/badge/tag-baked-f1d19f)](../tags/baked.md) [![](https://img.shields.io/badge/tag-fast_food-f6b493)](../tags/fast_food.md) [![](https://img.shields.io/badge/tag-grilled-b7439e)](../tags/grilled.md) [![](https://img.shields.io/badge/tag-italian-c6d429)](../tags/italian.md) [![](https://img.shields.io/badge/tag-protein-062ab)](../tags/protein.md) [![](https://img.shields.io/badge/tag-sides-517a72)](../tags/sides.md) [![](https://img.shields.io/badge/tag-snack-e5c1d4)](../tags/snack.md)|
+|[Hommus](../recipes/hommus.md)|2023-10-06|[![](https://img.shields.io/badge/tag-healthy-32613c)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-f6b493)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-659a8f)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-5d33f3)](../tags/tricky.md)|
