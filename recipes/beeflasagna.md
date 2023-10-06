@@ -46,4 +46,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_beeflasagna/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> 
