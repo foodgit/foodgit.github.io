@@ -13,7 +13,7 @@
 
 ## Method
 
-1. Sift flour and baking powder into a large bowl. Rub in butter with fingers until it resembles bread crumbs. Stir in fruit & peel, sugar.
+1. Sift flour & baking powder into a large bowl. Rub in butter with fingers until it resembles bread crumbs. Stir in fruit & peel, sugar.
 
 2. Beat eggs & milk & mix into dry ingredients adding more milk if mixture is too dry
 
