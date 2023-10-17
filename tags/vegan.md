@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Test Recipe #1](../recipes/test.md)|2023-06-24|[![](https://img.shields.io/badge/tag-Aussie-237124)](../tags/Aussie.md) [![](https://img.shields.io/badge/tag-low_carb-9ab3df)](../tags/low_carb.md) [![](https://img.shields.io/badge/tag-vegan-5c1fef)](../tags/vegan.md)|
+|[Banana Bread](../recipes/bananabread.md)|2023-10-16|[![](https://img.shields.io/badge/tag-baked-f05668)](../tags/baked.md) [![](https://img.shields.io/badge/tag-dessert-1d5152)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-snack-32613c)](../tags/snack.md) [![](https://img.shields.io/badge/tag-vegan-659a8f)](../tags/vegan.md)|

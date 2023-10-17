@@ -35,7 +35,7 @@
 > 
 > 9. Bake in the oven for 30-40 minutes or until cooked through.
 > 
-> Leave to stand for 5 minutes before serving.
+> 1. Leave to stand for 5 minutes before serving.
 
 ## Tips:
 

@@ -124,7 +124,7 @@ def make_badges(unq_tags, sep=' '):
    
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
-    pages = sorted(pages, key=lambda x:x['title'])[::-1]
+    pages = sorted(pages, key=lambda x:x['title'])
     recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# Pages tagged `{tag}`\n\n"
