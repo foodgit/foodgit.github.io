@@ -95,7 +95,7 @@ def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
     
 try:
-    TOC = sorted(TOC, key=lambda x:x['title'])[::-1]
+    TOC = sorted(TOC, key=lambda x:x['title'])
 except:
     pass
 
