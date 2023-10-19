@@ -2,4 +2,5 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Banana Bread](../recipes/bananabread.md)|2023-10-16|[![](https://img.shields.io/badge/tag-baked-f05668)](../tags/baked.md) [![](https://img.shields.io/badge/tag-dessert-1d5152)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-snack-32613c)](../tags/snack.md) [![](https://img.shields.io/badge/tag-vegan-659a8f)](../tags/vegan.md)|
+|[Banana Bread](../recipes/bananabread.md)|2023-10-19|[![](https://img.shields.io/badge/tag-baked-28ab17)](../tags/baked.md) [![](https://img.shields.io/badge/tag-dessert-8f457a)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-snack-e5c1d4)](../tags/snack.md) [![](https://img.shields.io/badge/tag-vegan-acaf3f)](../tags/vegan.md)|
+|[Banana Oat Cookies](../recipes/bananaoatcookies.md)|2023-10-19|[![](https://img.shields.io/badge/tag-baked-28ab17)](../tags/baked.md) [![](https://img.shields.io/badge/tag-breakfast-062ab)](../tags/breakfast.md) [![](https://img.shields.io/badge/tag-dessert-8f457a)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-great-517a72)](../tags/great.md) [![](https://img.shields.io/badge/tag-snack-e5c1d4)](../tags/snack.md)|
