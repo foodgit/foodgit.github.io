@@ -9,7 +9,7 @@ from pathlib import Path
 # os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
-os.system('cd ./pdf && pandoc -f gfm --lua-filter=../scripts/noexport-subtrees.lua -t html5 --metadata pagetitle="gitFood Recipe Book 1.0.1" -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
+os.system('cd ./pdf && pandoc -f gfm -t html5 --metadata pagetitle="gitFood Recipe Book 1.0.1" -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
 
 content_dir='./recipes'
 all_recipe_mds=[]
@@ -21,7 +21,7 @@ print("Recipe(s) found: \""+str(all_recipe_mds)+"\"")
 for recipe_md in list(all_recipe_mds):
     tempfile = recipe_md[:-2]+"temp.md"
     recipe_name=Path(recipe_md).stem
-    print(recipe_name)
+    print('\nprocessing '+recipe_name)
 
     #remove branding and pagecounts from footer
     delete_list = ["logo_sm.png", "count.svg"]
@@ -34,11 +34,15 @@ for recipe_md in list(all_recipe_mds):
                     break
             fout.write(line)
     #generate pdf of recipe
-    os.system('cd ./recipes && pandoc -f gfm --lua-filter=../scripts/noexport-subtrees.lua -t html5 --metadata pagetitle="gitFood Recipe Book 1.0.1" -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.pdf')
+    print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
+    # --lua-filter=../scripts/noexport-subtrees.lua no longer required
+    os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 --metadata pagetitle="gitFood Recipe Book 1.0.1" -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+    print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
+    os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
+    print('removing temp files')
+    os.remove('./pdf/'+recipe_name+'.temp.pdf')
     os.remove(tempfile)
 
-#generate full book (all recipes)
-#os.system('cd ./recipes && pandoc -f gfm --lua-filter=../scripts/noexport-subtrees.lua -t html5 --metadata pagetitle="gitFood Recipe Book 1.0.1" -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./*.temp.md -o ../pdf/_Gitfood-All_Recipes.pdf')
-# use pdfunite to include Title Page & pagebreaks
-print("exporting Recipe Book")
+# generate full book (all recipes) use pdfunite to include title page & pagebreaks
+print("\nexporting Recipe Book")
 os.system('cd ./pdf && pdfunite *.pdf ../Gitfood-Recipe_Book.pdf')
