@@ -2,3 +2,4 @@ healthy
 protein
 messy
 tricky
+vegan

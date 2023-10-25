@@ -99,7 +99,64 @@ body:
         - label: Sides
           required: false
           
-          
+  - type: checkboxes
+    id: country
+    attributes:
+      label: Country of origin
+      description: Categorize by country.
+      options:
+        - label: Aussie
+          required: false
+        - label: Irish
+          required: false
+        - label: Italian
+          required: false
+        - label: Russian
+          required: false
+        - label: Thai
+          required: false
+        - label: French
+          required: false
+        - label: Japanese
+          required: false
+        - label: Chinese
+          required: false
+
+  - type: checkboxes
+    id: misc_tags
+    attributes:
+      label: Miscellaneous categories
+      description: Help categorize the recipe further.
+      options:
+        - label: Vegan
+          required: false
+        - label: Vegetarian
+          required: false
+        - label: Great
+          required: false
+        - label: Amazing
+          required: false
+        - label: Dairy
+          required: false
+        - label: Pasta
+          required: false
+        - label: Rice
+          required: false
+        - label: Beef
+          required: false
+        - label: Lamb
+          required: false
+        - label: Chicken
+          required: false
+        - label: Chocolate
+          required: false
+        - label: Cheesey
+          required: false
+        - label: Long Cook Time
+          required: false
+        - label: Long Prep Time
+          required: false
+
   - type: input
     id: tags
     attributes:

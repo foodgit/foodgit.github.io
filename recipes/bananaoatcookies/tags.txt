@@ -3,3 +3,5 @@ breakfast
 dessert
 snack
 great
+vegan
+healthy
