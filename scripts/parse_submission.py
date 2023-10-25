@@ -22,7 +22,7 @@ else:
         issue_body = f.read()
 
 recipe_title=issue_body.split("### ")[1].split("\n")[2]
-friendly_title=recipe_title.strip().replace(" ","").lower()
+friendly_title=recipe_title.strip().replace("&","").replace("+","").replace(" ","").lower()
 
 # print("Friendly title: "+friendly_title)
 
