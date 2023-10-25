@@ -32,4 +32,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_bananaoatcookies/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-snack-blue.svg" /> <img src="https://img.shields.io/badge/tag-great-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-snack-blue.svg" /> <img src="https://img.shields.io/badge/tag-great-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> 
