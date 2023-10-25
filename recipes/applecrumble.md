@@ -24,9 +24,6 @@
 >   
 > 1. Serve warm with icecream or whipped cream.
 
-## Tips:
-
-> _No response_
 
 
 <img src="../images/logo_sm.png" width="40%" />

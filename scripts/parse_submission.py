@@ -87,7 +87,11 @@ out_method="## Method:\n"+method_text+"\n"
 
 tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
 tips_text="> ".join(("\n"+tips_text.lstrip()).splitlines(True))
-out_tips="## Tips:\n"+tips_text+"\n"
+if tips_text!="_No response_":
+    out_tips="## Tips:\n"+tips_text+"\n"
+else:
+    out_tips=""
+    
 
 try:
     images

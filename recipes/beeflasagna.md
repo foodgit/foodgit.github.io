@@ -37,9 +37,6 @@
 > 
 > 1. Leave to stand for 5 minutes before serving.
 
-## Tips:
-
-> _No response_
 
 
 <img src="../images/logo_sm.png" width="40%" />
