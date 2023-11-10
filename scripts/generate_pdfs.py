@@ -2,6 +2,9 @@
 import os, glob, shutil, filecmp
 from pathlib import Path
 
+author = "fexofenadine"
+title = "gitFOOD Recipe Book"
+
 #get project version number
 with open("./version.txt") as f:
     version_number = f.readline().strip('\n').strip()
@@ -61,8 +64,10 @@ for recipe_md in list(all_recipe_mds):
 
 # generate full book (all recipes) use pdfunite to include title page & pagebreaks
 print("\nexporting Recipe Book")
-os.system('cd ./pdf && pdfunite *.pdf ../gitFOOD_Recipe_Book.pdf')
+filename=title.replace(" ","_")+'.pdf'
+os.system('cd ./pdf && pdfunite *.pdf ../'+filename)
 print("applying metadata")
-os.system('exiftool -overwrite_original -author="fexofenadine" -title="gitFOOD Recipe Book '+version_number+'" ./gitFOOD_Recipe_Book.pdf')
+title=title+" "+version_number
+os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
 print('cleaning up')
 os.remove('./pdf/_title_page.md')
