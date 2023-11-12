@@ -5,6 +5,18 @@ from pathlib import Path
 author = "fexofenadine"
 title = "gitFOOD Recipe Book"
 
+#unused for now
+# def optimize_pdf(recipe_name):
+#     print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
+#     os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.temp.pdf ./'+recipe_name+'.pdf')
+
+# def cleanup_tempfiles():
+#     os.remove('./pdf/_title_page.md')
+#     for f in glob.glob("./pdf/*.temp.pdf"):
+#         os.remove(f)
+#     for f in glob.glob("./recipes/*.temp.md"):
+#         os.remove(f)
+    
 #get project version number
 with open("./version.txt") as f:
     version_number = f.readline().strip('\n').strip()
@@ -25,12 +37,11 @@ output_file.write_text(title_page_body)
 # os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
-os.system('cd ./pdf && pandoc -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
+os.system('cd ./pdf && pandoc -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --metadata title="gitFOOD Recipe Book" --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
 
 content_dir='./recipes'
 all_recipe_mds=[]
     
-#recipe_dirs=next(os.walk(content_dir))[1]
 recipe_mds=glob.glob(content_dir+'/*.md')
 all_recipe_mds=all_recipe_mds+recipe_mds
 print("Recipe(s) found: \""+str(all_recipe_mds)+"\"")
@@ -55,11 +66,9 @@ for recipe_md in list(all_recipe_mds):
     os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
     print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
     os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
-    #print('importing metadata from temp.pdf')
-    #os.system('cd ./pdf && exiftool -overwrite_original -tagsFromFile ./'+recipe_name+'.temp.pdf  ./'+recipe_name+'.pdf')
+
     print('removing temp files')
     os.remove('./pdf/'+recipe_name+'.temp.pdf')
- 
     os.remove(tempfile)
 
 # generate full book (all recipes) use pdfunite to include title page & pagebreaks
@@ -69,5 +78,3 @@ os.system('cd ./pdf && pdfunite *.pdf ../'+filename)
 print("applying metadata")
 title=title+" "+version_number
 os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
-print('cleaning up')
-os.remove('./pdf/_title_page.md')
