@@ -4,3 +4,4 @@ dairy
 baked
 long_prep_time
 amazing
+vegetarian

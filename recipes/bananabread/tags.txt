@@ -2,3 +2,4 @@ baked
 dessert
 snack
 vegan
+vegetarian

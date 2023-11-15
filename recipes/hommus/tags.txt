@@ -3,3 +3,4 @@ protein
 messy
 tricky
 vegan
+vegetarian

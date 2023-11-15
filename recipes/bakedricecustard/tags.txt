@@ -2,3 +2,4 @@ dessert
 baked
 rice
 dairy
+vegetarian

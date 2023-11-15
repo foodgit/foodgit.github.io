@@ -4,3 +4,4 @@ savoury
 sides
 baked
 cheesey
+vegetarian

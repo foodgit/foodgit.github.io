@@ -2,3 +2,4 @@ dessert
 fried
 family
 breakfast
+vegetarian

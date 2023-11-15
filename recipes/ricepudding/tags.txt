@@ -3,3 +3,4 @@ rice
 rice_cooker
 easy
 dairy
+vegetarian

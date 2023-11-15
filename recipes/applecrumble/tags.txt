@@ -1,2 +1,4 @@
 dessert
 stovetop
+vegan
+vegetarian
