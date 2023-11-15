@@ -37,7 +37,7 @@ output_file.write_text(title_page_body)
 # os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
-os.system('cd ./pdf && pandoc -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --metadata title="gitFOOD Recipe Book" --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
+os.system('cd ./pdf && pandoc -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
 
 content_dir='./recipes'
 all_recipe_mds=[]
