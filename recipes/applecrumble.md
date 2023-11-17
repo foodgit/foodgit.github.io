@@ -7,8 +7,8 @@
 -   1 tbsp lemon juice
 -   1 tbsp caster sugar
 -   1/4 cup water
--   
--   ## Crumble
+
+- ## Crumble
 -   1/3 cup plain flour
 -   1/3 cup caster sugar
 -   1/3 cup rolled oats
@@ -22,7 +22,7 @@
 >   
 > 1. Transfer the apples into a 3 cup capacity ovenproof dish, draining off most of the liquid. Sprinkle crumble mixture over the apples.  Bake in oven for 20-25 minutes or until golden brown.
 >   
-> 1. Serve warm with icecream or whipped cream.
+> 1. Serve warm with custard, icecream or whipped cream.
 
 
 

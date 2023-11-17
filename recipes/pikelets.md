@@ -13,7 +13,7 @@
 
 Mix all the wet ingredients together - you’ll have to beat hard but not for long, to blend the syrup into mix, then add enough milk to get a thick, runny batter.
 
-Use butter to cook them in (all this butter !!!). A tablespoon full for each one & cook in moderately hot pan until the bubbles appear & turn , they should be golden brown. A squeeze of lemon juice & a sprinkle of sugar is delicious when hot - butter (again) or margarine spread on when cold.
+Use butter to cook them in (all this butter!!!). A tablespoon full for each one & cook in moderately hot pan until the bubbles appear & turn, they should be golden brown. A squeeze of lemon juice & a sprinkle of sugar is delicious when hot - butter (again) or margarine spread on when cold.
 
 *Last updated 11 Sept 2021, 11:53:57*
 
