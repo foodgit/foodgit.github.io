@@ -75,5 +75,5 @@ print("\nexporting Recipe Book")
 filename=title.replace(" ","_")+'.pdf'
 os.system('cd ./pdf && pdfunite *.pdf ../'+filename)
 print("applying metadata")
-title=title+" "+version_number
-os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
+#title=title+" "+version_number
+os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
