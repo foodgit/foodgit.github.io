@@ -1,6 +1,6 @@
 # Beef Stroganoff
 
-## Ingredients:
+## Ingredients
 
 - 600g beef pieces
 - 2 tbsp oil
@@ -13,7 +13,7 @@
 - ⅔ cup (150ml) sour cream
 - Salt and pepper to taste
 
-## Method:
+## Method
 
 > 1. Sprinkle beef with a pinch of salt and pepper
 > 1. Heat 1 tbsp oil in a large skillet over high heat. Scatter half the beef in the skillet.  Quickly spread it with tongs. Leave untouched for 30 seconds to brown. Turn beef quickly (as best you can). Leave untouched for 30 seconds to brown. Immediately remove onto a plate. Don't worry about pink bits showing, it can remain raw inside at this stage.

@@ -1,6 +1,6 @@
 #   Apple Crumble
 
-## Ingredients:
+## Ingredients
 
 - ## Filling
 -   3 medium apples, peeled, cored, and diced
@@ -14,7 +14,7 @@
 -   ⅓ cup rolled oats
 -   60g butter, chopped
 
-## Method:
+## Method
 
 > 1. Preheat oven to 180°C/160°C fan forced. Combine apples, juice, sugar, and water in small saucepan over low-medium heat. Cook, stirring for 3 minutes or until apple is slightly softened.
 >   
