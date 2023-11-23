@@ -2,13 +2,15 @@
 
 ## Ingredients
 
-- ## Filling
+### Filling
+
 -   3 medium apples, peeled, cored, and diced
 -   1 tbsp lemon juice
 -   1 tbsp caster sugar
 -   ¼ cup water
 
-- ## Crumble
+### Crumble
+
 -   ⅓ cup plain flour
 -   ⅓ cup caster sugar
 -   ⅓ cup rolled oats

@@ -2,7 +2,7 @@
 
 ## Ingredients
 
-### Bread batter 
+### Bread batter
 
 (enough for 1 loaf of sourdough (~14 small-medium sized slices))
 Serves 4-5
@@ -14,7 +14,7 @@ Serves 4-5
 - ½ tsp cinnamon
 - ½ tsp salt
 
-### Whipped cream cheese 
+### Whipped cream cheese
 
 - 150ml cream
 - ~50g cream cheese
