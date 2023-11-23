@@ -41,14 +41,14 @@ with open("./LICENSE") as f:
 # os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
-with open("./pdf/_title_page.stub") as f:
+with open("./pdf/_3_title_page.stub") as f:
     title_page_body = f.read()
 title_page_body = title_page_body.replace("{version_number}", version_number)
-output_file = Path("./pdf/_title_page.md")
+output_file = Path("./pdf/_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
-os.system('cd ./pdf && pandoc --quiet -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_title_page.md -o ./_title_page.pdf')
-os.remove('./pdf/_title_page.md')
+os.system('cd ./pdf && pandoc --quiet -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_3_title_page.md -o ./_3_title_page.pdf')
+os.remove('./pdf/_3_title_page.md')
 
 if book_only:
     print("only generating recipe book, skipping regeneration of individual recipes")
