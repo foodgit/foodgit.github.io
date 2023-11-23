@@ -24,7 +24,7 @@
 
 ## Tips
 
-> Seemed to require up to 15 minutes extra in the oven for the centre to firm up.
+> - Seemed to require up to 15 minutes extra in the oven for the centre to firm up.
 
 <img src="../images/logo_sm.png" width="40%" />
 

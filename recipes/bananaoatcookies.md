@@ -25,9 +25,8 @@
 
 ## Tips
 
-> Plop a dollop of peanut butter on top before baking for a bit of spice.
-> 
-> Drizzle melted chocolate on top, or dip cookies into a bowl of melted dark chocolate after cooking for a chocolatey version.
+> - Plop a dollop of peanut butter on top before baking for a bit of spice.
+> - Drizzle melted chocolate on top, or dip cookies into a bowl of melted dark chocolate after cooking for a chocolatey version.
 
 <img src="../images/logo_sm.png" width="40%" />
 
