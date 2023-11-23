@@ -4,7 +4,7 @@
 
 - 1 can (425g) chickpeas, rinsed and drained, or 1 ½ cups cooked chickpeas-
 - ½ tsp baking soda (if you’re using canned chickpeas)
-- ¼ cup lemon juice (from 1 ½ to 2 lemons), more to taste
+- ¼ cup lemon juice (from 1½ to 2 lemons), more to taste
 - 1 medium-to-large clove garlic, roughly chopped
 - ½ tsp fine sea salt, to taste
 - ½ cup tahini

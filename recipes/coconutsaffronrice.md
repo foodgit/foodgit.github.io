@@ -2,17 +2,17 @@
 
 ## Ingredients
 
-- 1/4 tsp saffron threads
+- ¼ tsp saffron threads
 - 1 tbsp Sauvignon Blanc, or substitute white vinegar, room temperature 
 - 2 tsp peanut oil
 - 2 cups uncooked white basmati rice
-- 1 3/4 cup coconut milk
+- 1¾ cup coconut milk
 - 2 cups water
 - 2 to 3 tbsp dry shredded coconut
 - 1 tsp sea salt
-- 1 tsp agave nectar (or 1/2 teaspoon of sugar)
+- 1 tsp agave nectar (or ½ tsp of sugar)
 - 1/2 tsp turmeric
-- 1/4 tsp cumin
+- ¼ tsp cumin
 
 ## Method
 

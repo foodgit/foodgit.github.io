@@ -7,17 +7,17 @@
 - 3 tbsp white sugar
 - 1 egg
 - 2 tsp vanilla extract
-- 1 ¾ cups all-purpose flour
+- 1¾ cups plain flour
 - ½ tsp baking soda
 - ½ tsp baking powder
 - ½ tsp salt
-- 1 ½ tsp instant espresso coffee powder
-- 1 ½ cups semisweet chocolate chips
+- 1½ tsp instant espresso coffee powder
+- 1½ cups semisweet chocolate chips
 
 
 ## Method
 
-1. Preheat oven to 375 degrees F (190 degrees C). Grease a cookie sheet.
+1. Preheat oven to 375°F (190°C). Grease a cookie sheet.
 
 2. In a medium bowl, cream together the butter, brown sugar and white sugar until smooth. Beat in the egg and vanilla. Sift together the flour, baking soda, baking powder, salt and espresso powder; stir into the creamed mixture. Finally, stir in the chocolate chips.
 

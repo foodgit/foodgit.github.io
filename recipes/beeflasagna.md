@@ -6,14 +6,14 @@
 - 1 onion, finely diced
 - 1 clove garlic, crushed or 1 tsp minced garlic
 - 500g minced beef
-- 65g (5 tbsp) tomato paste
+- 5 tbsp (65g) tomato paste
 - 800g canned tomatoes
-- 500g (2 cups) liquid beef stock
+- 2 cups (500g) liquid beef stock
 - 2 tsp dried Italian herbs (oregano, parsley, etc)
 - 250g mozzarella cheese, shredded
 - 50g Parmesan cheese, grated
 - 375g packet fresh lasagna sheets
-- salt and pepper to taste
+- Salt and pepper to taste
 
 ## Method:
 
@@ -27,11 +27,11 @@
 > 
 > 5. Bring to the boil and then cover and simmer for 15-20 minutes, stirring occasionally.
 > 
-> 6. Spoon 1/2 cup of the bolognese sauce into the bottom of the prepared dish.
+> 6. Spoon ½ cup of the bolognese sauce into the bottom of the prepared dish.
 > 
-> 7. Layer with the fresh lasagna sheets and 1/4 of the shredded mozzarella cheese.
+> 7. Layer with the fresh lasagna sheets and ¼ of the shredded mozzarella cheese.
 > 
-> 8. Repeat with the meat. lasagna sheets, and mozzarella until you have 4 layers, finishing with a mozzarella layer. Sprinkle over the grated parmesan cheese.
+> 8. Repeat with the meat, lasagna sheets, and mozzarella until you have 4 layers, finishing with a mozzarella layer. Sprinkle over the grated parmesan cheese.
 > 
 > 9. Bake in the oven for 30-40 minutes or until cooked through.
 > 

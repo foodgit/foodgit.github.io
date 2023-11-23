@@ -6,12 +6,12 @@
 -   3 medium apples, peeled, cored, and diced
 -   1 tbsp lemon juice
 -   1 tbsp caster sugar
--   1/4 cup water
+-   ¼ cup water
 
 - ## Crumble
--   1/3 cup plain flour
--   1/3 cup caster sugar
--   1/3 cup rolled oats
+-   ⅓ cup plain flour
+-   ⅓ cup caster sugar
+-   ⅓ cup rolled oats
 -   60g butter, chopped
 
 ## Method:
