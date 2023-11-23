@@ -5,16 +5,16 @@
 
 ## Ingredients
 
-### Chicken:
+### Chicken
 
 - 500g thigh fillet chicken, sliced into strips, around 3cm thick
 
-### Batter:
+### Batter
 
 - eggs
 - ranch dressing
 
-### Crumb coating:
+### Crumb coating
 
 - cornflake crumbs
 - pepper

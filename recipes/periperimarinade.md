@@ -1,23 +1,23 @@
 # Peri Peri Marinade
 
-## Ingredients:
+## Ingredients
 
 - 2 tbsp Peri Peri powder (or other powdered chilli spice)
 - ½ cup olive oil
 - 1 tsp lemon juice
 - 1 pinch salt
 
-## Method:
+## Method
 
 > Combine ingredients and coat chicken before barbecuing
 
-## Tips:
+## Tips
 
-> For a milder version use 2 tbsp Peri Peri with 250g yoghurt.
+> - For a milder version use 2 tbsp Peri Peri with 250g yoghurt.
 > 
-> Use Peri Peri powder over oven wedges and serve with sour cream.
+> - Use Peri Peri powder over oven wedges and serve with sour cream.
 > 
-> Combine 1 tbsp Peri Peri powder with 300ml sour cream to use as a dipping sauce or as a topping for stuffed potatoes.
+> - Combine 1 tbsp Peri Peri powder with 300ml sour cream to use as a dipping sauce or as a topping for stuffed potatoes.
 
 
 <img src="../images/logo_sm.png" width="40%" />

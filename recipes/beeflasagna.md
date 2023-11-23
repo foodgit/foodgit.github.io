@@ -1,6 +1,6 @@
 # Beef Lasagna
 
-## Ingredients:
+## Ingredients
 
 - 1 tbsp olive oil
 - 1 onion, finely diced
@@ -15,7 +15,7 @@
 - 375g packet fresh lasagna sheets
 - Salt and pepper to taste
 
-## Method:
+## Method
 
 > 1. Preheat oven to 180°C (fan forced). Lightly grease a large baking dish.
 > 

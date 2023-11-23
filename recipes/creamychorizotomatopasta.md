@@ -1,6 +1,6 @@
 # Creamy Chorizo & Tomato Pasta
 
-## Ingredients:
+## Ingredients
 
 - 400g fresh linguine (shells or other short pasta for portable version)
 - 1 tbsp olive oil
@@ -12,7 +12,7 @@
 - Capsicum and/or mushrooms as per tastes
 - Parmesan or tasty cheese to serve
 
-## Method:
+## Method
 
 > 1. Cook pasta until al dente.
 > 2. While pasta is cooking, heat olive oil in a large frying pan to medium heat.

@@ -9,7 +9,7 @@
 - 1 tbsp white vinegar
 - ¼ cup tomato sauce
 - Salt & pepper
-- 1 tbsp of brown sugar
+- 1 tbsp brown sugar
 
 ## Method
 
