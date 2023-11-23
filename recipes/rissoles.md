@@ -12,23 +12,15 @@ Place into a large bowl:
 
 ## Method 
 
-1. Put a heap of plain flour on a plate
-
-2. Wet your hands & stick them into the mix, & mix & mix & squeeze & mix
-
-3. Grab about a ¼ cup of mix & roll into a ball
-
-4. Roll & pat in the flour - you can do this one at a time or do the rolling then the flouring.
-
-5. Fry in moderately hot olive oil until very brown.
-
-6. I turn them about 4 times & give them a squash just as I put them in pan.
-
-7. I also add chopped parsley & a bit of garlic but these aren’t in the original recipe.
-
-8. I reckon good ol tomato sauce is the best but do what takes your fancy.
-
-9. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
+> 1. Put a heap of plain flour on a plate
+> 2. Wet your hands & stick them into the mix, & mix & mix & squeeze & mix
+> 3. Grab about a ¼ cup of mix & roll into a ball
+> 4. Roll & pat in the flour - you can do this one at a time or do the rolling then the flouring.
+> 5. Fry in moderately hot olive oil until very brown.
+> 6. I turn them about 4 times & give them a squash just as I put them in pan.
+> 7. I also add chopped parsley & a bit of garlic but these aren’t in the original recipe.
+> 8. I reckon good ol tomato sauce is the best but do what takes your fancy.
+> 9. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
 
 *Last updated 14 Aug 2021, 12:16:49*
 

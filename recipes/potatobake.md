@@ -10,13 +10,10 @@
 
 ## Method
 
-1. Preheat oven to 180°C. Grease a 6cm deep, 24cm square baking dish.
-
-2. Melt butter in a heavy-based saucepan over medium heat. Add flour. Cook, stirring constantly, for 2 minutes, or until bubbly. Remove from heat. Slowly add milk, stirring constantly until well combined. Return to heat. Cook, stirring, until sauce comes to the boil.
-
-3. Add 1½ cups of cheese. Stir to combine.
-
-4. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
+> 1. Preheat oven to 180°C. Grease a 6cm deep, 24cm square baking dish.
+> 2. Melt butter in a heavy-based saucepan over medium heat. Add flour. Cook, stirring constantly, for 2 minutes, or until bubbly. Remove from heat. Slowly add milk, stirring constantly until well combined. Return to heat. Cook, stirring, until sauce comes to the boil.
+> 3. Add 1½ cups of cheese. Stir to combine.
+> 4. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
 
 *Last updated 24 Oct 2020, 19:44:12*
 

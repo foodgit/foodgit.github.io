@@ -18,23 +18,14 @@
 ## Method
 
 > 1. Preheat oven to 180°C (fan forced). Lightly grease a large baking dish.
-> 
 > 2. Heat the olive oil in a saucepan or deep frying pan. Add the diced onion and minced garlic and cook until soft and translucent.
-> 
 > 3. Add the beef mince, breaking the clumps apart with a spoon, and cook until browned.
-> 
 > 4. Stir through the tomato paste, canned tomatoes, beef stock, and herbs. Season with salt and pepper.
-> 
 > 5. Bring to the boil and then cover and simmer for 15-20 minutes, stirring occasionally.
-> 
 > 6. Spoon ½ cup of the bolognese sauce into the bottom of the prepared dish.
-> 
 > 7. Layer with the fresh lasagna sheets and ¼ of the shredded mozzarella cheese.
-> 
 > 8. Repeat with the meat, lasagna sheets, and mozzarella until you have 4 layers, finishing with a mozzarella layer. Sprinkle over the grated parmesan cheese.
-> 
 > 9. Bake in the oven for 30-40 minutes or until cooked through.
-> 
 > 1. Leave to stand for 5 minutes before serving.
 
 

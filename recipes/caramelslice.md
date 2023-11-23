@@ -26,9 +26,9 @@
 
 <img src="caramelslice/images/1.jpg" width="35%" align="right" />
 
-1. Preheat oven to 180°C (350°F). Place the flour, coconut, butter and sugar in a bowl and mix to combine. Using the back of a spoon, press the mixture into the base of a lightly greased 20cm x 30cm tin lined with non-stick baking paper and bake for 15–20 minutes or until golden.
+> 1. Preheat oven to 180°C (350°F). Place the flour, coconut, butter and sugar in a bowl and mix to combine. Using the back of a spoon, press the mixture into the base of a lightly greased 20cm x 30cm tin lined with non-stick baking paper and bake for 15–20 minutes or until golden.
 
-2. While the base is cooking, make the caramel filling.
+> 2. While the base is cooking, make the caramel filling.
     
     Place the butter, condensed milk and golden syrup, in a medium saucepan over medium heat. Whisk until the butter is melted and cook, whisking frequently, for 5–7 minutes or until the mixture has thickened slightly (see tip). .
 
@@ -36,14 +36,14 @@
     
     Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold
 
-3. To make the chocolate topping, place the chocolate and oil in a heatproof bowl over a saucepan of simmering water, and stir until melted and smooth. Pour the chocolate over the caramel mixture and spread evenly. Refrigerate for 30 minutes, or until firm. Using a warm knife, cut into slices or squares to serve. Makes 20 squares
+> 3. To make the chocolate topping, place the chocolate and oil in a heatproof bowl over a saucepan of simmering water, and stir until melted and smooth. Pour the chocolate over the caramel mixture and spread evenly. Refrigerate for 30 minutes, or until firm. Using a warm knife, cut into slices or squares to serve. Makes 20 squares
 
 <img src="caramelslice/images/6.jpg" width="35%" align="right" />
 
 ## Tip
-- When stirring the caramel, scrape the sides and bottom of the pan so the mixture doesn’t stick.
 
-- Try making the base from your favourite biscuits. Just take the equivalent weight of biscuits (around 280g), blend them coarsely in a blender, and combine with butter as per step 1.  Biscoff & Digestives are some examples that work well!
+> - When stirring the caramel, scrape the sides and bottom of the pan so the mixture doesn’t stick.
+> - Try making the base from your favourite biscuits. Just take the equivalent weight of biscuits (around 280g), blend them coarsely in a blender, and combine with butter as per step 1.  Biscoff & Digestives are some examples that work well!
 
 *Last updated 28 Jul 2022, 13:06:22*
 

@@ -24,7 +24,6 @@
 > 8. Serve immediately with parmesan/tasty cheese on top and season to taste.
 
 
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_creamychorizotomatopasta/count.svg" width="20%" align="right" />
