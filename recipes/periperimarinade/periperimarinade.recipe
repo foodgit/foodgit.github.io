@@ -3,7 +3,7 @@
 ## Ingredients:
 
 - 2 tbsp Peri Peri powder (or other powdered chilli spice)
-- 1/2 cup olive oil
+- ½ cup olive oil
 - 1 tsp lemon juice
 - 1 pinch salt
 

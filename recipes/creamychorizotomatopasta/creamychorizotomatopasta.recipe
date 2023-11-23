@@ -7,7 +7,7 @@
 - 150g chorizo, sliced
 - 2 cloves garlic, crushed
 - 400g can crushed tomatoes (or pasta sauce)
-- 1/2 bag baby spinach (70g)
+- ½ bag baby spinach (70g)
 - 100ml cooking cream cheese
 - Capsicum and/or mushrooms as per tastes
 - Parmesan or tasty cheese to serve

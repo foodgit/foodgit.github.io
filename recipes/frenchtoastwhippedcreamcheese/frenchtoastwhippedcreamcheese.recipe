@@ -9,16 +9,16 @@ Serves 4-5
 
 - 1 loaf of sourdough, slightly older will hold together best. Other breads may work well too.
 - 6 eggs
-- 1 1/2 cups milk
+- 1½ cups milk
 - 2 tsp vanilla extract
-- 1/2 tsp cinnamon
-- 1/2 tsp salt
+- ½ tsp cinnamon
+- ½ tsp salt
 
 ### Whipped cream cheese 
 
 - 150ml cream
 - ~50g cream cheese
-- 1 1/2 tbsp icing sugar
+- 1½ tbsp icing sugar
 
 ## Method
 

@@ -2,7 +2,7 @@
 
 ## Method
 
-1. Preheat air fryer to 120°C for a couple of minutes.
+1. Preheat air fryer to 120°C for a few minutes.
 
 2. Remove the packaging and film from lasagna.
 

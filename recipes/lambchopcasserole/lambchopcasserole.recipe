@@ -2,20 +2,20 @@
 
 ## Ingredients
 
-- 3/4 or chump chops
+- ¾ or chump chops
 - 1 onion sliced
 - 2 carrots sliced
 - 1 tbsp Worcester sauce
 - 1 tbsp white vinegar
-- 1/4 cup tomato sauce
+- ¼ cup tomato sauce
 - Salt & pepper
 - 1 tbsp of brown sugar
 
 ## Method
 
-1. Cut fat off chops; chuck into a plastic bag of plain flour & rub around to coat chops then brown them in olive oil & drain.
+1. Cut fat off chops. Chuck into a plastic bag of plain flour & rub around to coat chops. Brown them in olive oil & drain.
 
-2. Put browned chops into a baking dish. Mix all ingredients & add water- enough to blend & just come nearly to top of chops
+2. Put browned chops into a baking dish. Mix all ingredients & add water, enough to blend & just come nearly to top of chops.
 
 3. Cover & slow cook - till cooked!!!
 

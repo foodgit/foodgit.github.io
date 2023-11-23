@@ -6,12 +6,12 @@
 
 - 2 ripe bananas
 - 1 cup rolled oats
-- 1/3 cup walnuts or pecans
-- 
-- ##Optional addins
-- 1/2 tsp cinnamon
-- 1/3 cup dark choc chips
-- 1/4 cup raisins
+- ⅓ cup walnuts or pecans
+
+## Optional Ingredients:
+- ½ tsp cinnamon
+- ⅓ cup dark choc chips
+- ¼ cup raisins
 - Peanut butter
 
 ## Method:

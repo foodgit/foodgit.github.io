@@ -4,12 +4,12 @@
 
 ## Ingredients:
 
-- 1 1/2 cups (225g) plain flour
+- 1½ cups (225g) plain flour
 - 1 tsp baking powder
 - 1 tsp ground cinnamon
-- 1/2 cup (110g) caster sugar
+- ½ cup (110g) caster sugar
 - 1 egg
-- 1/3 cup (80ml) sunflower oil
+- ⅓ cup (80ml) sunflower oil
 - 1 tsp vanilla extract
 - 4 ripe bananas, mashed
 - 65g pecan nuts, roughly chopped

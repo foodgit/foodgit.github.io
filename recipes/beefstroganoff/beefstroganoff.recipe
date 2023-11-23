@@ -6,11 +6,11 @@
 - 2 tbsp oil
 - 1 large onion
 - 300g mushrooms, sliced coarsely
-- 40g (3 tbsp) butter
+- 3 tbsp (40g) butter
 - 2 tbsp flour
-- 500ml (2 cups) beef stock
+- 2 cups (500ml) beef stock
 - 1 tbsp dijon mustard
-- 150ml (2/3 cup) sour cream
+- ⅔ cup (150ml) sour cream
 - Salt and pepper to taste
 
 ## Method:
