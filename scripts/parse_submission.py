@@ -82,11 +82,11 @@ ingredients_text="- ".join(("\n"+ingredients_text.lstrip()).splitlines(True))
 out_ingredients="## Ingredients\n"+ingredients_text+"\n"
 
 method_text=issue_body.split("### Method")[1].split("### ")[0].strip()
-method_text="> ".join(("\n"+method_text.lstrip()).splitlines(True))
+method_text="> 1. ".join(("\n"+method_text.lstrip()).splitlines(True))
 out_method="## Method\n"+method_text+"\n"
 
 tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
-tips_text="> ".join(("\n"+tips_text.lstrip()).splitlines(True))
+tips_text="> - ".join(("\n"+tips_text.lstrip()).splitlines(True))
 if "No response" in tips_text:
     out_tips=""
 else:
