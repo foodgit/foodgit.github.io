@@ -9,7 +9,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to submit a recipe to gitFOOD! Dont worry too much if you make a mistake, it can be fixed later. Please try to fill it out as much detail as possible :)
+        Thanks for taking the time to submit a recipe to gitFOOD!
+        Dont worry too much if you make a mistake, it can be fixed later.
+        Please try to fill it out as much detail as possible :)
+
+        Some useful characters for copying & pasting: [ ¼ ¾ ⅓ ⅔ ½ ° ]
         
   - type: input
     id: Name
