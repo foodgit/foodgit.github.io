@@ -92,8 +92,13 @@ else:
 
 # generate full book (all recipes) use pdfunite to include title page & pagebreaks
 print("\nexporting Recipe Book")
+tempfilename=title.replace(" ","_")+'.temp.pdf'
 filename=title.replace(" ","_")+'.pdf'
-os.system('cd ./pdf && pdfunite *.pdf ../'+filename)
+os.system('cd ./pdf && pdfunite *.pdf ../'+tempfilename)
+
+print('optimizing '+filename+' for printing')
+os.system('ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+filename+' ./'+tempfilename)
+os.remove('./'+tempfilename)
 
 print("applying metadata")
 os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -marked="True" -webstatement="'+license_url+'" -description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
