@@ -2,10 +2,10 @@
 
 ## Ingredients
 
-- ¾ or chump chops
-- 1 onion sliced
-- 2 carrots sliced
-- 1 tbsp Worcester sauce
+- Forequarter or chump chops
+- 1 onion, sliced
+- 2 carrots, sliced
+- 1 tbsp Worcestershire sauce
 - 1 tbsp white vinegar
 - ¼ cup tomato sauce
 - Salt & pepper
