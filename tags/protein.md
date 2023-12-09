@@ -2,4 +2,4 @@
 
 |Recipe Title|Last Updated|Tags
 |:---|:---|:---|
-|[Hommus](../recipes/hommus.md)|2023-12-04|[![](https://img.shields.io/badge/tag-healthy-f53bfe)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-6984a1)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-da139a)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-bb15fd)](../tags/tricky.md) [![](https://img.shields.io/badge/tag-vegan-8f457a)](../tags/vegan.md) [![](https://img.shields.io/badge/tag-vegetarian-f6b493)](../tags/vegetarian.md)|
+|[Hommus](../recipes/hommus.md)|2023-12-09|[![](https://img.shields.io/badge/tag-healthy-5d33f3)](../tags/healthy.md) [![](https://img.shields.io/badge/tag-messy-659a8f)](../tags/messy.md) [![](https://img.shields.io/badge/tag-protein-cb29b)](../tags/protein.md) [![](https://img.shields.io/badge/tag-tricky-8ce73b)](../tags/tricky.md) [![](https://img.shields.io/badge/tag-vegan-8344b1)](../tags/vegan.md) [![](https://img.shields.io/badge/tag-vegetarian-427cd)](../tags/vegetarian.md)|
