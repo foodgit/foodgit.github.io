@@ -1,4 +1,4 @@
-#   Apple Crumble
+# Apple Crumble
 
 ## Ingredients
 
