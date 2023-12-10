@@ -2,7 +2,7 @@
 
 ## Ingredients
 
-### pudding
+### Pudding
 
 - 340g dates, seeded and chopped
 - 1½ cups (375ml) boiling water
@@ -14,7 +14,7 @@
 - [optional] 1 tbsp instant coffee (coffee version)
 - [optional] ½ tsp salt flakes (salted caramel version)
 
-### butterscotch sauce
+### Butterscotch Sauce
 
 - 80g unsalted butter, chopped
 - 1½ cups (265g) brown sugar
