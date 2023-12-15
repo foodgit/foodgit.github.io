@@ -47,4 +47,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_kimchipancakes/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-lunch-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-korean-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> <img src="https://img.shields.io/badge/tag-_no_response_-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-lunch-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-korean-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> 
