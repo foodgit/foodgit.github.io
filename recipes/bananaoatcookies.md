@@ -5,15 +5,16 @@
 ## Ingredients
 
 - 2 ripe bananas
-- 1 cup rolled oats
+- 1 cup rolled oats (or toasted muesli for a more interesting, slightly crunchy version)
 - ⅓ cup walnuts or pecans
 
 ## Optional Ingredients
 
+- 2 tsp instant coffee granules (banoffee version)
 - ½ tsp cinnamon
 - ⅓ cup dark choc chips
 - ¼ cup raisins
-- Peanut butter
+- Peanut butter (to serve)
 
 ## Method
 
@@ -26,10 +27,12 @@
 ## Tips
 
 > - Plop a dollop of peanut butter on top before baking for a bit of spice.
+> - Add 2 tsp coffee granules to the mix before shaping for a banoffee version.
+> - Swap out the rolled oats for a toasted muesli (with or without fruits and nuts included) for a slightly fancier spin on the recipe.
 > - Drizzle melted chocolate on top, or dip cookies into a bowl of melted dark chocolate after cooking for a chocolatey version.
 
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_bananaoatcookies/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-snack-blue.svg" /> <img src="https://img.shields.io/badge/tag-great-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> <img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-snack-blue.svg" /> <img src="https://img.shields.io/badge/tag-great-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> <img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> <img src="https://img.shields.io/badge/tag-coffee-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> 

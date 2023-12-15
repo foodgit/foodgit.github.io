@@ -6,3 +6,5 @@ great
 vegan
 vegetarian
 healthy
+coffee
+chocolate
