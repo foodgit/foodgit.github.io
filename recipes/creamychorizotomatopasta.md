@@ -28,4 +28,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_creamychorizotomatopasta/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-boiled-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-boiled-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 

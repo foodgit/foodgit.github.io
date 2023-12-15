@@ -3,3 +3,4 @@ fried
 family
 breakfast
 vegetarian
+dairy

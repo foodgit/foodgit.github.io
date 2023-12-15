@@ -20,4 +20,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_pikelets/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> <img src="https://img.shields.io/badge/tag-breakfast-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 

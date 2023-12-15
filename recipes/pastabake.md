@@ -26,4 +26,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_pastabake/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 

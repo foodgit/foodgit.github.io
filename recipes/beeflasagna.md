@@ -28,10 +28,8 @@
 > 9. Bake in the oven for 30-40 minutes or until cooked through.
 > 1. Leave to stand for 5 minutes before serving.
 
-
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_beeflasagna/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 

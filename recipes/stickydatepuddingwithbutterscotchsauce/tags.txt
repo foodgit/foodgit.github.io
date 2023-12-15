@@ -4,3 +4,5 @@ dessert
 amazing
 vegetarian
 british
+dairy
+coffee

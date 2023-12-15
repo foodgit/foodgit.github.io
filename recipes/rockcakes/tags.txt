@@ -2,3 +2,4 @@ dessert
 baked
 family
 vegetarian
+dairy
