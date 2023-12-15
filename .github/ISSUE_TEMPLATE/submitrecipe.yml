@@ -123,6 +123,8 @@ body:
           required: false
         - label: Japanese
           required: false
+        - label: Korean
+          required: false
         - label: Portuguese
           required: false
         - label: Russian

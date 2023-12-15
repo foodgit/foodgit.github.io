@@ -8,3 +8,4 @@ vegetarian
 healthy
 coffee
 chocolate
+easy
