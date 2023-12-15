@@ -1,4 +1,4 @@
-# Kimchi Pancakes
+# Kimchijeon (Kimchi Pancakes)
 
 ## Ingredients
 
@@ -7,13 +7,17 @@
 - ¼ medium onion
 - cooking oil with high smoke point for pan frying
 - [optional] 90g minced pork
-- 
+
+### Batter Mix
+
 - 1¼ cups all-purpose flour or buchimgaru (Korean pancake premix) or Swap 1/4 cup of all-purpose flour with sweet rice flour or corn/potato starch
 - 2-3 tbsp juice/liquid from kimchi
 - 1 cup icy cold water
 - [optional] 1-2 tsp gochujang (Korean chili pepper paste) or gochugaru
 - [optional] 1 lightly beaten egg
-- 
+
+### Dipping Sauce (combine all ingredients)
+
 - 1 tbsp soy sauce
 - 1 tsp vinegar
 - 1 tbsp water
@@ -22,7 +26,7 @@
 
 ## Method
 
-> 1. Thinly slice the kimchi, about 1-1½cm thick. Cut the spring onions into about 5cm pieces. If the white part is thick, cut in half lengthwise. Thinly slice the onion.
+> 1. Thinly slice the kimchi, about 1-1½ cm thick. Cut the spring onions into about 5 cm pieces. If the white part is thick, cut in half lengthwise. Thinly slice the onion.
 > 1. In a large bowl, combine the flour (or pancake mix) with the liquid from kimchi, the optional gochujang/gochugaru and egg, and water, a little bit at a time. Start with dissolving the gochujang with water, and mix everything together. Do not over mix.
 > 1. Add a little more water if the batter is too thick. The batter should flow easily from a spoon.
 > 1. Stir in the kimchi, spring onions, onion and the optional protein of your choice.
