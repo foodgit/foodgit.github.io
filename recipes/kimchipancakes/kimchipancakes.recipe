@@ -10,7 +10,7 @@
 
 ### Batter Mix
 
-- 1¼ cups all-purpose flour or buchimgaru (Korean pancake premix) or swap ¼ cup of all-purpose flour with sweet rice flour or corn/potato starch
+- 1¼ cups plain flour or buchimgaru (Korean pancake premix) or swap ¼ cup of plain flour with sweet rice flour or corn/potato starch
 - 2-3 tbsp juice/liquid from kimchi
 - 1 cup icy cold water
 - [optional] 1-2 tsp gochujang (Korean chili pepper paste) or gochugaru
