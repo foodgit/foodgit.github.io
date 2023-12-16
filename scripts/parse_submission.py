@@ -65,6 +65,10 @@ for line in body_lines:
 
 additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower().replace(", ",",").replace(" ","_").split(",")
 tags=tags+additional_tags
+# remove invalid tag if no checkbox was selected
+for tag in tags:
+    if "no response" in tag:
+        tags.remove(tag) 
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
     f.write('\n'.join(map(str, tags)))
