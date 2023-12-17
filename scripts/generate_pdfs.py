@@ -10,11 +10,23 @@ def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-bo', '--book-only', '-fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
+parser.add_argument('-bo', '--book-only', '--fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
+parser.add_argument('-a', '--all', '--slow', '--complete', '--regenerate', dest='regenerate_all', action='store_true', help='Regenerate all recipe PDFs, ignoring modified dates. (Slow mode)')
 parser.set_defaults(book_only=False)
+parser.set_defaults(regenerate_all=False)
 args = parser.parse_args()
 
 book_only=args.book_only
+regenerate_all=args.regenerate_all
+
+if book_only and regenerate_all:
+    print("--all argument overrides --book_only!")
+    book_only=False
+elif regenerate_all:
+    print("--all option selected")
+elif book_only:
+    print("--book-only option selected")
+
 
 author = "fexofenadine"
 title = "gitFOOD Recipe Book"
@@ -61,7 +73,7 @@ os.remove('./pdf/_3_title_page.md')
 if book_only:
     print("only generating recipe book, skipping regeneration of individual recipes")
 else:
-    print("regenerating all recipe pdfs from source")
+    print("regenerating recipe pdfs from source")
 
     content_dir='./recipes'
     all_recipe_mds=[]
@@ -81,6 +93,10 @@ else:
             recipe_md_modified=1
             recipe_pdf_modified=0
         print("recipe modified: "+datetime.date.fromtimestamp(recipe_md_modified).isoformat()+"\npdf modified: "+datetime.date.fromtimestamp(recipe_pdf_modified).isoformat())
+        # ignore modified dates if --all flag is set
+        if regenerate_all:
+            recipe_md_modified=1
+            recipe_pdf_modified=0
         if recipe_md_modified > recipe_pdf_modified:
             print("recipe has been updated, regenerating pdf")
             #remove branding and pagecounts from footer
