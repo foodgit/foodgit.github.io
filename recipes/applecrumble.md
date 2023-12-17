@@ -27,6 +27,9 @@
 > 1. Transfer the apples into a 3 cup capacity ovenproof dish, draining off most of the liquid. Sprinkle crumble mixture over the apples.  Bake in oven for 25-30 minutes or until golden brown.
 > 1. Serve warm with custard, icecream or whipped cream.
 
+## Tips
+> - Soften the butter for a few seconds in the microwave if it's too solid to squish between fingertips reasonably easily.  It should remain solid and not at all runny for the crumble.
+
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_applecrumble/count.svg" width="20%" align="right" />

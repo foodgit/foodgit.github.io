@@ -73,30 +73,36 @@ else:
         tempfile = recipe_md[:-2]+"temp.md"
         recipe_name=Path(recipe_md).stem
         print('\nprocessing '+recipe_name)
+        recipe_md_modified=os.path.getmtime(recipe_md)
+        recipe_pdf_modified=os.path.getmtime('./pdf/'+recipe_name+'.pdf')
+        print("recipe modified: "+datetime.date.fromtimestamp(recipe_md_modified).isoformat()+"\npdf modified: "+datetime.date.fromtimestamp(recipe_pdf_modified).isoformat())
+        if recipe_md_modified > recipe_pdf_modified:
+            print("recipe has been updated, regenerating pdf")
+            #remove branding and pagecounts from footer
+            delete_list = ["logo_sm.png", "count.svg"]
+            with open(recipe_md) as fin, open(tempfile, "w+") as fout:
+                for line in fin:
+                    for word in delete_list:
+                        if word in line:
+                            line = ""
+                            print("snipped "+word+" from "+tempfile)
+                            break
+                    fout.write(line)
+            
+            #generate pdf of recipe
+            print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
+            os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+            print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
+            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
 
-        #remove branding and pagecounts from footer
-        delete_list = ["logo_sm.png", "count.svg"]
-        with open(recipe_md) as fin, open(tempfile, "w+") as fout:
-            for line in fin:
-                for word in delete_list:
-                    if word in line:
-                        line = ""
-                        print("snipped "+word+" from "+tempfile)
-                        break
-                fout.write(line)
-        
-        #generate pdf of recipe
-        print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
-        os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
-        print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
-        os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
-
-        print('removing temp files')
-        try:
-            os.remove('./pdf/'+recipe_name+'.temp.pdf')
-            os.remove(tempfile)
-        except:
-            pass
+            print('removing temp files')
+            try:
+                os.remove('./pdf/'+recipe_name+'.temp.pdf')
+                os.remove(tempfile)
+            except:
+                pass
+        else:
+            print("pdf is newer, skipping")
 
 # generate full book (all recipes) use pdfunite to include title page & pagebreaks
 print("\nexporting Recipe Book")
