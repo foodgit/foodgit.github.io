@@ -1,6 +1,13 @@
 # linux only for now
-import os, glob, shutil, filecmp, argparse
+import os, glob, shutil, filecmp, argparse, datetime
 from pathlib import Path
+
+# date formatting pleasantries (for title page, etc)
+def suffix(d):
+    return {1:'st',2:'nd',3:'rd'}.get(d%20, 'th')
+
+def custom_strftime(format, t):
+    return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-bo', '--book-only', '-fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
@@ -44,6 +51,7 @@ print("generating title page")
 with open("./pdf/_3_title_page.stub") as f:
     title_page_body = f.read()
 title_page_body = title_page_body.replace("{version_number}", version_number)
+title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, %Y', datetime.datetime.now()))
 output_file = Path("./pdf/_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
