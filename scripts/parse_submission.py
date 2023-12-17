@@ -67,7 +67,7 @@ additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower(
 tags=tags+additional_tags
 # remove invalid tag if no checkbox was selected
 for tag in tags:
-    if "no response" in tag.lower():
+    if "_no response_" in tag.lower():
         tags.remove(tag) 
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:

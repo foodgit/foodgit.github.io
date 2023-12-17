@@ -3,4 +3,3 @@ snack
 sides
 vegan
 vegetarian
-_no_response_
