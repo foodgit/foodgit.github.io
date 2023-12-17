@@ -73,8 +73,13 @@ else:
         tempfile = recipe_md[:-2]+"temp.md"
         recipe_name=Path(recipe_md).stem
         print('\nprocessing '+recipe_name)
-        recipe_md_modified=os.path.getmtime(recipe_md)
-        recipe_pdf_modified=os.path.getmtime('./pdf/'+recipe_name+'.pdf')
+        try:
+            recipe_md_modified=os.path.getmtime(recipe_md)
+            recipe_pdf_modified=os.path.getmtime('./pdf/'+recipe_name+'.pdf')
+        except:
+            # regenerate pdf if a file is missing (ie. if it hasn't been created yet)
+            recipe_md_modified=1
+            recipe_pdf_modified=0
         print("recipe modified: "+datetime.date.fromtimestamp(recipe_md_modified).isoformat()+"\npdf modified: "+datetime.date.fromtimestamp(recipe_pdf_modified).isoformat())
         if recipe_md_modified > recipe_pdf_modified:
             print("recipe has been updated, regenerating pdf")
