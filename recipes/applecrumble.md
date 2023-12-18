@@ -8,14 +8,14 @@
 
 - 3 medium apples, peeled, cored, and sliced (about 2mm or so thick)
 - 1 tbsp lemon juice
-- 1 tbsp caster sugar
+- 1 tbsp brown sugar
 - ¼ tsp ground cinnamon
 - ¼ cup water
 
 ### Crumble
 
 - ⅓ cup plain flour
-- ⅓ cup caster sugar
+- ⅓ cup brown sugar
 - ⅓ cup rolled oats
 - ¼ tsp ground cinnamon
 - 60g butter, chopped
@@ -29,9 +29,10 @@
 
 ## Tips
 > - Soften the butter for a few seconds in the microwave if it's too solid to squish between fingertips reasonably easily.  It should remain solid and not at all runny for the crumble.
+> - Using brown sugar will give the dish a slightly rich, carameled taste and colour, but caster sugar can be easily swapped in for a lovely variation!
 
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_applecrumble/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 
