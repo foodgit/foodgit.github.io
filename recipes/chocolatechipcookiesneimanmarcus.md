@@ -17,9 +17,9 @@
 
 ## Method
 
-> 1. Preheat oven to 375°F (190°C). Grease a cookie sheet.
+> 1. Preheat oven to 190°C. Grease a cookie sheet.
 > 2. In a medium bowl, cream together the butter, brown sugar and white sugar until smooth. Beat in the egg and vanilla. Sift together the flour, baking soda, baking powder, salt and espresso powder; stir into the creamed mixture. Finally, stir in the chocolate chips.
-> 3. Drop dough by heaping tablespoonfuls onto the prepared baking sheet. Cookies should be 1 1/2 to 2 inches apart. You should have 12 to 15 large cookies.
+> 3. Drop dough by heaping tablespoonfuls onto the prepared baking sheet. Cookies should be 4 to 5 cm apart. You should have 12 to 15 large cookies.
 > 4. Bake for 8 to 10 minutes in the preheated oven. For crispier cookies, bake 2 minutes longer. Remove from baking sheets to cool on wire racks.
 
 *Last updated 17 Jun 2023, 16:50:16*
