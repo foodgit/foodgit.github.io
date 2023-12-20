@@ -23,4 +23,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_lambchopcasserole/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-lamb-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-fried-blue.svg" /> <img src="https://img.shields.io/badge/tag-battered-blue.svg" /> <img src="https://img.shields.io/badge/tag-aussie-blue.svg" /> <img src="https://img.shields.io/badge/tag-family-blue.svg" /> <img src="https://img.shields.io/badge/tag-casserole-blue.svg" /> 
+<img src="https://img.shields.io/badge/lamb-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/battered-blue.svg" /> <img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/casserole-blue.svg" /> 

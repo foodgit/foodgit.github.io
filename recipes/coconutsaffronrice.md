@@ -30,4 +30,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_coconutsaffronrice/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-rice-blue.svg" /> <img src="https://img.shields.io/badge/tag-sides-blue.svg" /> <img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-expensive-blue.svg" /> <img src="https://img.shields.io/badge/tag-thai-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/expensive-blue.svg" /> <img src="https://img.shields.io/badge/thai-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
