@@ -31,7 +31,7 @@
 > - Soften the butter for a few seconds in the microwave if it's too solid to squish between fingertips reasonably easily.  It should remain solid and not at all runny for the crumble.
 > - Using brown sugar will give the dish a slightly rich, carameled taste and colour, but caster sugar can be easily swapped in for a lovely variation!
 
-<img src="../images/logo_sm.png" width="40%" /> 
+<img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://profile-counter.glitch.me/gitfood_applecrumble/count.svg" width="20%" align="right" />
 
