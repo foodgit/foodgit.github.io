@@ -54,7 +54,7 @@ def badges2kv(text):
     return [(b.split('-')[0], b.split('-')[1]) for b in badges]
 
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
-    return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
+    return f"[![](https://img.shields.io/badge/{label}-{color})]({root}/tags/{label}.md)"
 
 def random_hex_color():
     """generates a string for a random hex color"""
@@ -99,8 +99,8 @@ try:
 except:
     pass
 
-header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
+header= "|Recipe Title|Tags\n|:---|:---|\n"
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -125,7 +125,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in pages]
+    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# Pages tagged `{tag}`\n\n"
         page_str += header + '\n'.join(recs)

@@ -42,7 +42,7 @@ for recipe_stub in list(all_recipe_stubs):
     taglinks=""
     for tag in list(tags):
         #formatted_tags=formatted_tags+["![Recipe: "+tag+"](https://img.shields.io/badge/tag-"+tag+"-blue.svg)"]
-        taglinks=taglinks+'<img src="https://img.shields.io/badge/tag-'+tag+'-blue.svg" /> '
+        taglinks=taglinks+'<img src="https://img.shields.io/badge/'+tag+'-blue.svg" /> '
     #replace {tag} with formatted tag images, no longer required
     #recipe_body = recipe_body.replace("{tags}", ' '.join(formatted_tags))
     temp_file_name="working/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
