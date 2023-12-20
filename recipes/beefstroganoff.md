@@ -32,4 +32,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_beefstroganoff/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/russian-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-russian-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 

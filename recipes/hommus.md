@@ -31,4 +31,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_hommus/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/protein-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/tricky-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-healthy-blue.svg" /> <img src="https://img.shields.io/badge/tag-protein-blue.svg" /> <img src="https://img.shields.io/badge/tag-messy-blue.svg" /> <img src="https://img.shields.io/badge/tag-tricky-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegan-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 

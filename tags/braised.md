@@ -1,0 +1,5 @@
+# Pages tagged `braised`
+
+|Recipe Title|Last Updated|Tags
+|:---|:---|:---|
+|[Workflow Casserole Test](../recipes/workflowcasseroletest.md)|2023-10-06|[![](https://img.shields.io/badge/tag-amazing-10cdd6)](../tags/amazing.md) [![](https://img.shields.io/badge/tag-baked-f1d19f)](../tags/baked.md) [![](https://img.shields.io/badge/tag-braised-95446)](../tags/braised.md) [![](https://img.shields.io/badge/tag-casserole-4d8aaa)](../tags/casserole.md) [![](https://img.shields.io/badge/tag-dinner-d5a11)](../tags/dinner.md) [![](https://img.shields.io/badge/tag-guinness-acbc2f)](../tags/guinness.md) [![](https://img.shields.io/badge/tag-irish-ad1215)](../tags/irish.md) [![](https://img.shields.io/badge/tag-large_quantity-13fda6)](../tags/large_quantity.md) [![](https://img.shields.io/badge/tag-long_cook_time-8a534c)](../tags/long_cook_time.md) [![](https://img.shields.io/badge/tag-long_prep_time-94b8ca)](../tags/long_prep_time.md) [![](https://img.shields.io/badge/tag-messy-9fef19)](../tags/messy.md) [![](https://img.shields.io/badge/tag-testing-42963a)](../tags/testing.md)|

@@ -12,4 +12,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_lasagnaairfryer/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/airfryer-blue.svg" /> <img src="https://img.shields.io/badge/reheating-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/italian-blue.svg" /> <img src="https://img.shields.io/badge/mine-blue.svg" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-airfryer-blue.svg" /> <img src="https://img.shields.io/badge/tag-reheating-blue.svg" /> <img src="https://img.shields.io/badge/tag-easy-blue.svg" /> <img src="https://img.shields.io/badge/tag-italian-blue.svg" /> <img src="https://img.shields.io/badge/tag-mine-blue.svg" /> <img src="https://img.shields.io/badge/tag-cheesey-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> 

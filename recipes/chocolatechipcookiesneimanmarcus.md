@@ -28,4 +28,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_chocolatechipcookiesneimanmarcus/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/coffee-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> 
+<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-coffee-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> 
