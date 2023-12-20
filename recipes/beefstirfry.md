@@ -36,4 +36,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_beefstirfry/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-stovetop-blue.svg" /> <img src="https://img.shields.io/badge/tag-dinner-blue.svg" /> <img src="https://img.shields.io/badge/tag-beef-blue.svg" /> <img src="https://img.shields.io/badge/tag-pasta-blue.svg" /> <img src="https://img.shields.io/badge/tag-versatile-blue.svg" /> <img src="https://img.shields.io/badge/tag-asian-blue.svg" /> 
+<img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> <img src="https://img.shields.io/badge/versatile-blue.svg" /> <img src="https://img.shields.io/badge/asian-blue.svg" /> 

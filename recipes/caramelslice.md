@@ -45,4 +45,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_caramelslice/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/tag-dessert-blue.svg" /> <img src="https://img.shields.io/badge/tag-chocolate-blue.svg" /> <img src="https://img.shields.io/badge/tag-dairy-blue.svg" /> <img src="https://img.shields.io/badge/tag-baked-blue.svg" /> <img src="https://img.shields.io/badge/tag-long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/tag-amazing-blue.svg" /> <img src="https://img.shields.io/badge/tag-vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
