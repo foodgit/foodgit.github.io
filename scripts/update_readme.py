@@ -54,7 +54,7 @@ def badges2kv(text):
     return [(b.split('-')[0], b.split('-')[1]) for b in badges]
 
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
-    return f"[![](https://img.shields.io/badge/{label}-{color})]({root}/tags/{label}.md)"
+    return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
 
 def random_hex_color():
     """generates a string for a random hex color"""
