@@ -5,7 +5,6 @@ content_dir='./recipes'
 all_recipe_stubs=[ "./template/template/template.recipe" ]
 recipe_dirs=next(os.walk(content_dir))[1]
 for recipe_dir in list(recipe_dirs):
-#    print("Recipe folder found: \""+content_dir+"/"+recipe_dir+"\"")
     recipe_stubs=glob.glob(content_dir+'/'+recipe_dir+'/*.recipe')
     all_recipe_stubs=all_recipe_stubs+recipe_stubs
 print("Recipe stub(s) found: \""+str(all_recipe_stubs)+"\"")
@@ -41,10 +40,7 @@ for recipe_stub in list(all_recipe_stubs):
         f.close()
     taglinks=""
     for tag in list(tags):
-        #formatted_tags=formatted_tags+["![Recipe: "+tag+"](https://img.shields.io/badge/tag-"+tag+"-blue.svg)"]
         taglinks=taglinks+'<img src="https://img.shields.io/badge/'+tag+'-blue.svg" /> '
-    #replace {tag} with formatted tag images, no longer required
-    #recipe_body = recipe_body.replace("{tags}", ' '.join(formatted_tags))
     temp_file_name="working/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
     recipe_file_name=recipe_stub.split("/")[-3]+"/"+recipe_stub.split("/")[-1].replace(".recipe",".md")
     
@@ -52,8 +48,6 @@ for recipe_stub in list(all_recipe_stubs):
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(recipe_body)
 
-    # with open(temp_file_name,'w') as f:
-    #     f.write(recipe_body)
     with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
         f.write('\n\n<img src="https://profile-counter.glitch.me/gitfood_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')

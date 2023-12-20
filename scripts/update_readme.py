@@ -47,11 +47,13 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
 
 
 def badges2kv(text):
-    testpat = r'\/([a-zA-Z]+-[a-zA-Z_]+-[a-zA-Z]+)'
+    testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+)'
 
     badges = re.findall(testpat, text)
     #return {b.split('-')[0]:b.split('-')[1] for b in badges}
-    return [(b.split('-')[0], b.split('-')[1]) for b in badges]
+    for b in badges:
+        print("tag", b.split('-')[0])
+    return [("tag", b.split('-')[0]) for b in badges]
 
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
     return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
@@ -66,6 +68,7 @@ def random_hex_color():
 md_files = Path('./recipes').glob('*.md')
 TOC = []
 unq_tags = defaultdict(list)
+print (unq_tags)
 for fpath in list(md_files):
     if fpath.name == 'README.md':
         continue
@@ -99,8 +102,8 @@ try:
 except:
     pass
 
-header= "|Recipe Title|Last Updated|Tags\n|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in TOC]
+header= "|Recipe Title|Tags\n|:---|:---|\n"
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -125,7 +128,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{d['last_modified']}|{make_badges(d['tags'])}|" for d in pages]
+    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# Pages tagged `{tag}`\n\n"
         page_str += header + '\n'.join(recs)
