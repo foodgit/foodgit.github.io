@@ -48,7 +48,6 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
 
 def badges2kv(text):
     testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
-
     badges = re.findall(testpat, text)
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
@@ -65,7 +64,6 @@ def random_hex_color():
 md_files = Path('./recipes').glob('*.md')
 TOC = []
 unq_tags = defaultdict(list)
-print (unq_tags)
 for fpath in list(md_files):
     if fpath.name == 'README.md':
         continue
