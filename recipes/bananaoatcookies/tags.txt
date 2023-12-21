@@ -1,6 +1,4 @@
 baked
-breakfast
-dessert
 snack
 great
 vegan

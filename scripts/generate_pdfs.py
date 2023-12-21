@@ -60,15 +60,15 @@ with open("./LICENSE") as f:
 # os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
-with open("./pdf/_3_title_page.stub") as f:
+with open("./pdf/0_3_title_page.stub") as f:
     title_page_body = f.read()
 title_page_body = title_page_body.replace("{version_number}", version_number)
 title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, %Y', datetime.datetime.now()))
-output_file = Path("./pdf/_3_title_page.md")
+output_file = Path("./pdf/0_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
-os.system('cd ./pdf && pandoc --quiet -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./_3_title_page.md -o ./_3_title_page.pdf')
-os.remove('./pdf/_3_title_page.md')
+os.system('cd ./pdf && pandoc --quiet -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
+os.remove('./pdf/0_3_title_page.md')
 
 if book_only:
     print("only generating recipe book, skipping regeneration of individual recipes")
@@ -85,9 +85,37 @@ else:
         tempfile = recipe_md[:-2]+"temp.md"
         recipe_name=Path(recipe_md).stem
         print('\nprocessing '+recipe_name)
+        tag_file=content_dir+'/'+recipe_name+'/tags.txt'
+        try: 
+            if os.path.isfile(tag_file):
+                with open(tag_file) as f:
+                    tags = f.read().splitlines()
+                    if not tags:
+                        tags=[ "none" ]
+            else:
+                tags=[ "none" ]            
+        except:
+            tags=[ "none" ]
+        finally:
+            f.close()
+        if 'snack' in list(tags):
+            category='1'
+        elif 'breakfast' in list(tags):
+            category='2'
+        elif 'lunch' in list(tags):
+            category='3'
+        elif 'dinner' in list(tags):
+            category='4'
+        elif 'dessert' in list(tags):
+            category='5'
+        elif 'sides' in list(tags):
+            category='6'
+        else:
+            category='9'
+        print('category '+category+' detected in tag file')
         try:
             recipe_md_modified=os.path.getmtime(recipe_md)
-            recipe_pdf_modified=os.path.getmtime('./pdf/'+recipe_name+'.pdf')
+            recipe_pdf_modified=os.path.getmtime('./pdf/'+category+'_'+recipe_name+'.pdf')
         except:
             # regenerate pdf if a file is missing (ie. if it hasn't been created yet)
             recipe_md_modified=1
@@ -114,7 +142,7 @@ else:
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
             os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
-            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
+            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
 
             print('removing temp files')
             try:
