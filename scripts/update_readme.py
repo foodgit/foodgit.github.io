@@ -47,13 +47,10 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
 
 
 def badges2kv(text):
-    testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+)'
+    testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
 
     badges = re.findall(testpat, text)
-    #return {b.split('-')[0]:b.split('-')[1] for b in badges}
-    for b in badges:
-        print("tag", b.split('-')[0])
-    return [("tag", b.split('-')[0]) for b in badges]
+    return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
     return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
