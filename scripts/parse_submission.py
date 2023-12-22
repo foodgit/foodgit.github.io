@@ -91,7 +91,7 @@ out_method="## Method\n"+method_text+"\n"
 
 tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
 tips_text="> - ".join(("\n"+tips_text.lstrip()).splitlines(True))
-if "No response" in tips_text:
+if "_no_response_" in tips_text:
     out_tips=""
 else:
     out_tips="## Tips\n"+tips_text+"\n"
