@@ -10,7 +10,6 @@
 - ¼ cup water
 - 1 tbsp lemon juice
 - 1 tbsp brown sugar
-- [optional] 2 tbsp sultanas, raisins, or currants
 - [optional] ¼ tsp ground cinnamon
 
 ### Crumble
@@ -24,7 +23,7 @@
 
 ## Method
 
-> 1. Preheat oven to 180°C/160°C fan forced. Combine apples, sultanas, juice, sugar, cinnamon, and water in small saucepan over medium heat. Cook, stirring for 5 minutes or until apple is slightly softened. Leave in the pan to soak/soften.
+> 1. Preheat oven to 180°C/160°C fan forced. Combine apples, juice, sugar, cinnamon, and water in small saucepan over medium heat. Cook, stirring for 5 minutes or until apple is slightly softened. Leave in the pan to soak/soften.
 > 1. To make the crumble, combine the flour, sugar, oats, cinnamon, nutmeg, and butter in a bowl. Use your fingertips to rub the butter into the flour mixture until the mixture resembles breadcrumbs. <img src="applecrumble/images/1.jpg" width="35%" align="right" />
 > 1. Transfer the apples into a 3 cup capacity ovenproof dish, draining off most of the liquid. Sprinkle crumble mixture over the apples.  Bake in oven for 25-30 minutes or until golden brown.
 > 1. Serve warm with custard, icecream or whipped cream.

@@ -1,5 +1,0 @@
-# Pages tagged `reheating`
-
-|Recipe Title|Tags
-|:---|:---|
-|[Frozen Lasagna (a la Airfryer)](../recipes/lasagnaairfryer.md)|[![](https://img.shields.io/badge/tag-airfryer-d5a11)](../tags/airfryer.md) [![](https://img.shields.io/badge/tag-cheesey-6d71)](../tags/cheesey.md) [![](https://img.shields.io/badge/tag-easy-9fef19)](../tags/easy.md) [![](https://img.shields.io/badge/tag-italian-32613c)](../tags/italian.md) [![](https://img.shields.io/badge/tag-mine-659a8f)](../tags/mine.md) [![](https://img.shields.io/badge/tag-pasta-5d33f3)](../tags/pasta.md) [![](https://img.shields.io/badge/tag-reheating-cb29b)](../tags/reheating.md)|

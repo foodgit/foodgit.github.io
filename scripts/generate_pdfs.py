@@ -99,23 +99,23 @@ else:
         finally:
             f.close()
         if 'snack' in list(tags):
-            category='1'
+            category=('1','snacks')
         elif 'breakfast' in list(tags):
-            category='2'
+            category=('2','breakfast')
         elif 'lunch' in list(tags):
-            category='3'
+            category=('3','lunch')
         elif 'dinner' in list(tags):
-            category='4'
+            category=('4','dinner')
         elif 'dessert' in list(tags):
-            category='5'
+            category=('5','dessert')
         elif 'sides' in list(tags):
-            category='6'
+            category=('6','sides')
         else:
-            category='9'
-        print('category '+category+' detected in tag file')
+            category=('9','extra stuff')
+        print('primary category '+category[0]+' ['+category[1]+'] detected in tag file')
         try:
             recipe_md_modified=os.path.getmtime(recipe_md)
-            recipe_pdf_modified=os.path.getmtime('./pdf/'+category+'_'+recipe_name+'.pdf')
+            recipe_pdf_modified=os.path.getmtime('./pdf/'+category[0]+'_'+recipe_name+'.pdf')
         except:
             # regenerate pdf if a file is missing (ie. if it hasn't been created yet)
             recipe_md_modified=1
@@ -142,7 +142,7 @@ else:
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
             os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
-            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
+            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
 
             print('removing temp files')
             try:

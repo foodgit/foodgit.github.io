@@ -17,9 +17,6 @@
 > 1. Remove potatoes from the oven and cut them in half. With a spoon, scoop out the flesh and place it into a bowl.
 > 1. In the bowl add cheese, spring onions, mustard, salt, and pepper, and any additional/optional ingredients, mashing everything together.
 > 1. Fill the potato skins with the cheesy potato mixture and sprinkle some cheese on top.
-> 1. Bake at 180°C in the oven for 20 minutes or until golden and crispy on top.
-
-
 
 <img src="../images/logo_sm.png" width="40%" />
 
