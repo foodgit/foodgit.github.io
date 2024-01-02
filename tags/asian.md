@@ -2,4 +2,4 @@
 
 |Recipe Title|Tags
 |:---|:---|
-|[Beef Stir Fry](../recipes/beefstirfry.md)|[![](https://img.shields.io/badge/tag-asian-e5fa6f)](../tags/asian.md) [![](https://img.shields.io/badge/tag-beef-208450)](../tags/beef.md) [![](https://img.shields.io/badge/tag-dinner-e4f90)](../tags/dinner.md) [![](https://img.shields.io/badge/tag-lunch-1fc54)](../tags/lunch.md) [![](https://img.shields.io/badge/tag-pasta-acaf3f)](../tags/pasta.md) [![](https://img.shields.io/badge/tag-stovetop-d5a11)](../tags/stovetop.md) [![](https://img.shields.io/badge/tag-versatile-d82abc)](../tags/versatile.md)|
+|[Beef Stir Fry](../recipes/beefstirfry.md)|[![](https://img.shields.io/badge/tag-asian-708555)](../tags/asian.md) [![](https://img.shields.io/badge/tag-beef-13fda6)](../tags/beef.md) [![](https://img.shields.io/badge/tag-dinner-9fef19)](../tags/dinner.md) [![](https://img.shields.io/badge/tag-lunch-e5fa6f)](../tags/lunch.md) [![](https://img.shields.io/badge/tag-pasta-da139a)](../tags/pasta.md) [![](https://img.shields.io/badge/tag-stovetop-32613c)](../tags/stovetop.md) [![](https://img.shields.io/badge/tag-versatile-dc62b7)](../tags/versatile.md)|

@@ -2,4 +2,4 @@
 
 |Recipe Title|Tags
 |:---|:---|
-|[Rice Pudding](../recipes/ricepudding.md)|[![](https://img.shields.io/badge/tag-dairy-e5c1d4)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-427cd)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-13fda6)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-bb15fd)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-32c994)](../tags/rice_cooker.md) [![](https://img.shields.io/badge/tag-vegetarian-32613c)](../tags/vegetarian.md)|
+|[Rice Pudding](../recipes/ricepudding.md)|[![](https://img.shields.io/badge/tag-dairy-1754e4)](../tags/dairy.md) [![](https://img.shields.io/badge/tag-dessert-6d71)](../tags/dessert.md) [![](https://img.shields.io/badge/tag-easy-d4602a)](../tags/easy.md) [![](https://img.shields.io/badge/tag-rice-5b6ac0)](../tags/rice.md) [![](https://img.shields.io/badge/tag-rice_cooker-d82abc)](../tags/rice_cooker.md) [![](https://img.shields.io/badge/tag-vegetarian-5d33f3)](../tags/vegetarian.md)|
