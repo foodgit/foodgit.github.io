@@ -3,3 +3,4 @@ stovetop
 breakfast
 fast
 simple
+vegetarian
