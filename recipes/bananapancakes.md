@@ -12,10 +12,6 @@
 > 1. Lightly spray a medium non-stick frying pan with oil and heat over medium heat. Spoon 2 tablespoons batter into pan and spread out with the back of a spoon until 1cm thick. Repeat with remaining batter to make 2 more pancakes.
 > 1. Cook for 1–2 minutes or until golden. Turn and cook for 1–2 minutes or until pancakes are golden and cooked through. Serve.
 
-## Tips
-
-> - _No response_
-
 
 <img src="../images/logo_sm.png" width="40%" />
 
