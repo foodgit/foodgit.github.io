@@ -1,7 +1,7 @@
-potato
-dairy
-savoury
-sides
 baked
 cheesey
+dairy
+potato
+savoury
+sides
 vegetarian

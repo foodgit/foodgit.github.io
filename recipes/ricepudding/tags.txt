@@ -1,6 +1,6 @@
+dairy
 dessert
+easy
 rice
 rice_cooker
-easy
-dairy
 vegetarian

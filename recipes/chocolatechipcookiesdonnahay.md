@@ -21,4 +21,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_chocolatechipcookiesdonnahay/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> 
+<img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> 

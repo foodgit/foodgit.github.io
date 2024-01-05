@@ -65,9 +65,10 @@ for line in body_lines:
 
 additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower().replace(", ",",").replace(" ","_").split(",")
 tags=tags+additional_tags
+tags.sort()
 # remove invalid tag if no checkbox was selected
 for tag in tags:
-    if "_no response_" in tag.lower():
+    if "_No response_" in tag:
         tags.remove(tag) 
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
@@ -91,7 +92,7 @@ out_method="## Method\n"+method_text+"\n"
 
 tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
 tips_text="> - ".join(("\n"+tips_text.lstrip()).splitlines(True))
-if "_no_response_" in tips_text:
+if "_No response_" in tips_text:
     out_tips=""
 else:
     out_tips="## Tips\n"+tips_text+"\n"

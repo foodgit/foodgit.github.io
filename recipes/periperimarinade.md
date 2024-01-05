@@ -22,4 +22,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_periperimarinade/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/portuguese-blue.svg" /> 
+<img src="https://img.shields.io/badge/portuguese-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> 

@@ -1,4 +1,4 @@
-snack
 baked
 chocolate
 dairy
+snack

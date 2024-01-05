@@ -1,8 +1,8 @@
 baked
-stovetop
-dinner
-italian
-easy
 beef
-pasta
 dairy
+dinner
+easy
+italian
+pasta
+stovetop

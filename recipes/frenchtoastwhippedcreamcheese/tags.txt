@@ -1,9 +1,9 @@
-dessert
+amazing
 breakfast
 dairy
-messy
+dessert
 fried
 large_quantity
-amazing
+messy
 mine
 vegetarian

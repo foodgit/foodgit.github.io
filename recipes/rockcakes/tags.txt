@@ -1,5 +1,5 @@
-snack
 baked
-family
-vegetarian
 dairy
+family
+snack
+vegetarian

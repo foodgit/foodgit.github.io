@@ -94,4 +94,4 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <img src="https://profile-counter.glitch.me/gitfood_template/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/american-blue.svg" /> <img src="https://img.shields.io/badge/fast_food-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> 
+<img src="https://img.shields.io/badge/american-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/fast_food-blue.svg" /> 

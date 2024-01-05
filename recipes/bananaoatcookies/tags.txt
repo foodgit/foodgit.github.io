@@ -1,10 +1,10 @@
 baked
-snack
+chocolate
+coffee
+easy
 great
+healthy
+simple
+snack
 vegan
 vegetarian
-healthy
-coffee
-chocolate
-easy
-simple

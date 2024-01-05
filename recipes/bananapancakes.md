@@ -17,4 +17,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_bananapancakes/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/fast-blue.svg" /> <img src="https://img.shields.io/badge/simple-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/fast-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/simple-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 

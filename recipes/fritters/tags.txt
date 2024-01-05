@@ -1,9 +1,9 @@
-leftovers
-lamb
-ham
 chicken
-vegetables
-fried
-family
 dairy
 dinner
+family
+fried
+ham
+lamb
+leftovers
+vegetables

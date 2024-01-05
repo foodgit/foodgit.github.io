@@ -1,8 +1,8 @@
-baked
-stovetop
-dessert
 amazing
-vegetarian
+baked
 british
-dairy
 coffee
+dairy
+dessert
+stovetop
+vegetarian

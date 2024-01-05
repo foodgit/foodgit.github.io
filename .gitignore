@@ -2,4 +2,4 @@ working/
 gitfood.code-workspace
 fonts/
 html/
-pdf/build_pdfs.sh
+scripts/build_pdfs.sh

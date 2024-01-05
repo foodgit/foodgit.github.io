@@ -32,4 +32,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_fritters/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/leftovers-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> <img src="https://img.shields.io/badge/ham-blue.svg" /> <img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> 
+<img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/ham-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> <img src="https://img.shields.io/badge/leftovers-blue.svg" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" /> 

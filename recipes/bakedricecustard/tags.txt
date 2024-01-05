@@ -1,5 +1,5 @@
-dessert
 baked
-rice
 dairy
+dessert
+rice
 vegetarian

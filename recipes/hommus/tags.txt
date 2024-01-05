@@ -1,6 +1,6 @@
 healthy
-protein
 messy
+protein
 tricky
 vegan
 vegetarian

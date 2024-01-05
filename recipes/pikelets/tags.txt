@@ -1,6 +1,6 @@
-dessert
-fried
-family
 breakfast
-vegetarian
 dairy
+dessert
+family
+fried
+vegetarian
