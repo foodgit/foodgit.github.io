@@ -1,5 +1,5 @@
 # linux only for now
-import os, glob, shutil, filecmp, argparse, datetime
+import os, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 
 # date formatting pleasantries (for title page, etc)
@@ -9,6 +9,7 @@ def suffix(d):
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
 
+# set variables to passed parameters
 parser = argparse.ArgumentParser()
 parser.add_argument('-bo', '--book-only', '--fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
 parser.add_argument('-a', '--all', '--slow', '--complete', '--regenerate', dest='regenerate_all', action='store_true', help='Regenerate all recipe PDFs, ignoring modified dates. (Slow mode)')
@@ -159,9 +160,31 @@ tempfilename=title.replace(" ","_")+'.temp.pdf'
 filename=title.replace(" ","_")+'.pdf'
 os.system('cd ./pdf && pdfunite *.pdf ../'+tempfilename)
 
+# calculate and insert number of blank pages to insert for tidy booklet printing
+p1 = subprocess.Popen(['pdfinfo', tempfilename], stdout=subprocess.PIPE)
+p2 = subprocess.Popen(['grep', 'Pages'], stdin=p1.stdout, stdout=subprocess.PIPE)
+p3 = subprocess.Popen(['sed', 's/[^0-9]*//'], stdin=p2.stdout, stdout=subprocess.PIPE)
+pagecount=p3.communicate()[0].decode("utf-8")
+print('pagecount: '+pagecount)
+num_add_pages=4 - (int(pagecount) % 4)
+print('number of pages to insert: '+str(num_add_pages))
+for i in range(0, num_add_pages):
+    shutil.copyfile('./pdf/0_2_blank.pdf', f'./pdf/zzzzz_blank{i}.pdf')
+
+# regenerate the book with the additional pages
+if num_add_pages > 0:
+    print('regenerating book with extra padding for booklet printing')
+    os.system('cd ./pdf && pdfunite *.pdf ../'+tempfilename)
+
 print('optimizing '+filename+' for printing')
 os.system('ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+filename+' ./'+tempfilename)
+
+# cleanup
+print('removing temp file '+tempfilename)
 os.remove('./'+tempfilename)
+print('removing blank padding pages')
+for f in glob.glob("./pdf/zzzzz_blank*.pdf"):
+    os.remove(f)
 
 print("applying metadata")
 os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -marked="True" -webstatement="'+license_url+'" -description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
