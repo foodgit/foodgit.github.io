@@ -2,4 +2,4 @@
 
 |Recipe Title|Tags
 |:---|:---|
-|[Peri Peri Marinade](../recipes/periperimarinade.md)|[![](https://img.shields.io/badge/tag-portuguese-f53bfe)](../tags/portuguese.md) [![](https://img.shields.io/badge/tag-vegan-95446)](../tags/vegan.md)|
+|[Peri Peri Marinade](../recipes/periperimarinade.md)|[![](https://img.shields.io/badge/tag-portuguese-4a3565)](../tags/portuguese.md) [![](https://img.shields.io/badge/tag-vegan-10cdd6)](../tags/vegan.md)|
