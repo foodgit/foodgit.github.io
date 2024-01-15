@@ -45,7 +45,6 @@ def get_last_modified_date(fpath, verbose=True, timestamp=False):
     #print(outv)
     return outv
 
-
 def badges2kv(text):
     testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
     badges = re.findall(testpat, text)
@@ -54,12 +53,21 @@ def badges2kv(text):
 def make_badge(label, prefix='tag', color='lightgrey', root='.'):
     return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
 
-def random_hex_color():
+def random_hex_colour():
     """generates a string for a random hex color"""
-    # https://stackoverflow.com/questions/13998901/generating-a-random-hex-color-in-python
-    # https://stackoverflow.com/questions/52843385/python-using-format-f-string-to-output-hex-with-0-padding-and-center
     r = lambda: random.randint(0,255)
     return  f"{r():x}{r():x}{r():x}"
+
+def get_tag_hex_colour(tag_name):
+    tag_file = Path('./tags/colours/'+tag_name+'.hex')
+    try:
+        with open(tag_file) as f:
+            tag_hex=f.readline()
+    except:
+        tag_hex=random_hex_colour()
+        tag_file.parent.mkdir(exist_ok=True, parents=True)
+        tag_file.write_text(tag_hex)
+    return tag_hex
 
 md_files = Path('./recipes').glob('*.md')
 TOC = []
@@ -87,7 +95,7 @@ for fpath in list(md_files):
                 TOC.append(d_)
                 break
 
-tag_badges_map = {tag_name:make_badge(label=tag_name, color = random_hex_color()) for tag_name in unq_tags}
+tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name)) for tag_name in unq_tags}
 
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
@@ -116,7 +124,7 @@ with open('README.md','w') as f:
     f.write(readme)
        
 # overriding it this way is ugly but whatever
-tag_badges_map = {tag_name:make_badge(label=tag_name, color = random_hex_color(), root='..') for tag_name in unq_tags}
+tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name), root='..') for tag_name in unq_tags}
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
    

@@ -3,3 +3,4 @@ gitfood.code-workspace
 fonts/
 html/
 scripts/build_pdfs.sh
+scripts/generatehex.py
