@@ -23,4 +23,4 @@
 
 <img src="https://profile-counter.glitch.me/gitfood_roastedcapsicum/count.svg" width="20%" align="right" />
 
-<img src="https://img.shields.io/badge/grilled-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/grilled-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
