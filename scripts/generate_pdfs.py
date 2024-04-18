@@ -21,17 +21,18 @@ book_only=args.book_only
 regenerate_all=args.regenerate_all
 
 if book_only and regenerate_all:
-    print("--all argument overrides --book_only!")
+    print('--all argument overrides --book_only!')
     book_only=False
 elif regenerate_all:
-    print("--all option selected")
+    print('--all option selected')
 elif book_only:
-    print("--book-only option selected")
+    print('--book-only option selected')
 
 
-author = "fexofenadine"
-title = "gitFOOD Recipe Book"
-license_url = "https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICENSE"
+author = 'fexofenadine'
+title = 'gitFOOD Recipe Book'
+license_url = 'https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICENSE'
+margin_size = '15'
 
 #unused for now
 # def optimize_pdf(recipe_name):
@@ -46,12 +47,12 @@ license_url = "https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICEN
 #         os.remove(f)
     
 #get project version number
-with open("./version.txt") as f:
+with open('./version.txt') as f:
     version_number = f.readline().strip('\n').strip()
-print("version "+version_number+" detected")
+print('version '+version_number+' detected')
 
 #get license
-with open("./LICENSE") as f:
+with open('./LICENSE') as f:
     license_text = f.read().strip('\n').strip()
 
 # print("installing pandoc")
@@ -144,6 +145,9 @@ else:
             os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
             os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
+            # print('setting margin size to '+margin_size+'.')
+            # os.system('cd ./pdf && pdfcrop --margins \''+margin_size+'\' ./'+category[0]+'_'+recipe_name+'.pdf ./'+category[0]+'_'+recipe_name+'.pdf')
+
 
             print('removing temp files')
             try:
