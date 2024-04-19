@@ -1,5 +1,5 @@
-// We import the light theme first.
-@import "minima/skins/classic";
+// We import the dark theme first.
+@import "minima/skins/solarized_dark";
 
 // We define css variables based on theme color
 :root {
@@ -57,14 +57,14 @@ $table-border-color:    var(--table-border-color,$table-border-color);
 @import "minima/initialize";
 
 
-// Define media query for dark theme users.
-@media (prefers-color-scheme: dark) {
+// Define media query for light theme users.
+@media (prefers-color-scheme: light) {
 
-// Import dark skin.
+// Import light skin.
 // We will have to alter it as well.
 // It gives our variables new meaning yet again.
-// But you have to remove  "!default" a the end of variable declarations in dark skin.
-  @import "minima/skins/dark";
+// But you have to remove  "!default" a the end of variable declarations in light skin.
+  @import "minima/skins/solarized_light";
 
   :root {
     --brand-color :           #{$brand-color};

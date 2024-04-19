@@ -52,7 +52,7 @@ def badges2kv(text):
 
 def make_badge(label, prefix='tag', color='lightgrey'):
     # return f"[![{label}](https://img.shields.io/badge/{prefix}-{label}-{color})](tags/{label}.md){{:target=\"_blank\"}}"
-    return f'<a href="tags/{label}.md"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
+    return f'<a href="tags/{label}.html"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
 
 def random_hex_colour():
     """generates a string for a random hex color"""
@@ -134,6 +134,6 @@ for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
     recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
-        page_str = f"# Pages tagged `{tag}`\n\n"
+        page_str = f"# {tag.replace('_'," ").title()} Recipes \n\n"
         page_str += header + '\n'.join(recs)
         f.write(page_str)
