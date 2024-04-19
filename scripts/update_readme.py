@@ -50,8 +50,8 @@ def badges2kv(text):
     badges = re.findall(testpat, text)
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
-def make_badge(label, prefix='tag', color='lightgrey', root='.'):
-    return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})]({root}/tags/{label}.md)"
+def make_badge(label, prefix='tag', color='lightgrey'):
+    return f"[![](https://img.shields.io/badge/{prefix}-{label}-{color})](tags/{label}.md)"
 
 def random_hex_colour():
     """generates a string for a random hex color"""
@@ -124,7 +124,7 @@ with open('README.md','w') as f:
     f.write(readme)
        
 # overriding it this way is ugly but whatever
-tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name), root='..') for tag_name in unq_tags}
+tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name)) for tag_name in unq_tags}
 def make_badges(unq_tags, sep=' '):
     return sep.join([tag_badges_map[tag] for tag in unq_tags])
    
