@@ -4,3 +4,5 @@ fonts/
 html/
 scripts/build_pdfs.sh
 scripts/generatehex.py
+**.old
+**.bak
