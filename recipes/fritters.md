@@ -2,7 +2,7 @@
 
 ## Ingredients
 
-### Lamb
+### Base
 
 - Leftover roast lamb or whatever cold cooked meat (eg. ham , chicken etc.)
 - Vegies, any sort you want, usually
