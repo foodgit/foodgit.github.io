@@ -56,6 +56,8 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/gitfood_beefandguinnesscasserole/count.svg" width="20%" align="right" />
-
 <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/casserole-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/guinness-blue.svg" /> <img src="https://img.shields.io/badge/irish-blue.svg" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/long_cook_time-blue.svg" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/tricky-blue.svg" /> 
+
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>

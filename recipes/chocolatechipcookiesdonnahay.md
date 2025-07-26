@@ -19,6 +19,8 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/gitfood_chocolatechipcookiesdonnahay/count.svg" width="20%" align="right" />
-
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> 
+
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>

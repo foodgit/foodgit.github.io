@@ -12,4 +12,7 @@ As a bonus for using Git, we get source control (notably the ability to see old 
 
 {TOC}
 
-<img src="https://profile-counter.glitch.me/gitfood_toc/count.svg" height="20" align="right" />
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>
+

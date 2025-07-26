@@ -45,6 +45,8 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/gitfood_kimchipancakes/count.svg" width="20%" align="right" />
-
 <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/korean-blue.svg" /> <img src="https://img.shields.io/badge/lunch-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>

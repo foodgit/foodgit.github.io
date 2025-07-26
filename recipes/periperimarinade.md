@@ -20,6 +20,8 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/gitfood_periperimarinade/count.svg" width="20%" align="right" />
-
 <img src="https://img.shields.io/badge/portuguese-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> 
+
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>
