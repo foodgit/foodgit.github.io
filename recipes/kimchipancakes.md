@@ -49,4 +49,4 @@
 
 <p>This page has been viewed <span id="counter">...</span> times.</p>
 
-<script src="/gitfood/assets/js/pageviews.js"></script>
+<script src="../assets/js/pageviews.js"></script>

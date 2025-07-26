@@ -54,9 +54,8 @@ for recipe_stub in list(all_recipe_stubs):
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
         f.write('\n\n'+taglinks)
         #pageviews
-        # f.write('\n\n<img src="https://profile-counter.glitch.me/gitfood_'+recipe_stub.split("/")[-2]+'/count.svg" width="20%" align="right" />')
         f.write('\n\n<p>This page has been viewed <span id="counter">...</span> times.</p>')
-        f.write('\n\n<script src="/gitfood/assets/js/pageviews.js"></script>')
+        f.write('\n\n<script src="../assets/js/pageviews.js"></script>')
 
     try:
         identical=filecmp.cmp(temp_file_name,recipe_file_name)
