@@ -30,4 +30,4 @@ Place into a large bowl:
 
 <p>This page has been viewed <span id="counter">...</span> times.</p>
 
-<script src="/assets/js/pageviews.js"></script>
+<script src="/gitfood/assets/js/pageviews.js"></script>

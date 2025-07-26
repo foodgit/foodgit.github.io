@@ -96,4 +96,4 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <p>This page has been viewed <span id="counter">...</span> times.</p>
 
-<script src="/assets/js/pageviews.js"></script>
+<script src="/gitfood/assets/js/pageviews.js"></script>
