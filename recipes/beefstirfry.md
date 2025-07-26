@@ -34,6 +34,8 @@
 
 <img src="../images/logo_sm.png" width="40%" />
 
-<img src="https://profile-counter.glitch.me/gitfood_beefstirfry/count.svg" width="20%" align="right" />
-
 <img src="https://img.shields.io/badge/asian-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/lunch-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/versatile-blue.svg" /> 
+
+<p>This page has been viewed <span id="counter">...</span> times.</p>
+
+<script src="/assets/js/pageviews.js"></script>

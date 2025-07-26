@@ -1,4 +1,5 @@
-# linux only for now
+# linux only for now 
+# requires poppler-utils, ghostscript, pandoc, exiftool
 import os, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 
