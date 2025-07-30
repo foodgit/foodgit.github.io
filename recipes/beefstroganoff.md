@@ -32,4 +32,5 @@
 
 <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/russian-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> 
 
-<script data-goatcounter="https://fexofenadine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://fexofenadine.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
