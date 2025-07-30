@@ -6,7 +6,7 @@ import time
 import datetime
 import os
 from collections import defaultdict
-from loguru import logger
+#from loguru import logger
 
 random.seed(0)
 
