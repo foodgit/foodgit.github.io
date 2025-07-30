@@ -29,4 +29,4 @@ Place into a large bowl:
 <img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> 
 
 <script data-goatcounter="https://fexofenadine.goatcounter.com/count"
-async src="//gc.zgo.at/count.js"></script>
+	async src="//gc.zgo.at/count.js"></script>

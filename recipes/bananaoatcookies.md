@@ -36,4 +36,4 @@
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/coffee-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/great-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/simple-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 <script data-goatcounter="https://fexofenadine.goatcounter.com/count"
-async src="//gc.zgo.at/count.js"></script>
+	async src="//gc.zgo.at/count.js"></script>
