@@ -26,7 +26,7 @@ friendly_title=recipe_title.strip().replace("&","").replace("+","").replace(" ",
 
 # print("Friendly title: "+friendly_title)
 
-output_file = Path("submissions/"+friendly_title+"/images/.placeholder")
+output_file = Path("submissions/"+friendly_title+"/images/.gitkeep")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text("placeholder text")
 
