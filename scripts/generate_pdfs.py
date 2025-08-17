@@ -56,11 +56,15 @@ print('version '+version_number+' detected')
 with open('./LICENSE') as f:
     license_text = f.read().strip('\n').strip()
 
-# print("installing pandoc")
-# os.system('wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb -P ~ && sudo dpkg -i ~/pandoc-3.1.8-1-amd64.deb && rm ~/pandoc-3.1.8-1-amd64.deb')
+#print("installing pandoc") # better use apt for new version
+#os.system('wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb -P ~ && sudo dpkg -i ~/pandoc-3.1.8-1-amd64.deb && rm ~/pandoc-3.1.8-1-amd64.deb && rm ~/pandoc-3.1.8-1-amd64.deb')
 
-# print("installing font")
-# os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
+print("installing libssl1.1 & wkhtmltopdf") # old packages :(
+#os.system('wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb && sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb && rm ./libssl1.1_1.1.1f-1ubuntu2_amd64.deb')
+#os.system('wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb && sudo apt install -f ./wkhtmltox_0.12.6-1.focal_amd64.deb && rm ./wkhtmltox_0.12.6-1.focal_amd64.deb')
+
+print("installing font")
+#os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
 
 print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
