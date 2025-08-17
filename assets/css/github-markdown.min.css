@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'gitFood Regular';
-  src: url('../../fonts/gitfood-regular.otf') format('opentype');
+  src: url('../fonts/gitfood-regular.otf') format('opentype');
 }
 
 @media (prefers-color-scheme: dark) {
