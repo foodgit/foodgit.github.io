@@ -100,7 +100,7 @@
     margin: 0;
     color: var(--color-fg-default);
     background-color: var(--color-canvas-default);
-    font-family: "Helvetica Rounded", "Helvetica Rounded LT Std" Helvetica, "Segoe UI", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: "Helvetica Rounded", "Helvetica Rounded LT Std", Helvetica, "Segoe UI", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
