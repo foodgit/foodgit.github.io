@@ -7,3 +7,5 @@ scripts/build_pdfs.sh
 scripts/generatehex.py
 **.old
 **.bak
+*.temp.*
+*.deb*
