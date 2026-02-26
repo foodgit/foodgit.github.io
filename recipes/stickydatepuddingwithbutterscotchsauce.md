@@ -5,19 +5,19 @@
 ### Pudding
 
 - 340g dates, seeded and chopped
-- 1½ cups (375ml) boiling water
-- 1½ tsp sodium bicarbonate (bicarbonate of soda)
+- 1 ½ cups (375ml) boiling water
+- 1 ½ tsp sodium bicarbonate (bicarbonate of soda)
 - 150g unsalted butter, chopped
 - 1 cup (175g) brown sugar
 - 3 eggs
-- 1½ cups (225g) self-raising flour
+- 1 ½ cups (225g) self-raising flour
 - [optional] 1 tbsp instant coffee (coffee version)
 - [optional] ½ tsp salt flakes (salted caramel version)
 
 ### Butterscotch Sauce
 
 - 80g unsalted butter, chopped
-- 1½ cups (265g) brown sugar
+- 1 ½ cups (265g) brown sugar
 - 1 cup (250ml) single (pouring) cream
 
 ## Method

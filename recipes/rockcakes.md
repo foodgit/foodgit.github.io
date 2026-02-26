@@ -2,7 +2,7 @@
 
 ## Ingredients
 
-- 1½ cups self raising flour
+- 1 ½ cups self raising flour
 - 1 teaspoon baking powder
 - 115g butter
 - 115g sultanas
@@ -14,9 +14,9 @@
 ## Method
 
 > 1. Sift flour & baking powder into a large bowl. Rub in butter with fingers until it resembles bread crumbs. Stir in fruit & peel, sugar.
-> 2. Beat eggs & milk & mix into dry ingredients adding more milk if mixture is too dry.
-> 3. Place tablespoons of mixture onto a greased or papered tray, leaving spreading space. Sprinkle with sugar on top.
-> 4. Bake 15-20 mins until golden at 200°C. Allow to cool, then hook in!
+> 1. Beat eggs & milk & mix into dry ingredients adding more milk if mixture is too dry.
+> 1. Place tablespoons of mixture onto a greased or papered tray, leaving spreading space. Sprinkle with sugar on top.
+> 1. Bake 15-20 mins until golden at 200°C. Allow to cool, then hook in!
 
 ## Tips
 

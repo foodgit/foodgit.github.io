@@ -19,10 +19,10 @@
 ## Method
 
 > 1. Preheat oven to 180°C (fan forced). Line a baking tray with baking paper. Mash the bananas in a bowl with a fork.
-> 2. Add the oats, chopped nuts and any optional addins.
-> 3. Mix together well with a fork or wooden spoon.
-> 4. Using a tablespoon, take some of the mixture and roll it into a ball. Place it onto the lined baking tray, and flatten with your hand to make a cookie.
-> 5. Place the baking tray in the oven and bake for 10 minutes. Flip cookies and bake 2-3 more minutes, to solidify the undersides of the cookies. Transfer cookies onto a wooden board to cool.
+> 1. Add the oats, chopped nuts and any optional addins.
+> 1. Mix together well with a fork or wooden spoon.
+> 1. Using a tablespoon, take some of the mixture and roll it into a ball. Place it onto the lined baking tray, and flatten with your hand to make a cookie.
+> 1. Place the baking tray in the oven and bake for 10 minutes. Flip cookies and bake 2-3 more minutes, to solidify the undersides of the cookies. Transfer cookies onto a wooden board to cool.
 
 ## Tips
 

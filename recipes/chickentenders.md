@@ -27,12 +27,12 @@
 ## Method
 
 > 1. Preheat airfryer to 180°C
-> 2. Take your sliced chicken strips and place them all on a chopping board. Use a meat tenderiser to soften and increase their surface area (to pick up more flavouring)
-> 3. Lightly beat together ranch dressing with eggs in a large bowl
-> 4. In a second large bowl, stir together the dry ingredients and put it next to your batter bowl.
-> 5. One at a time, take a chicken strip, dip it a couple of times in the egg batter, and hold it above the bowl for a couple of seconds, until it stops dripping. Lay it in the crumb bowl and lightly turn it until it is completely coated in crumbs and seasoning. Lay it out on a plate, not touching the other strips.
-> 6. Repeat step 5 for the remaining strips.
-> 7. Place your battered chicken into air fryer (in batches if you dont have space), keeping them as long and straight as you can manage. Bake for 12 minutes, turning once or twice
+> 1. Take your sliced chicken strips and place them all on a chopping board. Use a meat tenderiser to soften and increase their surface area (to pick up more flavouring)
+> 1. Lightly beat together ranch dressing with eggs in a large bowl
+> 1. In a second large bowl, stir together the dry ingredients and put it next to your batter bowl.
+> 1. One at a time, take a chicken strip, dip it a couple of times in the egg batter, and hold it above the bowl for a couple of seconds, until it stops dripping. Lay it in the crumb bowl and lightly turn it until it is completely coated in crumbs and seasoning. Lay it out on a plate, not touching the other strips.
+> 1. Repeat step 5 for the remaining strips.
+> 1. Place your battered chicken into air fryer (in batches if you dont have space), keeping them as long and straight as you can manage. Bake for 12 minutes, turning once or twice
 
 ## Tips
 

@@ -15,13 +15,13 @@
 ## Method
 
 > 1. Cook pasta until al dente.
-> 2. While pasta is cooking, heat olive oil in a large frying pan to medium heat.
-> 3. Add chorizo and fry a few minutes on each side until brown.
-> 4. Stir in garlic and fry for one minute, pour in tomatoes and stir again.
-> 5. Once tomatoes are bubbling, add the spinach and incorporate into sauce.
-> 6. When spinach has wilted, add the cream cheese and stir through sauce.
-> 7. Add drained pasta to the pan and make sure it is all covered in sauce.
-> 8. Serve immediately with parmesan/tasty cheese on top and season to taste.
+> 1. While pasta is cooking, heat olive oil in a large frying pan to medium heat.
+> 1. Add chorizo and fry a few minutes on each side until brown.
+> 1. Stir in garlic and fry for one minute, pour in tomatoes and stir again.
+> 1. Once tomatoes are bubbling, add the spinach and incorporate into sauce.
+> 1. When spinach has wilted, add the cream cheese and stir through sauce.
+> 1. Add drained pasta to the pan and make sure it is all covered in sauce.
+> 1. Serve immediately with parmesan/tasty cheese on top and season to taste.
 
 
 <img src="../images/logo_sm.png" width="40%" />

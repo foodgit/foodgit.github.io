@@ -6,7 +6,7 @@
 
 - 1 loaf of sliced sourdough, slightly older will hold together best. Other breads may work well too.
 - 6 eggs
-- 1½ cups milk
+- 1 ½ cups milk
 - 2 tsp vanilla extract
 - ½ tsp cinnamon
 - ½ tsp salt
@@ -20,11 +20,11 @@
 ## Method
 
 > 1. Whip the cream, cheese and sugar for maybe 5-10 mins (probably longer with a hand-whisk) until it gets really thick and floofy. Refrigerate until serving.
-> 2. Combine batter ingredients and whisk well in a shallow, wide bowl. The salt component supposedly helps it absorb into the bread(?)
-> 3. Preheat pan with butter, medium-high to high heat. If the heat is too low, the egg wont completely set, and too high and the outside will blacken, so try a single piece of toast or two before cooking a panful
-> 4. Soak a few pieces of bread in the batter for 20-30 seconds and transfer direct from bowl to hot frying pan
-> 5. Cook for 4-5 minutes, flipping a few times, until it looks a bit like a cooked, browned pancake.
-> 6. Slap it on a plate, with the cream and maple syrup or whatever toppings you like and enjoy!
+> 1. Combine batter ingredients and whisk well in a shallow, wide bowl. The salt component supposedly helps it absorb into the bread(?)
+> 1. Preheat pan with butter, medium-high to high heat. If the heat is too low, the egg wont completely set, and too high and the outside will blacken, so try a single piece of toast or two before cooking a panful
+> 1. Soak a few pieces of bread in the batter for 20-30 seconds and transfer direct from bowl to hot frying pan
+> 1. Cook for 4-5 minutes, flipping a few times, until it looks a bit like a cooked, browned pancake.
+> 1. Slap it on a plate, with the cream and maple syrup or whatever toppings you like and enjoy!
 
 ## Variations
 
