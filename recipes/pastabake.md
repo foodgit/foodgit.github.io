@@ -25,4 +25,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) 
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) 

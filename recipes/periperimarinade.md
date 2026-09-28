@@ -23,4 +23,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![portuguese](https://img.shields.io/badge/portuguese-blue.svg)](../tags/portuguese.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) 
+[![portuguese](https://img.shields.io/badge/portuguese-blue.svg)](../tags/portuguese.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) 

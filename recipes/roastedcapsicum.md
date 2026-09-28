@@ -24,4 +24,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![grilled](https://img.shields.io/badge/grilled-blue.svg)](../tags/grilled.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 
+[![grilled](https://img.shields.io/badge/grilled-blue.svg)](../tags/grilled.html) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 

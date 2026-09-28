@@ -28,4 +28,4 @@ Place into a large bowl:
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) 
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) 

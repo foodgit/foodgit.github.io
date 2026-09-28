@@ -20,4 +20,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 
+[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 

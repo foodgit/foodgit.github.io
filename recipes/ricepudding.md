@@ -23,4 +23,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.md) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](../tags/rice_cooker.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 
+[![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](../tags/rice_cooker.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 

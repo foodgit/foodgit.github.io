@@ -28,4 +28,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](../tags/chocolate.md) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](../tags/coffee.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.md) 
+[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](../tags/chocolate.html) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](../tags/coffee.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.html) 

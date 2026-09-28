@@ -32,4 +32,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 

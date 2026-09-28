@@ -33,4 +33,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![russian](https://img.shields.io/badge/russian-blue.svg)](../tags/russian.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) 
+[![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![russian](https://img.shields.io/badge/russian-blue.svg)](../tags/russian.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) 

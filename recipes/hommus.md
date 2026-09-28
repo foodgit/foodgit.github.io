@@ -30,4 +30,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.md) [![protein](https://img.shields.io/badge/protein-blue.svg)](../tags/protein.md) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 
+[![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![protein](https://img.shields.io/badge/protein-blue.svg)](../tags/protein.html) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
