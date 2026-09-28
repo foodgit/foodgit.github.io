@@ -1,5 +1,7 @@
 # Chicken Tenders
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 <img src="chickentenders/images/main.jpg" alt="Chicken Tenders" width="55%" align="right" />
 
 ## Ingredients
@@ -41,10 +43,8 @@
 > - Discard the leftover seasoning as it will be a health hazard to eat.
 > - Leftover batter can be cooked in the air fryer (around 7-8 minutes) in muffin pans for tasty mini omlettes.
 
+**Serves:** 3-4
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/airfryer-blue.svg" alt="airfryer" /> <img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/battered-blue.svg" alt="battered" /> <img src="https://img.shields.io/badge/chicken-blue.svg" alt="chicken" /> <img src="https://img.shields.io/badge/crumbed-blue.svg" alt="crumbed" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/mine-blue.svg" alt="mine" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![airfryer](https://img.shields.io/badge/airfryer-blue.svg)](../tags/airfryer.md) [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![battered](https://img.shields.io/badge/battered-blue.svg)](../tags/battered.md) [![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.md) [![crumbed](https://img.shields.io/badge/crumbed-blue.svg)](../tags/crumbed.md) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.md) [![mine](https://img.shields.io/badge/mine-blue.svg)](../tags/mine.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) 

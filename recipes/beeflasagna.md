@@ -1,5 +1,7 @@
 # Beef Lasagna
 
+*Created: 6th of October 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 1 tbsp olive oil
@@ -28,10 +30,8 @@
 > 1. Bake in the oven for 30-40 minutes or until cooked through.
 > 1. Leave to stand for 5 minutes before serving.
 
+**Serves:** 4-6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/italian-blue.svg" alt="italian" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
-
-*Created: 6th of October 2023*
-
-*Last Updated: 26th of February 2026*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![italian](https://img.shields.io/badge/italian-blue.svg)](../tags/italian.md) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) 

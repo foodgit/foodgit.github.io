@@ -1,5 +1,7 @@
 # Caramel Slice
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 <img src="caramelslice/images/main.jpg" alt="Caramel Slice" width="55%" align="right" />
 
 ## Ingredients
@@ -39,10 +41,8 @@
 > - When stirring the caramel, scrape the sides and bottom of the pan so the mixture doesn’t stick.
 > - Try making the base from your favourite biscuits. Just take the equivalent weight of biscuits (around 280g), blend them coarsely in a blender, and combine with butter as per step 1.  Biscoff & Digestives are some examples that work well!
 
+**Serves:** 10-12
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" alt="chocolate" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" alt="long_prep_time" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 29th of September 2026*
+[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](../tags/chocolate.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![long_prep_time](https://img.shields.io/badge/long_prep_time-blue.svg)](../tags/long_prep_time.md) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

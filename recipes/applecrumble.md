@@ -1,5 +1,7 @@
 # Apple Crumble
 
+*Created: 6th of October 2023 &middot; Last updated: 29th of September 2026*
+
 <img src="applecrumble/images/main.jpg" alt="Apple Crumble" width="55%" align="right" />
 
 ## Ingredients
@@ -33,10 +35,8 @@
 > - Soften the butter for a few seconds in the microwave if it's too solid to squish between fingertips reasonably easily.  It should remain solid and not at all runny for the crumble.
 > - Using brown sugar will give the dish a slightly rich, carameled taste and colour, but caster sugar can be easily swapped in for a lovely variation!
 
+**Serves:** 3-4
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 6th of October 2023*
-
-*Last Updated: 23rd of December 2023*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

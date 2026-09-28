@@ -1,5 +1,7 @@
 # Rock Cakes
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 1 ½ cups self raising flour
@@ -22,10 +24,8 @@
 
 > - A very basic recipe & I find that eating them on the day of making is best cause they stale quickly, but if any are left put into an airtight container.
 
+**Serves:** 6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

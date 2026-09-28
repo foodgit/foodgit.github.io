@@ -1,5 +1,8 @@
-# British Recipes 
+# British Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Sticky Date Pudding with Butterscotch Sauce](../recipes/stickydatepuddingwithbutterscotchsauce.md)|<a href="../tags/amazing.html"><img src="https://img.shields.io/badge/tag-amazing-3faa68" alt="amazing" /></a> <a href="../tags/baked.html"><img src="https://img.shields.io/badge/tag-baked-c5d714" alt="baked" /></a> <a href="../tags/british.html"><img src="https://img.shields.io/badge/tag-british-c6d429" alt="british" /></a> <a href="../tags/coffee.html"><img src="https://img.shields.io/badge/tag-coffee-e2851f" alt="coffee" /></a> <a href="../tags/dairy.html"><img src="https://img.shields.io/badge/tag-dairy-4b9e32" alt="dairy" /></a> <a href="../tags/dessert.html"><img src="https://img.shields.io/badge/tag-dessert-84f8cf" alt="dessert" /></a> <a href="../tags/stovetop.html"><img src="https://img.shields.io/badge/tag-stovetop-9bf4b7" alt="stovetop" /></a> <a href="../tags/vegetarian.html"><img src="https://img.shields.io/badge/tag-vegetarian-473080" alt="vegetarian" /></a>|2023-12-10|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/stickydatepuddingwithbutterscotchsauce.html">Sticky Date Pudding with Butterscotch Sauce</a></td><td class="tags"><a class="tag" href="../tags/amazing.html" style="background:#3faa68;color:#111">amazing</a> <a class="tag" href="../tags/baked.html" style="background:#c5d714;color:#111">baked</a> <a class="tag" href="../tags/british.html" style="background:#c6d429;color:#111">british</a> <a class="tag" href="../tags/coffee.html" style="background:#e2851f;color:#111">coffee</a> <a class="tag" href="../tags/dairy.html" style="background:#4b9e32;color:#fff">dairy</a> <a class="tag" href="../tags/dessert.html" style="background:#84f8cf;color:#111">dessert</a> <a class="tag" href="../tags/stovetop.html" style="background:#9bf4b7;color:#111">stovetop</a> <a class="tag" href="../tags/vegetarian.html" style="background:#473080;color:#fff">vegetarian</a></td><td class="date">2023-12-10</td><td class="date">2026-09-28</td></tr>
+</tbody>
+</table>

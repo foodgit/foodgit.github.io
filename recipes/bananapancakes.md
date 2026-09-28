@@ -1,5 +1,7 @@
 # Banana Pancakes
 
+*Created: 2nd of January 2024 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 1 ripe banana
@@ -16,10 +18,8 @@
 ## Tips
 - Try mixing in a teaspoon of cacao when adding the flour for a chocolatey variation
 
+**Serves:** 1
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/breakfast-blue.svg" alt="breakfast" /> <img src="https://img.shields.io/badge/fast-blue.svg" alt="fast" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/simple-blue.svg" alt="simple" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 2nd of January 2024*
-
-*Last Updated: 11th of January 2024*
+[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.md) [![fast](https://img.shields.io/badge/fast-blue.svg)](../tags/fast.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![simple](https://img.shields.io/badge/simple-blue.svg)](../tags/simple.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

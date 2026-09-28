@@ -1,5 +1,7 @@
 # Cheesy Potato Pockets
 
+*Created: 22nd of December 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 4 large potatoes
@@ -19,10 +21,8 @@
 > 1. Fill the potato skins with the cheesy potato mixture and sprinkle some cheese on top.
 > 1. Bake or grill for a further 5-10 minutes, until cheese has melted and turned golden brown.
 
+**Serves:** 4
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/aussie-blue.svg" alt="aussie" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" alt="cheesey" /> <img src="https://img.shields.io/badge/potato-blue.svg" alt="potato" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 22nd of December 2023*
-
-*Last Updated: 16th of January 2024*
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.md) [![potato](https://img.shields.io/badge/potato-blue.svg)](../tags/potato.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

@@ -1,5 +1,7 @@
 # French Toast with Whipped Cream Cheese
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 ### Bread batter
@@ -30,10 +32,8 @@
 
 > - Many other toppings, including icing sugar, ice cream, chocolate syrup, berries, agave nectar. Anything that's good on a pancake will probably be great here.
 
+**Serves:** 6-8
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/breakfast-blue.svg" alt="breakfast" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" alt="large_quantity" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/mine-blue.svg" alt="mine" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![large_quantity](https://img.shields.io/badge/large_quantity-blue.svg)](../tags/large_quantity.md) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.md) [![mine](https://img.shields.io/badge/mine-blue.svg)](../tags/mine.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

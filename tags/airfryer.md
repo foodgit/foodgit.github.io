@@ -1,5 +1,8 @@
-# Airfryer Recipes 
+# Airfryer Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Chicken Tenders](../recipes/chickentenders.md)|<a href="../tags/airfryer.html"><img src="https://img.shields.io/badge/tag-airfryer-5e3ff5" alt="airfryer" /></a> <a href="../tags/amazing.html"><img src="https://img.shields.io/badge/tag-amazing-3faa68" alt="amazing" /></a> <a href="../tags/battered.html"><img src="https://img.shields.io/badge/tag-battered-6b1fb" alt="battered" /></a> <a href="../tags/chicken.html"><img src="https://img.shields.io/badge/tag-chicken-d93385" alt="chicken" /></a> <a href="../tags/crumbed.html"><img src="https://img.shields.io/badge/tag-crumbed-237124" alt="crumbed" /></a> <a href="../tags/messy.html"><img src="https://img.shields.io/badge/tag-messy-8ce6fc" alt="messy" /></a> <a href="../tags/mine.html"><img src="https://img.shields.io/badge/tag-mine-9ab3df" alt="mine" /></a> <a href="../tags/sides.html"><img src="https://img.shields.io/badge/tag-sides-12b63" alt="sides" /></a>|2023-06-25|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/chickentenders.html">Chicken Tenders</a></td><td class="tags"><a class="tag" href="../tags/airfryer.html" style="background:#5e3ff5;color:#fff">airfryer</a> <a class="tag" href="../tags/amazing.html" style="background:#3faa68;color:#111">amazing</a> <a class="tag" href="../tags/battered.html" style="background:#06b1fb;color:#111">battered</a> <a class="tag" href="../tags/chicken.html" style="background:#d93385;color:#fff">chicken</a> <a class="tag" href="../tags/crumbed.html" style="background:#237124;color:#fff">crumbed</a> <a class="tag" href="../tags/messy.html" style="background:#8ce6fc;color:#111">messy</a> <a class="tag" href="../tags/mine.html" style="background:#9ab3df;color:#111">mine</a> <a class="tag" href="../tags/sides.html" style="background:#012b63;color:#fff">sides</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

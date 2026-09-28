@@ -1,5 +1,8 @@
-# Protein Recipes 
+# Protein Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Hommus](../recipes/hommus.md)|<a href="../tags/healthy.html"><img src="https://img.shields.io/badge/tag-healthy-7ca620" alt="healthy" /></a> <a href="../tags/messy.html"><img src="https://img.shields.io/badge/tag-messy-8ce6fc" alt="messy" /></a> <a href="../tags/protein.html"><img src="https://img.shields.io/badge/tag-protein-b6c680" alt="protein" /></a> <a href="../tags/tricky.html"><img src="https://img.shields.io/badge/tag-tricky-b62aa6" alt="tricky" /></a> <a href="../tags/vegan.html"><img src="https://img.shields.io/badge/tag-vegan-6f4790" alt="vegan" /></a> <a href="../tags/vegetarian.html"><img src="https://img.shields.io/badge/tag-vegetarian-473080" alt="vegetarian" /></a>|2023-06-25|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/hommus.html">Hommus</a></td><td class="tags"><a class="tag" href="../tags/healthy.html" style="background:#7ca620;color:#111">healthy</a> <a class="tag" href="../tags/messy.html" style="background:#8ce6fc;color:#111">messy</a> <a class="tag" href="../tags/protein.html" style="background:#b6c680;color:#111">protein</a> <a class="tag" href="../tags/tricky.html" style="background:#b62aa6;color:#fff">tricky</a> <a class="tag" href="../tags/vegan.html" style="background:#6f4790;color:#fff">vegan</a> <a class="tag" href="../tags/vegetarian.html" style="background:#473080;color:#fff">vegetarian</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

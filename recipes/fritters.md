@@ -1,5 +1,7 @@
 # Fritters
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 ### Base
@@ -25,10 +27,8 @@
 > 1. Turn them when bubbles start to form & pop on top - they should be golden brown. 
 > 1. Once again tomato sauce is great on top!!! The butter gives a great flavour & the olive oil stops it from burning - you might have to add more of these to the pan after each batch.
 
+**Serves:** 4-6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/chicken-blue.svg" alt="chicken" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/ham-blue.svg" alt="ham" /> <img src="https://img.shields.io/badge/lamb-blue.svg" alt="lamb" /> <img src="https://img.shields.io/badge/leftovers-blue.svg" alt="leftovers" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" alt="vegetables" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![ham](https://img.shields.io/badge/ham-blue.svg)](../tags/ham.md) [![lamb](https://img.shields.io/badge/lamb-blue.svg)](../tags/lamb.md) [![leftovers](https://img.shields.io/badge/leftovers-blue.svg)](../tags/leftovers.md) [![vegetables](https://img.shields.io/badge/vegetables-blue.svg)](../tags/vegetables.md) 

@@ -1,5 +1,7 @@
 # [Template] Recipe Title
 
+*Created: 25th of June 2023 &middot; Last updated: 28th of September 2026*
+
 <img src="template/images/main.jpg" alt="[Template] Recipe Title" width="55%" align="right" />
 
 Put a short description of the recipe here.  Maybe add a photo or drawing.
@@ -90,8 +92,4 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/american-blue.svg" alt="american" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/fast_food-blue.svg" alt="fast_food" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![american](https://img.shields.io/badge/american-blue.svg)](../tags/american.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![fast_food](https://img.shields.io/badge/fast_food-blue.svg)](../tags/fast_food.md) 

@@ -1,5 +1,7 @@
 # Banana Oat Cookies
 
+*Created: 19th of October 2023 &middot; Last updated: 29th of September 2026*
+
 <img src="bananaoatcookies/images/main.jpg" alt="Banana Oat Cookies" width="55%" align="right" />
 
 ## Ingredients
@@ -31,10 +33,8 @@
 > - Swap out the rolled oats for a toasted muesli (with or without fruits and nuts included) for a slightly fancier spin on the recipe.
 > - Drizzle melted chocolate on top, or dip cookies into a bowl of melted dark chocolate after cooking for a chocolatey version.
 
+**Serves:** 4-6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" alt="chocolate" /> <img src="https://img.shields.io/badge/coffee-blue.svg" alt="coffee" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/great-blue.svg" alt="great" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/simple-blue.svg" alt="simple" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 19th of October 2023*
-
-*Last Updated: 28th of September 2026*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](../tags/chocolate.md) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](../tags/coffee.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![great](https://img.shields.io/badge/great-blue.svg)](../tags/great.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![simple](https://img.shields.io/badge/simple-blue.svg)](../tags/simple.md) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

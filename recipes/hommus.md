@@ -1,5 +1,7 @@
 # Hommus
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 425g can (or 1½ cups cooked) chickpeas, rinsed and drained
@@ -24,10 +26,8 @@
 > 1. Taste, and adjust as necessary. Add another ¼ teaspoon salt for more flavor or extra lemon juice for more zing.
 > 1. Scrape the hommus into a serving bowl or platter, and use a spoon to create nice swooshes on top. Top with garnishes of your choice, and serve.
 
+**Serves:** 4-6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/protein-blue.svg" alt="protein" /> <img src="https://img.shields.io/badge/tricky-blue.svg" alt="tricky" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.md) [![protein](https://img.shields.io/badge/protein-blue.svg)](../tags/protein.md) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

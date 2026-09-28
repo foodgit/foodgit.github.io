@@ -1,5 +1,7 @@
 # Beef Stir Fry
 
+*Created: 29th of November 2023 &middot; Last updated: 28th of September 2026*
+
 ## Ingredients
 
 - 1 tbsp olive oil
@@ -34,8 +36,4 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/asian-blue.svg" alt="asian" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/versatile-blue.svg" alt="versatile" /> 
-
-*Created: 29th of November 2023*
-
-*Last Updated: 28th of September 2026*
+[![asian](https://img.shields.io/badge/asian-blue.svg)](../tags/asian.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.md) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) [![versatile](https://img.shields.io/badge/versatile-blue.svg)](../tags/versatile.md) 

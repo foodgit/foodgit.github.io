@@ -1,5 +1,8 @@
-# Thai Recipes 
+# Thai Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Coconut Saffron Rice](../recipes/coconutsaffronrice.md)|<a href="../tags/expensive.html"><img src="https://img.shields.io/badge/tag-expensive-5c1fef" alt="expensive" /></a> <a href="../tags/rice.html"><img src="https://img.shields.io/badge/tag-rice-25a9f1" alt="rice" /></a> <a href="../tags/sides.html"><img src="https://img.shields.io/badge/tag-sides-12b63" alt="sides" /></a> <a href="../tags/stovetop.html"><img src="https://img.shields.io/badge/tag-stovetop-9bf4b7" alt="stovetop" /></a> <a href="../tags/thai.html"><img src="https://img.shields.io/badge/tag-thai-1433c8" alt="thai" /></a> <a href="../tags/vegan.html"><img src="https://img.shields.io/badge/tag-vegan-6f4790" alt="vegan" /></a> <a href="../tags/vegetarian.html"><img src="https://img.shields.io/badge/tag-vegetarian-473080" alt="vegetarian" /></a>|2023-06-25|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/coconutsaffronrice.html">Coconut Saffron Rice</a></td><td class="tags"><a class="tag" href="../tags/expensive.html" style="background:#5c1fef;color:#fff">expensive</a> <a class="tag" href="../tags/rice.html" style="background:#25a9f1;color:#111">rice</a> <a class="tag" href="../tags/sides.html" style="background:#012b63;color:#fff">sides</a> <a class="tag" href="../tags/stovetop.html" style="background:#9bf4b7;color:#111">stovetop</a> <a class="tag" href="../tags/thai.html" style="background:#1433c8;color:#fff">thai</a> <a class="tag" href="../tags/vegan.html" style="background:#6f4790;color:#fff">vegan</a> <a class="tag" href="../tags/vegetarian.html" style="background:#473080;color:#fff">vegetarian</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

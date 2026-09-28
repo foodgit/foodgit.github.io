@@ -1,5 +1,8 @@
-# Portuguese Recipes 
+# Portuguese Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Peri Peri Marinade](../recipes/periperimarinade.md)|<a href="../tags/portuguese.html"><img src="https://img.shields.io/badge/tag-portuguese-28ab17" alt="portuguese" /></a> <a href="../tags/vegan.html"><img src="https://img.shields.io/badge/tag-vegan-6f4790" alt="vegan" /></a>|2023-11-15|2023-11-24|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/periperimarinade.html">Peri Peri Marinade</a></td><td class="tags"><a class="tag" href="../tags/portuguese.html" style="background:#28ab17;color:#fff">portuguese</a> <a class="tag" href="../tags/vegan.html" style="background:#6f4790;color:#fff">vegan</a></td><td class="date">2023-11-15</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

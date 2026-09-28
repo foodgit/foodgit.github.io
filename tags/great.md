@@ -1,5 +1,8 @@
-# Great Recipes 
+# Great Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Banana Oat Cookies](../recipes/bananaoatcookies.md)|<a href="../tags/baked.html"><img src="https://img.shields.io/badge/tag-baked-c5d714" alt="baked" /></a> <a href="../tags/chocolate.html"><img src="https://img.shields.io/badge/tag-chocolate-a168f4" alt="chocolate" /></a> <a href="../tags/coffee.html"><img src="https://img.shields.io/badge/tag-coffee-e2851f" alt="coffee" /></a> <a href="../tags/easy.html"><img src="https://img.shields.io/badge/tag-easy-72fcc" alt="easy" /></a> <a href="../tags/great.html"><img src="https://img.shields.io/badge/tag-great-0fcaa" alt="great" /></a> <a href="../tags/healthy.html"><img src="https://img.shields.io/badge/tag-healthy-7ca620" alt="healthy" /></a> <a href="../tags/simple.html"><img src="https://img.shields.io/badge/tag-simple-61717a" alt="simple" /></a> <a href="../tags/snack.html"><img src="https://img.shields.io/badge/tag-snack-33b5de" alt="snack" /></a> <a href="../tags/vegan.html"><img src="https://img.shields.io/badge/tag-vegan-6f4790" alt="vegan" /></a> <a href="../tags/vegetarian.html"><img src="https://img.shields.io/badge/tag-vegetarian-473080" alt="vegetarian" /></a>|2023-10-19|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/bananaoatcookies.html">Banana Oat Cookies</a></td><td class="tags"><a class="tag" href="../tags/baked.html" style="background:#c5d714;color:#111">baked</a> <a class="tag" href="../tags/chocolate.html" style="background:#a168f4;color:#fff">chocolate</a> <a class="tag" href="../tags/coffee.html" style="background:#e2851f;color:#111">coffee</a> <a class="tag" href="../tags/easy.html" style="background:#072fcc;color:#fff">easy</a> <a class="tag" href="../tags/great.html" style="background:#00fcaa;color:#111">great</a> <a class="tag" href="../tags/healthy.html" style="background:#7ca620;color:#111">healthy</a> <a class="tag" href="../tags/simple.html" style="background:#61717a;color:#fff">simple</a> <a class="tag" href="../tags/snack.html" style="background:#33b5de;color:#111">snack</a> <a class="tag" href="../tags/vegan.html" style="background:#6f4790;color:#fff">vegan</a> <a class="tag" href="../tags/vegetarian.html" style="background:#473080;color:#fff">vegetarian</a></td><td class="date">2023-10-19</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

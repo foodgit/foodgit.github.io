@@ -1,5 +1,7 @@
 # Beef Stroganoff
 
+*Created: 6th of October 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 600g beef pieces
@@ -27,11 +29,8 @@
 > 1. Add beef back in (including plate juices). Simmer for 1 minute, the remove from stove immediately.
 > 1. Serve over rice or pasta.
 
+**Serves:** 4
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/russian-blue.svg" alt="russian" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
-
-*Created: 6th of October 2023*
-
-*Last Updated: 23rd of November 2023*
+[![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![russian](https://img.shields.io/badge/russian-blue.svg)](../tags/russian.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) 

@@ -1,5 +1,8 @@
-# Japanese Recipes 
+# Japanese Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Chicken Katsu Curry](../recipes/chickenkatsucurry.md)|<a href="../tags/amazing.html"><img src="https://img.shields.io/badge/tag-amazing-3faa68" alt="amazing" /></a> <a href="../tags/baked.html"><img src="https://img.shields.io/badge/tag-baked-c5d714" alt="baked" /></a> <a href="../tags/chicken.html"><img src="https://img.shields.io/badge/tag-chicken-d93385" alt="chicken" /></a> <a href="../tags/curry.html"><img src="https://img.shields.io/badge/tag-curry-c5d714" alt="curry" /></a> <a href="../tags/dinner.html"><img src="https://img.shields.io/badge/tag-dinner-945e60" alt="dinner" /></a> <a href="../tags/japanese.html"><img src="https://img.shields.io/badge/tag-japanese-c5d714" alt="japanese" /></a> <a href="../tags/rice.html"><img src="https://img.shields.io/badge/tag-rice-25a9f1" alt="rice" /></a> <a href="../tags/rice_cooker.html"><img src="https://img.shields.io/badge/tag-rice_cooker-f6b493" alt="rice_cooker" /></a> <a href="../tags/stovetop.html"><img src="https://img.shields.io/badge/tag-stovetop-9bf4b7" alt="stovetop" /></a>|2026-09-28|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/chickenkatsucurry.html">Chicken Katsu Curry</a></td><td class="tags"><a class="tag" href="../tags/amazing.html" style="background:#3faa68;color:#111">amazing</a> <a class="tag" href="../tags/baked.html" style="background:#c5d714;color:#111">baked</a> <a class="tag" href="../tags/chicken.html" style="background:#d93385;color:#fff">chicken</a> <a class="tag" href="../tags/curry.html" style="background:#c5d714;color:#111">curry</a> <a class="tag" href="../tags/dinner.html" style="background:#945e60;color:#fff">dinner</a> <a class="tag" href="../tags/japanese.html" style="background:#c5d714;color:#111">japanese</a> <a class="tag" href="../tags/rice.html" style="background:#25a9f1;color:#111">rice</a> <a class="tag" href="../tags/rice_cooker.html" style="background:#f6b493;color:#111">rice cooker</a> <a class="tag" href="../tags/stovetop.html" style="background:#9bf4b7;color:#111">stovetop</a></td><td class="date">2026-09-28</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

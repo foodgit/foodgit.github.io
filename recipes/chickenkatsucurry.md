@@ -1,5 +1,7 @@
 # Chicken Katsu Curry
 
+*Created: 28th of September 2026 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 440g crumbed pub chicken breast schnitzels
@@ -24,11 +26,8 @@
 > - Reducing the quantity of vegetables would still make a good (and arguably more authentic) dish. Removing the potato entirely could work well. 
 > - More garlic is always welcome in my house
 
+**Serves:** 2-3
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/chicken-blue.svg" alt="chicken" /> <img src="https://img.shields.io/badge/curry-blue.svg" alt="curry" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/japanese-blue.svg" alt="japanese" /> <img src="https://img.shields.io/badge/rice-blue.svg" alt="rice" /> <img src="https://img.shields.io/badge/rice_cooker-blue.svg" alt="rice_cooker" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
-
-*Created: 28th of September 2026*
-
-*Last Updated: 28th of September 2026*
+[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.md) [![curry](https://img.shields.io/badge/curry-blue.svg)](../tags/curry.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![japanese](https://img.shields.io/badge/japanese-blue.svg)](../tags/japanese.md) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.md) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](../tags/rice_cooker.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) 

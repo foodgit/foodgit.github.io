@@ -1,5 +1,8 @@
-# Savoury Recipes 
+# Savoury Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Potato Bake](../recipes/potatobake.md)|<a href="../tags/baked.html"><img src="https://img.shields.io/badge/tag-baked-c5d714" alt="baked" /></a> <a href="../tags/cheesey.html"><img src="https://img.shields.io/badge/tag-cheesey-603dc8" alt="cheesey" /></a> <a href="../tags/dairy.html"><img src="https://img.shields.io/badge/tag-dairy-4b9e32" alt="dairy" /></a> <a href="../tags/potato.html"><img src="https://img.shields.io/badge/tag-potato-2ebd3b" alt="potato" /></a> <a href="../tags/savoury.html"><img src="https://img.shields.io/badge/tag-savoury-8f457a" alt="savoury" /></a> <a href="../tags/sides.html"><img src="https://img.shields.io/badge/tag-sides-12b63" alt="sides" /></a> <a href="../tags/vegetarian.html"><img src="https://img.shields.io/badge/tag-vegetarian-473080" alt="vegetarian" /></a>|2023-06-25|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/potatobake.html">Potato Bake</a></td><td class="tags"><a class="tag" href="../tags/baked.html" style="background:#c5d714;color:#111">baked</a> <a class="tag" href="../tags/cheesey.html" style="background:#603dc8;color:#fff">cheesey</a> <a class="tag" href="../tags/dairy.html" style="background:#4b9e32;color:#fff">dairy</a> <a class="tag" href="../tags/potato.html" style="background:#2ebd3b;color:#111">potato</a> <a class="tag" href="../tags/savoury.html" style="background:#8f457a;color:#fff">savoury</a> <a class="tag" href="../tags/sides.html" style="background:#012b63;color:#fff">sides</a> <a class="tag" href="../tags/vegetarian.html" style="background:#473080;color:#fff">vegetarian</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

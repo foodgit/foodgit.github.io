@@ -1,5 +1,7 @@
 # Lamb Chop Casserole
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - Forequarter or chump chops
@@ -17,10 +19,8 @@
 > 1. Put browned chops into a baking dish. Mix all ingredients & add water, enough to blend & just come nearly to top of chops.
 > 1. Cover & slow cook - till cooked!!!
 
+**Serves:** 4
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/aussie-blue.svg" alt="aussie" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/battered-blue.svg" alt="battered" /> <img src="https://img.shields.io/badge/casserole-blue.svg" alt="casserole" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/lamb-blue.svg" alt="lamb" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![battered](https://img.shields.io/badge/battered-blue.svg)](../tags/battered.md) [![casserole](https://img.shields.io/badge/casserole-blue.svg)](../tags/casserole.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![lamb](https://img.shields.io/badge/lamb-blue.svg)](../tags/lamb.md) 

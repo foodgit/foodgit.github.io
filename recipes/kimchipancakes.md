@@ -1,5 +1,7 @@
 # Kimchijeon (Kimchi Pancakes)
 
+*Created: 15th of December 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 1 cup thinly sliced, fully-fermented kimchi
@@ -42,11 +44,8 @@
 > - Use a generous amount of oil.
 > - Increase the heat a little to crisp up the pancakes at the end of pan-frying.
 
+**Serves:** 2-3
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/korean-blue.svg" alt="korean" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 15th of December 2023*
-
-*Last Updated: 26th of February 2026*
+[![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![korean](https://img.shields.io/badge/korean-blue.svg)](../tags/korean.md) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

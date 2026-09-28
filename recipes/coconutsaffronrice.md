@@ -1,5 +1,7 @@
 # Coconut Saffron Rice
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - ¼ tsp saffron threads
@@ -24,10 +26,8 @@
 
 > - While hot, mix rice with finely chopped carrots, mint, and mango, then chill in the refrigerator for a great whole grain summer salad.
 
+**Serves:** 6-8
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/expensive-blue.svg" alt="expensive" /> <img src="https://img.shields.io/badge/rice-blue.svg" alt="rice" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/thai-blue.svg" alt="thai" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![expensive](https://img.shields.io/badge/expensive-blue.svg)](../tags/expensive.md) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) [![thai](https://img.shields.io/badge/thai-blue.svg)](../tags/thai.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

@@ -1,5 +1,7 @@
 # Pasta Bake
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 500g mince
@@ -19,10 +21,8 @@
 > 1. Mix all together & put into a greased casserole dish or tray & sprinkle with copious amounts of tasty cheese.
 > 1. Cook in moderately hot oven until cheese melts & turns a golden brown colour. Yum!
 
+**Serves:** 4-6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" alt="cheesey" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) 

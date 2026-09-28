@@ -1,5 +1,7 @@
 # Beef & Guinness Casserole
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 <img src="beefandguinnesscasserole/images/main.jpg" alt="Beef &amp; Guinness Casserole" width="55%" align="right" />
 
 ## Ingredients
@@ -53,10 +55,8 @@
 > - sloppy joes
 > - baked potatoes
 
+**Serves:** 6-8
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/casserole-blue.svg" alt="casserole" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/guinness-blue.svg" alt="guinness" /> <img src="https://img.shields.io/badge/irish-blue.svg" alt="irish" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" alt="large_quantity" /> <img src="https://img.shields.io/badge/long_cook_time-blue.svg" alt="long_cook_time" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" alt="long_prep_time" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/tricky-blue.svg" alt="tricky" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.md) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![casserole](https://img.shields.io/badge/casserole-blue.svg)](../tags/casserole.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![guinness](https://img.shields.io/badge/guinness-blue.svg)](../tags/guinness.md) [![irish](https://img.shields.io/badge/irish-blue.svg)](../tags/irish.md) [![large_quantity](https://img.shields.io/badge/large_quantity-blue.svg)](../tags/large_quantity.md) [![long_cook_time](https://img.shields.io/badge/long_cook_time-blue.svg)](../tags/long_cook_time.md) [![long_prep_time](https://img.shields.io/badge/long_prep_time-blue.svg)](../tags/long_prep_time.md) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.md) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.md) 

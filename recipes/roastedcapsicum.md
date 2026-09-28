@@ -1,5 +1,7 @@
 # Roasted Capsicum
 
+*Created: 17th of December 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - Capsicum
@@ -18,11 +20,8 @@
 > - If you’re not using them immediately, place your capsicums in a resealable jar and cover with olive oil.
 > - They’ll store in the fridge for two weeks, or you can freeze them for up to two months.
 
+**Serves:** 2-4
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/grilled-blue.svg" alt="grilled" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 17th of December 2023*
-
-*Last Updated: 17th of December 2023*
+[![grilled](https://img.shields.io/badge/grilled-blue.svg)](../tags/grilled.md) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.md) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

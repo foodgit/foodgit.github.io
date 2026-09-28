@@ -1,5 +1,8 @@
-# Leftovers Recipes 
+# Leftovers Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Fritters](../recipes/fritters.md)|<a href="../tags/chicken.html"><img src="https://img.shields.io/badge/tag-chicken-d93385" alt="chicken" /></a> <a href="../tags/dairy.html"><img src="https://img.shields.io/badge/tag-dairy-4b9e32" alt="dairy" /></a> <a href="../tags/dinner.html"><img src="https://img.shields.io/badge/tag-dinner-945e60" alt="dinner" /></a> <a href="../tags/family.html"><img src="https://img.shields.io/badge/tag-family-f05668" alt="family" /></a> <a href="../tags/fried.html"><img src="https://img.shields.io/badge/tag-fried-379a95" alt="fried" /></a> <a href="../tags/ham.html"><img src="https://img.shields.io/badge/tag-ham-1d5152" alt="ham" /></a> <a href="../tags/lamb.html"><img src="https://img.shields.io/badge/tag-lamb-af803c" alt="lamb" /></a> <a href="../tags/leftovers.html"><img src="https://img.shields.io/badge/tag-leftovers-e2596" alt="leftovers" /></a> <a href="../tags/vegetables.html"><img src="https://img.shields.io/badge/tag-vegetables-f1d19f" alt="vegetables" /></a>|2023-06-25|2026-09-28|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/fritters.html">Fritters</a></td><td class="tags"><a class="tag" href="../tags/chicken.html" style="background:#d93385;color:#fff">chicken</a> <a class="tag" href="../tags/dairy.html" style="background:#4b9e32;color:#fff">dairy</a> <a class="tag" href="../tags/dinner.html" style="background:#945e60;color:#fff">dinner</a> <a class="tag" href="../tags/family.html" style="background:#f05668;color:#fff">family</a> <a class="tag" href="../tags/fried.html" style="background:#379a95;color:#fff">fried</a> <a class="tag" href="../tags/ham.html" style="background:#1d5152;color:#fff">ham</a> <a class="tag" href="../tags/lamb.html" style="background:#af803c;color:#fff">lamb</a> <a class="tag" href="../tags/leftovers.html" style="background:#0e2596;color:#fff">leftovers</a> <a class="tag" href="../tags/vegetables.html" style="background:#f1d19f;color:#111">vegetables</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

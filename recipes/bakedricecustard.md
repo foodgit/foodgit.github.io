@@ -1,5 +1,7 @@
 # Baked Rice Custard
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 4 eggs
@@ -19,10 +21,8 @@
 > 1. Bake for 30 minutes, whisking lightly with fork under skin occasionally. Sprinkle with cinnamon.
 > 1. Bake a further 20 minutes. Serve warm or cold.
 
+**Serves:** 6
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/rice-blue.svg" alt="rice" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.md) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.md) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.md) 

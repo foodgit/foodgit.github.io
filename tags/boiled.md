@@ -1,5 +1,8 @@
-# Boiled Recipes 
+# Boiled Recipes
 
-|Recipe Title|Tags|Created|Last Updated|
-|:---|:---|:---|:---|
-|[Creamy Chorizo & Tomato Pasta](../recipes/creamychorizotomatopasta.md)|<a href="../tags/boiled.html"><img src="https://img.shields.io/badge/tag-boiled-6685b7" alt="boiled" /></a> <a href="../tags/dairy.html"><img src="https://img.shields.io/badge/tag-dairy-4b9e32" alt="dairy" /></a> <a href="../tags/italian.html"><img src="https://img.shields.io/badge/tag-italian-3bf9ab" alt="italian" /></a> <a href="../tags/lunch.html"><img src="https://img.shields.io/badge/tag-lunch-be57aa" alt="lunch" /></a> <a href="../tags/pasta.html"><img src="https://img.shields.io/badge/tag-pasta-617c8" alt="pasta" /></a> <a href="../tags/sides.html"><img src="https://img.shields.io/badge/tag-sides-12b63" alt="sides" /></a> <a href="../tags/stovetop.html"><img src="https://img.shields.io/badge/tag-stovetop-9bf4b7" alt="stovetop" /></a>|2023-10-25|2026-02-26|
+<table class="recipes">
+<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
+<tbody>
+<tr><td><a href="../recipes/creamychorizotomatopasta.html">Creamy Chorizo &amp; Tomato Pasta</a></td><td class="tags"><a class="tag" href="../tags/boiled.html" style="background:#6685b7;color:#fff">boiled</a> <a class="tag" href="../tags/dairy.html" style="background:#4b9e32;color:#fff">dairy</a> <a class="tag" href="../tags/italian.html" style="background:#3bf9ab;color:#111">italian</a> <a class="tag" href="../tags/lunch.html" style="background:#be57aa;color:#fff">lunch</a> <a class="tag" href="../tags/pasta.html" style="background:#0617c8;color:#fff">pasta</a> <a class="tag" href="../tags/sides.html" style="background:#012b63;color:#fff">sides</a> <a class="tag" href="../tags/stovetop.html" style="background:#9bf4b7;color:#111">stovetop</a></td><td class="date">2023-10-25</td><td class="date">2026-09-29</td></tr>
+</tbody>
+</table>

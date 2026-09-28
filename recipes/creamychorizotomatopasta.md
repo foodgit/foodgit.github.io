@@ -1,5 +1,7 @@
 # Creamy Chorizo & Tomato Pasta
 
+*Created: 25th of October 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 - 400g fresh linguine (shells or other short pasta for portable version)
@@ -23,11 +25,8 @@
 > 1. Add drained pasta to the pan and make sure it is all covered in sauce.
 > 1. Serve immediately with parmesan/tasty cheese on top and season to taste.
 
+**Serves:** 3-4
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/boiled-blue.svg" alt="boiled" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/italian-blue.svg" alt="italian" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
-
-*Created: 25th of October 2023*
-
-*Last Updated: 26th of February 2026*
+[![boiled](https://img.shields.io/badge/boiled-blue.svg)](../tags/boiled.md) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.md) [![italian](https://img.shields.io/badge/italian-blue.svg)](../tags/italian.md) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.md) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.md) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.md) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.md) 

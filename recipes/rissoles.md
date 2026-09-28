@@ -1,5 +1,7 @@
 # Rissoles
 
+*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
+
 ## Ingredients
 
 Place into a large bowl:
@@ -22,10 +24,8 @@ Place into a large bowl:
 > 1. I reckon good ol tomato sauce is the best but do what takes your fancy.
 > 1. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
 
+**Serves:** 4
+
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/aussie-blue.svg" alt="aussie" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> 
-
-*Created: 25th of June 2023*
-
-*Last Updated: 28th of September 2026*
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.md) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.md) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.md) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.md) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.md) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.md) 
