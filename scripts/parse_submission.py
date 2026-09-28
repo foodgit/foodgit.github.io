@@ -54,19 +54,31 @@ if image_links:
         images.append(image)
         get_image(image)
 
+def section(label):
+    """the answer under a '### label' heading of the issue form ('' if left empty)"""
+    parts = issue_body.split("### "+label)
+    if len(parts) < 2:
+        return ""
+    text = parts[1].split("### ")[0].strip()
+    return "" if text == "_No response_" else text
+
+def listed(text, marker):
+    # one list item per non-blank line; blank lines between entries (which the form
+    # used to ask for) previously became empty list items
+    return "\n".join(marker+line.strip() for line in text.splitlines() if line.strip())
+
 with open(recipe_file_name,'r') as f:
     body_lines = f.readlines()
-read_nextline=False
 tags=[]
 for line in body_lines:
     if line[:6].lower()=="- [x] ":
         tag=line[6:].strip().lower().replace(" ","_")
         tags.append(tag)
 
-additional_tags=[t.strip().replace(" ","_") for t in issue_body.split("### Additional tags")[1].split("\n")[2].lower().split(",")]
-tags=tags+additional_tags
-# drop the placeholder GitHub uses for an empty field, blanks and duplicates
-tags=sorted({tag for tag in tags if tag and "_no_response_" not in tag})
+tags += [t.strip().lower().replace(" ","_") for t in section("Additional tags").split(",")]
+tags.append(section("How difficult is it to prepare this meal?").lower())
+# drop blanks and duplicates
+tags=sorted({tag for tag in tags if tag})
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
     f.write('\n'.join(map(str, tags)))
@@ -78,35 +90,20 @@ with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
 ### Tips
 
 out_title="# "+recipe_title+"\n"
+out_ingredients="## Ingredients\n\n"+listed(section("Ingredients"), "- ")+"\n"
+out_method="## Method\n\n"+listed(section("Method"), "> 1. ")+"\n"
+tips_text=section("Tips")
+out_tips="## Tips\n\n"+listed(tips_text, "> - ")+"\n" if tips_text else ""
+serves=section("How many people does it serve?")
+out_serves="**Serves:** "+serves+"\n" if serves else ""
 
-ingredients_text=issue_body.split("### Ingredients")[1].split("### ")[0].strip()
-ingredients_text="- ".join(("\n"+ingredients_text.lstrip()).splitlines(True))
-out_ingredients="## Ingredients\n"+ingredients_text+"\n"
-
-method_text=issue_body.split("### Method")[1].split("### ")[0].strip()
-method_text="> 1. ".join(("\n"+method_text.lstrip()).splitlines(True))
-out_method="## Method\n"+method_text+"\n"
-
-tips_text=issue_body.split("### Tips")[1].split("### ")[0].strip()
-tips_text="> - ".join(("\n"+tips_text.lstrip()).splitlines(True))
-if "_No response_" in tips_text:
-    out_tips=""
-else:
-    out_tips="## Tips\n"+tips_text+"\n"
-    
-
+output=[out_title, out_ingredients, out_method, out_tips, out_serves]
 try:
     images
 except NameError:
-    output=[out_title, out_ingredients, out_method, out_tips]
+    pass
 else:
-    output=["\n",out_title, out_ingredients, out_method, out_tips]
-
-#try:
-#    if images:
-#        output=["\n",out_title, out_ingredients, out_method, out_tips]
-#except:
-#    output=[out_title, out_ingredients, out_method, out_tips]
+    output.insert(0, "\n")
 
 formatted_output="\n".join(output)
 
@@ -127,17 +124,6 @@ else:
         lines[i*image_spacing]=lines[i*image_spacing]+" "+image["tag"]
         i=i+1
     formatted_output="\n".join(lines)
-    
-#numimages = len(images)
-#image_spacing=ceil(numlines / numimages)
-#lines=formatted_output.splitlines()
-#if images:
-#    print("embedding image tags")
-#    i=0
-#    for image in images:
-#        lines[i*image_spacing]=lines[i*image_spacing]+" "+image["tag"]
-#        i=i+1
-#    formatted_output="\n".join(lines)
 
 print("saving submissions/"+friendly_title+"/"+friendly_title+".recipe")
 with open("submissions/"+friendly_title+"/"+friendly_title+".recipe", 'w') as f:

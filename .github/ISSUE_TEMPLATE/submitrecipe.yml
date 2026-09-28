@@ -10,8 +10,8 @@ body:
     attributes:
       value: |
         Thanks for taking the time to submit a recipe to gitFOOD!
-        Dont worry too much if you make a mistake, it can be fixed later.
-        Please try to fill it out as much detail as possible :)
+        Don't worry too much if you make a mistake, it can be fixed later.
+        Please try to fill it out in as much detail as possible :)
 
         Some useful characters for copying & pasting: [ ¼ ¾ ⅓ ⅔ ½ ° ]
         
@@ -35,17 +35,25 @@ body:
     id: method
     attributes:
       label: Method
-      description: Add the instructions for pretparing and cooking your recipe here your recipe. Hit enter once between steps.
+      description: Add the instructions for preparing and cooking your recipe here, one step per line.
     validations:
       required: true
-      
+
   - type: textarea
     id: tips
     attributes:
       label: Tips
-      description: Add a list of tips to keep in mind to help make things better or easier! Hit enter twice between tips.
+      description: Add a list of tips to keep in mind to help make things better or easier, one tip per line.
     validations:
       required: false
+
+  - type: input
+    id: serves
+    attributes:
+      label: How many people does it serve?
+      description: A number or a range, e.g. 4 or 2-4.
+    validations:
+      required: true
            
   - type: dropdown
     id: Level
