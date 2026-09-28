@@ -26,10 +26,10 @@
 
 <img src="caramelslice/images/1.jpg" alt="Caramel Slice - photo 1" width="35%" align="right" />
 
-> 1. Preheat oven to 180°C. Place the flour, coconut, butter and sugar in a bowl and mix to combine. Using the back of a spoon, press the mixture into the base of a lightly greased 20cm x 30cm tin lined with non-stick baking paper and bake for 15–20 minutes or until golden. <img src="caramelslice/images/4.jpg" alt="Caramel Slice - photo 4" width="35%" align="right" />
+> 1. Preheat oven to 180°C. Place the flour, coconut, butter and sugar in a bowl and mix to combine. Using the back of a spoon, press the mixture into the base of a lightly greased 20cm x 30cm tin lined with non-stick baking paper and bake for 15–20 minutes or until golden.
 > 1. While the base is cooking, make the caramel filling.
 > 1. Place the butter, condensed milk and golden syrup, in a medium saucepan over medium heat. Whisk until the butter is melted and cook, whisking frequently, for 5–7 minutes or until the mixture has thickened slightly (see tip). <img src="caramelslice/images/2.jpg" alt="Caramel Slice - photo 2" width="35%" align="right" />
-> 1. Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold <img src="caramelslice/images/3.jpg" alt="Caramel Slice - photo 3" width="35%" align="right" />
+> 1. Pour the caramel over the cooked base, spread evenly with a palette knife and cook for 15–20 minutes or until golden. Cool slightly and refrigerate until cold <img src="caramelslice/images/3.jpg" alt="Caramel Slice - photo 3" width="35%" align="right" /> <img src="caramelslice/images/4.jpg" alt="Caramel Slice - photo 4" width="35%" align="right" />
 > 1. To make the chocolate topping, place the chocolate and oil in a heatproof bowl over a saucepan of simmering water, and stir until melted and smooth. Pour the chocolate over the caramel mixture and spread evenly. Refrigerate for 30 minutes, or until firm. Using a warm knife, cut into slices or squares to serve. Makes 20 squares <img src="caramelslice/images/5.jpg" alt="Caramel Slice - photo 5" width="35%" align="right" />
 
 <img src="caramelslice/images/6.jpg" alt="Caramel Slice - photo 6" width="35%" align="right" />
@@ -45,4 +45,4 @@
 
 *Created: 25th of June 2023*
 
-*Last Updated: 28th of September 2026*
+*Last Updated: 29th of September 2026*
