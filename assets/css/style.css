@@ -30,8 +30,15 @@ body {
   }
 }
 
+/* flow-root keeps heading underlines from running beneath floated images
+   while still letting text wrap beside them (clear: both left large gaps) */
 .markdown-body h1,
-.markdown-body h2,
-.markdown-body h3 {
-  clear: both;
+.markdown-body h2 {
+  display: flow-root;
+}
+
+/* stack consecutive floated photos instead of squeezing text between them */
+.markdown-body img[align="right"] {
+  clear: right;
+  margin: 0 0 12px 16px;
 }
