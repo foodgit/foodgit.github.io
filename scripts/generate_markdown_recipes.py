@@ -35,6 +35,10 @@ for recipe_stub in all_recipe_stubs:
     recipe_dir = recipe_stub.parent
     content_root = recipe_dir.parent
 
+    last_updated_iso, created_iso = get_dates(recipe_stub)
+    dates_line = ('*Created: '+humanize_date(created_iso)+
+                  ' &middot; Last updated: '+humanize_date(last_updated_iso)+'*')
+
     lines = recipe_body.splitlines()
     title_idx = next((i for i, l in enumerate(lines) if l.startswith("# ")), None)
     title = lines[title_idx][2:].strip() if title_idx is not None else recipe_stub.stem
@@ -44,7 +48,9 @@ for recipe_stub in all_recipe_stubs:
         lines.pop(main_idx)
         title_idx -= 1
         lines[title_idx+1:title_idx+1] = ["", "{main.jpg}"]
-        recipe_body = "\n".join(lines).lstrip("\n")
+    if title_idx is not None:
+        lines[title_idx+1:title_idx+1] = ["", dates_line]
+    recipe_body = "\n".join(lines).lstrip("\n")
 
     image_dir = recipe_dir/"images"
     image_files = sorted(image_dir.glob("*.jpg"))
@@ -75,9 +81,11 @@ for recipe_stub in all_recipe_stubs:
         tags=[ "none" ]
     finally:
         f.close()
+    # markdown links (not <a>) so jekyll-relative-links points them at the .html
+    # tag pages on the site, while they still work on GitHub
     taglinks=""
     for tag in list(tags):
-        taglinks=taglinks+'<img src="https://img.shields.io/badge/'+tag+'-blue.svg" alt="'+tag+'" /> '
+        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](../tags/'+tag+'.md) '
     temp_file_name = Path("working")/recipe_stub.with_suffix(".md").name
     recipe_file_name = content_root/recipe_stub.with_suffix(".md").name
 
@@ -85,15 +93,9 @@ for recipe_stub in all_recipe_stubs:
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(recipe_body)
 
-    last_updated_iso, created_iso = get_dates(recipe_stub)
-    last_updated = humanize_date(last_updated_iso)
-    created = humanize_date(created_iso)
-
     with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />')
         f.write('\n\n'+taglinks)
-        f.write('\n\n*Created: '+created+'*')
-        f.write('\n\n*Last Updated: '+last_updated+'*')
 
     try:
         identical=filecmp.cmp(temp_file_name,recipe_file_name)
