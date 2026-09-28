@@ -1,4 +1,4 @@
-import shutil, filecmp, subprocess, datetime
+import shutil, filecmp, subprocess, datetime, html
 from pathlib import Path
 
 def get_dates(stub_path):
@@ -34,6 +34,18 @@ for recipe_stub in all_recipe_stubs:
     recipe_body = recipe_stub.read_text()
     recipe_dir = recipe_stub.parent
     content_root = recipe_dir.parent
+
+    lines = recipe_body.splitlines()
+    title_idx = next((i for i, l in enumerate(lines) if l.startswith("# ")), None)
+    title = lines[title_idx][2:].strip() if title_idx is not None else recipe_stub.stem
+    main_idx = next((i for i, l in enumerate(lines) if l.strip() == "{main.jpg}"), None)
+    # title must be the first line for jekyll-titles-from-headings to name the page
+    if main_idx is not None and title_idx is not None and main_idx < title_idx:
+        lines.pop(main_idx)
+        title_idx -= 1
+        lines[title_idx+1:title_idx+1] = ["", "{main.jpg}"]
+        recipe_body = "\n".join(lines).lstrip("\n")
+
     image_dir = recipe_dir/"images"
     image_files = sorted(image_dir.glob("*.jpg"))
     print("Image(s) found: "+str(image_files))
@@ -41,9 +53,11 @@ for recipe_stub in all_recipe_stubs:
         image_path = recipe_dir.name+"/images/"+image_file.name
         if image_file.name == "main.jpg":
             image_width="55%"
+            image_alt=title
         else:
             image_width="35%"
-        recipe_body = recipe_body.replace("{"+image_file.name+"}", "<img src=\""+image_path+"\" width=\""+image_width+"\" align=\"right\" />")
+            image_alt=title+" - photo "+image_file.stem
+        recipe_body = recipe_body.replace("{"+image_file.name+"}", "<img src=\""+image_path+"\" alt=\""+html.escape(image_alt)+"\" width=\""+image_width+"\" align=\"right\" />")
     tag_file = recipe_dir/"tags.txt"
     tags=list()
     formatted_tags=list()
@@ -63,7 +77,7 @@ for recipe_stub in all_recipe_stubs:
         f.close()
     taglinks=""
     for tag in list(tags):
-        taglinks=taglinks+'<img src="https://img.shields.io/badge/'+tag+'-blue.svg" /> '
+        taglinks=taglinks+'<img src="https://img.shields.io/badge/'+tag+'-blue.svg" alt="'+tag+'" /> '
     temp_file_name = Path("working")/recipe_stub.with_suffix(".md").name
     recipe_file_name = content_root/recipe_stub.with_suffix(".md").name
 
@@ -76,7 +90,7 @@ for recipe_stub in all_recipe_stubs:
     created = humanize_date(created_iso)
 
     with open(temp_file_name, "a") as f:
-        f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
+        f.write('\n\n<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />')
         f.write('\n\n'+taglinks)
         f.write('\n\n*Created: '+created+'*')
         f.write('\n\n*Last Updated: '+last_updated+'*')
@@ -88,9 +102,10 @@ for recipe_stub in all_recipe_stubs:
         identical=filecmp.cmp(temp_file_name,recipe_file_name)
     except FileNotFoundError:
         print("New recipe found! Creating "+str(recipe_file_name))
-        shutil.copyfile(temp_file_name, recipe_file_name)
+        identical=False
     except:
         print("something went wrong comparing temp file with destination")
+        identical=False
     if not identical:
         print(str(recipe_file_name)+" has been updated. Replacing with new version.")
         shutil.copyfile(temp_file_name, recipe_file_name)
