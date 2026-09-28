@@ -42,3 +42,11 @@ body {
   clear: right;
   margin: 0 0 12px 16px;
 }
+
+/* step photos taller than their step push every later photo further down the
+   list; capping their height keeps each one level with its own step */
+.markdown-body li img[align="right"] {
+  width: auto;
+  max-width: 35%;
+  max-height: 7.5em;
+}
