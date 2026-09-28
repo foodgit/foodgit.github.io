@@ -33,7 +33,7 @@
 > - For a salted caramel sticky date pudding, add ¼ teaspoon salt flakes to the butterscotch sauce. Sprinkle with extra salt to serve. 
 > - You can freeze the pudding (before saucing). Just wrap in non-stick baking paper and freeze in an airtight container for up to one month. Simply reheat at 160°C when ready to serve.
 
-## Serves 6-8
+**Serves:** 6-8
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
@@ -41,4 +41,4 @@
 
 *Created: 10th of December 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

@@ -8,7 +8,7 @@
 - 1 cup rolled oats (or toasted muesli for a more interesting, slightly crunchy version)
 - ⅓ cup walnuts or pecans
 
-## Optional Ingredients
+### Optional
 
 - 2 tsp instant coffee granules (banoffee version)
 - ½ tsp cinnamon
@@ -37,4 +37,4 @@
 
 *Created: 19th of October 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

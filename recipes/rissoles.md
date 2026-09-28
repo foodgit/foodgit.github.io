@@ -12,7 +12,7 @@ Place into a large bowl:
 - Pinch salt & pepper
 - About ¼ cup tomato sauce
 
-## Method 
+## Method
 
 > 1. Put a heap of plain flour on a plate
 > 1. Wet your hands & stick them into the mix, & mix & mix & squeeze & mix

@@ -30,7 +30,7 @@
 > - The vegetables can be swapped around to nearly anything available in your area/season.
 > - Beef can easily be swapped out with thinly sliced chicken or pork. Reduce the cooking time of step 2 to around 4 minutes accordingly.
 
-## Serves: 4-5
+**Serves:** 4-5
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
@@ -38,4 +38,4 @@
 
 *Created: 29th of November 2023*
 
-*Last Updated: 30th of November 2023*
+*Last Updated: 28th of September 2026*
