@@ -25,13 +25,10 @@
 > 1. Turn them when bubbles start to form & pop on top - they should be golden brown. 
 > 1. Once again tomato sauce is great on top!!! The butter gives a great flavour & the olive oil stops it from burning - you might have to add more of these to the pan after each batch.
 
-* Last updated 14 Aug 2021, 12:14:10*
-
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/ham-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> <img src="https://img.shields.io/badge/leftovers-blue.svg" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

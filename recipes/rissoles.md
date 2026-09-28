@@ -22,12 +22,10 @@ Place into a large bowl:
 > 1. I reckon good ol tomato sauce is the best but do what takes your fancy.
 > 1. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
 
-*Last updated 14 Aug 2021, 12:16:49*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

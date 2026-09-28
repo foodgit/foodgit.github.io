@@ -15,12 +15,10 @@
 > 1. Add 1 ½ cups of cheese. Stir to combine.
 > 1. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
 
-*Last updated 24 Oct 2020, 19:44:12*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/potato-blue.svg" /> <img src="https://img.shields.io/badge/savoury-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

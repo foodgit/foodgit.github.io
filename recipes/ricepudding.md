@@ -17,12 +17,10 @@
 > 1. Serve warm or let cool slightly and refrigerate for at least 1 hour.
 > 1. When cold, cover with plastic wrap and store for up to 4 days.
 
-*Last updated 24 Oct 2020, 20:02:33*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/rice_cooker-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

@@ -22,12 +22,10 @@
 > 1. Drop dough by heaping tablespoonfuls onto the prepared baking sheet. Cookies should be 4 to 5 cm apart. You should have 12 to 15 large cookies.
 > 1. Bake for 8 to 10 minutes in the preheated oven. For crispier cookies, bake 2 minutes longer. Remove from baking sheets to cool on wire racks.
 
-*Last updated 17 Jun 2023, 16:50:16*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/coffee-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

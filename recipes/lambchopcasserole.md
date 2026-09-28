@@ -17,12 +17,10 @@
 > 1. Put browned chops into a baking dish. Mix all ingredients & add water, enough to blend & just come nearly to top of chops.
 > 1. Cover & slow cook - till cooked!!!
 
-*Last updated 15 Apr 2023, 23:37:57*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/battered-blue.svg" /> <img src="https://img.shields.io/badge/casserole-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

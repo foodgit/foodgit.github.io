@@ -19,13 +19,10 @@
 > 1. Bake for 30 minutes, whisking lightly with fork under skin occasionally. Sprinkle with cinnamon.
 > 1. Bake a further 20 minutes. Serve warm or cold.
 
-*Last updated 15 Apr 2023, 23:37:57*
-
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

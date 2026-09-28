@@ -22,12 +22,10 @@
 
 > - A very basic recipe & I find that eating them on the day of making is best cause they stale quickly, but if any are left put into an airtight container.
 
-*Last updated 11 Sept 2021, 11:55:10*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

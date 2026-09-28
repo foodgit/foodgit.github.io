@@ -42,13 +42,10 @@
 > - Discard the leftover seasoning as it will be a health hazard to eat.
 > - Leftover batter can be cooked in the air fryer (around 7-8 minutes) in muffin pans for tasty mini omlettes.
 
-*Last updated 26 Jun 2023, 14:17:00*
-
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/airfryer-blue.svg" /> <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/battered-blue.svg" /> <img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/crumbed-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/mine-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

@@ -24,12 +24,10 @@
 
 > - While hot, mix rice with finely chopped carrots, mint, and mango, then chill in the refrigerator for a great whole grain summer salad.
 
-*Last updated 25 Jun 2023, 10:17:20*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/expensive-blue.svg" /> <img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/thai-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

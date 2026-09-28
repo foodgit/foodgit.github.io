@@ -39,12 +39,10 @@
 > - When stirring the caramel, scrape the sides and bottom of the pan so the mixture doesn’t stick.
 > - Try making the base from your favourite biscuits. Just take the equivalent weight of biscuits (around 280g), blend them coarsely in a blender, and combine with butter as per step 1.  Biscoff & Digestives are some examples that work well!
 
-*Last updated 28 Jul 2022, 13:06:22*
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

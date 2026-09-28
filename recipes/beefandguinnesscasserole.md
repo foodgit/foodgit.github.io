@@ -51,13 +51,10 @@
 > - sloppy joes
 > - baked potatoes
 
-*Last updated 25 Jun 2023, 19:55:10*
-
-
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/casserole-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/guinness-blue.svg" /> <img src="https://img.shields.io/badge/irish-blue.svg" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/long_cook_time-blue.svg" /> <img src="https://img.shields.io/badge/long_prep_time-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/tricky-blue.svg" /> 
 
 *Created: 25th of June 2023*
 
-*Last Updated: 24th of November 2023*
+*Last Updated: 28th of September 2026*
