@@ -1,6 +1,6 @@
 # linux only for now 
 # requires poppler-utils, ghostscript, pandoc, exiftool
-import os, sys, glob, shutil, filecmp, argparse, datetime, subprocess
+import os, re, sys, html, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 
 # date formatting pleasantries (for title page, etc)
@@ -14,9 +14,19 @@ def run(cmd):
     if os.system(cmd) != 0:
         sys.exit('command failed: '+cmd)
 
+def book_parts():
+    return sorted(f.name for f in Path('./pdf').glob('*.pdf') if '.temp.' not in f.name)
+
 def unite_book(output):
-    parts = sorted(f.name for f in Path('./pdf').glob('*.pdf') if '.temp.' not in f.name)
-    subprocess.run(['pdfunite', *parts, '../'+output], cwd='./pdf', check=True)
+    subprocess.run(['pdfunite', *book_parts(), '../'+output], cwd='./pdf', check=True)
+
+def page_count(pdf):
+    out = subprocess.run(['pdfinfo', str(pdf)], capture_output=True, text=True, check=True).stdout
+    return int(next(l.split()[1] for l in out.splitlines() if l.startswith('Pages:')))
+
+def ps_text(s):
+    # UTF-16 hex string, so pdfmark titles survive parentheses and non-ASCII
+    return '<FEFF'+s.encode('utf-16-be').hex().upper()+'>'
 
 # set variables to passed parameters
 parser = argparse.ArgumentParser()
@@ -46,6 +56,7 @@ site_url = 'https://fexofenadine.github.io/gitfood/'
 site_url_short = 'https://foodgit.github.io'
 margin_size = '15'
 font_name = 'Nunito ExtraBold'
+font_postscript_name = 'Nunito-ExtraBold'
 
 #unused for now
 # def optimize_pdf(recipe_name):
@@ -188,6 +199,56 @@ else:
 print("\nexporting Recipe Book")
 tempfilename=title.replace(" ","_")+'.temp.pdf'
 filename=title.replace(" ","_")+'.pdf'
+category_names = {'1':'snacks', '2':'breakfast', '3':'lunch', '4':'dinner',
+                  '5':'dessert', '6':'sides', '9':'extra stuff'}
+
+def recipe_title(part):
+    md = Path('./recipes')/(part.split('_', 1)[1][:-4]+'.md')
+    if md.exists():
+        for line in md.read_text().splitlines():
+            if line.startswith('# '):
+                return line[2:].strip()
+    return md.stem
+
+def layout():
+    """first page of each part, recipe pages to number, and the category/recipe outline,
+    all as page numbers in the finished book"""
+    start, page, numbered, sections = {}, 1, set(), []
+    for part in book_parts():
+        n = page_count(Path('./pdf')/part)
+        start[part] = page
+        divider = re.match(r'(\d)__', part)
+        if divider:
+            sections.append((category_names.get(divider[1], part[3:-4]), page, []))
+        elif re.match(r'\d_[a-z]', part):
+            numbered.update(range(page, page+n))
+            if sections:
+                sections[-1][2].append((recipe_title(part), page))
+        page += n
+    return start, numbered, sections
+
+def build_contents(sections):
+    rows = ['# contents', '']
+    for name, _, recipes in sections:
+        if recipes:
+            rows.append('<h2 class="toc-category">'+html.escape(name)+'</h2>')
+            rows.append('<table class="toc">')
+            rows += ['<tr><td>'+html.escape(t)+'</td><td class="toc-page">'+str(pg)+'</td></tr>' for t, pg in recipes]
+            rows += ['</table>', '']
+    Path('./pdf/0_4_contents.md').write_text('\n'.join(rows))
+    run('cd ./pdf && pandoc '+pandoc_pdf_opts+' ./0_4_contents.md -o ./0_4_contents.pdf')
+    os.remove('./pdf/0_4_contents.md')
+
+# the contents page's own length shifts every later page, so build it once to
+# learn its length, then again with the final page numbers
+print("generating contents page")
+Path('./pdf/0_4_contents.pdf').unlink(missing_ok=True)
+build_contents(layout()[2])
+start, numbered, sections = layout()
+build_contents(sections)
+if layout()[2] != sections:
+    sys.exit('contents page length changed between passes')
+
 unite_book(tempfilename)
 
 # calculate and insert number of blank pages to insert for tidy booklet printing
@@ -207,7 +268,24 @@ if num_add_pages > 0:
     unite_book(tempfilename)
 
 print('optimizing '+filename+' for printing')
-run('ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+filename+' ./'+tempfilename)
+# bookmarks (sidebar outline) and page numbers on recipe pages, added in the same pass
+marks = ['[/Title '+ps_text('contents')+' /Page '+str(start['0_4_contents.pdf'])+' /OUT pdfmark']
+for name, page, recipes in sections:
+    if recipes:
+        marks.append('[/Title %s /Page %d /Count -%d /OUT pdfmark' % (ps_text(name), page, len(recipes)))
+        marks += ['[/Title %s /Page %d /OUT pdfmark' % (ps_text(t), pg) for t, pg in recipes]
+marks.append('[/PageMode /UseOutlines /DOCVIEW pdfmark')
+Path('./bookmarks.temp.ps').write_text('\n'.join(marks)+'\n')
+number_pages = ('/NumberedPages << '+' '.join('%d true' % n for n in sorted(numbered))+' >> def '
+    '<< /EndPage { exch 1 add exch 0 eq '
+    '{ dup NumberedPages exch known '
+    '{ /'+font_postscript_name+' findfont 10 scalefont setfont 0.45 setgray '
+    '20 string cvs dup stringwidth pop 2 div 297.64 exch sub 22 moveto show } { pop } ifelse true } '
+    '{ pop false } ifelse } bind >> setpagedevice')
+subprocess.run(['ghostscript', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4', '-dPDFSETTINGS=/printer',
+    '-dNOPAUSE', '-dQUIET', '-dBATCH', '-sFONTPATH='+str(font_dest.parent),
+    '-sOutputFile=./'+filename, '-c', number_pages, '-f', './'+tempfilename, './bookmarks.temp.ps'], check=True)
+os.remove('./bookmarks.temp.ps')
 
 # cleanup
 print('removing temp file '+tempfilename)
