@@ -28,12 +28,6 @@ jobs:
             fontconfig xfonts-75dpi xfonts-base
           wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
           sudo apt-get install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
-          # fonts/ is gitignored; this tracked copy (also used by the site) is the
-          # same Helvetica Rounded Bold face the PDF templates ask for
-          mkdir -p ~/.local/share/fonts
-          cp assets/fonts/gitfood-regular.otf ~/.local/share/fonts/
-          fc-cache -f
-          fc-list | grep -q "Helvetica Rounded" || { echo "PDF font not installed"; exit 1; }
       - name: Build PDFs
         # --all: file mtimes are meaningless after a fresh checkout
         run: python scripts/generate_pdfs.py --all

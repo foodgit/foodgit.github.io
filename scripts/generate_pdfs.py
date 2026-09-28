@@ -42,6 +42,7 @@ author = 'fexofenadine'
 title = 'gitFOOD Recipe Book'
 license_url = 'https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICENSE'
 margin_size = '15'
+font_name = 'Nunito ExtraBold'
 
 #unused for now
 # def optimize_pdf(recipe_name):
@@ -64,15 +65,18 @@ print('version '+version_number+' detected')
 with open('./LICENSE') as f:
     license_text = f.read().strip('\n').strip()
 
-#print("installing pandoc") # better use apt for new version
-#os.system('wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb -P ~ && sudo dpkg -i ~/pandoc-3.1.8-1-amd64.deb && rm ~/pandoc-3.1.8-1-amd64.deb && rm ~/pandoc-3.1.8-1-amd64.deb')
-
-print("installing libssl1.1 & wkhtmltopdf") # old packages :(
-#os.system('wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb && sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb && rm ./libssl1.1_1.1.1f-1ubuntu2_amd64.deb')
-#os.system('wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb && sudo apt install -f ./wkhtmltox_0.12.6-1.focal_amd64.deb && rm ./wkhtmltox_0.12.6-1.focal_amd64.deb')
-
-print("installing font")
-#os.system('cp ./fonts/helvetica-rounded-bold.otf ~/.local/share/fonts/helvetica-rounded-bold.otf')
+# toolchain (pandoc, wkhtmltopdf with patched qt, ghostscript, poppler-utils,
+# exiftool) is installed by .github/workflows/build-book.yml; the font ships
+# with the repo and is installed here so local and CI builds match
+font_file = Path('./assets/fonts/nunito-extrabold.ttf')
+font_dest = Path.home()/'.local/share/fonts'/font_file.name
+if not font_dest.exists():
+    print("installing font "+font_file.name)
+    font_dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(font_file, font_dest)
+    run('fc-cache -f')
+if font_name not in subprocess.run(['fc-list'], capture_output=True, text=True).stdout:
+    sys.exit('font "'+font_name+'" not found by fontconfig')
 
 print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
@@ -82,7 +86,7 @@ title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, 
 output_file = Path("./pdf/0_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
-run('cd ./pdf && pandoc --quiet -f gfm -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
+run('cd ./pdf && pandoc --quiet -f gfm -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"'+font_name+'" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
 os.remove('./pdf/0_3_title_page.md')
 
 if book_only:
@@ -155,7 +159,7 @@ else:
             
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
-            run('cd ./recipes && pandoc -f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+            run('cd ./recipes && pandoc -f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"'+font_name+'" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
             run('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
             # print('setting margin size to '+margin_size+'.')

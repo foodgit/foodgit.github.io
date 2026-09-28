@@ -1,7 +1,6 @@
 working/
 gitfood.code-workspace
 fonts/*
-!fonts/gitfood-regular.otf
 html/
 scripts/build_pdfs.sh
 scripts/generatehex.py
