@@ -22,7 +22,7 @@ else:
         issue_body = f.read()
 
 recipe_title=issue_body.split("### ")[1].split("\n")[2]
-friendly_title=recipe_title.strip().replace("&","").replace("+","").replace(" ","").lower()
+friendly_title=re.sub(r'[^a-z0-9]', '', recipe_title.lower())
 
 # print("Friendly title: "+friendly_title)
 
@@ -60,14 +60,13 @@ read_nextline=False
 tags=[]
 for line in body_lines:
     if line[:6].lower()=="- [x] ":
-        tag=line[6:].strip().lower()
+        tag=line[6:].strip().lower().replace(" ","_")
         tags.append(tag)
 
-additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower().replace(", ",",").replace(" ","_").split(",")
+additional_tags=[t.strip().replace(" ","_") for t in issue_body.split("### Additional tags")[1].split("\n")[2].lower().split(",")]
 tags=tags+additional_tags
-tags.sort()
-# remove invalid tag if no checkbox was selected
-tags=[tag for tag in tags if "_no_response_" not in tag]
+# drop the placeholder GitHub uses for an empty field, blanks and duplicates
+tags=sorted({tag for tag in tags if tag and "_no_response_" not in tag})
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
     f.write('\n'.join(map(str, tags)))
