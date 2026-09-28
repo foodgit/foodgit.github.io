@@ -1,6 +1,6 @@
-<img src="fritters/images/main.jpg" width="55%" align="right" />
-
 # Fritters
+
+<img src="fritters/images/main.jpg" alt="Fritters" width="55%" align="right" />
 
 ## Ingredients
 
@@ -27,9 +27,9 @@
 > 1. Turn them when bubbles start to form & pop on top - they should be golden brown. 
 > 1. Once again tomato sauce is great on top!!! The butter gives a great flavour & the olive oil stops it from burning - you might have to add more of these to the pan after each batch.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/ham-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> <img src="https://img.shields.io/badge/leftovers-blue.svg" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" /> 
+<img src="https://img.shields.io/badge/chicken-blue.svg" alt="chicken" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/ham-blue.svg" alt="ham" /> <img src="https://img.shields.io/badge/lamb-blue.svg" alt="lamb" /> <img src="https://img.shields.io/badge/leftovers-blue.svg" alt="leftovers" /> <img src="https://img.shields.io/badge/vegetables-blue.svg" alt="vegetables" /> 
 
 *Created: 25th of June 2023*
 

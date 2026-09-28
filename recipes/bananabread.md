@@ -1,6 +1,6 @@
- <img src="bananabread/images/main.jpg" width="55%" align="right" />
-
 # Banana Bread
+
+<img src="bananabread/images/main.jpg" alt="Banana Bread" width="55%" align="right" />
 
 ## Ingredients
 
@@ -26,9 +26,9 @@
 
 > - Seems to require up to 15 minutes extra in the oven for the centre to firm up.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 16th of October 2023*
 

@@ -32,9 +32,9 @@
 
 ## Serves: 4-5
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/asian-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/lunch-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/versatile-blue.svg" /> 
+<img src="https://img.shields.io/badge/asian-blue.svg" alt="asian" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/versatile-blue.svg" alt="versatile" /> 
 
 *Created: 29th of November 2023*
 

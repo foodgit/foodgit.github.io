@@ -28,9 +28,9 @@
 > 1. Bake in the oven for 30-40 minutes or until cooked through.
 > 1. Leave to stand for 5 minutes before serving.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/italian-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> 
+<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/italian-blue.svg" alt="italian" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
 
 *Created: 6th of October 2023*
 

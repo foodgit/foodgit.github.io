@@ -1,6 +1,6 @@
-<img src="chocolatechipcookiesneimanmarcus/images/main.jpg" width="55%" align="right" />
-
 # Chocolate Chip Cookies (Neiman Marcus Style)
+
+<img src="chocolatechipcookiesneimanmarcus/images/main.jpg" alt="Chocolate Chip Cookies (Neiman Marcus Style)" width="55%" align="right" />
 
 ## Ingredients
 
@@ -24,9 +24,9 @@
 > 1. Drop dough by heaping tablespoonfuls onto the prepared baking sheet. Cookies should be 4 to 5 cm apart. You should have 12 to 15 large cookies.
 > 1. Bake for 8 to 10 minutes in the preheated oven. For crispier cookies, bake 2 minutes longer. Remove from baking sheets to cool on wire racks.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" /> <img src="https://img.shields.io/badge/coffee-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> 
+<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/chocolate-blue.svg" alt="chocolate" /> <img src="https://img.shields.io/badge/coffee-blue.svg" alt="coffee" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> 
 
 *Created: 25th of June 2023*
 

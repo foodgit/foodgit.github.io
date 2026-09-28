@@ -18,9 +18,9 @@
 > - Combine 1 tbsp Peri Peri powder with 300ml sour cream to use as a dipping sauce or as a topping for stuffed potatoes.
 
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/portuguese-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> 
+<img src="https://img.shields.io/badge/portuguese-blue.svg" alt="portuguese" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> 
 
 *Created: 15th of November 2023*
 

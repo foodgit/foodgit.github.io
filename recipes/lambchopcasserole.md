@@ -1,6 +1,6 @@
-<img src="lambchopcasserole/images/main.jpg" width="55%" align="right" />
-
 # Lamb Chop Casserole
+
+<img src="lambchopcasserole/images/main.jpg" alt="Lamb Chop Casserole" width="55%" align="right" />
 
 ## Ingredients
 
@@ -19,9 +19,9 @@
 > 1. Put browned chops into a baking dish. Mix all ingredients & add water, enough to blend & just come nearly to top of chops.
 > 1. Cover & slow cook - till cooked!!!
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/battered-blue.svg" /> <img src="https://img.shields.io/badge/casserole-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/lamb-blue.svg" /> 
+<img src="https://img.shields.io/badge/aussie-blue.svg" alt="aussie" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/battered-blue.svg" alt="battered" /> <img src="https://img.shields.io/badge/casserole-blue.svg" alt="casserole" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/lamb-blue.svg" alt="lamb" /> 
 
 *Created: 25th of June 2023*
 

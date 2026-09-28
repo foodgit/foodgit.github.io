@@ -19,9 +19,9 @@
 > 1. Fill the potato skins with the cheesy potato mixture and sprinkle some cheese on top.
 > 1. Bake or grill for a further 5-10 minutes, until cheese has melted and turned golden brown.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/aussie-blue.svg" /> <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" /> <img src="https://img.shields.io/badge/potato-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/aussie-blue.svg" alt="aussie" /> <img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/cheesey-blue.svg" alt="cheesey" /> <img src="https://img.shields.io/badge/potato-blue.svg" alt="potato" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 22nd of December 2023*
 

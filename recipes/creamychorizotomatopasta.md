@@ -24,9 +24,9 @@
 > 1. Serve immediately with parmesan/tasty cheese on top and season to taste.
 
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/boiled-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/italian-blue.svg" /> <img src="https://img.shields.io/badge/lunch-blue.svg" /> <img src="https://img.shields.io/badge/pasta-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> 
+<img src="https://img.shields.io/badge/boiled-blue.svg" alt="boiled" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/italian-blue.svg" alt="italian" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/pasta-blue.svg" alt="pasta" /> <img src="https://img.shields.io/badge/sides-blue.svg" alt="sides" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
 
 *Created: 25th of October 2023*
 

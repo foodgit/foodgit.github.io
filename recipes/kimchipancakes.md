@@ -43,9 +43,9 @@
 > - Increase the heat a little to crisp up the pancakes at the end of pan-frying.
 
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/korean-blue.svg" /> <img src="https://img.shields.io/badge/lunch-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/korean-blue.svg" alt="korean" /> <img src="https://img.shields.io/badge/lunch-blue.svg" alt="lunch" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 15th of December 2023*
 

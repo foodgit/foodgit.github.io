@@ -1,6 +1,6 @@
-<img src="frenchtoastwhippedcreamcheese/images/main.jpg" width="55%" align="right" />
-
 # French Toast with Whipped Cream Cheese
+
+<img src="frenchtoastwhippedcreamcheese/images/main.jpg" alt="French Toast with Whipped Cream Cheese" width="55%" align="right" />
 
 ## Ingredients
 
@@ -32,9 +32,9 @@
 
 > - Many other toppings, including icing sugar, ice cream, chocolate syrup, berries, agave nectar. Anything that's good on a pancake will probably be great here.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/mine-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/amazing-blue.svg" alt="amazing" /> <img src="https://img.shields.io/badge/breakfast-blue.svg" alt="breakfast" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/large_quantity-blue.svg" alt="large_quantity" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/mine-blue.svg" alt="mine" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 25th of June 2023*
 

@@ -1,6 +1,6 @@
-<img src="ricepudding/images/main.jpg" width="55%" align="right" />
-
 # Rice Pudding
+
+<img src="ricepudding/images/main.jpg" alt="Rice Pudding" width="55%" align="right" />
 
 ## Ingredients
 
@@ -19,9 +19,9 @@
 > 1. Serve warm or let cool slightly and refrigerate for at least 1 hour.
 > 1. When cold, cover with plastic wrap and store for up to 4 days.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/easy-blue.svg" /> <img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/rice_cooker-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/easy-blue.svg" alt="easy" /> <img src="https://img.shields.io/badge/rice-blue.svg" alt="rice" /> <img src="https://img.shields.io/badge/rice_cooker-blue.svg" alt="rice_cooker" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 25th of June 2023*
 

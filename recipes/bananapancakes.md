@@ -16,9 +16,9 @@
 ## Tips
 - Try mixing in a teaspoon of cacao when adding the flour for a chocolatey variation
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/fast-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/simple-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/breakfast-blue.svg" alt="breakfast" /> <img src="https://img.shields.io/badge/fast-blue.svg" alt="fast" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/simple-blue.svg" alt="simple" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 2nd of January 2024*
 

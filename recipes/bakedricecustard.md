@@ -1,6 +1,6 @@
-<img src="bakedricecustard/images/main.jpg" width="55%" align="right" />
-
 # Baked Rice Custard
+
+<img src="bakedricecustard/images/main.jpg" alt="Baked Rice Custard" width="55%" align="right" />
 
 ## Ingredients
 
@@ -21,9 +21,9 @@
 > 1. Bake for 30 minutes, whisking lightly with fork under skin occasionally. Sprinkle with cinnamon.
 > 1. Bake a further 20 minutes. Serve warm or cold.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/rice-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/rice-blue.svg" alt="rice" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 25th of June 2023*
 

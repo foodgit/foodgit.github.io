@@ -1,6 +1,6 @@
-<img src="hommus/images/main.jpg" width="55%" align="right" />
-
 # Hommus
+
+<img src="hommus/images/main.jpg" alt="Hommus" width="55%" align="right" />
 
 ## Ingredients
 
@@ -26,9 +26,9 @@
 > 1. Taste, and adjust as necessary. Add another ¼ teaspoon salt for more flavor or extra lemon juice for more zing.
 > 1. Scrape the hommus into a serving bowl or platter, and use a spoon to create nice swooshes on top. Top with garnishes of your choice, and serve.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/protein-blue.svg" /> <img src="https://img.shields.io/badge/tricky-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/healthy-blue.svg" alt="healthy" /> <img src="https://img.shields.io/badge/messy-blue.svg" alt="messy" /> <img src="https://img.shields.io/badge/protein-blue.svg" alt="protein" /> <img src="https://img.shields.io/badge/tricky-blue.svg" alt="tricky" /> <img src="https://img.shields.io/badge/vegan-blue.svg" alt="vegan" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 25th of June 2023*
 

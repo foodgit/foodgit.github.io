@@ -28,9 +28,9 @@
 > 1. Serve over rice or pasta.
 
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dinner-blue.svg" /> <img src="https://img.shields.io/badge/russian-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> 
+<img src="https://img.shields.io/badge/beef-blue.svg" alt="beef" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dinner-blue.svg" alt="dinner" /> <img src="https://img.shields.io/badge/russian-blue.svg" alt="russian" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" alt="stovetop" /> 
 
 *Created: 6th of October 2023*
 

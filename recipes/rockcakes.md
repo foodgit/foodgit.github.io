@@ -1,6 +1,6 @@
-<img src="rockcakes/images/main.jpg" width="55%" align="right" />
-
 # Rock Cakes
+
+<img src="rockcakes/images/main.jpg" alt="Rock Cakes" width="55%" align="right" />
 
 ## Ingredients
 
@@ -24,9 +24,9 @@
 
 > - A very basic recipe & I find that eating them on the day of making is best cause they stale quickly, but if any are left put into an airtight container.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/snack-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/baked-blue.svg" alt="baked" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/snack-blue.svg" alt="snack" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 25th of June 2023*
 

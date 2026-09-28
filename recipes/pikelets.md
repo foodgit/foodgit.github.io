@@ -1,6 +1,6 @@
-<img src="pikelets/images/main.jpg" width="55%" align="right" />
-
 # Pikelets
+
+<img src="pikelets/images/main.jpg" alt="Pikelets" width="55%" align="right" />
 
 ## Ingredients
 
@@ -16,9 +16,9 @@
 > 1. Mix all the wet ingredients together - you’ll have to beat hard but not for long, to blend the syrup into mix. Then add enough milk to get a thick, runny batter.
 > 1. Use butter to cook them in (all this butter!!!). A tablespoon full for each one & cook in moderately hot pan until the bubbles appear & turn, they should be golden brown. A squeeze of lemon juice & a sprinkle of sugar is delicious when hot - butter (again) or margarine spread on when cold.
 
-<img src="../images/logo_sm.png" width="40%" />
+<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-<img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+<img src="https://img.shields.io/badge/breakfast-blue.svg" alt="breakfast" /> <img src="https://img.shields.io/badge/dairy-blue.svg" alt="dairy" /> <img src="https://img.shields.io/badge/dessert-blue.svg" alt="dessert" /> <img src="https://img.shields.io/badge/family-blue.svg" alt="family" /> <img src="https://img.shields.io/badge/fried-blue.svg" alt="fried" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" alt="vegetarian" /> 
 
 *Created: 26th of June 2023*
 
