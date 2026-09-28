@@ -202,6 +202,50 @@ filename=title.replace(" ","_")+'.pdf'
 category_names = {'1':'snacks', '2':'breakfast', '3':'lunch', '4':'dinner',
                   '5':'dessert', '6':'sides', '9':'extra stuff'}
 
+# covers, the blank page and chapter dividers are simple enough to draw on every
+# build, which also keeps the back cover's year current
+static_page_css = '''
+html, body { margin: 0; padding: 0; background: white; }
+.page { position: relative; width: 210mm; height: 297mm; overflow: hidden;
+        font-family: "'''+font_name+'''"; }
+.gradient { background: #000;
+            background: -webkit-gradient(linear, left top, left bottom, from(#3366cc), to(#000000)); }
+.logo { position: absolute; left: 3.9mm; top: 123.8mm; width: 204.6mm; }
+.welcome { position: absolute; left: 6.4mm; top: 119.5mm; font-size: 22pt; line-height: 1; color: #151515; }
+.copyright { position: absolute; left: 0; right: 0; bottom: 12.3mm; text-align: center;
+             font-size: 18pt; line-height: 1; color: #00ffff; }
+'''
+
+def divider_svg(text):
+    # SVG so the text can have an outline: wkhtmltopdf drops text-stroke and text-shadow
+    return ('<svg width="210mm" height="297mm" viewBox="0 0 595 842">'
+            '<text x="297.6" y="447" text-anchor="middle" font-family="'+font_name+'" font-size="74" '
+            'fill="#6bade9" stroke="#3a5e7a" stroke-width="1.1" stroke-linejoin="round">'
+            +html.escape(text)+'</text></svg>')
+
+def static_page(name, body, dark=False):
+    src = Path('./pdf')/(name+'.temp.html')
+    src.write_text('<!doctype html><html><head><meta charset="utf-8"><style>'+static_page_css+
+                   ('html, body { background: #000; }' if dark else '')+
+                   '</style></head><body>'+body+'</body></html>')
+    subprocess.run(['wkhtmltopdf', '--quiet', '--enable-local-file-access', '--disable-smart-shrinking',
+                    '-s', 'A4', '-T', '0', '-B', '0', '-L', '0', '-R', '0',
+                    str(src), str(Path('./pdf')/(name+'.pdf'))], check=True)
+    src.unlink()
+
+print("generating covers, blank page and chapter dividers")
+for old in Path('./pdf').glob('[0-9]__*.pdf'):
+    old.unlink()
+static_page('0_1_cover', '<div class="page gradient"><img class="logo" src="'+
+            str(Path('./images/logo_md.png').resolve())+'"><div class="welcome">welcome to</div></div>', dark=True)
+static_page('0_2_blank', '<div class="page"></div>')
+static_page('zzzzz_cover', '<div class="page gradient"><div class="copyright">&copy; gitFOOD '+
+            str(datetime.datetime.now().year)+'</div></div>', dark=True)
+used_categories = sorted({f.name[0] for f in Path('./pdf').glob('[0-9]_[a-z]*.pdf')})
+for num in used_categories:
+    name = category_names.get(num, 'other')
+    static_page(num+'__'+name.split()[0], '<div class="page">'+divider_svg(name)+'</div>')
+
 def recipe_title(part):
     md = Path('./recipes')/(part.split('_', 1)[1][:-4]+'.md')
     if md.exists():
