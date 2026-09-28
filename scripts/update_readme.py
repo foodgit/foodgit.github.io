@@ -82,7 +82,7 @@ except:
     pass
 
 header= "|Recipe Title|Tags|Created|Last Updated|\n|:---|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
+recs = [f"|[{d['title']}]({ (Path('.')/d['fpath']).as_posix() })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -107,7 +107,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in pages]
+    recs = [f"|[{d['title']}]({ (Path('..')/d['fpath']).as_posix() })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# {tag.replace('_'," ").title()} Recipes \n\n"
         page_str += header + '\n'.join(recs)
