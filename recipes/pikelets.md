@@ -19,3 +19,5 @@
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/dairy-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/family-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+
+*Last Updated: 2026-02-26*

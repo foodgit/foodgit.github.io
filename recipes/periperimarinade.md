@@ -21,3 +21,5 @@
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/portuguese-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> 
+
+*Last Updated: 2023-11-24*

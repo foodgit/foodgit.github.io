@@ -36,3 +36,5 @@
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/baked-blue.svg" /> <img src="https://img.shields.io/badge/dessert-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
+
+*Last Updated: 2023-12-23*

@@ -48,3 +48,5 @@
 <img src="../images/logo_sm.png" width="40%" />
 
 <img src="https://img.shields.io/badge/airfryer-blue.svg" /> <img src="https://img.shields.io/badge/amazing-blue.svg" /> <img src="https://img.shields.io/badge/battered-blue.svg" /> <img src="https://img.shields.io/badge/chicken-blue.svg" /> <img src="https://img.shields.io/badge/crumbed-blue.svg" /> <img src="https://img.shields.io/badge/messy-blue.svg" /> <img src="https://img.shields.io/badge/mine-blue.svg" /> <img src="https://img.shields.io/badge/sides-blue.svg" /> 
+
+*Last Updated: 2026-02-26*
