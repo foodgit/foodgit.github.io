@@ -1,3 +1,5 @@
+<img src="potatobake/images/main.jpg" width="55%" align="right" />
+
 # Potato Bake
 
 ## Ingredients

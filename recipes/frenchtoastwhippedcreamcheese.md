@@ -1,3 +1,5 @@
+<img src="frenchtoastwhippedcreamcheese/images/main.jpg" width="55%" align="right" />
+
 # French Toast with Whipped Cream Cheese
 
 ## Ingredients
@@ -36,4 +38,4 @@
 
 *Created: 25th of June 2023*
 
-*Last Updated: 26th of February 2026*
+*Last Updated: 28th of September 2026*

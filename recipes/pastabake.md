@@ -1,3 +1,5 @@
+<img src="pastabake/images/main.jpg" width="55%" align="right" />
+
 # Pasta Bake
 
 ## Ingredients

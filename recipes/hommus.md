@@ -1,3 +1,5 @@
+<img src="hommus/images/main.jpg" width="55%" align="right" />
+
 # Hommus
 
 ## Ingredients
@@ -30,4 +32,4 @@
 
 *Created: 25th of June 2023*
 
-*Last Updated: 15th of January 2024*
+*Last Updated: 28th of September 2026*

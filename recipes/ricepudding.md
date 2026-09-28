@@ -1,3 +1,5 @@
+<img src="ricepudding/images/main.jpg" width="55%" align="right" />
+
 # Rice Pudding
 
 ## Ingredients

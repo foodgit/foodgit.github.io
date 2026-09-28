@@ -1,3 +1,5 @@
+<img src="rockcakes/images/main.jpg" width="55%" align="right" />
+
 # Rock Cakes
 
 ## Ingredients

@@ -1,3 +1,5 @@
+<img src="fritters/images/main.jpg" width="55%" align="right" />
+
 # Fritters
 
 ## Ingredients

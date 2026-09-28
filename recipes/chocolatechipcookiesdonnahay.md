@@ -1,3 +1,5 @@
+<img src="chocolatechipcookiesdonnahay/images/main.jpg" width="55%" align="right" />
+
 # Chocolate Chip Cookies (Donna Hay Style)
 
 ## Ingredients

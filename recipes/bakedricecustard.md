@@ -1,3 +1,5 @@
+<img src="bakedricecustard/images/main.jpg" width="55%" align="right" />
+
 # Baked Rice Custard
 
 ## Ingredients

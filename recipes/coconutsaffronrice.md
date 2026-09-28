@@ -1,3 +1,5 @@
+<img src="coconutsaffronrice/images/main.jpg" width="55%" align="right" />
+
 # Coconut Saffron Rice
 
 ## Ingredients

@@ -1,3 +1,5 @@
+<img src="chocolatechipcookiesneimanmarcus/images/main.jpg" width="55%" align="right" />
+
 # Chocolate Chip Cookies (Neiman Marcus Style)
 
 ## Ingredients

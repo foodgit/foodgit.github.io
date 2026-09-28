@@ -1,3 +1,5 @@
+<img src="lambchopcasserole/images/main.jpg" width="55%" align="right" />
+
 # Lamb Chop Casserole
 
 ## Ingredients

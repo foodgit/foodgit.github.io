@@ -1,3 +1,5 @@
+<img src="pikelets/images/main.jpg" width="55%" align="right" />
+
 # Pikelets
 
 ## Ingredients
