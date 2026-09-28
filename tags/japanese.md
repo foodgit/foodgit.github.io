@@ -1,0 +1,5 @@
+# Japanese Recipes 
+
+|Recipe Title|Tags|Created|Last Updated|
+|:---|:---|:---|:---|
+|[Chicken Katsu Curry](../recipes/chickenkatsucurry.md)|<a href="../tags/amazing.html"><img src="https://img.shields.io/badge/tag-amazing-3faa68" alt="amazing" /></a> <a href="../tags/baked.html"><img src="https://img.shields.io/badge/tag-baked-c5d714" alt="baked" /></a> <a href="../tags/chicken.html"><img src="https://img.shields.io/badge/tag-chicken-d93385" alt="chicken" /></a> <a href="../tags/curry.html"><img src="https://img.shields.io/badge/tag-curry-c5d714" alt="curry" /></a> <a href="../tags/dinner.html"><img src="https://img.shields.io/badge/tag-dinner-945e60" alt="dinner" /></a> <a href="../tags/japanese.html"><img src="https://img.shields.io/badge/tag-japanese-c5d714" alt="japanese" /></a> <a href="../tags/rice.html"><img src="https://img.shields.io/badge/tag-rice-25a9f1" alt="rice" /></a> <a href="../tags/rice_cooker.html"><img src="https://img.shields.io/badge/tag-rice_cooker-f6b493" alt="rice_cooker" /></a> <a href="../tags/stovetop.html"><img src="https://img.shields.io/badge/tag-stovetop-9bf4b7" alt="stovetop" /></a>|2026-09-28|2026-09-28|
