@@ -1,7 +1,5 @@
 # Chocolate Chip Cookies (Donna Hay Style)
 
-<img src="chocolatechipcookiesdonnahay/images/main.jpg" alt="Chocolate Chip Cookies (Donna Hay Style)" width="55%" align="right" />
-
 ## Ingredients
 
 - 180g unsalted butter, softened

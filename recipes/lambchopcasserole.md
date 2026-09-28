@@ -1,7 +1,5 @@
 # Lamb Chop Casserole
 
-<img src="lambchopcasserole/images/main.jpg" alt="Lamb Chop Casserole" width="55%" align="right" />
-
 ## Ingredients
 
 - Forequarter or chump chops

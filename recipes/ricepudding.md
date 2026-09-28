@@ -1,7 +1,5 @@
 # Rice Pudding
 
-<img src="ricepudding/images/main.jpg" alt="Rice Pudding" width="55%" align="right" />
-
 ## Ingredients
 
 - ⅔ cup rice long grain or short grain, uncooked

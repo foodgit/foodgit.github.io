@@ -1,7 +1,5 @@
 # Potato Bake
 
-<img src="potatobake/images/main.jpg" alt="Potato Bake" width="55%" align="right" />
-
 ## Ingredients
 
 - 60g butter

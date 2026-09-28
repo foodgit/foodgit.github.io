@@ -1,7 +1,5 @@
 # Pikelets
 
-<img src="pikelets/images/main.jpg" alt="Pikelets" width="55%" align="right" />
-
 ## Ingredients
 
 - 2 cups self raising flour

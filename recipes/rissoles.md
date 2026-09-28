@@ -1,7 +1,5 @@
 # Rissoles
 
-<img src="rissoles/images/main.jpg" alt="Rissoles" width="55%" align="right" />
-
 ## Ingredients
 
 Place into a large bowl:

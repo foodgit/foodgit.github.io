@@ -1,7 +1,5 @@
 # Chocolate Chip Cookies (Neiman Marcus Style)
 
-<img src="chocolatechipcookiesneimanmarcus/images/main.jpg" alt="Chocolate Chip Cookies (Neiman Marcus Style)" width="55%" align="right" />
-
 ## Ingredients
 
 - ½ cup unsalted butter

@@ -1,7 +1,5 @@
 # Coconut Saffron Rice
 
-<img src="coconutsaffronrice/images/main.jpg" alt="Coconut Saffron Rice" width="55%" align="right" />
-
 ## Ingredients
 
 - ¼ tsp saffron threads

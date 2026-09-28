@@ -1,7 +1,5 @@
 # Baked Rice Custard
 
-<img src="bakedricecustard/images/main.jpg" alt="Baked Rice Custard" width="55%" align="right" />
-
 ## Ingredients
 
 - 4 eggs

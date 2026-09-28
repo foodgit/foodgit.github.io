@@ -1,7 +1,5 @@
 # Rock Cakes
 
-<img src="rockcakes/images/main.jpg" alt="Rock Cakes" width="55%" align="right" />
-
 ## Ingredients
 
 - 1 ½ cups self raising flour

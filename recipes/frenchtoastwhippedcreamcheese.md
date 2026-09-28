@@ -1,7 +1,5 @@
 # French Toast with Whipped Cream Cheese
 
-<img src="frenchtoastwhippedcreamcheese/images/main.jpg" alt="French Toast with Whipped Cream Cheese" width="55%" align="right" />
-
 ## Ingredients
 
 ### Bread batter

@@ -1,7 +1,5 @@
 # Pasta Bake
 
-<img src="pastabake/images/main.jpg" alt="Pasta Bake" width="55%" align="right" />
-
 ## Ingredients
 
 - 500g mince

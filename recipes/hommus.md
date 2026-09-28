@@ -1,7 +1,5 @@
 # Hommus
 
-<img src="hommus/images/main.jpg" alt="Hommus" width="55%" align="right" />
-
 ## Ingredients
 
 - 425g can (or 1½ cups cooked) chickpeas, rinsed and drained
