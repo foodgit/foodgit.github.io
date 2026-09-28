@@ -59,7 +59,7 @@ with open(recipe_file_name,'r') as f:
 read_nextline=False
 tags=[]
 for line in body_lines:
-    if line[:6]=="- [X] ":
+    if line[:6].lower()=="- [x] ":
         tag=line[6:].strip().lower()
         tags.append(tag)
 
@@ -67,9 +67,7 @@ additional_tags=issue_body.split("### Additional tags")[1].split("\n")[2].lower(
 tags=tags+additional_tags
 tags.sort()
 # remove invalid tag if no checkbox was selected
-for tag in tags:
-    if "_No response_" in tag:
-        tags.remove(tag) 
+tags=[tag for tag in tags if "_no_response_" not in tag]
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
     f.write('\n'.join(map(str, tags)))
