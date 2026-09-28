@@ -94,4 +94,6 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <img src="https://img.shields.io/badge/american-blue.svg" /> <img src="https://img.shields.io/badge/beef-blue.svg" /> <img src="https://img.shields.io/badge/fast_food-blue.svg" /> 
 
-*Last Updated: 2023-06-25*
+*Created: 25th of June 2023*
+
+*Last Updated: 25th of June 2023*

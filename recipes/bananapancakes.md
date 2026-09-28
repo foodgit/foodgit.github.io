@@ -20,4 +20,6 @@
 
 <img src="https://img.shields.io/badge/breakfast-blue.svg" /> <img src="https://img.shields.io/badge/fast-blue.svg" /> <img src="https://img.shields.io/badge/fried-blue.svg" /> <img src="https://img.shields.io/badge/healthy-blue.svg" /> <img src="https://img.shields.io/badge/simple-blue.svg" /> <img src="https://img.shields.io/badge/stovetop-blue.svg" /> <img src="https://img.shields.io/badge/vegetarian-blue.svg" /> 
 
-*Last Updated: 2024-01-11*
+*Created: 2nd of January 2024*
+
+*Last Updated: 11th of January 2024*

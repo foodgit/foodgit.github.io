@@ -22,4 +22,6 @@
 
 <img src="https://img.shields.io/badge/portuguese-blue.svg" /> <img src="https://img.shields.io/badge/vegan-blue.svg" /> 
 
-*Last Updated: 2023-11-24*
+*Created: 15th of November 2023*
+
+*Last Updated: 24th of November 2023*
