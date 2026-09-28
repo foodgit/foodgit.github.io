@@ -1,15 +1,28 @@
-import shutil, filecmp, subprocess
+import shutil, filecmp, subprocess, datetime
 from pathlib import Path
 
-def get_last_updated(stub_path):
+def get_dates(stub_path):
+    """Returns (last_updated, created) ISO dates from the stub's git history."""
     try:
         result = subprocess.run(
-            ["git", "log", "-1", "--format=%as", "--", str(stub_path)],
+            ["git", "log", "--format=%as", "--", str(stub_path)],
             capture_output=True, text=True, check=True
         )
-        return result.stdout.strip()
+        dates = result.stdout.strip().splitlines()
+        if not dates:
+            return "", ""
+        return dates[0], dates[-1]
     except Exception:
+        return "", ""
+
+def suffix(d):
+    return {1:'st',2:'nd',3:'rd'}.get(d%20, 'th')
+
+def humanize_date(iso_date):
+    if not iso_date:
         return ""
+    d = datetime.datetime.strptime(iso_date, "%Y-%m-%d")
+    return d.strftime('{S} of %B %Y').replace('{S}', str(d.day)+suffix(d.day))
 
 content_dir = Path("recipes")
 all_recipe_stubs = [Path("template/template/template.recipe")]
@@ -58,11 +71,14 @@ for recipe_stub in all_recipe_stubs:
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(recipe_body)
 
-    last_updated = get_last_updated(recipe_stub)
+    last_updated_iso, created_iso = get_dates(recipe_stub)
+    last_updated = humanize_date(last_updated_iso)
+    created = humanize_date(created_iso)
 
     with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
         f.write('\n\n'+taglinks)
+        f.write('\n\n*Created: '+created+'*')
         f.write('\n\n*Last Updated: '+last_updated+'*')
         #pageviews
         #f.write('\n\n<p>This page has been viewed <span id="counter">...</span> times.</p>')

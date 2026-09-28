@@ -7,15 +7,19 @@ from collections import defaultdict
 
 random.seed(0)
 
-def get_last_updated(stub_path):
+def get_dates(stub_path):
+    """Returns (last_updated, created) ISO dates from the stub's git history."""
     try:
         result = subprocess.run(
-            ["git", "log", "-1", "--format=%as", "--", str(stub_path)],
+            ["git", "log", "--format=%as", "--", str(stub_path)],
             capture_output=True, text=True, check=True
         )
-        return result.stdout.strip()
+        dates = result.stdout.strip().splitlines()
+        if not dates:
+            return "", ""
+        return dates[0], dates[-1]
     except Exception:
-        return ""
+        return "", ""
 
 def badges2kv(text):
     testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
@@ -57,7 +61,7 @@ for fpath in list(md_files):
                 d_ = {'fpath':fpath}
                 d_['title'] = header[2:].strip()
                 stub_path = Path('recipes')/fpath.stem/f"{fpath.stem}.recipe"
-                d_['last_updated'] = get_last_updated(stub_path)
+                d_['last_updated'], d_['created'] = get_dates(stub_path)
                 d_['n_char'] = len(text)
                 d_['tags'] = [v for k,v in badge_meta if k =='tag']
                 d_['tags'].sort()
@@ -77,8 +81,8 @@ try:
 except:
     pass
 
-header= "|Recipe Title|Tags|Last Updated|\n|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|{d['last_updated']}|" for d in TOC]
+header= "|Recipe Title|Tags|Created|Last Updated|\n|:---|:---|:---|:---|\n"
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -103,7 +107,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|{d['last_updated']}|" for d in pages]
+    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# {tag.replace('_'," ").title()} Recipes \n\n"
         page_str += header + '\n'.join(recs)
