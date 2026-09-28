@@ -8,8 +8,10 @@ name: Rebuild Markdown Files [bot]
 # Versioning: if the current version.txt has no release yet (set by hand, e.g. a
 # major bump, or an earlier release build failed) it is released as-is. Otherwise
 # recipe/content changes bump the patch version and changes to the book's style or
-# structure bump the minor version. A release is only published when the current
-# version has none yet, so existing releases are never overwritten.
+# structure bump the minor version. Website-only changes don't bump; when a change
+# to a book input only affects the website, put "[no release]" in a commit message
+# of the push. A release is only published when the current version has none yet,
+# so existing releases are never overwritten.
 
 on:
   push:
@@ -83,11 +85,14 @@ jobs:
               bump=none
             elif [ "$GITHUB_EVENT_NAME" = "push" ]; then
               if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
-                changed="$(git diff --name-only "$BEFORE" "$GITHUB_SHA")"
+                range="$BEFORE..$GITHUB_SHA"
               else
-                changed="$(git diff --name-only "$GITHUB_SHA~1" "$GITHUB_SHA")"
+                range="$GITHUB_SHA~1..$GITHUB_SHA"
               fi
-              if grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
+              changed="$(git diff --name-only "${range%%..*}" "${range##*..}")"
+              if git log --format=%B "$range" | grep -qF '[no release]'; then
+                bump=none    # e.g. a generator change that only affects the website
+              elif grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
                 bump=minor   # book style or structure
               elif grep -q '^recipes/' <<< "$changed"; then
                 bump=patch   # recipe content
