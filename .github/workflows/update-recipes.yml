@@ -12,8 +12,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
       - name: install dependencies
@@ -27,7 +27,7 @@ jobs:
           git add recipes
           git commit -a -m "Recreated recipes from stubs"
       - name: Push markdown changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v1.3.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
@@ -41,7 +41,7 @@ jobs:
           git add tags/*
           git commit -a -m "Regenerated README.md TOC"
       - name: Push TOC changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v1.3.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
