@@ -81,6 +81,12 @@ if not font_dest.exists():
 if font_name not in subprocess.run(['fc-list'], capture_output=True, text=True).stdout:
     sys.exit('font "'+font_name+'" not found by fontconfig')
 
+# smart shrinking is disabled so the sizes in print-style.html are the printed sizes
+pandoc_pdf_opts = ('-f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf '
+    '--pdf-engine-opt=--enable-local-file-access --pdf-engine-opt=--disable-smart-shrinking '
+    '-V papersize:a4 -V margin-top=15mm -V margin-bottom=15mm -V margin-left=15mm -V margin-right=15mm '
+    '-V mainfont:"'+font_name+'" -H "'+str(Path('./pdf/print-style.html').resolve())+'"')
+
 print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
     title_page_body = f.read()
@@ -89,7 +95,7 @@ title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, 
 output_file = Path("./pdf/0_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
-run('cd ./pdf && pandoc --quiet -f gfm -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"'+font_name+'" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
+run('cd ./pdf && pandoc '+pandoc_pdf_opts+' ./0_3_title_page.md -o ./0_3_title_page.pdf')
 os.remove('./pdf/0_3_title_page.md')
 
 if book_only:
@@ -162,7 +168,7 @@ else:
             
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
-            run('cd ./recipes && pandoc -f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"'+font_name+'" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+            run('cd ./recipes && pandoc '+pandoc_pdf_opts+' --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
             run('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
             # print('setting margin size to '+margin_size+'.')
