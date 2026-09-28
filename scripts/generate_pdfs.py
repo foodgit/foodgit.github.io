@@ -274,8 +274,8 @@ def recipe_title(part):
     return md.stem
 
 def layout():
-    """first page of each part, recipe pages to number, and the category/recipe outline,
-    all as page numbers in the finished book"""
+    """first page of each part, pages to number (recipes and blanks), and the
+    category/recipe outline, all as page numbers in the finished book"""
     start, page, numbered, sections = {}, 1, set(), []
     for part in book_parts():
         n = page_count(Path('./pdf')/part)
@@ -287,6 +287,8 @@ def layout():
             numbered.update(range(page, page+n))
             if sections:
                 sections[-1][2].append((recipe_title(part), page))
+        elif part == '0_2_blank.pdf' or part.startswith('zzzzz_blank'):
+            numbered.update(range(page, page+n))
         page += n
     return start, numbered, sections
 
@@ -329,9 +331,11 @@ for i in range(0, num_add_pages):
 if num_add_pages > 0:
     print('regenerating book with extra padding for booklet printing')
     unite_book(tempfilename)
+    # the padding pages are numbered too
+    numbered = layout()[1]
 
 print('optimizing '+filename+' for printing')
-# bookmarks (sidebar outline) and page numbers on recipe pages, added in the same pass
+# bookmarks (sidebar outline) and page numbers on recipe and blank pages, added in the same pass
 marks = ['[/Title '+ps_text('contents')+' /Page '+str(start['0_4_contents.pdf'])+' /OUT pdfmark']
 for name, page, recipes in sections:
     if recipes:
