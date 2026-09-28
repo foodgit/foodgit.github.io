@@ -1,16 +1,40 @@
 name: Rebuild Markdown Files [bot]
 
-# Recipe pipeline: regenerate recipe pages + README TOC, build the PDF book and
-# publish it as a release, then deploy the site. Everything runs in one
-# workflow because pushes made with GITHUB_TOKEN never trigger other workflows.
+# Recipe pipeline: regenerate recipe pages + README TOC, bump the version, build
+# the PDF book and publish it as a new release, then deploy the site. Everything
+# runs in one workflow because pushes made with GITHUB_TOKEN never trigger other
+# workflows.
+#
+# Versioning: recipe/content changes bump the patch version, changes to the book's
+# style or structure bump the minor version, and a hand edit to version.txt (e.g.
+# a major bump) is used as-is. A release is only published when the current
+# version has none yet, so existing releases are never overwritten.
 
 on:
   push:
     branches: [ "main" ]
+    # keep in sync with the paths-ignore list in jekyll-gh-pages.yml
     paths:
       - recipes/**
+      - pdf/**
+      - images/**
+      - assets/fonts/**
+      - scripts/generate_pdfs.py
+      - scripts/generate_markdown_recipes.py
+      - version.txt
   workflow_call:
+    inputs:
+      bump:
+        description: patch, minor, none, or auto (work it out from the pushed changes)
+        type: string
+        default: auto
   workflow_dispatch:
+    inputs:
+      bump:
+        description: Version bump
+        type: choice
+        options: [auto, patch, minor, none]
+        default: none
 
 permissions:
   contents: write
@@ -23,11 +47,13 @@ jobs:
     concurrency:
       group: recipe-update
       cancel-in-progress: false
+    outputs:
+      release: ${{ steps.version.outputs.release }}
     steps:
       - uses: actions/checkout@v7
         with:
-          # full history for the Created/Last Updated dates; branch tip so a
-          # commit made earlier in the same run (new submission) is included
+          # full history for the Created/Last Updated dates and change detection;
+          # branch tip so a commit made earlier in the same run is included
           ref: ${{ github.ref_name }}
           fetch-depth: 0
       - uses: actions/setup-python@v7
@@ -37,25 +63,74 @@ jobs:
         run: python scripts/generate_markdown_recipes.py
       - name: Recreate README.md TOC
         run: python scripts/update_readme.py
+      - name: Bump version
+        id: version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BUMP: ${{ inputs.bump || 'auto' }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          bump="$BUMP"
+          if [ "$bump" = "auto" ]; then
+            if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+              if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+                changed="$(git diff --name-only "$BEFORE" "$GITHUB_SHA")"
+              else
+                changed="$(git diff --name-only "$GITHUB_SHA~1" "$GITHUB_SHA")"
+              fi
+              if grep -qx 'version.txt' <<< "$changed"; then
+                bump=none    # set by hand
+              elif grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
+                bump=minor   # book style or structure
+              elif grep -q '^recipes/' <<< "$changed"; then
+                bump=patch   # recipe content
+              else
+                bump=none
+              fi
+            else
+              bump=patch
+            fi
+          fi
+          IFS=. read -r major minor patch < <(tr -d '[:space:]' < version.txt)
+          case "$bump" in
+            minor) minor=$((minor + 1)); patch=0 ;;
+            patch) patch=$((patch + 1)) ;;
+          esac
+          version="$major.$minor.$patch"
+          printf '%s' "$version" > version.txt
+          echo "bump: $bump, version: $version"
+          if gh release view "$version" > /dev/null 2>&1; then
+            echo "release=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
       - name: Commit and push changes
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "action@github.com"
-          git add -A recipes template README.md tags
+          git add -A recipes template README.md tags version.txt
           if git diff --cached --quiet; then
             echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "Regenerated recipe pages and README TOC"
+          if git diff --cached --quiet -- version.txt; then
+            git commit -m "Regenerated recipe pages and README TOC"
+          else
+            git commit -m "Release $VERSION"
+          fi
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin "HEAD:${{ github.ref_name }}"
 
   book:
     needs: update
+    if: ${{ needs.update.outputs.release == 'true' }}
     uses: ./.github/workflows/build-book.yml
 
   deploy:
     needs: [update, book]
-    # publish the site even if the PDF build fails
+    # publish the site even when no book was built or the PDF build failed
     if: ${{ !cancelled() && needs.update.result == 'success' }}
     uses: ./.github/workflows/jekyll-gh-pages.yml

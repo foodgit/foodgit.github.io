@@ -2,12 +2,19 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch. Recipe-only pushes are
-  # skipped because rebuild-markdown.yml deploys once it has regenerated them.
+  # Runs on pushes targeting the default branch. Pushes that only touch what
+  # rebuild-markdown.yml handles are skipped, because it deploys once it has
+  # regenerated pages and built the book. Keep in sync with its paths list.
   push:
     branches: ["main"]
     paths-ignore:
       - recipes/**
+      - pdf/**
+      - images/**
+      - assets/fonts/**
+      - scripts/generate_pdfs.py
+      - scripts/generate_markdown_recipes.py
+      - version.txt
 
   # Called at the end of the recipe pipeline
   workflow_call:

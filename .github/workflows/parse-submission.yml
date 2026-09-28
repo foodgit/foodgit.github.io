@@ -51,3 +51,5 @@ jobs:
   publish:
     needs: parse
     uses: ./.github/workflows/rebuild-markdown.yml
+    with:
+      bump: patch    # a new recipe
