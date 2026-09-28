@@ -94,9 +94,6 @@ for recipe_stub in all_recipe_stubs:
         f.write('\n\n'+taglinks)
         f.write('\n\n*Created: '+created+'*')
         f.write('\n\n*Last Updated: '+last_updated+'*')
-        #pageviews
-        #f.write('\n\n<p>This page has been viewed <span id="counter">...</span> times.</p>')
-        #f.write('\n\n<script data-goatcounter="https://fexofenadine.goatcounter.com/count"\n\tasync src="//gc.zgo.at/count.js"></script>')
 
     try:
         identical=filecmp.cmp(temp_file_name,recipe_file_name)
