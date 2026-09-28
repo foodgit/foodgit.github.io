@@ -42,6 +42,7 @@ jobs:
             fontconfig xfonts-75dpi xfonts-base
           wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
           sudo apt-get install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+          pip install fonttools
       - name: Build PDFs
         if: ${{ !steps.check.outputs.exists }}
         # --all: file mtimes are meaningless after a fresh checkout

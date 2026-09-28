@@ -1,7 +1,11 @@
 # linux only for now 
-# requires poppler-utils, ghostscript, pandoc, exiftool
+# requires poppler-utils, ghostscript, pandoc, wkhtmltopdf, exiftool, and the python
+# package fonttools
 import os, re, sys, html, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
+from fontTools.ttLib import TTFont
+from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.transformPen import TransformPen
 
 # date formatting pleasantries (for title page, etc)
 def suffix(d):
@@ -84,7 +88,7 @@ with open('./LICENSE') as f:
 # with the repo and is installed here so local and CI builds match
 font_file = Path('./assets/fonts/nunito-extrabold.ttf')
 font_dest = Path.home()/'.local/share/fonts'/font_file.name
-if not font_dest.exists():
+if not font_dest.exists() or not filecmp.cmp(font_file, font_dest, shallow=False):
     print("installing font "+font_file.name)
     font_dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(font_file, font_dest)
@@ -216,12 +220,27 @@ html, body { margin: 0; padding: 0; background: white; }
              font-size: 18pt; line-height: 1; color: #00ffff; }
 '''
 
+def text_outline(text, size):
+    """SVG path data for text set in the book font, and its advance width (in pt)"""
+    font = TTFont(font_file)
+    cmap, glyphs = font.getBestCmap(), font.getGlyphSet()
+    scale = size / font['head'].unitsPerEm
+    pen, x = SVGPathPen(glyphs), 0
+    for ch in text:
+        name = cmap.get(ord(ch))
+        if name:
+            glyphs[name].draw(TransformPen(pen, (scale, 0, 0, -scale, x, 0)))
+            x += glyphs[name].width * scale
+    return pen.getCommands(), x
+
 def divider_svg(text):
-    # SVG so the text can have an outline: wkhtmltopdf drops text-stroke and text-shadow
+    # drawn as a single outline shape, filled and stroked: wkhtmltopdf drops CSS
+    # text-stroke/text-shadow, and SVG <text> lays the fill and stroke out separately
+    # so they drift apart along the word
+    path, width = text_outline(text, 74)
     return ('<svg width="210mm" height="297mm" viewBox="0 0 595 842">'
-            '<text x="297.6" y="447" text-anchor="middle" font-family="'+font_name+'" font-size="74" '
-            'fill="#6bade9" stroke="#3a5e7a" stroke-width="1.1" stroke-linejoin="round">'
-            +html.escape(text)+'</text></svg>')
+            '<path transform="translate(%.2f 447)" d="%s" fill="#6bade9" stroke="#3a5e7a" '
+            'stroke-width="1.1" stroke-linejoin="round"/></svg>') % (297.6 - width/2, path)
 
 def static_page(name, body, dark=False):
     src = Path('./pdf')/(name+'.temp.html')
