@@ -1,6 +1,6 @@
 # linux only for now 
 # requires poppler-utils, ghostscript, pandoc, exiftool
-import os, glob, shutil, filecmp, argparse, datetime, subprocess
+import os, sys, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 
 # date formatting pleasantries (for title page, etc)
@@ -9,6 +9,14 @@ def suffix(d):
 
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
+
+def run(cmd):
+    if os.system(cmd) != 0:
+        sys.exit('command failed: '+cmd)
+
+def unite_book(output):
+    parts = sorted(f.name for f in Path('./pdf').glob('*.pdf') if '.temp.' not in f.name)
+    subprocess.run(['pdfunite', *parts, '../'+output], cwd='./pdf', check=True)
 
 # set variables to passed parameters
 parser = argparse.ArgumentParser()
@@ -74,7 +82,7 @@ title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, 
 output_file = Path("./pdf/0_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
-os.system('cd ./pdf && pandoc --quiet -f gfm -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
+run('cd ./pdf && pandoc --quiet -f gfm -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V documentclass=book --pdf-engine-opt=--enable-local-file-access ./0_3_title_page.md -o ./0_3_title_page.pdf')
 os.remove('./pdf/0_3_title_page.md')
 
 if book_only:
@@ -147,9 +155,9 @@ else:
             
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
-            os.system('cd ./recipes && pandoc -f gfm --quiet -t html5 -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+            run('cd ./recipes && pandoc -f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf -V papersize:a4 -V geometry:margin=2cm -V mainfont:"Helvetica Rounded" -V mainfontoptions:"Scale=1.1" -V fontsize=20pt -V documentclass=book --pdf-engine-opt=--enable-local-file-access --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
-            os.system('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
+            run('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
             # print('setting margin size to '+margin_size+'.')
             # os.system('cd ./pdf && pdfcrop --margins \''+margin_size+'\' ./'+category[0]+'_'+recipe_name+'.pdf ./'+category[0]+'_'+recipe_name+'.pdf')
 
@@ -167,7 +175,7 @@ else:
 print("\nexporting Recipe Book")
 tempfilename=title.replace(" ","_")+'.temp.pdf'
 filename=title.replace(" ","_")+'.pdf'
-os.system('cd ./pdf && pdfunite *.pdf ../'+tempfilename)
+unite_book(tempfilename)
 
 # calculate and insert number of blank pages to insert for tidy booklet printing
 p1 = subprocess.Popen(['pdfinfo', tempfilename], stdout=subprocess.PIPE)
@@ -175,7 +183,7 @@ p2 = subprocess.Popen(['grep', 'Pages'], stdin=p1.stdout, stdout=subprocess.PIPE
 p3 = subprocess.Popen(['sed', 's/[^0-9]*//'], stdin=p2.stdout, stdout=subprocess.PIPE)
 pagecount=p3.communicate()[0].decode("utf-8")
 print('pagecount: '+pagecount)
-num_add_pages=4 - (int(pagecount) % 4)
+num_add_pages=(4 - int(pagecount) % 4) % 4
 print('number of pages to insert: '+str(num_add_pages))
 for i in range(0, num_add_pages):
     shutil.copyfile('./pdf/0_2_blank.pdf', f'./pdf/zzzzz_blank{i}.pdf')
@@ -183,10 +191,10 @@ for i in range(0, num_add_pages):
 # regenerate the book with the additional pages
 if num_add_pages > 0:
     print('regenerating book with extra padding for booklet printing')
-    os.system('cd ./pdf && pdfunite *.pdf ../'+tempfilename)
+    unite_book(tempfilename)
 
 print('optimizing '+filename+' for printing')
-os.system('ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+filename+' ./'+tempfilename)
+run('ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+filename+' ./'+tempfilename)
 
 # cleanup
 print('removing temp file '+tempfilename)
@@ -196,4 +204,4 @@ for f in glob.glob("./pdf/zzzzz_blank*.pdf"):
     os.remove(f)
 
 print("applying metadata")
-os.system('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -marked="True" -webstatement="'+license_url+'" -description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.gihub.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
+run('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -marked="True" -webstatement="'+license_url+'" -description="'+title+' '+version_number+'\nhttps://foodgit.github.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.github.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
