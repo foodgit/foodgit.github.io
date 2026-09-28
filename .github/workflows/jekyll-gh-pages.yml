@@ -14,6 +14,9 @@ on:
       - assets/fonts/**
       - scripts/generate_pdfs.py
       - scripts/generate_markdown_recipes.py
+      - scripts/update_readme.py
+      - README.stub
+      - index.stub
       - version.txt
 
   # Called at the end of the recipe pipeline

@@ -1,1 +1,17 @@
 theme: jekyll-theme-primer
+title: gitFOOD
+description: A personal recipe collection built from simple Markdown files, and a printable recipe book made from them.
+
+# preview image when a page is shared
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/logo_sq.png
+
+# build inputs and tooling, not site pages
+exclude:
+  - README.stub
+  - index.stub
+  - scripts
+  - submissions

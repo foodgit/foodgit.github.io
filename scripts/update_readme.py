@@ -1,4 +1,5 @@
 from pathlib import Path
+import html
 import random
 import re
 import subprocess
@@ -33,7 +34,7 @@ def make_badge(label, prefix='tag', color='lightgrey', root='.'):
 def random_hex_colour():
     """generates a string for a random hex color"""
     r = lambda: random.randint(0,255)
-    return  f"{r():x}{r():x}{r():x}"
+    return  f"{r():02x}{r():02x}{r():02x}"
 
 def get_tag_hex_colour(tag_name):
     tag_file = Path('./tags/colours/'+tag_name+'.hex')
@@ -99,16 +100,45 @@ if not readme:
 with open('README.md','w') as f:
     f.write(readme)
        
-# overriding it this way is ugly but whatever
-tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name), root='..') for tag_name in unq_tags}
-def make_badges(unq_tags, sep=' '):
-    return sep.join([tag_badges_map[tag] for tag in unq_tags])
-   
+# The site's homepage (index.md) and tag pages use plain styled tag labels and an
+# HTML table that assets/js/recipes.js makes sortable and filterable. README.md
+# keeps image badges, since GitHub strips inline styles when showing it.
+
+def label_colours(tag):
+    # older colour files can have 5 hex digits (the generator didn't zero-pad)
+    bg = get_tag_hex_colour(tag).strip().lstrip('#').rjust(6, '0')[:6]
+    def linear(c):
+        c /= 255
+        return c/12.92 if c <= 0.03928 else ((c+0.055)/1.055)**2.4
+    r, g, b = (linear(int(bg[i:i+2], 16)) for i in (0, 2, 4))
+    luminance = 0.2126*r + 0.7152*g + 0.0722*b
+    return '#'+bg, ('#111' if luminance > 0.3 else '#fff')
+
+def make_label(tag, root):
+    bg, fg = label_colours(tag)
+    return (f'<a class="tag" href="{root}/tags/{tag}.html" style="background:{bg};color:{fg}">'
+            f'{tag.replace("_", " ")}</a>')
+
+def recipe_table(rows, root):
+    out = ['<table class="recipes">',
+           '<thead><tr><th data-sort>Recipe</th><th>Tags</th>'
+           '<th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>',
+           '<tbody>']
+    for d in rows:
+        href = root+'/'+d['fpath'].with_suffix('.html').as_posix()
+        labels = ' '.join(make_label(t, root) for t in d['tags'])
+        out.append(f'<tr><td><a href="{href}">{html.escape(d["title"])}</a></td><td class="tags">{labels}</td>'
+                   f'<td class="date">{d["created"]}</td><td class="date">{d["last_updated"]}</td></tr>')
+    out += ['</tbody>', '</table>']
+    return '\n'.join(out)
+
+with open('index.stub') as f:
+    index_stub = f.read()
+with open('index.md', 'w') as f:
+    f.write(index_stub.replace('{TOC}', recipe_table(TOC, '.')))
+
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ (Path('..')/d['fpath']).as_posix() })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
-        page_str = f"# {tag.replace('_'," ").title()} Recipes \n\n"
-        page_str += header + '\n'.join(recs)
-        f.write(page_str)
+        f.write(f"# {tag.replace('_'," ").title()} Recipes\n\n"+recipe_table(pages, '..')+'\n')

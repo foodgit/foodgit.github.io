@@ -22,6 +22,9 @@ on:
       - assets/fonts/**
       - scripts/generate_pdfs.py
       - scripts/generate_markdown_recipes.py
+      - scripts/update_readme.py
+      - README.stub
+      - index.stub
       - version.txt
   workflow_call:
     inputs:
@@ -117,7 +120,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "action@github.com"
-          git add -A recipes template README.md tags version.txt
+          git add -A recipes template README.md index.md tags version.txt
           if git diff --cached --quiet; then
             echo "Nothing to commit"
             exit 0
