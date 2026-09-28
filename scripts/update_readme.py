@@ -2,48 +2,20 @@ from pathlib import Path
 import random
 import re
 import subprocess
-import time
-import datetime
-import os
 from collections import defaultdict
 #from loguru import logger
 
 random.seed(0)
 
-def get_last_modified_date(fpath, verbose=True, timestamp=False):
-    fmt = "%as"
-    if timestamp:
-        fmt="%at"
-    # cmd = f"git log --pretty=format:{fmt}__%ae --".split()
-    # cmd += [str(fpath)]
-    # if verbose:
-    #     logger.debug(cmd)
-    # response = subprocess.run(cmd, capture_output=True)
-    # commits = response.stdout.decode()
-    # logger.debug(response)
-    # commits = commits.split()
-    # for c in commits:
-    #     outv, author_email = c.split('__')
-    #     if author_email != 'action@github.com':
-    #         break
-    # if verbose:
-    #     try:
-    #         logger.debug(outv)
-    #     except:
-    #         pass
-    # try:
-    #     return outv
-    # except:
-    #     return "N/A"
-
-    t = os.path.getmtime(fpath)
-    if timestamp:
-        outv=datetime.datetime.fromtimestamp(t)
-  
-    else:
-        outv=time.strftime('%Y-%m-%d', time.gmtime(t))
-    #print(outv)
-    return outv
+def get_last_updated(stub_path):
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%as", "--", str(stub_path)],
+            capture_output=True, text=True, check=True
+        )
+        return result.stdout.strip()
+    except Exception:
+        return ""
 
 def badges2kv(text):
     testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
@@ -84,9 +56,8 @@ for fpath in list(md_files):
                 badge_meta = badges2kv(text)
                 d_ = {'fpath':fpath}
                 d_['title'] = header[2:].strip()
-                d_['last_modified'] = get_last_modified_date(fpath)
-                d_['last_modified_ts'] = get_last_modified_date(fpath, timestamp=True)
-                #d_['last_modified']=time.strftime('%Y-%m-%d', time.gmtime(int(d_['last_modified_ts'])))
+                stub_path = Path('recipes')/fpath.stem/f"{fpath.stem}.recipe"
+                d_['last_updated'] = get_last_updated(stub_path)
                 d_['n_char'] = len(text)
                 d_['tags'] = [v for k,v in badge_meta if k =='tag']
                 d_['tags'].sort()
@@ -106,8 +77,8 @@ try:
 except:
     pass
 
-header= "|Recipe Title|Tags\n|:---|:---|\n"
-recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|" for d in TOC]
+header= "|Recipe Title|Tags|Last Updated|\n|:---|:---|:---|\n"
+recs = [f"|[{d['title']}]({ Path('.')/d['fpath'] })|{make_badges(d['tags'])}|{d['last_updated']}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = None
@@ -132,7 +103,7 @@ def make_badges(unq_tags, sep=' '):
 Path("tags").mkdir(exist_ok=True)
 for tag, pages in unq_tags.items():
     pages = sorted(pages, key=lambda x:x['title'])
-    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|" for d in pages]
+    recs = [f"|[{d['title']}]({ Path('..')/d['fpath'] })|{make_badges(d['tags'])}|{d['last_updated']}|" for d in pages]
     with open(f"tags/{tag}.md", 'w') as f:
         page_str = f"# {tag.replace('_'," ").title()} Recipes \n\n"
         page_str += header + '\n'.join(recs)
