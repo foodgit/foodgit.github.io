@@ -1,5 +1,15 @@
-import os, glob, shutil, filecmp
+import os, glob, shutil, filecmp, subprocess
 from pathlib import Path
+
+def get_last_updated(stub_path):
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%as", "--", stub_path],
+            capture_output=True, text=True, check=True
+        )
+        return result.stdout.strip()
+    except Exception:
+        return ""
 
 content_dir='./recipes'
 all_recipe_stubs=[ "./template/template/template.recipe" ]
@@ -50,9 +60,12 @@ for recipe_stub in list(all_recipe_stubs):
     output_file.parent.mkdir(exist_ok=True, parents=True)
     output_file.write_text(recipe_body)
 
+    last_updated = get_last_updated(recipe_stub)
+
     with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" width="40%" />')
         f.write('\n\n'+taglinks)
+        f.write('\n\n*Last Updated: '+last_updated+'*')
         #pageviews
         #f.write('\n\n<p>This page has been viewed <span id="counter">...</span> times.</p>')
         #f.write('\n\n<script data-goatcounter="https://fexofenadine.goatcounter.com/count"\n\tasync src="//gc.zgo.at/count.js"></script>')
