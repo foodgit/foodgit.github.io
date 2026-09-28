@@ -41,6 +41,9 @@ elif book_only:
 author = 'fexofenadine'
 title = 'gitFOOD Recipe Book'
 license_url = 'https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICENSE'
+repo_url = 'https://github.com/fexofenadine/gitfood'
+site_url = 'https://fexofenadine.github.io/gitfood/'
+site_url_short = 'https://foodgit.github.io'
 margin_size = '15'
 font_name = 'Nunito ExtraBold'
 
@@ -208,4 +211,25 @@ for f in glob.glob("./pdf/zzzzz_blank*.pdf"):
     os.remove(f)
 
 print("applying metadata")
-run('exiftool -overwrite_original -author="'+author+'" -xmp-dc:creator="'+author+'" -marked="True" -webstatement="'+license_url+'" -description="'+title+' '+version_number+'\nhttps://foodgit.github.io" -xmp-dc:description="'+title+' '+version_number+'\nhttps://foodgit.github.io" -title="'+title+'" -xmp-dc:title="'+title+'" ./'+filename)
+now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y:%m:%d %H:%M:%S+00:00')
+description = (title+' '+version_number+', a collection of recipes from '+site_url+
+               ' (also '+site_url_short+'). Formatted for A4 and booklet printing.')
+keywords = ['gitFOOD', 'recipes', 'recipe book', 'cookbook',
+            'snacks', 'breakfast', 'lunch', 'dinner', 'dessert', 'sides']
+subprocess.run(['exiftool', '-overwrite_original', '-q',
+    '-PDF:Title='+title, '-XMP-dc:Title='+title,
+    '-PDF:Author='+author, '-XMP-dc:Creator='+author, '-XMP-dc:Publisher='+author,
+    '-PDF:Subject='+description, '-XMP-dc:Description='+description,
+    '-PDF:Keywords='+', '.join(keywords), '-XMP-pdf:Keywords='+', '.join(keywords),
+    *['-XMP-dc:Subject='+k for k in keywords],
+    '-PDF:Creator=gitFOOD generate_pdfs.py (pandoc, wkhtmltopdf)',
+    '-XMP-xmp:CreatorTool=gitFOOD generate_pdfs.py (pandoc, wkhtmltopdf)',
+    '-PDF:CreateDate='+now, '-PDF:ModifyDate='+now,
+    '-XMP-xmp:CreateDate='+now, '-XMP-xmp:ModifyDate='+now, '-XMP-dc:Date='+now,
+    '-XMP-dc:Identifier='+title+' '+version_number,
+    '-XMP-dc:Language=en',
+    '-XMP-dc:Source='+repo_url,
+    '-XMP-dc:Relation='+site_url, '-XMP-dc:Relation='+site_url_short,
+    '-XMP-dc:Rights=GNU General Public License v3.0',
+    '-XMP-xmpRights:Marked=True', '-XMP-xmpRights:WebStatement='+license_url,
+    './'+filename], check=True)
