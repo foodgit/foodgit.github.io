@@ -5,9 +5,10 @@ name: Rebuild Markdown Files [bot]
 # runs in one workflow because pushes made with GITHUB_TOKEN never trigger other
 # workflows.
 #
-# Versioning: recipe/content changes bump the patch version, changes to the book's
-# style or structure bump the minor version, and a hand edit to version.txt (e.g.
-# a major bump) is used as-is. A release is only published when the current
+# Versioning: if the current version.txt has no release yet (set by hand, e.g. a
+# major bump, or an earlier release build failed) it is released as-is. Otherwise
+# recipe/content changes bump the patch version and changes to the book's style or
+# structure bump the minor version. A release is only published when the current
 # version has none yet, so existing releases are never overwritten.
 
 on:
@@ -71,16 +72,19 @@ jobs:
           BEFORE: ${{ github.event.before }}
         run: |
           bump="$BUMP"
+          current="$(tr -d '[:space:]' < version.txt)"
           if [ "$bump" = "auto" ]; then
-            if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            if ! gh release view "$current" > /dev/null 2>&1; then
+              # not released yet: set by hand (e.g. a major bump), or an earlier
+              # release build failed -- release this version as it is
+              bump=none
+            elif [ "$GITHUB_EVENT_NAME" = "push" ]; then
               if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
                 changed="$(git diff --name-only "$BEFORE" "$GITHUB_SHA")"
               else
                 changed="$(git diff --name-only "$GITHUB_SHA~1" "$GITHUB_SHA")"
               fi
-              if grep -qx 'version.txt' <<< "$changed"; then
-                bump=none    # set by hand
-              elif grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
+              if grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
                 bump=minor   # book style or structure
               elif grep -q '^recipes/' <<< "$changed"; then
                 bump=patch   # recipe content
@@ -88,10 +92,12 @@ jobs:
                 bump=none
               fi
             else
-              bump=patch
+              bump=patch     # approved submission: a new recipe
             fi
           fi
-          IFS=. read -r major minor patch < <(tr -d '[:space:]' < version.txt)
+          # here-string, not <(...): version.txt has no trailing newline, and read
+          # returns non-zero at EOF, which fails the step under bash -e
+          IFS=. read -r major minor patch <<< "$current"
           case "$bump" in
             minor) minor=$((minor + 1)); patch=0 ;;
             patch) patch=$((patch + 1)) ;;
