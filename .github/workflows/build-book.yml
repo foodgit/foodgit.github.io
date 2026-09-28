@@ -1,0 +1,50 @@
+name: Build Recipe Book PDF
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  book:
+    # pinned: the wkhtmltopdf .deb below is built for this Ubuntu generation
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # when called after a bot commit, build the new branch tip rather than
+          # the commit that originally triggered the run
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.x'
+      - name: Install PDF toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc ghostscript poppler-utils libimage-exiftool-perl \
+            fontconfig xfonts-75dpi xfonts-base
+          wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+          sudo apt-get install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+          mkdir -p ~/.local/share/fonts
+          cp fonts/*.otf ~/.local/share/fonts/
+          fc-cache -f
+      - name: Build PDFs
+        # --all: file mtimes are meaningless after a fresh checkout
+        run: python scripts/generate_pdfs.py --all
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(tr -d '[:space:]' < version.txt)"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            # keep the existing (possibly hand-written) release notes; refresh the PDF only
+            gh release upload "$tag" gitFOOD_Recipe_Book.pdf --clobber
+          else
+            gh release create "$tag" gitFOOD_Recipe_Book.pdf \
+              --title "v${tag} - A4 Printable Version" \
+              --notes "Built automatically from $(git rev-parse --short HEAD) on $(date -u +%Y-%m-%d). Formatted and optimized for A4 page size printing. Booklet-printing friendly." \
+              --target "$(git rev-parse HEAD)"
+          fi

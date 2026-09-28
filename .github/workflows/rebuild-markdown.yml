@@ -1,52 +1,61 @@
 name: Rebuild Markdown Files [bot]
 
+# Recipe pipeline: regenerate recipe pages + README TOC, build the PDF book and
+# publish it as a release, then deploy the site. Everything runs in one
+# workflow because pushes made with GITHUB_TOKEN never trigger other workflows.
+
 on:
   push:
     branches: [ "main" ]
     paths:
       - recipes/**
+  workflow_call:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
+    concurrency:
+      group: recipe-update
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
         with:
+          # full history for the Created/Last Updated dates; branch tip so a
+          # commit made earlier in the same run (new submission) is included
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
       - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
-      - name: install dependencies
-        run: pip install loguru
       - name: Rebuild markdown recipes
         run: python scripts/generate_markdown_recipes.py
-      - name: setup git config
+      - name: Recreate README.md TOC
+        run: python scripts/update_readme.py
+      - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "action@github.com"
-      - name: Check if there are any changes
-        id: verify_diff1
-        run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
-      - name: Commit markdown changes
-        if: steps.verify_diff1.outputs.changed == 'true'
-        run: |
-          git add recipes/*.md
-          git commit -a -m "Recreated recipes from stubs"
-      - name: Recreate README.md TOC
-        run: python scripts/update_readme.py
-      - name: Check if there are any changes
-        id: verify_diff2
-        run: |
-          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
-      - name: Commit TOC changes
-        if: steps.verify_diff2.outputs.changed == 'true'
-        run: |
-          git add README.md
-          git add tags/*
-          git commit -a -m "Regenerated README.md TOC"
-      - name: Push changes
-        uses: ad-m/github-push-action@v1.3.0
-        with:
-          branch: ${{ github.ref_name }}
+          git add -A recipes template README.md tags
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Regenerated recipe pages and README TOC"
+          git pull --rebase origin "${{ github.ref_name }}"
+          git push origin "HEAD:${{ github.ref_name }}"
+
+  book:
+    needs: update
+    uses: ./.github/workflows/build-book.yml
+
+  deploy:
+    needs: [update, book]
+    # publish the site even if the PDF build fails
+    if: ${{ !cancelled() && needs.update.result == 'success' }}
+    uses: ./.github/workflows/jekyll-gh-pages.yml

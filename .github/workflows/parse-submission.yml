@@ -3,18 +3,23 @@ name: parse_submission
 on:
   issues:
     types: [labeled]
-  
-env:
-  ISSUE_TITLE: ${{ github.event.issue.title }}
-  ISSUE_BODY: ${{ github.event.issue.body }}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build:
+  parse:
     if: ${{ github.event.label.name == 'approved' }}
     runs-on: ubuntu-latest
+    concurrency:
+      group: recipe-update
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
       - uses: actions/setup-python@v7
         with:
@@ -22,19 +27,27 @@ jobs:
       - name: Install dependencies
         run: pip install requests
       - name: Call python issue submission parser
-        run: python scripts/parse_submission.py "${{ env.ISSUE_BODY }}"
-      - name: setup git config
+        env:
+          # passed via env + file, never interpolated into the shell command
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/issue_body.md"
+          python scripts/parse_submission.py "$RUNNER_TEMP/issue_body.md"
+      - name: Commit and push new recipe
         run: |
           git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-      - name: Add new submissions to git
-        run: |
-          git add submissions
-          git add recipes
-      - name: Commit markdown changes
-        run: |
-          git commit -a -m "Processed new recipe from submitted issue template"
-      - name: Push changes
-        uses: ad-m/github-push-action@v1.3.0
-        with:
-          branch: ${{ github.ref_name }}
+          git config user.email "action@github.com"
+          git add -A submissions recipes
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Processed new recipe from submitted issue template"
+          git pull --rebase origin "${{ github.ref_name }}"
+          git push origin "HEAD:${{ github.ref_name }}"
+
+  # regenerate pages/TOC (fills in dates now the stub is committed), build and
+  # release the PDF, then deploy the site
+  publish:
+    needs: parse
+    uses: ./.github/workflows/rebuild-markdown.yml
