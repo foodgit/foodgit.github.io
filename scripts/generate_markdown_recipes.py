@@ -80,11 +80,11 @@ for recipe_stub in all_recipe_stubs:
         tags=[ "none" ]
     finally:
         f.close()
-    # link to the site's .html tag pages: jekyll-relative-links doesn't rewrite
-    # image links, and a .md link would serve the raw markdown on the site
+    # link to the site's homepage filtered by the tag (absolute, so it also works
+    # when browsing the repo on GitHub)
     taglinks=""
     for tag in list(tags):
-        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](../tags/'+tag+'.html) '
+        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](https://fexofenadine.github.io/gitfood/?tag='+tag+') '
     temp_file_name = Path("working")/recipe_stub.with_suffix(".md").name
     recipe_file_name = content_root/recipe_stub.with_suffix(".md").name
 

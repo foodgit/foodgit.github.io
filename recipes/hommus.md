@@ -28,6 +28,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![protein](https://img.shields.io/badge/protein-blue.svg)](../tags/protein.html) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+[![healthy](https://img.shields.io/badge/healthy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=healthy) [![messy](https://img.shields.io/badge/messy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=messy) [![protein](https://img.shields.io/badge/protein-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=protein) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=tricky) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

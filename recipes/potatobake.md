@@ -19,6 +19,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![potato](https://img.shields.io/badge/potato-blue.svg)](../tags/potato.html) [![savoury](https://img.shields.io/badge/savoury-blue.svg)](../tags/savoury.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+[![baked](https://img.shields.io/badge/baked-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dairy) [![potato](https://img.shields.io/badge/potato-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=potato) [![savoury](https://img.shields.io/badge/savoury-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=savoury) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

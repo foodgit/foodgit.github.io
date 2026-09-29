@@ -26,6 +26,6 @@ Place into a large bowl:
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) 
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=aussie) [![beef](https://img.shields.io/badge/beef-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=beef) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dinner) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=easy) [![family](https://img.shields.io/badge/family-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=fried) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

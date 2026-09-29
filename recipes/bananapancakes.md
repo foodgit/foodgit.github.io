@@ -20,6 +20,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.html) [![fast](https://img.shields.io/badge/fast-blue.svg)](../tags/fast.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![simple](https://img.shields.io/badge/simple-blue.svg)](../tags/simple.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=breakfast) [![fast](https://img.shields.io/badge/fast-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=fast) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=fried) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=healthy) [![simple](https://img.shields.io/badge/simple-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=simple) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=stovetop) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 2nd of January 2024 &middot; Last updated: 29th of September 2026</em></p>

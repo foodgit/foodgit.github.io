@@ -90,6 +90,6 @@ Did you think this was a good recipe? Did it take too long to prepare, did it ta
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![american](https://img.shields.io/badge/american-blue.svg)](../tags/american.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![fast_food](https://img.shields.io/badge/fast_food-blue.svg)](../tags/fast_food.html) 
+[![american](https://img.shields.io/badge/american-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=american) [![beef](https://img.shields.io/badge/beef-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=beef) [![fast_food](https://img.shields.io/badge/fast_food-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=fast_food) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 28th of September 2026</em></p>

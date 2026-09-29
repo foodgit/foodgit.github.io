@@ -28,6 +28,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![expensive](https://img.shields.io/badge/expensive-blue.svg)](../tags/expensive.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![thai](https://img.shields.io/badge/thai-blue.svg)](../tags/thai.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+[![expensive](https://img.shields.io/badge/expensive-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=expensive) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=rice) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=sides) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=stovetop) [![thai](https://img.shields.io/badge/thai-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=thai) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
