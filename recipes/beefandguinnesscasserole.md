@@ -1,7 +1,5 @@
 # Beef & Guinness Casserole
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 <img src="beefandguinnesscasserole/images/main.jpg" alt="Beef &amp; Guinness Casserole" width="55%" align="right" />
 
 ## Ingredients
@@ -60,3 +58,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![casserole](https://img.shields.io/badge/casserole-blue.svg)](../tags/casserole.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![guinness](https://img.shields.io/badge/guinness-blue.svg)](../tags/guinness.html) [![irish](https://img.shields.io/badge/irish-blue.svg)](../tags/irish.html) [![large_quantity](https://img.shields.io/badge/large_quantity-blue.svg)](../tags/large_quantity.html) [![long_cook_time](https://img.shields.io/badge/long_cook_time-blue.svg)](../tags/long_cook_time.html) [![long_prep_time](https://img.shields.io/badge/long_prep_time-blue.svg)](../tags/long_prep_time.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

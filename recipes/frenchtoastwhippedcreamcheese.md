@@ -1,7 +1,5 @@
 # French Toast with Whipped Cream Cheese
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 ### Bread batter
@@ -37,3 +35,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![large_quantity](https://img.shields.io/badge/large_quantity-blue.svg)](../tags/large_quantity.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![mine](https://img.shields.io/badge/mine-blue.svg)](../tags/mine.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

@@ -1,7 +1,5 @@
 # Pikelets
 
-*Created: 26th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 2 cups self raising flour
@@ -21,3 +19,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 26th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

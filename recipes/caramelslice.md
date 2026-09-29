@@ -1,7 +1,5 @@
 # Caramel Slice
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 <img src="caramelslice/images/main.jpg" alt="Caramel Slice" width="55%" align="right" />
 
 ## Ingredients
@@ -46,3 +44,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](../tags/chocolate.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![long_prep_time](https://img.shields.io/badge/long_prep_time-blue.svg)](../tags/long_prep_time.html) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

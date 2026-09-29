@@ -1,7 +1,5 @@
 # Chicken Tenders
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 <img src="chickentenders/images/main.jpg" alt="Chicken Tenders" width="55%" align="right" />
 
 ## Ingredients
@@ -48,3 +46,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![airfryer](https://img.shields.io/badge/airfryer-blue.svg)](../tags/airfryer.html) [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![battered](https://img.shields.io/badge/battered-blue.svg)](../tags/battered.html) [![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.html) [![crumbed](https://img.shields.io/badge/crumbed-blue.svg)](../tags/crumbed.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![mine](https://img.shields.io/badge/mine-blue.svg)](../tags/mine.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

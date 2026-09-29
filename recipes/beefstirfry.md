@@ -1,7 +1,5 @@
 # Beef Stir Fry
 
-*Created: 29th of November 2023 &middot; Last updated: 28th of September 2026*
-
 ## Ingredients
 
 - 1 tbsp olive oil
@@ -37,3 +35,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![asian](https://img.shields.io/badge/asian-blue.svg)](../tags/asian.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.html) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![versatile](https://img.shields.io/badge/versatile-blue.svg)](../tags/versatile.html) 
+
+<p class="recipe-dates"><em>Created: 29th of November 2023 &middot; Last updated: 28th of September 2026</em></p>

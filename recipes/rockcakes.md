@@ -1,7 +1,5 @@
 # Rock Cakes
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 1 ½ cups self raising flour
@@ -29,3 +27,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![snack](https://img.shields.io/badge/snack-blue.svg)](../tags/snack.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

@@ -1,7 +1,5 @@
 # Fritters
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 ### Base
@@ -32,3 +30,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![family](https://img.shields.io/badge/family-blue.svg)](../tags/family.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![ham](https://img.shields.io/badge/ham-blue.svg)](../tags/ham.html) [![lamb](https://img.shields.io/badge/lamb-blue.svg)](../tags/lamb.html) [![leftovers](https://img.shields.io/badge/leftovers-blue.svg)](../tags/leftovers.html) [![vegetables](https://img.shields.io/badge/vegetables-blue.svg)](../tags/vegetables.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

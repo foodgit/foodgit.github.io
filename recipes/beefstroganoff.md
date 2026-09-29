@@ -1,7 +1,5 @@
 # Beef Stroganoff
 
-*Created: 6th of October 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 600g beef pieces
@@ -34,3 +32,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![russian](https://img.shields.io/badge/russian-blue.svg)](../tags/russian.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) 
+
+<p class="recipe-dates"><em>Created: 6th of October 2023 &middot; Last updated: 29th of September 2026</em></p>

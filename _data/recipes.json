@@ -1,0 +1,2605 @@
+{
+ "applecrumble": {
+  "created": "6th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert",
+     "snack"
+    ],
+    "slug": "bananabread",
+    "title": "Banana Bread"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "stickydatepuddingwithbutterscotchsauce",
+    "title": "Sticky Date Pudding with Butterscotch Sauce"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "coconutsaffronrice",
+    "title": "Coconut Saffron Rice"
+   }
+  ],
+  "serves": "3-4",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "bakedricecustard": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "ricepudding",
+    "title": "Rice Pudding"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "stickydatepuddingwithbutterscotchsauce",
+    "title": "Sticky Date Pudding with Butterscotch Sauce"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   }
+  ],
+  "serves": "6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "bananabread": {
+  "created": "16th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   }
+  ],
+  "serves": "8-10",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "bananaoatcookies": {
+  "created": "19th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert",
+     "snack"
+    ],
+    "slug": "bananabread",
+    "title": "Banana Bread"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "caramelslice",
+    "title": "Caramel Slice"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesneimanmarcus",
+    "title": "Chocolate Chip Cookies (Neiman Marcus Style)"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesdonnahay",
+    "title": "Chocolate Chip Cookies (Donna Hay Style)"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "easy"
+   },
+   {
+    "group": "other",
+    "name": "great"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "other",
+    "name": "simple"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "bananapancakes": {
+  "created": "2nd of January 2024",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "frenchtoastwhippedcreamcheese",
+    "title": "French Toast with Whipped Cream Cheese"
+   },
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "pikelets",
+    "title": "Pikelets"
+   },
+   {
+    "meals": [],
+    "slug": "hommus",
+    "title": "Hommus"
+   }
+  ],
+  "serves": "1",
+  "tags": [
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "other",
+    "name": "fast"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "other",
+    "name": "simple"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "beefandguinnesscasserole": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cuisine",
+    "name": "irish"
+   },
+   {
+    "group": "other",
+    "name": "casserole"
+   },
+   {
+    "group": "other",
+    "name": "guinness"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "lambchopcasserole",
+    "title": "Lamb Chop Casserole"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "rissoles",
+    "title": "Rissoles"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "other",
+    "name": "casserole"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "guinness"
+   },
+   {
+    "group": "cuisine",
+    "name": "irish"
+   },
+   {
+    "group": "other",
+    "name": "large_quantity"
+   },
+   {
+    "group": "other",
+    "name": "long_cook_time"
+   },
+   {
+    "group": "other",
+    "name": "long_prep_time"
+   },
+   {
+    "group": "other",
+    "name": "messy"
+   },
+   {
+    "group": "other",
+    "name": "tricky"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "beeflasagna": {
+  "created": "6th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "italian"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beefstroganoff",
+    "title": "Beef Stroganoff"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "pastabake",
+    "title": "Pasta Bake"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "beefstirfry",
+    "title": "Beef Stir Fry"
+   },
+   {
+    "meals": [
+     "lunch",
+     "sides"
+    ],
+    "slug": "creamychorizotomatopasta",
+    "title": "Creamy Chorizo & Tomato Pasta"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "easy"
+   },
+   {
+    "group": "cuisine",
+    "name": "italian"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "beefstirfry": {
+  "created": "29th of November 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "asian"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beefstroganoff",
+    "title": "Beef Stroganoff"
+   },
+   {
+    "meals": [
+     "lunch",
+     "sides"
+    ],
+    "slug": "creamychorizotomatopasta",
+    "title": "Creamy Chorizo & Tomato Pasta"
+   }
+  ],
+  "serves": "4-5",
+  "tags": [
+   {
+    "group": "cuisine",
+    "name": "asian"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "other",
+    "name": "versatile"
+   }
+  ],
+  "updated": "28th of September 2026"
+ },
+ "beefstroganoff": {
+  "created": "6th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "russian"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "beefstirfry",
+    "title": "Beef Stir Fry"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "rissoles",
+    "title": "Rissoles"
+   }
+  ],
+  "serves": "4",
+  "tags": [
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "cuisine",
+    "name": "russian"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "caramelslice": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesdonnahay",
+    "title": "Chocolate Chip Cookies (Donna Hay Style)"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesneimanmarcus",
+    "title": "Chocolate Chip Cookies (Neiman Marcus Style)"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   }
+  ],
+  "serves": "10-12",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "other",
+    "name": "long_prep_time"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "cheesypotatopockets": {
+  "created": "22nd of December 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "main",
+    "name": "potato"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "potatobake",
+    "title": "Potato Bake"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "pastabake",
+    "title": "Pasta Bake"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   }
+  ],
+  "serves": "4",
+  "tags": [
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   },
+   {
+    "group": "main",
+    "name": "potato"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "chickenkatsucurry": {
+  "created": "28th of September 2026",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cooking",
+    "name": "rice_cooker"
+   },
+   {
+    "group": "cuisine",
+    "name": "japanese"
+   },
+   {
+    "group": "other",
+    "name": "curry"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   }
+  ],
+  "serves": "2-3",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "other",
+    "name": "curry"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "cuisine",
+    "name": "japanese"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "rice_cooker"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "chickentenders": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "cooking",
+    "name": "airfryer"
+   },
+   {
+    "group": "other",
+    "name": "battered"
+   },
+   {
+    "group": "other",
+    "name": "crumbed"
+   }
+  ],
+  "related": [],
+  "serves": "3-4",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "airfryer"
+   },
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "other",
+    "name": "battered"
+   },
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "other",
+    "name": "crumbed"
+   },
+   {
+    "group": "other",
+    "name": "messy"
+   },
+   {
+    "group": "other",
+    "name": "mine"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "chocolatechipcookiesdonnahay": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "caramelslice",
+    "title": "Caramel Slice"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesneimanmarcus",
+    "title": "Chocolate Chip Cookies (Neiman Marcus Style)"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   }
+  ],
+  "serves": "6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "chocolatechipcookiesneimanmarcus": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesdonnahay",
+    "title": "Chocolate Chip Cookies (Donna Hay Style)"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "caramelslice",
+    "title": "Caramel Slice"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "chocolate"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "coconutsaffronrice": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "thai"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [],
+    "slug": "hommus",
+    "title": "Hommus"
+   },
+   {
+    "meals": [],
+    "slug": "roastedcapsicum",
+    "title": "Roasted Capsicum"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "other",
+    "name": "expensive"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "thai"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "creamychorizotomatopasta": {
+  "created": "25th of October 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cooking",
+    "name": "boiled"
+   },
+   {
+    "group": "cuisine",
+    "name": "italian"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "pastabake",
+    "title": "Pasta Bake"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "beefstirfry",
+    "title": "Beef Stir Fry"
+   }
+  ],
+  "serves": "3-4",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "boiled"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "cuisine",
+    "name": "italian"
+   },
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "frenchtoastwhippedcreamcheese": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "pikelets",
+    "title": "Pikelets"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "breakfast"
+    ],
+    "slug": "bananapancakes",
+    "title": "Banana Pancakes"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "ricepudding",
+    "title": "Rice Pudding"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "large_quantity"
+   },
+   {
+    "group": "other",
+    "name": "messy"
+   },
+   {
+    "group": "other",
+    "name": "mine"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "fritters": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "main",
+    "name": "lamb"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "other",
+    "name": "ham"
+   },
+   {
+    "group": "other",
+    "name": "vegetables"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "lambchopcasserole",
+    "title": "Lamb Chop Casserole"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "main",
+    "name": "chicken"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "family"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "ham"
+   },
+   {
+    "group": "main",
+    "name": "lamb"
+   },
+   {
+    "group": "other",
+    "name": "leftovers"
+   },
+   {
+    "group": "other",
+    "name": "vegetables"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "hommus": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "other",
+    "name": "protein"
+   }
+  ],
+  "related": [
+   {
+    "meals": [],
+    "slug": "roastedcapsicum",
+    "title": "Roasted Capsicum"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "other",
+    "name": "messy"
+   },
+   {
+    "group": "other",
+    "name": "protein"
+   },
+   {
+    "group": "other",
+    "name": "tricky"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "kimchipancakes": {
+  "created": "15th of December 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "cuisine",
+    "name": "korean"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "breakfast"
+    ],
+    "slug": "bananapancakes",
+    "title": "Banana Pancakes"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "beefstirfry",
+    "title": "Beef Stir Fry"
+   },
+   {
+    "meals": [],
+    "slug": "hommus",
+    "title": "Hommus"
+   },
+   {
+    "meals": [],
+    "slug": "roastedcapsicum",
+    "title": "Roasted Capsicum"
+   }
+  ],
+  "serves": "2-3",
+  "tags": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "easy"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "cuisine",
+    "name": "korean"
+   },
+   {
+    "group": "meal",
+    "name": "lunch"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "lambchopcasserole": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "lamb"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   },
+   {
+    "group": "other",
+    "name": "battered"
+   },
+   {
+    "group": "other",
+    "name": "casserole"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "rissoles",
+    "title": "Rissoles"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beefandguinnesscasserole",
+    "title": "Beef & Guinness Casserole"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "fritters",
+    "title": "Fritters"
+   }
+  ],
+  "serves": "4",
+  "tags": [
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "battered"
+   },
+   {
+    "group": "other",
+    "name": "casserole"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "family"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "main",
+    "name": "lamb"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "pastabake": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "potatobake",
+    "title": "Potato Bake"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "cheesypotatopockets",
+    "title": "Cheesy Potato Pockets"
+   },
+   {
+    "meals": [
+     "lunch",
+     "sides"
+    ],
+    "slug": "creamychorizotomatopasta",
+    "title": "Creamy Chorizo & Tomato Pasta"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "main",
+    "name": "pasta"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "periperimarinade": {
+  "created": "15th of November 2023",
+  "facts": [
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "cuisine",
+    "name": "portuguese"
+   }
+  ],
+  "related": [],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "cuisine",
+    "name": "portuguese"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "pikelets": {
+  "created": "26th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "frenchtoastwhippedcreamcheese",
+    "title": "French Toast with Whipped Cream Cheese"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "breakfast"
+    ],
+    "slug": "bananapancakes",
+    "title": "Banana Pancakes"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "ricepudding",
+    "title": "Rice Pudding"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "meal",
+    "name": "breakfast"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "other",
+    "name": "family"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "potatobake": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "main",
+    "name": "potato"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "cheesypotatopockets",
+    "title": "Cheesy Potato Pockets"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "pastabake",
+    "title": "Pasta Bake"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "cheesey"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "main",
+    "name": "potato"
+   },
+   {
+    "group": "other",
+    "name": "savoury"
+   },
+   {
+    "group": "meal",
+    "name": "sides"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "ricepudding": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "rice_cooker"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "frenchtoastwhippedcreamcheese",
+    "title": "French Toast with Whipped Cream Cheese"
+   },
+   {
+    "meals": [
+     "breakfast",
+     "dessert"
+    ],
+    "slug": "pikelets",
+    "title": "Pikelets"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "stickydatepuddingwithbutterscotchsauce",
+    "title": "Sticky Date Pudding with Butterscotch Sauce"
+   }
+  ],
+  "serves": "4-6",
+  "tags": [
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "other",
+    "name": "easy"
+   },
+   {
+    "group": "main",
+    "name": "rice"
+   },
+   {
+    "group": "cooking",
+    "name": "rice_cooker"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "rissoles": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   },
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "lambchopcasserole",
+    "title": "Lamb Chop Casserole"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beefstroganoff",
+    "title": "Beef Stroganoff"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beefandguinnesscasserole",
+    "title": "Beef & Guinness Casserole"
+   }
+  ],
+  "serves": "4",
+  "tags": [
+   {
+    "group": "cuisine",
+    "name": "aussie"
+   },
+   {
+    "group": "main",
+    "name": "beef"
+   },
+   {
+    "group": "meal",
+    "name": "dinner"
+   },
+   {
+    "group": "other",
+    "name": "easy"
+   },
+   {
+    "group": "other",
+    "name": "family"
+   },
+   {
+    "group": "cooking",
+    "name": "fried"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "roastedcapsicum": {
+  "created": "17th of December 2023",
+  "facts": [
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "cooking",
+    "name": "grilled"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [],
+    "slug": "hommus",
+    "title": "Hommus"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   }
+  ],
+  "serves": "2-4",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "grilled"
+   },
+   {
+    "group": "other",
+    "name": "healthy"
+   },
+   {
+    "group": "diet",
+    "name": "vegan"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "rockcakes": {
+  "created": "25th of June 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "caramelslice",
+    "title": "Caramel Slice"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "chocolatechipcookiesdonnahay",
+    "title": "Chocolate Chip Cookies (Donna Hay Style)"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "dessert",
+     "snack"
+    ],
+    "slug": "bananabread",
+    "title": "Banana Bread"
+   }
+  ],
+  "serves": "6",
+  "tags": [
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "other",
+    "name": "family"
+   },
+   {
+    "group": "meal",
+    "name": "snack"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "29th of September 2026"
+ },
+ "stickydatepuddingwithbutterscotchsauce": {
+  "created": "10th of December 2023",
+  "facts": [
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "british"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   }
+  ],
+  "related": [
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "applecrumble",
+    "title": "Apple Crumble"
+   },
+   {
+    "meals": [
+     "dessert"
+    ],
+    "slug": "bakedricecustard",
+    "title": "Baked Rice Custard"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
+   },
+   {
+    "meals": [
+     "dessert",
+     "snack"
+    ],
+    "slug": "bananabread",
+    "title": "Banana Bread"
+   }
+  ],
+  "serves": "6-8",
+  "tags": [
+   {
+    "group": "other",
+    "name": "amazing"
+   },
+   {
+    "group": "cooking",
+    "name": "baked"
+   },
+   {
+    "group": "cuisine",
+    "name": "british"
+   },
+   {
+    "group": "other",
+    "name": "coffee"
+   },
+   {
+    "group": "other",
+    "name": "dairy"
+   },
+   {
+    "group": "meal",
+    "name": "dessert"
+   },
+   {
+    "group": "cooking",
+    "name": "stovetop"
+   },
+   {
+    "group": "diet",
+    "name": "vegetarian"
+   }
+  ],
+  "updated": "28th of September 2026"
+ }
+}

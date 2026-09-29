@@ -1,7 +1,5 @@
 # Baked Rice Custard
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 4 eggs
@@ -26,3 +24,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

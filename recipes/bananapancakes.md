@@ -1,7 +1,5 @@
 # Banana Pancakes
 
-*Created: 2nd of January 2024 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 1 ripe banana
@@ -23,3 +21,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](../tags/breakfast.html) [![fast](https://img.shields.io/badge/fast-blue.svg)](../tags/fast.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![simple](https://img.shields.io/badge/simple-blue.svg)](../tags/simple.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 2nd of January 2024 &middot; Last updated: 29th of September 2026</em></p>

@@ -1,7 +1,5 @@
 # Coconut Saffron Rice
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - ¼ tsp saffron threads
@@ -31,3 +29,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![expensive](https://img.shields.io/badge/expensive-blue.svg)](../tags/expensive.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![thai](https://img.shields.io/badge/thai-blue.svg)](../tags/thai.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

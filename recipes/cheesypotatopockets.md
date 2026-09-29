@@ -1,7 +1,5 @@
 # Cheesy Potato Pockets
 
-*Created: 22nd of December 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 4 large potatoes
@@ -26,3 +24,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![aussie](https://img.shields.io/badge/aussie-blue.svg)](../tags/aussie.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.html) [![potato](https://img.shields.io/badge/potato-blue.svg)](../tags/potato.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 22nd of December 2023 &middot; Last updated: 29th of September 2026</em></p>

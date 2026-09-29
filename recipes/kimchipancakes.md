@@ -1,7 +1,5 @@
 # Kimchijeon (Kimchi Pancakes)
 
-*Created: 15th of December 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 1 cup thinly sliced, fully-fermented kimchi
@@ -49,3 +47,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.html) [![fried](https://img.shields.io/badge/fried-blue.svg)](../tags/fried.html) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![korean](https://img.shields.io/badge/korean-blue.svg)](../tags/korean.html) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 15th of December 2023 &middot; Last updated: 29th of September 2026</em></p>

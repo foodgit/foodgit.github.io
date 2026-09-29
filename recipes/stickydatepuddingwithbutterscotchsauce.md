@@ -1,7 +1,5 @@
 # Sticky Date Pudding with Butterscotch Sauce
 
-*Created: 10th of December 2023 &middot; Last updated: 28th of September 2026*
-
 ## Ingredients
 
 ### Pudding
@@ -40,3 +38,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![british](https://img.shields.io/badge/british-blue.svg)](../tags/british.html) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](../tags/coffee.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 10th of December 2023 &middot; Last updated: 28th of September 2026</em></p>

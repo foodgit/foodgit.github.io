@@ -1,7 +1,5 @@
 # Peri Peri Marinade
 
-*Created: 15th of November 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 2 tbsp Peri Peri powder (or other powdered chilli spice)
@@ -24,3 +22,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![portuguese](https://img.shields.io/badge/portuguese-blue.svg)](../tags/portuguese.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) 
+
+<p class="recipe-dates"><em>Created: 15th of November 2023 &middot; Last updated: 29th of September 2026</em></p>

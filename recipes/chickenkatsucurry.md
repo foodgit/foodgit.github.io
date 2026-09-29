@@ -1,7 +1,5 @@
 # Chicken Katsu Curry
 
-*Created: 28th of September 2026 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 440g crumbed chicken schnitzels or tenders
@@ -31,3 +29,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](../tags/amazing.html) [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![chicken](https://img.shields.io/badge/chicken-blue.svg)](../tags/chicken.html) [![curry](https://img.shields.io/badge/curry-blue.svg)](../tags/curry.html) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](../tags/dinner.html) [![japanese](https://img.shields.io/badge/japanese-blue.svg)](../tags/japanese.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](../tags/rice_cooker.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) 
+
+<p class="recipe-dates"><em>Created: 28th of September 2026 &middot; Last updated: 29th of September 2026</em></p>

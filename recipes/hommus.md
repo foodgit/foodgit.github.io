@@ -1,7 +1,5 @@
 # Hommus
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 425g can (or 1½ cups cooked) chickpeas, rinsed and drained
@@ -31,3 +29,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![healthy](https://img.shields.io/badge/healthy-blue.svg)](../tags/healthy.html) [![messy](https://img.shields.io/badge/messy-blue.svg)](../tags/messy.html) [![protein](https://img.shields.io/badge/protein-blue.svg)](../tags/protein.html) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](../tags/tricky.html) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](../tags/vegan.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

@@ -1,7 +1,5 @@
 # Creamy Chorizo & Tomato Pasta
 
-*Created: 25th of October 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 400g fresh linguine (shells or other short pasta for portable version)
@@ -30,3 +28,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![boiled](https://img.shields.io/badge/boiled-blue.svg)](../tags/boiled.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![italian](https://img.shields.io/badge/italian-blue.svg)](../tags/italian.html) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](../tags/lunch.html) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](../tags/stovetop.html) 
+
+<p class="recipe-dates"><em>Created: 25th of October 2023 &middot; Last updated: 29th of September 2026</em></p>

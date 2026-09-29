@@ -1,7 +1,5 @@
 # Pasta Bake
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - 500g mince
@@ -26,3 +24,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![baked](https://img.shields.io/badge/baked-blue.svg)](../tags/baked.html) [![beef](https://img.shields.io/badge/beef-blue.svg)](../tags/beef.html) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](../tags/cheesey.html) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](../tags/pasta.html) [![sides](https://img.shields.io/badge/sides-blue.svg)](../tags/sides.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

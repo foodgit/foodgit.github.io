@@ -1,7 +1,5 @@
 # Rice Pudding
 
-*Created: 25th of June 2023 &middot; Last updated: 29th of September 2026*
-
 ## Ingredients
 
 - ⅔ cup rice long grain or short grain, uncooked
@@ -24,3 +22,5 @@
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![dairy](https://img.shields.io/badge/dairy-blue.svg)](../tags/dairy.html) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](../tags/dessert.html) [![easy](https://img.shields.io/badge/easy-blue.svg)](../tags/easy.html) [![rice](https://img.shields.io/badge/rice-blue.svg)](../tags/rice.html) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](../tags/rice_cooker.html) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](../tags/vegetarian.html) 
+
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
