@@ -36,8 +36,9 @@ for recipe_stub in all_recipe_stubs:
     content_root = recipe_dir.parent
 
     last_updated_iso, created_iso = get_dates(recipe_stub)
-    dates_line = ('*Created: '+humanize_date(created_iso)+
-                  ' &middot; Last updated: '+humanize_date(last_updated_iso)+'*')
+    # class lets the website's recipe layout restyle it (GitHub and the PDF ignore it)
+    dates_line = ('<p class="recipe-dates"><em>Created: '+humanize_date(created_iso)+
+                  ' &middot; Last updated: '+humanize_date(last_updated_iso)+'</em></p>')
 
     lines = recipe_body.splitlines()
     title_idx = next((i for i, l in enumerate(lines) if l.startswith("# ")), None)
@@ -48,8 +49,6 @@ for recipe_stub in all_recipe_stubs:
         lines.pop(main_idx)
         title_idx -= 1
         lines[title_idx+1:title_idx+1] = ["", "{main.jpg}"]
-    if title_idx is not None:
-        lines[title_idx+1:title_idx+1] = ["", dates_line]
     recipe_body = "\n".join(lines).lstrip("\n")
 
     image_dir = recipe_dir/"images"
@@ -96,6 +95,7 @@ for recipe_stub in all_recipe_stubs:
     with open(temp_file_name, "a") as f:
         f.write('\n\n<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />')
         f.write('\n\n'+taglinks)
+        f.write('\n\n'+dates_line)
 
     try:
         identical=filecmp.cmp(temp_file_name,recipe_file_name)
