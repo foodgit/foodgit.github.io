@@ -209,6 +209,7 @@ table.recipes td.tags { line-height: 1.9; }
     margin: 0 0 16px;
   }
   .markdown-body img[align="right"][width="55%"] { height: 200px; object-fit: cover; }
+  .markdown-body ul li img[align="right"] { height: 160px; object-fit: cover; }
   .markdown-body ol li img[align="right"] { max-width: 100%; max-height: none; }
   table.recipes th:nth-child(3), table.recipes td:nth-child(3) { display: none; }
 
