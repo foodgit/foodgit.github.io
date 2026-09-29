@@ -20,4 +20,4 @@ exclude:
   - index.stub
   - scripts
   - submissions
-  - tags/groups.txt
+  - tags

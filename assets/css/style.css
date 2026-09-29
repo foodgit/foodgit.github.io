@@ -83,28 +83,6 @@ body {
 }
 .markdown-body a.button:hover { filter: brightness(1.08); }
 
-/* recipe tables (sorting and filtering in assets/js/recipes.js) */
-.markdown-body table.recipes { display: table; width: 100%; }
-.markdown-body table.recipes th { text-align: left; }
-.markdown-body table.recipes th, .markdown-body table.recipes td { padding: 6px 10px; }
-table.recipes th[data-sort] { cursor: pointer; white-space: nowrap; }
-table.recipes th[aria-sort="ascending"]::after { content: " \25B2"; font-size: 0.7em; }
-table.recipes th[aria-sort="descending"]::after { content: " \25BC"; font-size: 0.7em; }
-table.recipes .date { white-space: nowrap; }
-table.recipes td.tags { line-height: 1.9; }
-.recipe-toolbar { display: flex; align-items: center; gap: 12px; margin: 8px 0 12px; }
-.recipe-filter {
-  flex: 1;
-  max-width: 360px;
-  padding: 6px 10px;
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: 1px solid #8c959f;
-  border-radius: 6px;
-}
-.recipe-count { color: var(--gf-muted); font-size: 0.9em; }
-
 /* tag colours, one per group in tags/groups.txt */
 :root {
   --t-meal-bg: #ddf4ff; --t-meal-fg: #0550ae;
@@ -155,7 +133,10 @@ table.recipes td.tags { line-height: 1.9; }
 .recipe-sort option { color: #111; }
 .results-status { margin: 10px 0 6px; color: var(--gf-muted); font-size: 0.85em; }
 .link-button { padding: 0; border: 0; background: none; color: var(--gf-link); font: inherit; cursor: pointer; }
-.active-filters { display: none; }
+.active-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.active-filters:empty { display: none; }
+.active-filters .pill { padding: 2px 10px; border: 0; border-radius: 13px; background: var(--gf-blue);
+                        color: #06283a; font: inherit; font-size: 0.85em; font-weight: 700; cursor: pointer; }
 .markdown-body ul.recipe-list { list-style: none; padding: 0; margin: 0; }
 .markdown-body .recipe-list li { padding: 8px 2px; margin: 0; border-bottom: 1px solid var(--gf-line); }
 .recipe-list .recipe-name { font-weight: 700; }
@@ -199,7 +180,7 @@ table.recipes td.tags { line-height: 1.9; }
 
 /* phones: photos full width above the text rather than squeezing it; the main
    photo is cropped short so the ingredients start near the top; the homepage
-   filters collapse behind a button; tag-page tables drop the Created column */
+   filters collapse behind a button */
 @media (max-width: 600px) {
   .markdown-body img[align="right"] {
     float: none;
@@ -211,7 +192,6 @@ table.recipes td.tags { line-height: 1.9; }
   .markdown-body img[align="right"][width="55%"] { height: 200px; object-fit: cover; }
   .markdown-body ul li img[align="right"] { height: 160px; object-fit: cover; }
   .markdown-body ol li img[align="right"] { max-width: 100%; max-height: none; }
-  table.recipes th:nth-child(3), table.recipes td:nth-child(3) { display: none; }
 
   .recipe-browser { display: block; }
   .recipe-browser .filters { display: none; width: auto; }
@@ -222,15 +202,12 @@ table.recipes td.tags { line-height: 1.9; }
   .filters.open .filters-done { display: block; width: 100%; margin-top: 6px; padding: 8px; border: 0;
                                 border-radius: 6px; background: var(--gf-blue); color: #06283a;
                                 font: inherit; font-weight: 700; }
-  .active-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .active-filters .pill { padding: 2px 10px; border: 0; border-radius: 13px; background: var(--gf-blue);
-                          color: #06283a; font: inherit; font-size: 0.85em; font-weight: 700; }
   .recipe-search { max-width: none; }
 }
 
 /* printing a single recipe */
 @media print {
-  .site-header, .footer, .recipe-toolbar, .recipe-tools, .related, .recipe-footer h2 { display: none; }
+  .site-header, .footer, .recipe-tools, .related, .recipe-footer h2 { display: none; }
   .recipe-body .tickable::before { display: none; }
   .recipe-body .tickable.done { color: inherit; text-decoration: none; }
   body, .markdown-body { background: white !important; color: black !important; }

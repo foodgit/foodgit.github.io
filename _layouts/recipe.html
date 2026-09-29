@@ -15,7 +15,7 @@ scripts/update_readme.py) instead.
 {%- if r %}
 <div class="recipe-facts">
   {%- if r.serves != "" %}<span class="fact">Serves {{ r.serves }}</span>{% endif -%}
-  {%- for t in r.facts %}<a class="tag t-{{ t.group }}" href="{{ '/tags/' | append: t.name | append: '.html' | relative_url }}">{{ t.name | replace: '_', ' ' }}</a>{% endfor -%}
+  {%- for t in r.facts %}<a class="tag t-{{ t.group }}" href="{{ '/' | relative_url }}?tag={{ t.name }}">{{ t.name | replace: '_', ' ' }}</a>{% endfor -%}
 </div>
 <div class="recipe-tools">
   {%- if content contains 'id="method"' %}<a href="#method">Jump to method &#8595;</a>{% endif %}
@@ -29,7 +29,7 @@ scripts/update_readme.py) instead.
 {%- if r %}
 <footer class="recipe-footer">
   <p class="recipe-tags">
-    {%- for t in r.tags %}<a class="tag t-{{ t.group }}" href="{{ '/tags/' | append: t.name | append: '.html' | relative_url }}">{{ t.name | replace: '_', ' ' }}</a> {% endfor -%}
+    {%- for t in r.tags %}<a class="tag t-{{ t.group }}" href="{{ '/' | relative_url }}?tag={{ t.name }}">{{ t.name | replace: '_', ' ' }}</a> {% endfor -%}
   </p>
   <p class="recipe-dates-footer">Created: {{ r.created }} &middot; Last updated: {{ r.updated }}</p>
   {%- if r.related.size > 0 %}
@@ -37,7 +37,7 @@ scripts/update_readme.py) instead.
   <ul class="related">
     {%- for o in r.related %}
     <li><a href="{{ '/recipes/' | append: o.slug | append: '.html' | relative_url }}">{{ o.title | escape }}</a>
-      {%- for m in o.meals %} <span class="tag t-meal">{{ m }}</span>{% endfor %}</li>
+      {%- for m in o.meals %} <a class="tag t-meal" href="{{ '/' | relative_url }}?tag={{ m }}">{{ m }}</a>{% endfor %}</li>
     {%- endfor %}
   </ul>
   {%- endif %}

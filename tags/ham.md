@@ -1,8 +1,0 @@
-# Ham Recipes
-
-<table class="recipes">
-<thead><tr><th data-sort>Recipe</th><th>Tags</th><th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>
-<tbody>
-<tr><td><a href="../recipes/fritters.html">Fritters</a></td><td class="tags"><a class="tag t-main" href="../tags/chicken.html">chicken</a> <a class="tag t-other" href="../tags/dairy.html">dairy</a> <a class="tag t-meal" href="../tags/dinner.html">dinner</a> <a class="tag t-other" href="../tags/family.html">family</a> <a class="tag t-cooking" href="../tags/fried.html">fried</a> <a class="tag t-other" href="../tags/ham.html">ham</a> <a class="tag t-main" href="../tags/lamb.html">lamb</a> <a class="tag t-other" href="../tags/leftovers.html">leftovers</a> <a class="tag t-other" href="../tags/vegetables.html">vegetables</a></td><td class="date">2023-06-25</td><td class="date">2026-09-29</td></tr>
-</tbody>
-</table>

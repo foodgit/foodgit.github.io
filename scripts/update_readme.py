@@ -28,9 +28,11 @@ def badges2kv(text):
     badges = re.findall(testpat, text)
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
-def make_badge(label, prefix='tag', color='lightgrey', root='.'):
-    # return f"[![{label}](https://img.shields.io/badge/{prefix}-{label}-{color})](tags/{label}.md){{:target=\"_blank\"}}"
-    return f'<a href="{root}/tags/{label}.html"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
+SITE_URL = 'https://fexofenadine.github.io/gitfood/'
+
+def make_badge(label, prefix='tag', color='lightgrey'):
+    # links to the site's homepage filtered by the tag (works from GitHub too)
+    return f'<a href="{SITE_URL}?tag={label}"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
 
 def random_hex_colour():
     """generates a string for a random hex color"""
@@ -135,11 +137,10 @@ def shown_tags(d):
     rest = [t for t in d['tags'] if t not in HIDDEN and t not in MEALS]
     return meals(d) + sorted(rest, key=lambda t: order.get(t, len(order)))
 
-def make_label(tag, root):
-    if tag == 'other':
-        return '<span class="tag t-meal">other</span>'
-    return (f'<a class="tag t-{group_of.get(tag, "other")}" href="{root}/tags/{tag}.html">'
-            f'{tag.replace("_", " ")}</a>')
+def make_label(tag):
+    # a tag links to the homepage filtered by it; recipes.js applies it in place
+    group = 'meal' if tag == 'other' else group_of.get(tag, 'other')
+    return f'<a class="tag t-{group}" href="./?tag={tag}">{tag.replace("_", " ")}</a>'
 
 def suffix(day):
     return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 20, 'th')
@@ -200,7 +201,7 @@ def recipe_browser(rows):
             side.append(f'<fieldset><legend>{g}</legend>{"".join(items)}</fieldset>')
     lis = []
     for d in rows:
-        chips = ''.join(make_label(t, '.') for t in shown_tags(d)[:6])
+        chips = ''.join(make_label(t) for t in shown_tags(d)[:6])
         lis.append(f'<li data-tags="{" ".join(d["tags"])}" data-meal="{" ".join(meals(d))}" '
                    f'data-created="{d["created"]}" data-updated="{d["last_updated"]}">'
                    f'<a class="recipe-name" href="./recipes/{d["slug"]}.html">{html.escape(d["title"])}</a>'
@@ -216,26 +217,7 @@ def recipe_browser(rows):
             '<div class="active-filters"></div><p class="results-status"></p>'
             f'<ul class="recipe-list">{"".join(lis)}</ul></div></div>')
 
-def recipe_table(rows, root):
-    out = ['<table class="recipes">',
-           '<thead><tr><th data-sort>Recipe</th><th>Tags</th>'
-           '<th data-sort class="date">Created</th><th data-sort class="date">Last updated</th></tr></thead>',
-           '<tbody>']
-    for d in rows:
-        href = root+'/'+d['fpath'].with_suffix('.html').as_posix()
-        labels = ' '.join(make_label(t, root) for t in d['tags'])
-        out.append(f'<tr><td><a href="{href}">{html.escape(d["title"])}</a></td><td class="tags">{labels}</td>'
-                   f'<td class="date">{d["created"]}</td><td class="date">{d["last_updated"]}</td></tr>')
-    out += ['</tbody>', '</table>']
-    return '\n'.join(out)
-
 with open('index.stub') as f:
     index_stub = f.read()
 with open('index.md', 'w') as f:
     f.write(index_stub.replace('{TOC}', recipe_browser(TOC)))
-
-Path("tags").mkdir(exist_ok=True)
-for tag, pages in unq_tags.items():
-    pages = sorted(pages, key=lambda x:x['title'])
-    with open(f"tags/{tag}.md", 'w') as f:
-        f.write(f"# {tag.replace('_'," ").title()} Recipes\n\n"+recipe_table(pages, '..')+'\n')
