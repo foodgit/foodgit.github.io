@@ -17,6 +17,7 @@ on:
       - scripts/update_readme.py
       - README.stub
       - index.stub
+      - tags/groups.txt
       - version.txt
 
   # Called at the end of the recipe pipeline

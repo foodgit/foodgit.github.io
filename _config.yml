@@ -8,6 +8,11 @@ defaults:
       path: ""
     values:
       image: /images/logo_sq.png
+  # recipe pages get the facts, tick-off, tags and "More like this" extras
+  - scope:
+      path: "recipes"
+    values:
+      layout: recipe
 
 # build inputs and tooling, not site pages
 exclude:
@@ -15,3 +20,4 @@ exclude:
   - index.stub
   - scripts
   - submissions
+  - tags/groups.txt

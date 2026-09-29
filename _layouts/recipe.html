@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{%- comment -%}
+Website-only extras around a recipe page. The recipe markdown itself is shared with
+the PDF book and GitHub, so these come from _data/recipes.json (built by
+scripts/update_readme.py) instead.
+{%- endcomment -%}
+{%- assign slug = page.name | remove: ".md" -%}
+{%- assign r = site.data.recipes[slug] -%}
+{%- assign head = content | split: "</h1>" | first -%}
+{%- assign rest = content | remove_first: head | remove_first: "</h1>" -%}
+<article class="recipe-page">
+{{ head }}</h1>
+{%- if r %}
+<div class="recipe-facts">
+  {%- if r.serves != "" %}<span class="fact">Serves {{ r.serves }}</span>{% endif -%}
+  {%- for t in r.facts %}<a class="tag t-{{ t.group }}" href="{{ '/tags/' | append: t.name | append: '.html' | relative_url }}">{{ t.name | replace: '_', ' ' }}</a>{% endfor -%}
+</div>
+<div class="recipe-tools">
+  {%- if content contains 'id="method"' %}<a href="#method">Jump to method &#8595;</a>{% endif %}
+  <button type="button" class="keep-awake" aria-pressed="false" hidden><span class="switch" aria-hidden="true"></span>Keep screen on while cooking</button>
+  <button type="button" class="clear-ticks" hidden>Clear ticks</button>
+</div>
+{%- endif %}
+<div class="recipe-body">
+{{ rest }}
+</div>
+{%- if r %}
+<footer class="recipe-footer">
+  <p class="recipe-tags">
+    {%- for t in r.tags %}<a class="tag t-{{ t.group }}" href="{{ '/tags/' | append: t.name | append: '.html' | relative_url }}">{{ t.name | replace: '_', ' ' }}</a> {% endfor -%}
+  </p>
+  <p class="recipe-dates-footer">Created: {{ r.created }} &middot; Last updated: {{ r.updated }}</p>
+  {%- if r.related.size > 0 %}
+  <h2>More like this</h2>
+  <ul class="related">
+    {%- for o in r.related %}
+    <li><a href="{{ '/recipes/' | append: o.slug | append: '.html' | relative_url }}">{{ o.title | escape }}</a>
+      {%- for m in o.meals %} <span class="tag t-meal">{{ m }}</span>{% endfor %}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</footer>
+{%- endif %}
+</article>
