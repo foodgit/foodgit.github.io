@@ -1,15 +1,13 @@
-# How the website groups tags. One group per line: "name: tag tag tag".
-# - Groups appear as filters on the homepage in this order, and each group has
-#   its own tag colour.
-# - "meal" is special: recipes with none of its tags are listed under "other".
-# - "hidden" tags are left off the homepage and "More like this" matching, but
-#   still show on recipe pages and have tag pages.
-# - Any tag not listed here lands in an automatic "Other tags" filter group.
-# Changes here only affect the website, not the PDF book.
+#one group per line, as "name: tag tag tag"
+#groups show as homepage filters in this order, each with its own tag colour
+#meal is special: recipes with none of its tags are listed under "other"
+#hidden tags stay off the homepage and out of "more like this" matching
+#tags not listed here land in an automatic "other tags" filter group
+#changes here only affect the website, not the pdf book
 
 meal:    breakfast lunch dinner dessert snack sides
 diet:    vegetarian vegan
-main:    beef chicken lamb pasta rice potato chocolate
-cooking: baked stovetop fried boiled grilled airfryer rice_cooker
-cuisine: aussie italian asian chinese thai korean japanese irish british russian portuguese
-hidden:  amazing great mine messy family easy tricky fast simple versatile expensive large_quantity long_prep_time long_cook_time savoury leftovers
+main:    beef chicken chocolate lamb pasta potato rice
+cooking: airfryer baked boiled fried grilled rice_cooker stovetop
+cuisine: asian aussie british chinese irish italian japanese korean portuguese russian thai
+hidden:  amazing easy expensive family fast great large_quantity leftovers long_cook_time long_prep_time messy mine savoury simple tricky versatile

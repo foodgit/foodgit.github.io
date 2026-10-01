@@ -48,10 +48,10 @@
    },
    {
     "meals": [
-     "sides"
+     "snack"
     ],
-    "slug": "coconutsaffronrice",
-    "title": "Coconut Saffron Rice"
+    "slug": "bananaoatcookies",
+    "title": "Banana Oat Cookies"
    }
   ],
   "serves": "3-4",
@@ -358,11 +358,11 @@
    },
    {
     "group": "cooking",
-    "name": "stovetop"
+    "name": "fried"
    },
    {
     "group": "cooking",
-    "name": "fried"
+    "name": "stovetop"
    },
    {
     "group": "other",
@@ -370,14 +370,6 @@
    }
   ],
   "related": [
-   {
-    "meals": [
-     "dinner",
-     "lunch"
-    ],
-    "slug": "kimchipancakes",
-    "title": "Kimchijeon (Kimchi Pancakes)"
-   },
    {
     "meals": [
      "breakfast",
@@ -393,6 +385,14 @@
     ],
     "slug": "pikelets",
     "title": "Pikelets"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "kimchipancakes",
+    "title": "Kimchijeon (Kimchi Pancakes)"
    },
    {
     "meals": [],
@@ -586,19 +586,19 @@
    },
    {
     "meals": [
-     "dinner",
-     "lunch"
-    ],
-    "slug": "beefstirfry",
-    "title": "Beef Stir Fry"
-   },
-   {
-    "meals": [
      "lunch",
      "sides"
     ],
     "slug": "creamychorizotomatopasta",
     "title": "Creamy Chorizo & Tomato Pasta"
+   },
+   {
+    "meals": [
+     "dinner",
+     "lunch"
+    ],
+    "slug": "beefstirfry",
+    "title": "Beef Stir Fry"
    }
   ],
   "serves": "4-6",
@@ -666,6 +666,10 @@
     "name": "asian"
    },
    {
+    "group": "cuisine",
+    "name": "chinese"
+   },
+   {
     "group": "other",
     "name": "healthy"
    }
@@ -673,18 +677,18 @@
   "related": [
    {
     "meals": [
-     "dinner"
-    ],
-    "slug": "beeflasagna",
-    "title": "Beef Lasagna"
-   },
-   {
-    "meals": [
      "dinner",
      "lunch"
     ],
     "slug": "kimchipancakes",
     "title": "Kimchijeon (Kimchi Pancakes)"
+   },
+   {
+    "meals": [
+     "dinner"
+    ],
+    "slug": "beeflasagna",
+    "title": "Beef Lasagna"
    },
    {
     "meals": [
@@ -711,6 +715,10 @@
    {
     "group": "main",
     "name": "beef"
+   },
+   {
+    "group": "cuisine",
+    "name": "chinese"
    },
    {
     "group": "meal",
@@ -1000,11 +1008,15 @@
    },
    {
     "group": "cooking",
-    "name": "stovetop"
+    "name": "rice_cooker"
    },
    {
     "group": "cooking",
-    "name": "rice_cooker"
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "asian"
    },
    {
     "group": "cuisine",
@@ -1015,20 +1027,16 @@
     "name": "curry"
    }
   ],
-  "related": [
-   {
-    "meals": [
-     "dinner"
-    ],
-    "slug": "beeflasagna",
-    "title": "Beef Lasagna"
-   }
-  ],
+  "related": [],
   "serves": "2-3",
   "tags": [
    {
     "group": "other",
     "name": "amazing"
+   },
+   {
+    "group": "cuisine",
+    "name": "asian"
    },
    {
     "group": "cooking",
@@ -1306,6 +1314,10 @@
    },
    {
     "group": "cuisine",
+    "name": "asian"
+   },
+   {
+    "group": "cuisine",
     "name": "thai"
    }
   ],
@@ -1324,20 +1336,14 @@
     ],
     "slug": "kimchipancakes",
     "title": "Kimchijeon (Kimchi Pancakes)"
-   },
-   {
-    "meals": [],
-    "slug": "hommus",
-    "title": "Hommus"
-   },
-   {
-    "meals": [],
-    "slug": "roastedcapsicum",
-    "title": "Roasted Capsicum"
    }
   ],
   "serves": "6-8",
   "tags": [
+   {
+    "group": "cuisine",
+    "name": "asian"
+   },
    {
     "group": "other",
     "name": "expensive"
@@ -1386,11 +1392,11 @@
    },
    {
     "group": "cooking",
-    "name": "stovetop"
+    "name": "boiled"
    },
    {
     "group": "cooking",
-    "name": "boiled"
+    "name": "stovetop"
    },
    {
     "group": "cuisine",
@@ -1735,11 +1741,15 @@
    },
    {
     "group": "cooking",
-    "name": "stovetop"
+    "name": "fried"
    },
    {
     "group": "cooking",
-    "name": "fried"
+    "name": "stovetop"
+   },
+   {
+    "group": "cuisine",
+    "name": "asian"
    },
    {
     "group": "cuisine",
@@ -1753,13 +1763,6 @@
   "related": [
    {
     "meals": [
-     "breakfast"
-    ],
-    "slug": "bananapancakes",
-    "title": "Banana Pancakes"
-   },
-   {
-    "meals": [
      "dinner",
      "lunch"
     ],
@@ -1767,18 +1770,31 @@
     "title": "Beef Stir Fry"
    },
    {
-    "meals": [],
-    "slug": "hommus",
-    "title": "Hommus"
+    "meals": [
+     "breakfast"
+    ],
+    "slug": "bananapancakes",
+    "title": "Banana Pancakes"
+   },
+   {
+    "meals": [
+     "sides"
+    ],
+    "slug": "coconutsaffronrice",
+    "title": "Coconut Saffron Rice"
    },
    {
     "meals": [],
-    "slug": "roastedcapsicum",
-    "title": "Roasted Capsicum"
+    "slug": "hommus",
+    "title": "Hommus"
    }
   ],
   "serves": "2-3",
   "tags": [
+   {
+    "group": "cuisine",
+    "name": "asian"
+   },
    {
     "group": "meal",
     "name": "dinner"
