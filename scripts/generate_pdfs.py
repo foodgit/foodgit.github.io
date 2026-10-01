@@ -1,6 +1,6 @@
 #linux only for now
 #requires poppler-utils, ghostscript, pandoc, wkhtmltopdf, exiftool, fonttools (python)
-import os, re, sys, html, glob, shutil, filecmp, argparse, datetime, subprocess
+import os, re, sys, unicodedata, html, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -12,6 +12,13 @@ def suffix(d):
 
 def custom_strftime(format, t):
     return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
+
+def build_fractions(text):
+    #the font lacks most fractions and falls back to a lighter one, so build them from small text
+    def build(match):
+        top, bottom = (''.join(chr(int(c, 16)) for c in side.split()) for side in unicodedata.decomposition(match.group())[11:].split(' 2044 '))
+        return '<span style="font-size:.65em;vertical-align:.45em;line-height:0">'+top+'</span>⁄<span style="font-size:.65em;vertical-align:-.05em;line-height:0">'+bottom+'</span>'
+    return re.sub('[⅐-⅞↉]', build, text)
 
 def run(cmd):
     if os.system(cmd) != 0:
@@ -178,7 +185,7 @@ else:
                             line = ""
                             print("snipped "+word+" from "+tempfile)
                             break
-                    fout.write(line)
+                    fout.write(build_fractions(line))
             
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
