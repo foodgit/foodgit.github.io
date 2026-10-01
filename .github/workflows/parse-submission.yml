@@ -51,4 +51,4 @@ jobs:
     needs: parse
     uses: ./.github/workflows/rebuild-markdown.yml
     with:
-      bump: auto     #patch for a new recipe, unless the current version is unreleased
+      bump: auto     #released if the new recipe changes the book pages

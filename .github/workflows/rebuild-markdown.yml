@@ -1,11 +1,9 @@
 name: Rebuild Markdown Files [bot]
 
-#recipe pipeline: regenerate pages and toc, bump version, build and release pdf, deploy site
+#recipe pipeline: regenerate pages and toc, build and release pdf, deploy site
 #all in one workflow because pushes made with the github token never trigger other workflows
-#an unreleased version.txt is released as it is (set by hand, or an earlier release failed)
-#otherwise recipe changes bump the patch and book style or structure changes bump the minor
-#website-only changes do not bump, "[no release]" in a commit message skips a bump
-#a release is only published when the current version has none, so releases are never overwritten
+#the book is only released when its recipe pages changed, see build-book.yml
+#website-only changes build nothing, releases are never overwritten
 
 on:
   push:
@@ -26,7 +24,7 @@ on:
   workflow_call:
     inputs:
       bump:
-        description: patch, minor, none, or auto (work it out from the pushed changes)
+        description: patch, minor, none, or auto (release only if the book pages changed)
         type: string
         default: auto
   workflow_dispatch:
@@ -35,7 +33,7 @@ on:
         description: Version bump
         type: choice
         options: [auto, patch, minor, none]
-        default: none
+        default: auto
 
 permissions:
   contents: write
@@ -64,58 +62,7 @@ jobs:
         run: python scripts/generate_markdown_recipes.py
       - name: Recreate README.md TOC
         run: python scripts/update_readme.py
-      - name: Bump version
-        id: version
-        env:
-          GH_TOKEN: ${{ github.token }}
-          BUMP: ${{ inputs.bump || 'auto' }}
-          BEFORE: ${{ github.event.before }}
-        run: |
-          bump="$BUMP"
-          current="$(tr -d '[:space:]' < version.txt)"
-          if [ "$bump" = "auto" ]; then
-            if ! gh release view "$current" > /dev/null 2>&1; then
-              #not released yet (set by hand, or an earlier release build failed), release it as it is
-              bump=none
-            elif [ "$GITHUB_EVENT_NAME" = "push" ]; then
-              if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
-                range="$BEFORE..$GITHUB_SHA"
-              else
-                range="$GITHUB_SHA~1..$GITHUB_SHA"
-              fi
-              changed="$(git diff --name-only "${range%%..*}" "${range##*..}")"
-              if git log --format=%B "$range" | grep -qF '[no release]'; then
-                bump=none    #e.g. a generator change that only affects the website
-              elif grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
-                bump=minor   #book style or structure
-              elif grep -q '^recipes/' <<< "$changed"; then
-                bump=patch   #recipe content
-              else
-                bump=none
-              fi
-            else
-              bump=patch     #approved submission: a new recipe
-            fi
-          fi
-          #here-string, not <(...): version.txt has no trailing newline
-          #read returns non-zero at eof, which fails the step under bash -e
-          IFS=. read -r major minor patch <<< "$current"
-          case "$bump" in
-            minor) minor=$((minor + 1)); patch=0 ;;
-            patch) patch=$((patch + 1)) ;;
-          esac
-          version="$major.$minor.$patch"
-          printf '%s' "$version" > version.txt
-          echo "bump: $bump, version: $version"
-          if gh release view "$version" > /dev/null 2>&1; then
-            echo "release=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "release=true" >> "$GITHUB_OUTPUT"
-          fi
-          echo "version=$version" >> "$GITHUB_OUTPUT"
       - name: Commit and push changes
-        env:
-          VERSION: ${{ steps.version.outputs.version }}
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "action@github.com"
@@ -124,18 +71,15 @@ jobs:
             echo "Nothing to commit"
             exit 0
           fi
-          if git diff --cached --quiet -- version.txt; then
-            git commit -m "Regenerated recipe pages and README TOC"
-          else
-            git commit -m "Release $VERSION"
-          fi
+          git commit -m "Regenerated recipe pages and README TOC"
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin "HEAD:${{ github.ref_name }}"
 
   book:
     needs: update
-    if: ${{ needs.update.outputs.release == 'true' }}
     uses: ./.github/workflows/build-book.yml
+    with:
+      bump: ${{ inputs.bump || 'auto' }}
 
   deploy:
     needs: [update, book]

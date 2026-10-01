@@ -1,8 +1,24 @@
 name: Build Recipe Book PDF
 
+#builds the recipe book and releases it when its recipe pages changed since the last release
+#the comparison ignores the title page, back cover and metadata, so those never release alone
+#patch for recipe changes, minor when the page style (stylesheet, font, logos) changed
+#an unreleased version.txt (set by hand) is released as it is
+
 on:
   workflow_call:
+    inputs:
+      bump:
+        description: auto, patch, minor or none
+        type: string
+        default: auto
   workflow_dispatch:
+    inputs:
+      bump:
+        description: Version bump
+        type: choice
+        options: [auto, patch, minor, none]
+        default: auto
 
 permissions:
   contents: write
@@ -11,29 +27,28 @@ jobs:
   book:
     #pinned: the wkhtmltopdf .deb below is built for this ubuntu generation
     runs-on: ubuntu-24.04
+    concurrency:
+      group: recipe-book
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BUMP: ${{ inputs.bump || 'auto' }}
     steps:
       - uses: actions/checkout@v7
         with:
           #build the new branch tip, not the commit that triggered the run
+          #full history and tags, to see what changed since the last release
           ref: ${{ github.ref_name }}
-      - name: Check the version has no release yet
+          fetch-depth: 0
+      - name: Check whether a build is needed
         id: check
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          tag="$(tr -d '[:space:]' < version.txt)"
-          echo "tag=$tag" >> "$GITHUB_OUTPUT"
-          if gh release view "$tag" > /dev/null 2>&1; then
-            #published releases are never modified, bump version.txt to release again
-            echo "::notice::Release $tag already exists; nothing to publish"
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-          fi
+        run: python3 scripts/release_tools.py precheck "$BUMP" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v7
-        if: ${{ !steps.check.outputs.exists }}
+        if: ${{ steps.check.outputs.build == 'true' }}
         with:
           python-version: '3.x'
       - name: Install PDF toolchain
-        if: ${{ !steps.check.outputs.exists }}
+        if: ${{ steps.check.outputs.build == 'true' }}
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
@@ -43,16 +58,52 @@ jobs:
           sudo apt-get install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
           pip install fonttools
       - name: Build PDFs
-        if: ${{ !steps.check.outputs.exists }}
+        if: ${{ steps.check.outputs.build == 'true' }}
         #--all: file mtimes are meaningless after a fresh checkout
         run: python scripts/generate_pdfs.py --all
-      - name: Publish release
-        if: ${{ !steps.check.outputs.exists }}
+      - name: Compare with the last release
+        id: compare
+        if: ${{ steps.check.outputs.build == 'true' && steps.check.outputs.unreleased == 'false' && steps.check.outputs.prev != '' && env.BUMP == 'auto' }}
         env:
-          GH_TOKEN: ${{ github.token }}
-          TAG: ${{ steps.check.outputs.tag }}
+          PREV: ${{ steps.check.outputs.prev }}
         run: |
-          gh release create "$TAG" gitFOOD_Recipe_Book.pdf \
-            --title "v${TAG} - A4 Printable Version" \
-            --notes "Built automatically from $(git rev-parse --short HEAD) on $(date -u +%Y-%m-%d). Formatted and optimized for A4 page size printing. Booklet-printing friendly." \
+          gh release download "$PREV" -p gitFOOD_Recipe_Book.pdf -O "$RUNNER_TEMP/previous.pdf"
+          if python scripts/compare_books.py "$RUNNER_TEMP/previous.pdf" gitFOOD_Recipe_Book.pdf; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Choose the version
+        id: version
+        if: ${{ steps.check.outputs.build == 'true' }}
+        env:
+          CHANGED: ${{ steps.compare.outputs.changed }}
+        run: python3 scripts/release_tools.py next-version "$BUMP" "${CHANGED:-true}" | tee -a "$GITHUB_OUTPUT"
+      - name: Release
+        if: ${{ steps.check.outputs.build == 'true' && steps.version.outputs.release == 'true' }}
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          PREV: ${{ steps.check.outputs.prev }}
+        run: |
+          current="$(tr -d '[:space:]' < version.txt)"
+          if [ "$VERSION" != "$current" ]; then
+            #rebuild the title page and book so they carry the new version
+            printf '%s' "$VERSION" > version.txt
+            python scripts/generate_pdfs.py --book-only
+            git config user.name "GitHub Actions Bot"
+            git config user.email "action@github.com"
+            git add version.txt
+            git commit -m "Release $VERSION"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+          if [ -n "$PREV" ]; then
+            python3 scripts/release_tools.py notes "$PREV" > "$RUNNER_TEMP/notes.md"
+          else
+            echo "First release." > "$RUNNER_TEMP/notes.md"
+          fi
+          printf '\n\nBuilt automatically from %s on %s. Formatted and optimized for A4 page size printing. Booklet-printing friendly.\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
+          gh release create "$VERSION" gitFOOD_Recipe_Book.pdf \
+            --title "v${VERSION} - A4 Printable Version" \
+            --notes-file "$RUNNER_TEMP/notes.md" \
             --target "$(git rev-parse HEAD)"
