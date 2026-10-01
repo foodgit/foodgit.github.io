@@ -4,6 +4,7 @@ name: Build Recipe Book PDF
 #the comparison ignores the title page, back cover and metadata, so those never release alone
 #patch for recipe changes, minor when the page style (stylesheet, font, logos) changed
 #an unreleased version.txt (set by hand) is released as it is
+#two books are built and released, metric and freedom units
 
 on:
   workflow_call:
@@ -60,19 +61,24 @@ jobs:
       - name: Build PDFs
         if: ${{ steps.check.outputs.build == 'true' }}
         #--all: file mtimes are meaningless after a fresh checkout
-        run: python scripts/generate_pdfs.py --all
+        #metric last, so the recipe pdfs left behind are the metric ones
+        run: |
+          python scripts/generate_pdfs.py --all --edition freedom
+          python scripts/generate_pdfs.py --all
       - name: Compare with the last release
         id: compare
         if: ${{ steps.check.outputs.build == 'true' && steps.check.outputs.unreleased == 'false' && steps.check.outputs.prev != '' && env.BUMP == 'auto' }}
         env:
           PREV: ${{ steps.check.outputs.prev }}
         run: |
+          changed=false
           gh release download "$PREV" -p gitFOOD_Recipe_Book.pdf -O "$RUNNER_TEMP/previous.pdf"
-          if python scripts/compare_books.py "$RUNNER_TEMP/previous.pdf" gitFOOD_Recipe_Book.pdf; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+          python scripts/compare_books.py "$RUNNER_TEMP/previous.pdf" gitFOOD_Recipe_Book.pdf || changed=true
+          #the freedom book too, once the previous release has one
+          if gh release download "$PREV" -p gitFOOD_Recipe_Book-freedom.pdf -O "$RUNNER_TEMP/previous-freedom.pdf" 2>/dev/null; then
+            python scripts/compare_books.py "$RUNNER_TEMP/previous-freedom.pdf" gitFOOD_Recipe_Book-freedom.pdf || changed=true
           fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
       - name: Choose the version
         id: version
         if: ${{ steps.check.outputs.build == 'true' }}
@@ -90,6 +96,7 @@ jobs:
             #rebuild the title page and book so they carry the new version
             printf '%s' "$VERSION" > version.txt
             python scripts/generate_pdfs.py --book-only
+            python scripts/generate_pdfs.py --book-only --edition freedom
             git config user.name "GitHub Actions Bot"
             git config user.email "action@github.com"
             git add version.txt
@@ -102,8 +109,8 @@ jobs:
           else
             echo "First release." > "$RUNNER_TEMP/notes.md"
           fi
-          printf '\n\nBuilt automatically from %s on %s. Formatted and optimized for A4 page size printing. Booklet-printing friendly.\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
-          gh release create "$VERSION" gitFOOD_Recipe_Book.pdf \
+          printf '\n\nBuilt automatically from %s on %s. Formatted and optimized for A4 page size printing. Booklet-printing friendly. Two editions: metric, and freedom units (-freedom).\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
+          gh release create "$VERSION" gitFOOD_Recipe_Book.pdf gitFOOD_Recipe_Book-freedom.pdf \
             --title "v${VERSION} - A4 Printable Version" \
             --notes-file "$RUNNER_TEMP/notes.md" \
             --target "$(git rev-parse HEAD)"

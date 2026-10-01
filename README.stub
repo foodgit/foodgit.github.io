@@ -2,7 +2,7 @@
 
 gitFOOD is a personal recipe repository framework built around Markdown-based recipe documents
 
-## Download the complete gitFOOD Recipe Book [here](https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book.pdf)
+## Download the complete gitFOOD Recipe Book [here](https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book.pdf) (or the [freedom units edition](https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book-freedom.pdf))
 
 ## Submit a new recipe [here](https://github.com/foodgit/foodgit.github.io/issues/new?assignees=fexofenadine%2C+foodgit&labels=Recipe&projects=&template=submitrecipe.yml&title=%5BRecipe%5D%3A+New+Submission)
 

@@ -16,6 +16,7 @@ on:
       - assets/fonts/**
       - scripts/generate_pdfs.py
       - scripts/generate_markdown_recipes.py
+      - scripts/units.py
       - scripts/update_readme.py
       - README.stub
       - index.stub

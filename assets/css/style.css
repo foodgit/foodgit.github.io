@@ -149,15 +149,15 @@ body {
 .recipe-facts .fact { display: inline-block; padding: 0 9px; margin-right: 4px; border-radius: 10px;
                       background: var(--gf-blue); color: #06283a; font-weight: 700; font-size: 0.8em; line-height: 1.7; }
 .recipe-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin: 0 0 18px; font-size: 0.9em; }
-.keep-awake, .clear-ticks { display: inline-flex; align-items: center; gap: 8px; padding: 0; border: 0;
+.keep-awake, .units-toggle, .clear-ticks { display: inline-flex; align-items: center; gap: 8px; padding: 0; border: 0;
                             background: none; color: var(--gf-muted); font: inherit; cursor: pointer; }
-.keep-awake[hidden], .clear-ticks[hidden] { display: none; }
-.keep-awake .switch { position: relative; width: 34px; height: 18px; border-radius: 9px; background: #6e7681; }
-.keep-awake .switch::after { content: ""; position: absolute; left: 2px; top: 2px; width: 14px; height: 14px;
+.keep-awake[hidden], .units-toggle[hidden], .clear-ticks[hidden] { display: none; }
+.keep-awake .switch, .units-toggle .switch { position: relative; width: 34px; height: 18px; border-radius: 9px; background: #6e7681; }
+.keep-awake .switch::after, .units-toggle .switch::after { content: ""; position: absolute; left: 2px; top: 2px; width: 14px; height: 14px;
                              border-radius: 50%; background: #fff; transition: left 0.15s; }
-.keep-awake.on { color: inherit; }
-.keep-awake.on .switch { background: var(--gf-blue); }
-.keep-awake.on .switch::after { left: 18px; background: #06283a; }
+.keep-awake.on, .units-toggle.on { color: inherit; }
+.keep-awake.on .switch, .units-toggle.on .switch { background: var(--gf-blue); }
+.keep-awake.on .switch::after, .units-toggle.on .switch::after { left: 18px; background: #06283a; }
 
 /*tick-off: a circle before each ingredient or step, step numbers are kept*/
 .recipe-body .tickable { position: relative; padding-left: 1.5em; cursor: pointer; }

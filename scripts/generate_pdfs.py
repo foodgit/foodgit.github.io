@@ -5,6 +5,7 @@ from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
+from units import to_freedom
 
 #date formatting pleasantries (for title page, etc)
 def suffix(d):
@@ -42,6 +43,7 @@ def ps_text(s):
 parser = argparse.ArgumentParser()
 parser.add_argument('-bo', '--book-only', '--fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
 parser.add_argument('-a', '--all', '--slow', '--complete', '--regenerate', dest='regenerate_all', action='store_true', help='Regenerate all recipe PDFs, ignoring modified dates. (Slow mode)')
+parser.add_argument('-e', '--edition', choices=['metric', 'freedom'], default='metric', help='metric (the recipes as written) or freedom (amounts converted, saved with a -freedom suffix)')
 parser.set_defaults(book_only=False)
 parser.set_defaults(regenerate_all=False)
 args = parser.parse_args()
@@ -58,8 +60,12 @@ elif book_only:
     print('--book-only option selected')
 
 
+edition = args.edition
 author = 'fexofenadine'
 title = 'gitFOOD Recipe Book'
+#the metric book keeps the plain name
+suffix_for_edition = '' if edition == 'metric' else '-freedom'
+pdf_title = title if edition == 'metric' else title+' (freedom edition)'
 license_url = 'https://creativecommons.org/licenses/by-sa/4.0/'
 repo_url = 'https://github.com/foodgit/foodgit.github.io'
 site_url = 'https://foodgit.github.io/'
@@ -109,7 +115,7 @@ pandoc_pdf_opts = ('-f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf '
 print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
     title_page_body = f.read()
-title_page_body = title_page_body.replace("{version_number}", version_number)
+title_page_body = title_page_body.replace("{version_number}", version_number).replace("{edition}", edition)
 first_year, this_year = 2023, datetime.datetime.now().year  #first commit
 title_page_body = title_page_body.replace("{years}", str(first_year) if this_year == first_year else f"{first_year}–{this_year}")
 title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, %Y', datetime.datetime.now()))
@@ -118,6 +124,13 @@ output_file.parent.mkdir(exist_ok=True, parents=True)
 output_file.write_text(title_page_body)
 run('cd ./pdf && pandoc '+pandoc_pdf_opts+' ./0_3_title_page.md -o ./0_3_title_page.pdf')
 os.remove('./pdf/0_3_title_page.md')
+
+#the recipe pdfs are shared by both editions, so they are rebuilt when the edition changes
+edition_marker = Path('./pdf/.edition')
+if not edition_marker.exists() or edition_marker.read_text() != edition:
+    print('recipe pdfs are from another edition, rebuilding them')
+    book_only, regenerate_all = False, True
+edition_marker.write_text(edition)
 
 if book_only:
     print("only generating recipe book, skipping regeneration of individual recipes")
@@ -185,7 +198,7 @@ else:
                             line = ""
                             print("snipped "+word+" from "+tempfile)
                             break
-                    fout.write(build_fractions(line))
+                    fout.write(build_fractions(to_freedom(line) if edition == 'freedom' else line))
             
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
@@ -207,8 +220,8 @@ else:
 
 #generate full book (all recipes) use pdfunite to include title page & pagebreaks
 print("\nexporting Recipe Book")
-tempfilename=title.replace(" ","_")+'.temp.pdf'
-filename=title.replace(" ","_")+'.pdf'
+tempfilename=title.replace(" ","_")+suffix_for_edition+'.temp.pdf'
+filename=title.replace(" ","_")+suffix_for_edition+'.pdf'
 category_names = {'1':'snacks', '2':'breakfast', '3':'lunch', '4':'dinner',
                   '5':'dessert', '6':'sides', '9':'extra stuff'}
 
@@ -367,12 +380,12 @@ for f in glob.glob("./pdf/zzzzz_blank*.pdf"):
 
 print("applying metadata")
 now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y:%m:%d %H:%M:%S+00:00')
-description = (title+' '+version_number+', a collection of recipes from '+site_url+
+description = (pdf_title+' '+version_number+', a collection of recipes from '+site_url+
                '. Formatted for A4 and booklet printing.')
 keywords = ['gitFOOD', 'recipes', 'recipe book', 'cookbook',
             'snacks', 'breakfast', 'lunch', 'dinner', 'dessert', 'sides']
 subprocess.run(['exiftool', '-overwrite_original', '-q',
-    '-PDF:Title='+title, '-XMP-dc:Title='+title,
+    '-PDF:Title='+pdf_title, '-XMP-dc:Title='+pdf_title,
     '-PDF:Author='+author, '-XMP-dc:Creator='+author, '-XMP-dc:Publisher='+author,
     '-PDF:Subject='+description, '-XMP-dc:Description='+description,
     '-PDF:Keywords='+', '.join(keywords), '-XMP-pdf:Keywords='+', '.join(keywords),
@@ -381,7 +394,7 @@ subprocess.run(['exiftool', '-overwrite_original', '-q',
     '-XMP-xmp:CreatorTool=gitFOOD generate_pdfs.py (pandoc, wkhtmltopdf)',
     '-PDF:CreateDate='+now, '-PDF:ModifyDate='+now,
     '-XMP-xmp:CreateDate='+now, '-XMP-xmp:ModifyDate='+now, '-XMP-dc:Date='+now,
-    '-XMP-dc:Identifier='+title+' '+version_number,
+    '-XMP-dc:Identifier='+pdf_title+' '+version_number,
     '-XMP-dc:Language=en',
     '-XMP-dc:Source='+repo_url,
     '-XMP-dc:Relation='+site_url,
