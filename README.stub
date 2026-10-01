@@ -11,3 +11,9 @@ Its primary goal is to allow easy submission of recipes, that are easy to make l
 As a bonus for using Git, we get source control (notably the ability to see old versions of documents), automation, speed, and potential to produce many delivery methods to users (think native phone app, a pretty, polished website, or even PDFs (recipe books!))
 
 {TOC}
+
+## License
+
+Copyright © {years} gitFOOD contributors.
+
+The project is licensed under the [GNU General Public License v3.0](LICENSE).

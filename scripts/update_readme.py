@@ -1,4 +1,5 @@
 from pathlib import Path
+import datetime
 import html
 import json
 import random
@@ -29,6 +30,9 @@ def badges2kv(text):
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
 SITE_URL = 'https://foodgit.github.io/'
+FIRST_YEAR = 2023  # first commit
+THIS_YEAR = datetime.date.today().year
+COPYRIGHT_YEARS = str(FIRST_YEAR) if THIS_YEAR == FIRST_YEAR else f'{FIRST_YEAR}–{THIS_YEAR}'
 
 def make_badge(label, prefix='tag', color='lightgrey'):
     # links to the site's homepage filtered by the tag (works from GitHub too)
@@ -96,6 +100,7 @@ if Path('README.stub').exists():
         readme_stub = f.read()
     readme = readme_stub.replace('{TOC}', toc_str)
     readme = readme.replace('{tags}', make_badges(unq_tags))
+    readme = readme.replace('{years}', COPYRIGHT_YEARS)
     readme = readme.strip()
 if not readme:
     with open('empty.stub') as f:

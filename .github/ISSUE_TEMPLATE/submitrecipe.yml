@@ -15,6 +15,10 @@ body:
 
         Some useful characters for copying & pasting: [ ¼ ¾ ⅓ ⅔ ½ ° ]
         
+        By submitting a recipe you confirm it is yours to share (your own, or reworded from
+        another, with the source mentioned in the tips), and that you agree it and any photos
+        you attach can be published under the project's licence (GPL-3.0, see the LICENSE file).
+        
   - type: input
     id: Name
     attributes:

@@ -105,6 +105,8 @@ print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
     title_page_body = f.read()
 title_page_body = title_page_body.replace("{version_number}", version_number)
+first_year, this_year = 2023, datetime.datetime.now().year  # first commit
+title_page_body = title_page_body.replace("{years}", str(first_year) if this_year == first_year else f"{first_year}–{this_year}")
 title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, %Y', datetime.datetime.now()))
 output_file = Path("./pdf/0_3_title_page.md")
 output_file.parent.mkdir(exist_ok=True, parents=True)
