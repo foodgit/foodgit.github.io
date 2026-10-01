@@ -54,7 +54,7 @@ elif book_only:
 
 author = 'fexofenadine'
 title = 'gitFOOD Recipe Book'
-license_url = 'https://raw.githubusercontent.com/foodgit/foodgit.github.io/main/LICENSE'
+license_url = 'https://creativecommons.org/licenses/by-sa/4.0/'
 repo_url = 'https://github.com/foodgit/foodgit.github.io'
 site_url = 'https://foodgit.github.io/'
 margin_size = '15'
@@ -382,6 +382,6 @@ subprocess.run(['exiftool', '-overwrite_original', '-q',
     '-XMP-dc:Language=en',
     '-XMP-dc:Source='+repo_url,
     '-XMP-dc:Relation='+site_url,
-    '-XMP-dc:Rights=GNU General Public License v3.0',
+    '-XMP-dc:Rights=Creative Commons Attribution-ShareAlike 4.0 International',
     '-XMP-xmpRights:Marked=True', '-XMP-xmpRights:WebStatement='+license_url,
     './'+filename], check=True)

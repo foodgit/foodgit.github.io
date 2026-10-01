@@ -16,4 +16,11 @@ As a bonus for using Git, we get source control (notably the ability to see old 
 
 Copyright © {years} gitFOOD contributors.
 
-The project is licensed under the [GNU General Public License v3.0](LICENSE).
+| What | Licence |
+|:---|:---|
+| Recipes, photos and the recipe book (`recipes/`, `template/` and the PDF) | [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (full text in `recipes/LICENSE.txt`) |
+| Code: scripts, workflows, site templates and styles (everything else) | [GNU General Public License v3.0](LICENSE) |
+
+You are free to share and adapt the recipes, including commercially, as long as you credit gitFOOD with a link to <https://foodgit.github.io/> and share your adaptations under the same licence.
+
+The gitFOOD name and logo (`images/`) are not covered by either licence. The Nunito font in `assets/fonts` is under the SIL Open Font License.

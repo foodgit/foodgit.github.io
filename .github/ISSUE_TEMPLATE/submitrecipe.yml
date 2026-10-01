@@ -17,7 +17,7 @@ body:
         
         By submitting a recipe you confirm it is yours to share (your own, or reworded from
         another, with the source mentioned in the tips), and that you agree it and any photos
-        you attach can be published under the project's licence (GPL-3.0, see the LICENSE file).
+        you attach can be published under the Creative Commons Attribution-ShareAlike 4.0 licence.
         
   - type: input
     id: Name
