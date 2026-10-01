@@ -54,10 +54,9 @@ elif book_only:
 
 author = 'fexofenadine'
 title = 'gitFOOD Recipe Book'
-license_url = 'https://raw.githubusercontent.com/fexofenadine/gitfood/main/LICENSE'
-repo_url = 'https://github.com/fexofenadine/gitfood'
-site_url = 'https://fexofenadine.github.io/gitfood/'
-site_url_short = 'https://foodgit.github.io'
+license_url = 'https://raw.githubusercontent.com/foodgit/foodgit.github.io/main/LICENSE'
+repo_url = 'https://github.com/foodgit/foodgit.github.io'
+site_url = 'https://foodgit.github.io/'
 margin_size = '15'
 font_name = 'Nunito ExtraBold'
 font_postscript_name = 'Nunito-ExtraBold'
@@ -364,7 +363,7 @@ for f in glob.glob("./pdf/zzzzz_blank*.pdf"):
 print("applying metadata")
 now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y:%m:%d %H:%M:%S+00:00')
 description = (title+' '+version_number+', a collection of recipes from '+site_url+
-               ' (also '+site_url_short+'). Formatted for A4 and booklet printing.')
+               '. Formatted for A4 and booklet printing.')
 keywords = ['gitFOOD', 'recipes', 'recipe book', 'cookbook',
             'snacks', 'breakfast', 'lunch', 'dinner', 'dessert', 'sides']
 subprocess.run(['exiftool', '-overwrite_original', '-q',
@@ -380,7 +379,7 @@ subprocess.run(['exiftool', '-overwrite_original', '-q',
     '-XMP-dc:Identifier='+title+' '+version_number,
     '-XMP-dc:Language=en',
     '-XMP-dc:Source='+repo_url,
-    '-XMP-dc:Relation='+site_url, '-XMP-dc:Relation='+site_url_short,
+    '-XMP-dc:Relation='+site_url,
     '-XMP-dc:Rights=GNU General Public License v3.0',
     '-XMP-xmpRights:Marked=True', '-XMP-xmpRights:WebStatement='+license_url,
     './'+filename], check=True)

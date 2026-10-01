@@ -84,7 +84,7 @@ for recipe_stub in all_recipe_stubs:
     # when browsing the repo on GitHub)
     taglinks=""
     for tag in list(tags):
-        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](https://fexofenadine.github.io/gitfood/?tag='+tag+') '
+        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](https://foodgit.github.io/?tag='+tag+') '
     temp_file_name = Path("working")/recipe_stub.with_suffix(".md").name
     recipe_file_name = content_root/recipe_stub.with_suffix(".md").name
 

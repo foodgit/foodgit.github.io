@@ -28,7 +28,7 @@ def badges2kv(text):
     badges = re.findall(testpat, text)
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
-SITE_URL = 'https://fexofenadine.github.io/gitfood/'
+SITE_URL = 'https://foodgit.github.io/'
 
 def make_badge(label, prefix='tag', color='lightgrey'):
     # links to the site's homepage filtered by the tag (works from GitHub too)
