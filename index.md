@@ -6,6 +6,7 @@ title: gitFOOD
 
 <p class="actions">
 <a class="button" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book.pdf">Download the recipe book (PDF)</a>
+<a class="button" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book-freedom.pdf">Freedom units edition (PDF)</a>
 <a class="button secondary" href="https://github.com/foodgit/foodgit.github.io/issues/new?assignees=fexofenadine%2C+foodgit&amp;labels=Recipe&amp;projects=&amp;template=submitrecipe.yml&amp;title=%5BRecipe%5D%3A+New+Submission">Submit a recipe</a>
 </p>
 
