@@ -18,7 +18,7 @@ def build_fractions(text):
     #the font lacks most fractions and falls back to a lighter one, so build them from small text
     def build(match):
         top, bottom = (''.join(chr(int(c, 16)) for c in side.split()) for side in unicodedata.decomposition(match.group())[11:].split(' 2044 '))
-        return '<span style="font-size:.65em;vertical-align:.45em;line-height:0">'+top+'</span>⁄<span style="font-size:.65em;vertical-align:-.05em;line-height:0">'+bottom+'</span>'
+        return '<span style="font-size:.75em;vertical-align:.4em;line-height:0">'+top+'</span>⁄<span style="font-size:.75em;vertical-align:-.1em;line-height:0">'+bottom+'</span>'
     return re.sub('[⅐-⅞↉]', build, text)
 
 def run(cmd):
