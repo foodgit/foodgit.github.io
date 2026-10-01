@@ -23,6 +23,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![aussie](https://img.shields.io/badge/aussie-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=aussie) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=cheesey) [![potato](https://img.shields.io/badge/potato-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=potato) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
+[![aussie](https://img.shields.io/badge/aussie-blue.svg)](https://foodgit.github.io/?tag=aussie) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://foodgit.github.io/?tag=cheesey) [![potato](https://img.shields.io/badge/potato-blue.svg)](https://foodgit.github.io/?tag=potato) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 22nd of December 2023 &middot; Last updated: 29th of September 2026</em></p>

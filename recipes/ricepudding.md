@@ -21,6 +21,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dessert) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=easy) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=rice) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=rice_cooker) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
+[![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://foodgit.github.io/?tag=easy) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://foodgit.github.io/?tag=rice) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](https://foodgit.github.io/?tag=rice_cooker) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

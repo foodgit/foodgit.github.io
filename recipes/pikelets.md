@@ -18,6 +18,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=breakfast) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dessert) [![family](https://img.shields.io/badge/family-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=fried) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegetarian) 
+[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](https://foodgit.github.io/?tag=breakfast) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
 <p class="recipe-dates"><em>Created: 26th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

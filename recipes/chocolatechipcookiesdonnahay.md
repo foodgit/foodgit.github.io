@@ -19,6 +19,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=baked) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=chocolate) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dairy) [![snack](https://img.shields.io/badge/snack-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=snack) 
+[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](https://foodgit.github.io/?tag=chocolate) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![snack](https://img.shields.io/badge/snack-blue.svg)](https://foodgit.github.io/?tag=snack) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

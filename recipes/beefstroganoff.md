@@ -31,6 +31,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![beef](https://img.shields.io/badge/beef-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=beef) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dairy) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=dinner) [![russian](https://img.shields.io/badge/russian-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=russian) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=stovetop) 
+[![beef](https://img.shields.io/badge/beef-blue.svg)](https://foodgit.github.io/?tag=beef) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![russian](https://img.shields.io/badge/russian-blue.svg)](https://foodgit.github.io/?tag=russian) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) 
 
 <p class="recipe-dates"><em>Created: 6th of October 2023 &middot; Last updated: 29th of September 2026</em></p>

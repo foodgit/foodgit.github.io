@@ -21,6 +21,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![portuguese](https://img.shields.io/badge/portuguese-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=portuguese) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://fexofenadine.github.io/gitfood/?tag=vegan) 
+[![portuguese](https://img.shields.io/badge/portuguese-blue.svg)](https://foodgit.github.io/?tag=portuguese) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://foodgit.github.io/?tag=vegan) 
 
 <p class="recipe-dates"><em>Created: 15th of November 2023 &middot; Last updated: 29th of September 2026</em></p>
