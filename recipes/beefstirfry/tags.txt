@@ -1,5 +1,6 @@
 asian
 beef
+chinese
 dinner
 healthy
 lunch

@@ -11,5 +11,5 @@ meal:    breakfast lunch dinner dessert snack sides
 diet:    vegetarian vegan
 main:    beef chicken lamb pasta rice potato chocolate
 cooking: baked stovetop fried boiled grilled airfryer rice_cooker
-cuisine: aussie italian asian thai korean japanese irish british russian portuguese
+cuisine: aussie italian asian chinese thai korean japanese irish british russian portuguese
 hidden:  amazing great mine messy family easy tricky fast simple versatile expensive large_quantity long_prep_time long_cook_time savoury leftovers
