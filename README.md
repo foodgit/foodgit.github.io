@@ -46,7 +46,7 @@ As a bonus for using Git, we get source control (notably the ability to see old 
 
 ## License
 
-Copyright © 2023–2026 gitFOOD contributors.
+Copyright © 2023–2026 fexofenadine.
 
 | What | Licence |
 |:---|:---|
