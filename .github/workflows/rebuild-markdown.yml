@@ -1,22 +1,16 @@
 name: Rebuild Markdown Files [bot]
 
-# Recipe pipeline: regenerate recipe pages + README TOC, bump the version, build
-# the PDF book and publish it as a new release, then deploy the site. Everything
-# runs in one workflow because pushes made with GITHUB_TOKEN never trigger other
-# workflows.
-#
-# Versioning: if the current version.txt has no release yet (set by hand, e.g. a
-# major bump, or an earlier release build failed) it is released as-is. Otherwise
-# recipe/content changes bump the patch version and changes to the book's style or
-# structure bump the minor version. Website-only changes don't bump; when a change
-# to a book input only affects the website, put "[no release]" in a commit message
-# of the push. A release is only published when the current version has none yet,
-# so existing releases are never overwritten.
+#recipe pipeline: regenerate pages and toc, bump version, build and release pdf, deploy site
+#all in one workflow because pushes made with the github token never trigger other workflows
+#an unreleased version.txt is released as it is (set by hand, or an earlier release failed)
+#otherwise recipe changes bump the patch and book style or structure changes bump the minor
+#website-only changes do not bump, "[no release]" in a commit message skips a bump
+#a release is only published when the current version has none, so releases are never overwritten
 
 on:
   push:
     branches: [ "main" ]
-    # keep in sync with the paths-ignore list in jekyll-gh-pages.yml
+    #keep in sync with the paths-ignore list in jekyll-gh-pages.yml
     paths:
       - recipes/**
       - pdf/**
@@ -59,8 +53,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          # full history for the Created/Last Updated dates and change detection;
-          # branch tip so a commit made earlier in the same run is included
+          #full history for the created/last updated dates and change detection
+          #branch tip, so a commit made earlier in the same run is included
           ref: ${{ github.ref_name }}
           fetch-depth: 0
       - uses: actions/setup-python@v7
@@ -81,8 +75,7 @@ jobs:
           current="$(tr -d '[:space:]' < version.txt)"
           if [ "$bump" = "auto" ]; then
             if ! gh release view "$current" > /dev/null 2>&1; then
-              # not released yet: set by hand (e.g. a major bump), or an earlier
-              # release build failed -- release this version as it is
+              #not released yet (set by hand, or an earlier release build failed), release it as it is
               bump=none
             elif [ "$GITHUB_EVENT_NAME" = "push" ]; then
               if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
@@ -92,20 +85,20 @@ jobs:
               fi
               changed="$(git diff --name-only "${range%%..*}" "${range##*..}")"
               if git log --format=%B "$range" | grep -qF '[no release]'; then
-                bump=none    # e.g. a generator change that only affects the website
+                bump=none    #e.g. a generator change that only affects the website
               elif grep -qE '^(pdf/|images/|assets/fonts/|scripts/generate_(pdfs|markdown_recipes)\.py$)' <<< "$changed"; then
-                bump=minor   # book style or structure
+                bump=minor   #book style or structure
               elif grep -q '^recipes/' <<< "$changed"; then
-                bump=patch   # recipe content
+                bump=patch   #recipe content
               else
                 bump=none
               fi
             else
-              bump=patch     # approved submission: a new recipe
+              bump=patch     #approved submission: a new recipe
             fi
           fi
-          # here-string, not <(...): version.txt has no trailing newline, and read
-          # returns non-zero at EOF, which fails the step under bash -e
+          #here-string, not <(...): version.txt has no trailing newline
+          #read returns non-zero at eof, which fails the step under bash -e
           IFS=. read -r major minor patch <<< "$current"
           case "$bump" in
             minor) minor=$((minor + 1)); patch=0 ;;
@@ -146,6 +139,6 @@ jobs:
 
   deploy:
     needs: [update, book]
-    # publish the site even when no book was built or the PDF build failed
+    #publish the site even when no book was built or the pdf build failed
     if: ${{ !cancelled() && needs.update.result == 'success' }}
     uses: ./.github/workflows/jekyll-gh-pages.yml

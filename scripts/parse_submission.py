@@ -14,7 +14,7 @@ def get_image(image):
         del response
 
 script_name = sys.argv[0]
-# take raw text or file path as argument
+#take raw text or file path as argument
 if sys.argv[1][:3]=="###":
     issue_body = sys.argv[1]
 else:
@@ -63,8 +63,7 @@ def section(label):
     return "" if text == "_No response_" else text
 
 def listed(text, marker):
-    # one list item per non-blank line; blank lines between entries (which the form
-    # used to ask for) previously became empty list items
+    #one list item per non-blank line, blank lines between entries used to become empty items
     return "\n".join(marker+line.strip() for line in text.splitlines() if line.strip())
 
 with open(recipe_file_name,'r') as f:
@@ -77,13 +76,13 @@ for line in body_lines:
 
 tags += [t.strip().lower().replace(" ","_") for t in section("Additional tags").split(",")]
 tags.append(section("How difficult is it to prepare this meal?").lower())
-# drop blanks and duplicates
+#drop blanks and duplicates
 tags=sorted({tag for tag in tags if tag})
 print("saving submissions/"+friendly_title+"/tags.txt")
 with open("submissions/"+friendly_title+"/tags.txt", 'w') as f:
     f.write('\n'.join(map(str, tags)))
 
-# heading syntax
+#heading syntax
 ### Title of Recipe
 ### Ingredients
 ### Method

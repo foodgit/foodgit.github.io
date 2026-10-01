@@ -30,21 +30,19 @@ body {
   }
 }
 
-/* flow-root keeps heading underlines from running beneath floated images
-   while still letting text wrap beside them (clear: both left large gaps) */
+/*flow-root keeps heading underlines clear of floated images while text still wraps beside them*/
 .markdown-body h1,
 .markdown-body h2 {
   display: flow-root;
 }
 
-/* stack consecutive floated photos instead of squeezing text between them */
+/*stack consecutive floated photos instead of squeezing text between them*/
 .markdown-body img[align="right"] {
   clear: right;
   margin: 0 0 12px 16px;
 }
 
-/* floated step photos can only stack down the right-hand side, so on photo-heavy
-   recipes they end up beside later steps; show each one under its own step */
+/*floated photos only stack down the right, so show each method step photo under its step*/
 .markdown-body ol li img[align="right"] {
   float: none;
   display: block;
@@ -54,8 +52,7 @@ body {
   margin: 0.5em 0 0.8em;
 }
 
-/* brand colours: the logo blue is too light for text on white, so light mode
-   links use a darker shade */
+/*brand colours: light mode links use a darker blue, the logo blue is too light on white*/
 :root { --gf-blue: #00abeb; --gf-link: #0071a1; --gf-muted: #57606a; }
 @media (prefers-color-scheme: dark) {
   :root { --gf-link: #33bdf2; --gf-muted: #9aa4ae; }
@@ -83,7 +80,7 @@ body {
 }
 .markdown-body a.button:hover { filter: brightness(1.08); }
 
-/* tag colours, one per group in tags/groups.txt */
+/*tag colours, one per group in tags/groups.txt*/
 :root {
   --t-meal-bg: #ddf4ff; --t-meal-fg: #0550ae;
   --t-diet-bg: #dafbe1; --t-diet-fg: #116329;
@@ -113,7 +110,7 @@ body {
 .markdown-body .t-cuisine { background: var(--t-cuisine-bg); color: var(--t-cuisine-fg); }
 .markdown-body .t-other { background: var(--t-other-bg); color: var(--t-other-fg); }
 
-/* homepage recipe browser: sidebar filters + list (assets/js/recipes.js) */
+/*homepage recipe browser: sidebar filters and list (assets/js/recipes.js)*/
 .recipe-browser { display: flex; gap: 28px; align-items: flex-start; }
 .recipe-browser .filters { width: 190px; flex: none; }
 .filters fieldset { border: 0; padding: 0; margin: 0 0 14px; }
@@ -143,8 +140,7 @@ body {
 .recipe-list .recipe-tags { margin-top: 2px; }
 .markdown-body .recipe-list li[hidden] { display: none; }
 
-/* recipe pages (_layouts/recipe.html); the markdown's own logo, badge row and dates
-   are replaced by the layout's footer on the site */
+/*recipe pages: hide the markdown's own logo, badges and dates, the layout footer replaces them*/
 .recipe-body p:has(> img[src$="logo_sm.png"]),
 .recipe-body > img[src$="logo_sm.png"],
 .recipe-body p:has(> a > img[src*="img.shields.io"]),
@@ -163,7 +159,7 @@ body {
 .keep-awake.on .switch { background: var(--gf-blue); }
 .keep-awake.on .switch::after { left: 18px; background: #06283a; }
 
-/* tick-off: a circle before each ingredient/step (numbers on steps are kept) */
+/*tick-off: a circle before each ingredient or step, step numbers are kept*/
 .recipe-body .tickable { position: relative; padding-left: 1.5em; cursor: pointer; }
 .recipe-body ul > li.tickable { list-style: none; margin-left: -1.5em; }
 .recipe-body .tickable::before {
@@ -178,9 +174,7 @@ body {
 .markdown-body ul.related { list-style: none; padding: 0; }
 .markdown-body .related li { padding: 5px 0; margin: 0; border-bottom: 1px solid var(--gf-line); }
 
-/* phones: photos full width above the text rather than squeezing it; the main
-   photo is cropped short so the ingredients start near the top; the homepage
-   filters collapse behind a button */
+/*phones: full width photos above the text, short main photo, filters behind a button*/
 @media (max-width: 600px) {
   .markdown-body img[align="right"] {
     float: none;
@@ -205,7 +199,7 @@ body {
   .recipe-search { max-width: none; }
 }
 
-/* printing a single recipe */
+/*printing a single recipe*/
 @media print {
   .site-header, .footer, .recipe-tools, .related, .recipe-footer h2 { display: none; }
   .recipe-body .tickable::before { display: none; }

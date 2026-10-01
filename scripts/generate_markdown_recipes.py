@@ -2,7 +2,7 @@ import shutil, filecmp, subprocess, datetime, html
 from pathlib import Path
 
 def get_dates(stub_path):
-    """Returns (last_updated, created) ISO dates from the stub's git history."""
+    """returns (last_updated, created) iso dates from the stub's git history"""
     try:
         result = subprocess.run(
             ["git", "log", "--format=%as", "--", str(stub_path)],
@@ -36,7 +36,7 @@ for recipe_stub in all_recipe_stubs:
     content_root = recipe_dir.parent
 
     last_updated_iso, created_iso = get_dates(recipe_stub)
-    # class lets the website's recipe layout restyle it (GitHub and the PDF ignore it)
+    #class lets the website's recipe layout restyle it (github and the pdf ignore it)
     dates_line = ('<p class="recipe-dates"><em>Created: '+humanize_date(created_iso)+
                   ' &middot; Last updated: '+humanize_date(last_updated_iso)+'</em></p>')
 
@@ -44,7 +44,7 @@ for recipe_stub in all_recipe_stubs:
     title_idx = next((i for i, l in enumerate(lines) if l.startswith("# ")), None)
     title = lines[title_idx][2:].strip() if title_idx is not None else recipe_stub.stem
     main_idx = next((i for i, l in enumerate(lines) if l.strip() == "{main.jpg}"), None)
-    # title must be the first line for jekyll-titles-from-headings to name the page
+    #title must be the first line for jekyll-titles-from-headings to name the page
     if main_idx is not None and title_idx is not None and main_idx < title_idx:
         lines.pop(main_idx)
         title_idx -= 1
@@ -80,8 +80,7 @@ for recipe_stub in all_recipe_stubs:
         tags=[ "none" ]
     finally:
         f.close()
-    # link to the site's homepage filtered by the tag (absolute, so it also works
-    # when browsing the repo on GitHub)
+    #link to the site's homepage filtered by the tag, absolute so it also works on github
     taglinks=""
     for tag in list(tags):
         taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](https://foodgit.github.io/?tag='+tag+') '

@@ -1,6 +1,5 @@
-// Site behaviour: homepage recipe browser, and on recipe pages tick-off
-// ingredients/steps and keep-screen-on. Everything here is optional: without it
-// every recipe is still listed and every page still reads fine.
+//site behaviour: homepage recipe browser, and tick-off and keep-screen-on on recipe pages
+//all optional: without it every recipe is still listed and every page still reads fine
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.recipe-browser').forEach(setUpBrowser);
   var recipe = document.querySelector('.recipe-page');
@@ -12,9 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function words(text) { return text.toLowerCase().split(/\s+/).filter(Boolean); }
 
-// Homepage: sidebar filters (any within a group, all across groups), search, sort.
-// Tag links anywhere on the site point here as ?tag=name; the filters are kept in
-// the address so a filtered view can be bookmarked or shared.
+//homepage: sidebar filters (any within a group, all across groups), search and sort
+//tag links point here as ?tag=name and filters are kept in the address so views can be shared
 function setUpBrowser(browser) {
   var list = browser.querySelector('.recipe-list');
   var items = Array.prototype.slice.call(list.children);
@@ -26,7 +24,7 @@ function setUpBrowser(browser) {
   var aside = browser.querySelector('.filters');
   var toggle = browser.querySelector('.filters-toggle');
   var done = browser.querySelector('.filters-done');
-  var extra = [];  // tags with no checkbox (hidden tags), each required
+  var extra = [];  //hidden tags with no checkbox, each required
 
   function boxesFor(tag) { return boxes.filter(function (b) { return b.value === tag; }); }
 
@@ -112,12 +110,12 @@ function setUpBrowser(browser) {
       var an = a.querySelector('.recipe-name').textContent, bn = b.querySelector('.recipe-name').textContent;
       if (key === 'name') return an.localeCompare(bn);
       var x = a.dataset[key] || '', y = b.dataset[key] || '';
-      return y.localeCompare(x) || an.localeCompare(bn);  // newest first; undated last
+      return y.localeCompare(x) || an.localeCompare(bn);  //newest first, undated last
     });
     items.forEach(function (li) { list.appendChild(li); });
   }
 
-  // clicking a tag chip in the list filters in place instead of reloading
+  //clicking a tag chip in the list filters in place instead of reloading
   list.addEventListener('click', function (e) {
     var chip = e.target.closest('a.tag');
     if (!chip) return;
@@ -141,7 +139,7 @@ function setUpBrowser(browser) {
   update();
 }
 
-// Recipe pages: tap an ingredient or step to tick it off; remembered on this device.
+//recipe pages: tap an ingredient or step to tick it off, remembered on this device
 function setUpTicks(page) {
   var body = page.querySelector('.recipe-body');
   var items = [];
@@ -166,7 +164,7 @@ function setUpTicks(page) {
   function save() {
     ticked = items.map(function (item, i) { return item.classList.contains('done') ? i : -1; })
                   .filter(function (i) { return i !== -1; });
-    try { localStorage.setItem(key, JSON.stringify(ticked)); } catch (e) { /* private mode */ }
+    try { localStorage.setItem(key, JSON.stringify(ticked)); } catch (e) { /*private mode*/ }
     if (clear) clear.hidden = !ticked.length;
   }
 
@@ -196,7 +194,7 @@ function setUpTicks(page) {
   }
 }
 
-// Recipe pages: stop the screen dimming while cooking (where the browser allows it).
+//recipe pages: stop the screen dimming while cooking, where the browser allows it
 function setUpKeepAwake(page) {
   var button = page.querySelector('.keep-awake');
   if (!button || !('wakeLock' in navigator)) return;
@@ -223,7 +221,7 @@ function setUpKeepAwake(page) {
       request();
     }
   });
-  // the browser drops the lock when the tab is hidden; take it back on return
+  //the browser drops the lock when the tab is hidden, take it back on return
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'visible' && button.classList.contains('on') && !lock) request();
   });

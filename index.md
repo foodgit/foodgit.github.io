@@ -1,7 +1,7 @@
 ---
 title: gitFOOD
 ---
-<!-- index.md is generated from index.stub by scripts/update_readme.py: edit index.stub instead -->
+<!--index.md is generated from index.stub by scripts/update_readme.py, edit index.stub instead-->
 <p class="lede">A personal recipe collection built from simple Markdown files, and a printable recipe book made from them.</p>
 
 <p class="actions">

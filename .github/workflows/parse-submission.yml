@@ -28,7 +28,7 @@ jobs:
         run: pip install requests
       - name: Call python issue submission parser
         env:
-          # passed via env + file, never interpolated into the shell command
+          #passed via env and a file, never interpolated into the shell command
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/issue_body.md"
@@ -46,10 +46,9 @@ jobs:
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin "HEAD:${{ github.ref_name }}"
 
-  # regenerate pages/TOC (fills in dates now the stub is committed), build and
-  # release the PDF, then deploy the site
+  #regenerate pages and toc, build and release the pdf, then deploy the site
   publish:
     needs: parse
     uses: ./.github/workflows/rebuild-markdown.yml
     with:
-      bump: auto     # patch for a new recipe, unless the current version is still unreleased
+      bump: auto     #patch for a new recipe, unless the current version is unreleased

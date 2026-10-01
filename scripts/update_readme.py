@@ -11,7 +11,7 @@ from collections import defaultdict
 random.seed(0)
 
 def get_dates(stub_path):
-    """Returns (last_updated, created) ISO dates from the stub's git history."""
+    """returns (last_updated, created) iso dates from the stub's git history"""
     try:
         result = subprocess.run(
             ["git", "log", "--format=%as", "--", str(stub_path)],
@@ -30,12 +30,12 @@ def badges2kv(text):
     return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
 
 SITE_URL = 'https://foodgit.github.io/'
-FIRST_YEAR = 2023  # first commit
+FIRST_YEAR = 2023  #first commit
 THIS_YEAR = datetime.date.today().year
 COPYRIGHT_YEARS = str(FIRST_YEAR) if THIS_YEAR == FIRST_YEAR else f'{FIRST_YEAR}–{THIS_YEAR}'
 
 def make_badge(label, prefix='tag', color='lightgrey'):
-    # links to the site's homepage filtered by the tag (works from GitHub too)
+    #links to the site's homepage filtered by the tag (works from github too)
     return f'<a href="{SITE_URL}?tag={label}"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
 
 def random_hex_colour():
@@ -109,9 +109,8 @@ if not readme:
 with open('README.md','w') as f:
     f.write(readme)
        
-# Everything below is for the website. README.md (above) keeps image badges, since
-# GitHub strips inline styles when showing it. The site's tag grouping, colours and
-# hidden tags come from tags/groups.txt.
+#below is for the website, README.md above keeps image badges (github strips inline styles)
+#tag grouping, colours and hidden tags come from tags/groups.txt
 
 def load_groups(path='tags/groups.txt'):
     groups, hidden = {}, set()
@@ -143,7 +142,7 @@ def shown_tags(d):
     return meals(d) + sorted(rest, key=lambda t: order.get(t, len(order)))
 
 def make_label(tag):
-    # a tag links to the homepage filtered by it; recipes.js applies it in place
+    #a tag links to the homepage filtered by it, recipes.js applies it in place
     group = 'meal' if tag == 'other' else group_of.get(tag, 'other')
     return f'<a class="tag t-{group}" href="./?tag={tag}">{tag.replace("_", " ")}</a>'
 
@@ -175,7 +174,7 @@ def related(d, n=4):
             scored.append((score, o['title'], o))
     return [o for _, _, o in sorted(scored, key=lambda s: (-s[0], s[1]))[:n]]
 
-# data for the recipe page layout (_layouts/recipe.html)
+#data for the recipe page layout (_layouts/recipe.html)
 Path('_data').mkdir(exist_ok=True)
 recipe_data = {d['slug']: {
     'serves': d['serves'],

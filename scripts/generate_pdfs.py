@@ -1,13 +1,12 @@
-# linux only for now 
-# requires poppler-utils, ghostscript, pandoc, wkhtmltopdf, exiftool, and the python
-# package fonttools
+#linux only for now
+#requires poppler-utils, ghostscript, pandoc, wkhtmltopdf, exiftool, fonttools (python)
 import os, re, sys, html, glob, shutil, filecmp, argparse, datetime, subprocess
 from pathlib import Path
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
-# date formatting pleasantries (for title page, etc)
+#date formatting pleasantries (for title page, etc)
 def suffix(d):
     return {1:'st',2:'nd',3:'rd'}.get(d%20, 'th')
 
@@ -29,10 +28,10 @@ def page_count(pdf):
     return int(next(l.split()[1] for l in out.splitlines() if l.startswith('Pages:')))
 
 def ps_text(s):
-    # UTF-16 hex string, so pdfmark titles survive parentheses and non-ASCII
+    #utf-16 hex string, so pdfmark titles survive parentheses and non-ascii
     return '<FEFF'+s.encode('utf-16-be').hex().upper()+'>'
 
-# set variables to passed parameters
+#set variables to passed parameters
 parser = argparse.ArgumentParser()
 parser.add_argument('-bo', '--book-only', '--fast', dest='book_only', action='store_true', help='Only generate title page & final recipe book, do not regenerate component recipes. (Fast mode)')
 parser.add_argument('-a', '--all', '--slow', '--complete', '--regenerate', dest='regenerate_all', action='store_true', help='Regenerate all recipe PDFs, ignoring modified dates. (Slow mode)')
@@ -82,9 +81,8 @@ print('version '+version_number+' detected')
 with open('./LICENSE') as f:
     license_text = f.read().strip('\n').strip()
 
-# toolchain (pandoc, wkhtmltopdf with patched qt, ghostscript, poppler-utils,
-# exiftool) is installed by .github/workflows/build-book.yml; the font ships
-# with the repo and is installed here so local and CI builds match
+#toolchain is installed by build-book.yml
+#the font ships with the repo and is installed here so local and ci builds match
 font_file = Path('./assets/fonts/nunito-extrabold.ttf')
 font_dest = Path.home()/'.local/share/fonts'/font_file.name
 if not font_dest.exists() or not filecmp.cmp(font_file, font_dest, shallow=False):
@@ -95,7 +93,7 @@ if not font_dest.exists() or not filecmp.cmp(font_file, font_dest, shallow=False
 if font_name not in subprocess.run(['fc-list'], capture_output=True, text=True).stdout:
     sys.exit('font "'+font_name+'" not found by fontconfig')
 
-# smart shrinking is disabled so the sizes in print-style.html are the printed sizes
+#smart shrinking is disabled so the sizes in print-style.html are the printed sizes
 pandoc_pdf_opts = ('-f gfm --quiet -t html5 --pdf-engine=wkhtmltopdf '
     '--pdf-engine-opt=--enable-local-file-access --pdf-engine-opt=--disable-smart-shrinking '
     '-V papersize:a4 -V margin-top=15mm -V margin-bottom=15mm -V margin-left=15mm -V margin-right=15mm '
@@ -105,7 +103,7 @@ print("generating title page")
 with open("./pdf/0_3_title_page.stub") as f:
     title_page_body = f.read()
 title_page_body = title_page_body.replace("{version_number}", version_number)
-first_year, this_year = 2023, datetime.datetime.now().year  # first commit
+first_year, this_year = 2023, datetime.datetime.now().year  #first commit
 title_page_body = title_page_body.replace("{years}", str(first_year) if this_year == first_year else f"{first_year}–{this_year}")
 title_page_body = title_page_body.replace("{date}", custom_strftime('{S} of %B, %Y', datetime.datetime.now()))
 output_file = Path("./pdf/0_3_title_page.md")
@@ -161,11 +159,11 @@ else:
             recipe_md_modified=os.path.getmtime(recipe_md)
             recipe_pdf_modified=os.path.getmtime('./pdf/'+category[0]+'_'+recipe_name+'.pdf')
         except:
-            # regenerate pdf if a file is missing (ie. if it hasn't been created yet)
+            #regenerate pdf if a file is missing (ie. if it hasn't been created yet)
             recipe_md_modified=1
             recipe_pdf_modified=0
         print("recipe modified: "+datetime.date.fromtimestamp(recipe_md_modified).isoformat()+"\npdf modified: "+datetime.date.fromtimestamp(recipe_pdf_modified).isoformat())
-        # ignore modified dates if --all flag is set
+        #ignore modified dates if --all flag is set
         if regenerate_all:
             recipe_md_modified=1
             recipe_pdf_modified=0
@@ -200,15 +198,15 @@ else:
         else:
             print("pdf is newer, skipping")
 
-# generate full book (all recipes) use pdfunite to include title page & pagebreaks
+#generate full book (all recipes) use pdfunite to include title page & pagebreaks
 print("\nexporting Recipe Book")
 tempfilename=title.replace(" ","_")+'.temp.pdf'
 filename=title.replace(" ","_")+'.pdf'
 category_names = {'1':'snacks', '2':'breakfast', '3':'lunch', '4':'dinner',
                   '5':'dessert', '6':'sides', '9':'extra stuff'}
 
-# covers, the blank page and chapter dividers are simple enough to draw on every
-# build, which also keeps the back cover's year current
+#covers, blank page and chapter dividers are simple enough to draw on every build
+#which also keeps the back cover's year current
 static_page_css = '''
 html, body { margin: 0; padding: 0; background: white; }
 .page { position: relative; width: 210mm; height: 297mm; overflow: hidden;
@@ -222,7 +220,7 @@ html, body { margin: 0; padding: 0; background: white; }
 '''
 
 def text_outline(text, size):
-    """SVG path data for text set in the book font, and its advance width (in pt)"""
+    """svg path data for text set in the book font, and its advance width (in pt)"""
     font = TTFont(font_file)
     cmap, glyphs = font.getBestCmap(), font.getGlyphSet()
     scale = size / font['head'].unitsPerEm
@@ -235,9 +233,8 @@ def text_outline(text, size):
     return pen.getCommands(), x
 
 def divider_svg(text):
-    # drawn as a single outline shape, filled and stroked: wkhtmltopdf drops CSS
-    # text-stroke/text-shadow, and SVG <text> lays the fill and stroke out separately
-    # so they drift apart along the word
+    #drawn as one outline path, filled and stroked: wkhtmltopdf drops css text-stroke and text-shadow
+    #and svg <text> lays out fill and stroke separately so they drift apart along the word
     path, width = text_outline(text, 74)
     return ('<svg width="210mm" height="297mm" viewBox="0 0 595 842">'
             '<path transform="translate(%.2f 447)" d="%s" fill="#6bade9" stroke="#3a5e7a" '
@@ -275,8 +272,7 @@ def recipe_title(part):
     return md.stem
 
 def layout():
-    """first page of each part, pages to number (recipes and blanks), and the
-    category/recipe outline, all as page numbers in the finished book"""
+    """first page of each part, pages to number and the category/recipe outline, all as book page numbers"""
     start, page, numbered, sections = {}, 1, set(), []
     for part in book_parts():
         n = page_count(Path('./pdf')/part)
@@ -305,8 +301,8 @@ def build_contents(sections):
     run('cd ./pdf && pandoc '+pandoc_pdf_opts+' ./0_4_contents.md -o ./0_4_contents.pdf')
     os.remove('./pdf/0_4_contents.md')
 
-# the contents page's own length shifts every later page, so build it once to
-# learn its length, then again with the final page numbers
+#the contents page's own length shifts later pages, so build it once to learn its length
+#then again with the final page numbers
 print("generating contents page")
 Path('./pdf/0_4_contents.pdf').unlink(missing_ok=True)
 build_contents(layout()[2])
@@ -317,7 +313,7 @@ if layout()[2] != sections:
 
 unite_book(tempfilename)
 
-# calculate and insert number of blank pages to insert for tidy booklet printing
+#calculate and insert number of blank pages to insert for tidy booklet printing
 p1 = subprocess.Popen(['pdfinfo', tempfilename], stdout=subprocess.PIPE)
 p2 = subprocess.Popen(['grep', 'Pages'], stdin=p1.stdout, stdout=subprocess.PIPE)
 p3 = subprocess.Popen(['sed', 's/[^0-9]*//'], stdin=p2.stdout, stdout=subprocess.PIPE)
@@ -328,15 +324,15 @@ print('number of pages to insert: '+str(num_add_pages))
 for i in range(0, num_add_pages):
     shutil.copyfile('./pdf/0_2_blank.pdf', f'./pdf/zzzzz_blank{i}.pdf')
 
-# regenerate the book with the additional pages
+#regenerate the book with the additional pages
 if num_add_pages > 0:
     print('regenerating book with extra padding for booklet printing')
     unite_book(tempfilename)
-    # the padding pages are numbered too
+    #the padding pages are numbered too
     numbered = layout()[1]
 
 print('optimizing '+filename+' for printing')
-# bookmarks (sidebar outline) and page numbers on recipe and blank pages, added in the same pass
+#bookmarks (sidebar outline) and page numbers on recipe and blank pages, added in the same pass
 marks = ['[/Title '+ps_text('contents')+' /Page '+str(start['0_4_contents.pdf'])+' /OUT pdfmark']
 for name, page, recipes in sections:
     if recipes:
@@ -355,7 +351,7 @@ subprocess.run(['ghostscript', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4', 
     '-sOutputFile=./'+filename, '-c', number_pages, '-f', './'+tempfilename, './bookmarks.temp.ps'], check=True)
 os.remove('./bookmarks.temp.ps')
 
-# cleanup
+#cleanup
 print('removing temp file '+tempfilename)
 os.remove('./'+tempfilename)
 print('removing blank padding pages')

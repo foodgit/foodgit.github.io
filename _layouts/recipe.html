@@ -2,9 +2,7 @@
 layout: default
 ---
 {%- comment -%}
-Website-only extras around a recipe page. The recipe markdown itself is shared with
-the PDF book and GitHub, so these come from _data/recipes.json (built by
-scripts/update_readme.py) instead.
+site-only extras, data from _data/recipes.json since the markdown is shared with the pdf and github
 {%- endcomment -%}
 {%- assign slug = page.name | remove: ".md" -%}
 {%- assign r = site.data.recipes[slug] -%}
