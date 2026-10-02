@@ -113,17 +113,17 @@
    },
    {
     "meals": [
-     "snack"
-    ],
-    "slug": "rockcakes",
-    "title": "Rock Cakes"
-   },
-   {
-    "meals": [
      "dessert"
     ],
     "slug": "stickydatepuddingwithbutterscotchsauce",
     "title": "Sticky Date Pudding with Butterscotch Sauce"
+   },
+   {
+    "meals": [
+     "snack"
+    ],
+    "slug": "rockcakes",
+    "title": "Rock Cakes"
    },
    {
     "meals": [
@@ -2543,10 +2543,6 @@
    },
    {
     "group": "other",
-    "name": "coffee"
-   },
-   {
-    "group": "other",
     "name": "dairy"
    }
   ],
@@ -2594,10 +2590,6 @@
    {
     "group": "cuisine",
     "name": "british"
-   },
-   {
-    "group": "other",
-    "name": "coffee"
    },
    {
     "group": "other",
