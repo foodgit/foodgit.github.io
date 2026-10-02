@@ -5,13 +5,13 @@
 ### Pudding
 
 - 340g dates, seeded and chopped
-- 1 ½ cups (375ml) boiling water
+- 1 ½ cups (375ml) cold water
+- 1 tsp vanilla extract / vanilla bean paste
 - 1 ½ tsp sodium bicarbonate (bicarbonate of soda)
 - 150g unsalted butter, chopped
 - 1 cup (175g) brown sugar
 - 3 eggs
 - 1 ½ cups (225g) self-raising flour
-- [optional] 1 tbsp instant coffee (coffee version)
 - [optional] ½ tsp salt flakes (salted caramel version)
 
 ### Butterscotch Sauce
@@ -22,14 +22,20 @@
 
 ## Method
 
-> 1. Preheat oven to 160°C. Place the dates, water and bicarbonate of soda in a medium bowl and set aside for 5 minutes. Place the date mixture, butter, sugar and eggs in a food processor and process until well combined. Sift the flour over the date mixture and process until smooth. 
+> 1. Preheat oven to 160°C. 
+> 1. Add the dates to the cold water in a saucepan.  Begin heating the dates in the water, and when they reach boiling point, remove from heat.
+> 1. Place the dates, water and bicarbonate of soda in a medium bowl and set aside. 
+> 1. Cream the butter, sugar and vanilla with a whisk or cake mixer.
+> 1. Once creamed, add an egg and ½ cup of the flour, and continue to mix until smooth. 
+> 1. Add the next egg and the next ½ cup of flour and continue to mix until smooth.  
+> 1. Add the final egg and the last of the flour and mix until smooth.
+> 1. Fold the dates into the mixture.
 > 1. Pour the mixture into a lightly greased 20cm square cake tin lined with non-stick baking paper and cook for 55–60 minutes or until cooked when tested with a skewer. Allow to cool in the tin for 10 minutes before turning out onto a wire rack. 
 > 1. To make the butterscotch sauce, place the butter and sugar in a medium saucepan over high heat and stir until the sugar has dissolved. Gradually add the cream, stirring to combine. Bring to the boil and cook for 6–8 minutes or until thickened slightly. 
 > 1. Slice the sticky date pudding into squares and serve warm or at room temperature, drizzled with the butterscotch sauce.
 
 ## Tips
 
-> - For a coffee sticky date pudding, add 1 tablespoon of instant coffee granules in with the dates in step 1. 
 > - For a salted caramel sticky date pudding, add ¼ teaspoon salt flakes to the butterscotch sauce. Sprinkle with extra salt to serve. 
 > - You can freeze the pudding (before saucing). Just wrap in non-stick baking paper and freeze in an airtight container for up to one month. Simply reheat at 160°C when ready to serve.
 
@@ -39,4 +45,4 @@
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](https://foodgit.github.io/?tag=amazing) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![british](https://img.shields.io/badge/british-blue.svg)](https://foodgit.github.io/?tag=british) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](https://foodgit.github.io/?tag=coffee) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 10th of December 2023 &middot; Last updated: 28th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 10th of December 2023 &middot; Last updated: 2nd of October 2026</em></p>
