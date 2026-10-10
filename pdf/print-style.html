@@ -13,6 +13,23 @@ h1 { font-size: 2.7em; line-height: 1.1; margin: 0 0 0.25em; }
 .ptag { background: #e3f4fb; color: #065979; }
 h2 { font-size: 1.45em; margin: 1em 0 0.4em; }
 h3 { font-size: 1.15em; margin: 0.8em 0 0.3em; }
+table.cols { display: table; width: 100%; table-layout: fixed; border-collapse: collapse; border: none; margin: 0 0 0.8em; }
+table.cols tbody { border: none; }
+table.cols tr { background: none; }
+table.cols td { vertical-align: top; padding: 0; border: none; }
+td.ing { width: 36%; background: #f0f9fd; border-radius: 3mm; padding: 4mm 5mm !important; }
+td.gap { width: 6mm; }
+td.ing h2, td.met h2 { margin: 0 0 0.4em; }
+td.ing h2 { border-bottom: 2px solid #00abeb; padding-bottom: 0.15em; }
+td.ing h3 { font-size: 0.85em; margin: 0.8em 0 0.2em; text-transform: uppercase; letter-spacing: 0.08em; }
+td.ing ul { list-style: none; padding: 0; margin: 0; font-size: 0.86em; }
+td.ing li { margin: 0; padding: 0.25em 0; border-bottom: 1px dotted #b7d9e6; }
+td.ing img { float: none; display: block; width: 70%; margin: 0.4em 0; }
+td.met blockquote { border-left: none; margin: 0; padding: 0; color: #111; }
+td.met h3 { margin: 0.6em 0 0.2em; }
+td.met ol { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+td.met ol li { counter-increment: step; position: relative; margin: 0; padding: 0 0 0.6em 2.1em; }
+td.met ol li:before { content: counter(step); position: absolute; left: 0; top: 0.1em; width: 1.5em; height: 1.5em; border-radius: 0.75em; background: #00abeb; color: #06283a; text-align: center; line-height: 1.5em; font-size: 0.8em; }
 .tips { background: #e3f4fb; border-radius: 6px; margin: 0.8em 0; padding: 0.1em 1em 0.3em; page-break-inside: avoid; }
 .tips h2 { margin: 0.5em 0 0.3em; }
 .tips blockquote { border-left: none; margin: 0; padding: 0; }

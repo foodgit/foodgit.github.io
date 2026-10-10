@@ -55,13 +55,18 @@ def hero_photo(text):
         pass
     return text, '<div class="hero"><img src="'+html.escape(match[1])+'" style="margin-top:%.1fmm"></div>' % shift
 
-def recipe_header(text, tags, section):
+def recipe_header(text, tags, section, side_by_side=True):
     #serves and tags move from the foot of the recipe to a strip under the title
     serves = re.search(r'^\*\*Serves:\*\*[ \t]*(.+)$', text, re.M)
     text = re.sub(r'^\*\*Serves:\*\*.*\n?', '', text, flags=re.M)
     text = '\n'.join(l for l in text.split('\n') if 'img.shields.io' not in l)
     #tips stay in one piece so the box is not split across pages
     text = re.sub(r'^(## Tips[ \t]*\n.*?)(?=^## |^<p class="recipe-dates"|\Z)', lambda m: '<div class="tips">\n\n'+m.group(1).rstrip()+'\n\n</div>\n\n', text, flags=re.M | re.S)
+    #ingredients and method sit side by side when the method directly follows the ingredients
+    if side_by_side:
+        text = re.sub(r'^(## Ingredients[ \t]*\n(?:(?!## ).*\n)*)(## Method[ \t]*\n(?:(?!## |<p class="recipe-dates").*\n)*)',
+            lambda m: '<table class="cols"><tr><td class="ing">\n\n'+m[1].rstrip()+'\n\n</td><td class="gap"></td><td class="met">\n\n'+m[2].rstrip()+'\n\n</td></tr></table>\n\n',
+            text.rstrip('\n')+'\n', flags=re.M)
     text, hero = hero_photo(text)
     chips = ['<span class="fact">Serves '+html.escape(serves[1].strip())+'</span>'] if serves else []
     chips += ['<span class="ptag">'+html.escape(t.replace('_', ' '))+'</span>' for t in tags if t not in hidden_tags and t != 'none']
@@ -248,14 +253,16 @@ else:
                             break
                     fout.write(build_fractions(to_freedom(line) if edition == 'freedom' else line))
             
-            with open(tempfile, encoding='utf-8') as fin:
-                recipe_text = recipe_header(fin.read(), tags, category[1])
-            with open(tempfile, 'w', encoding='utf-8') as fout:
-                fout.write(recipe_text)
+            source_text = Path(tempfile).read_text(encoding='utf-8')
 
-            #generate pdf of recipe
+            #generate pdf of recipe, side by side only when that keeps it to one page
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
-            run('cd ./recipes && pandoc '+pandoc_pdf_opts+' --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+            for side_by_side in (True, False):
+                Path(tempfile).write_text(recipe_header(source_text, tags, category[1], side_by_side), encoding='utf-8')
+                run('cd ./recipes && pandoc '+pandoc_pdf_opts+' --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
+                if not side_by_side or page_count('./pdf/'+recipe_name+'.temp.pdf') == 1:
+                    break
+                print('over one page side by side, using the stacked layout')
             print('optimizing ./pdf/'+recipe_name+'.pdf for printing')
             run('cd ./pdf && ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=./'+category[0]+'_'+recipe_name+'.pdf ./'+recipe_name+'.temp.pdf')
             # print('setting margin size to '+margin_size+'.')
