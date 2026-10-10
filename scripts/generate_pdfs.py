@@ -437,6 +437,8 @@ for name, page, recipes in sections:
         marks.append('[/Title %s /Page %d /Count -%d /OUT pdfmark' % (ps_text(name), page, len(recipes)))
         marks += ['[/Title %s /Page %d /OUT pdfmark' % (ps_text(t), pg) for t, pg in recipes]
 marks.append('[/PageMode /UseOutlines /DOCVIEW pdfmark')
+#show the title in the viewer's title bar and open on single pages
+marks.append('[{Catalog} << /ViewerPreferences << /DisplayDocTitle true >> /PageLayout /SinglePage >> /PUT pdfmark')
 Path('./bookmarks.temp.ps').write_text('\n'.join(marks)+'\n')
 def ps_string(s):
     #ascii text in a postscript string, anything else is simplified or dropped
@@ -444,11 +446,17 @@ def ps_string(s):
     return '('+s.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')+')'
 
 footers = ' '.join('%d [%s %s]' % (n, ps_string('gitFOOD - '+sec), ps_string(rec)) for n, (sec, rec) in sorted(labels.items()))
+#corner ticks on every page but the covers, so a reader that crops to the content crops every page alike
+last_page = page_count('./'+tempfilename)
+corner_marks = ('/MarkSkip << 1 true %d true >> def /Marks { gsave 0.7 setgray 0.4 setlinewidth newpath '
+    '12 18 moveto 12 12 lineto 18 12 lineto 577.3 12 moveto 583.3 12 lineto 583.3 18 lineto '
+    '12 823.9 moveto 12 829.9 lineto 18 829.9 lineto 577.3 829.9 moveto 583.3 829.9 lineto 583.3 823.9 lineto '
+    'stroke grestore } def ') % last_page
 #page number in the middle, section on the left and recipe on the right, with a hairline above
-number_pages = ('/NumberedPages << '+' '.join('%d true' % n for n in sorted(numbered))+' >> def '
+number_pages = (corner_marks+'/NumberedPages << '+' '.join('%d true' % n for n in sorted(numbered))+' >> def '
     '/Footers << '+footers+' >> def '
     '<< /EndPage { exch 1 add exch 0 eq '
-    '{ dup NumberedPages exch known '
+    '{ dup MarkSkip exch known not { Marks } if dup NumberedPages exch known '
     '{ /PgNum exch def /'+font_postscript_name+' findfont 10 scalefont setfont 0.45 setgray '
     'PgNum 20 string cvs dup stringwidth pop 2 div 297.64 exch sub 22 moveto show '
     'Footers PgNum known { Footers PgNum get aload pop /'+font_postscript_name+' findfont 8 scalefont setfont '
@@ -473,7 +481,7 @@ print("applying metadata")
 now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y:%m:%d %H:%M:%S+00:00')
 description = (pdf_title+' '+version_number+', a collection of recipes from '+site_url+
                '. Formatted for A4 and booklet printing.')
-keywords = ['gitFOOD', 'recipes', 'recipe book', 'cookbook',
+keywords = ['gitFOOD', 'recipes', 'recipe book', 'cookbook', edition+' edition', 'version '+version_number,
             'snacks', 'breakfast', 'lunch', 'dinner', 'dessert', 'sides']
 subprocess.run(['exiftool', '-overwrite_original', '-q',
     '-PDF:Title='+pdf_title, '-XMP-dc:Title='+pdf_title,
@@ -486,7 +494,9 @@ subprocess.run(['exiftool', '-overwrite_original', '-q',
     '-PDF:CreateDate='+now, '-PDF:ModifyDate='+now,
     '-XMP-xmp:CreateDate='+now, '-XMP-xmp:ModifyDate='+now, '-XMP-dc:Date='+now,
     '-XMP-dc:Identifier='+pdf_title+' '+version_number,
-    '-XMP-dc:Language=en',
+    '-XMP-dc:Language=en', '-XMP-dc:Type=Text', '-XMP-dc:Format=application/pdf',
+    '-XMP-cc:License='+license_url, '-XMP-cc:AttributionName='+author, '-XMP-cc:AttributionURL='+site_url,
+    '-XMP-pdf:PDFVersion=1.4', '-XMP-xmpRights:UsageTerms=Free to share and adapt with credit, under the same licence',
     '-XMP-dc:Source='+repo_url,
     '-XMP-dc:Relation='+site_url,
     '-XMP-dc:Rights=Creative Commons Attribution-ShareAlike 4.0 International',
