@@ -101,7 +101,9 @@ jobs:
             git config user.email "action@github.com"
             git add version.txt
             git commit -m "Release $VERSION"
-            git pull --rebase origin "${{ github.ref_name }}"
+            #show what the build left modified, then rebase over it
+            git status --short
+            git pull --rebase --autostash origin "${{ github.ref_name }}"
             git push origin "HEAD:${{ github.ref_name }}"
           fi
           if [ -n "$PREV" ]; then
