@@ -59,10 +59,12 @@ def next_version(bump, pages_changed):
         return
     kind = bump
     if bump == 'auto':
-        if not pages_changed and prev:
+        #a style change (colours, fonts, logos) leaves the text in place, so it counts on its own
+        styled = bool(prev) and style_changed(prev)
+        if not pages_changed and not styled and prev:
             print('release=false\nreason=the book pages are unchanged')
             return
-        kind = 'minor' if style_changed(prev) else 'patch'
+        kind = 'minor' if styled else 'patch'
     major, minor, patch = (int(x) for x in current.split('.'))
     if kind == 'minor':
         minor, patch = minor + 1, 0
