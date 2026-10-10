@@ -21,6 +21,54 @@ def build_fractions(text):
         return '<span style="font-size:.75em;vertical-align:.4em;line-height:0">'+top+'</span>⁄<span style="font-size:.75em;vertical-align:-.1em;line-height:0">'+bottom+'</span>'
     return re.sub('[⅐-⅞↉]', build, text)
 
+#tags in the hidden group stay off the book too
+hidden_tags = set()
+for line in Path('./tags/groups.txt').read_text(encoding='utf-8').splitlines():
+    if line.startswith('hidden:'):
+        hidden_tags = set(line.split(':', 1)[1].split())
+
+hero_height, content_width = 66, 180  #mm, the photo is cropped to this height across the page
+
+def jpeg_size(path):
+    #width and height from the first start-of-frame marker
+    data, i = path.read_bytes(), 2
+    while i + 9 < len(data):
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        if 0xC0 <= data[i+1] <= 0xCF and data[i+1] not in (0xC4, 0xC8, 0xCC):
+            return int.from_bytes(data[i+7:i+9], 'big'), int.from_bytes(data[i+5:i+7], 'big')
+        i += 2 + int.from_bytes(data[i+2:i+4], 'big')
+    return None
+
+def hero_photo(text):
+    #the main photo moves from beside the ingredients to a cropped banner above the title
+    match = re.search(r'^<img[^>]*src="([^"]*/images/main\.\w+)"[^>]*>[ \t]*\n?', text, re.M)
+    if not match:
+        return text, ''
+    text = text[:match.start()]+text[match.end():]
+    shift = 0
+    try:
+        width, height = jpeg_size(Path('./recipes')/match[1])
+        shift = min(0, (hero_height - content_width*height/width) / 2)
+    except Exception:
+        pass
+    return text, '<div class="hero"><img src="'+html.escape(match[1])+'" style="margin-top:%.1fmm"></div>' % shift
+
+def recipe_header(text, tags, section):
+    #serves and tags move from the foot of the recipe to a strip under the title
+    serves = re.search(r'^\*\*Serves:\*\*[ \t]*(.+)$', text, re.M)
+    text = re.sub(r'^\*\*Serves:\*\*.*\n?', '', text, flags=re.M)
+    text = '\n'.join(l for l in text.split('\n') if 'img.shields.io' not in l)
+    #tips stay in one piece so the box is not split across pages
+    text = re.sub(r'^(## Tips[ \t]*\n.*?)(?=^## |^<p class="recipe-dates"|\Z)', lambda m: '<div class="tips">\n\n'+m.group(1).rstrip()+'\n\n</div>\n\n', text, flags=re.M | re.S)
+    text, hero = hero_photo(text)
+    chips = ['<span class="fact">Serves '+html.escape(serves[1].strip())+'</span>'] if serves else []
+    chips += ['<span class="ptag">'+html.escape(t.replace('_', ' '))+'</span>' for t in tags if t not in hidden_tags and t != 'none']
+    strip = ('\n\n<div class="facts">'+' '.join(chips)+'</div>') if chips else ''
+    top = hero+'\n\n<div class="kicker">'+html.escape(section)+'</div>\n\n'
+    return re.sub(r'^(# .+)$', lambda m: top+m.group(1)+strip, text, count=1, flags=re.M)
+
 def run(cmd):
     if os.system(cmd) != 0:
         sys.exit('command failed: '+cmd)
@@ -200,6 +248,11 @@ else:
                             break
                     fout.write(build_fractions(to_freedom(line) if edition == 'freedom' else line))
             
+            with open(tempfile, encoding='utf-8') as fin:
+                recipe_text = recipe_header(fin.read(), tags, category[1])
+            with open(tempfile, 'w', encoding='utf-8') as fout:
+                fout.write(recipe_text)
+
             #generate pdf of recipe
             print('exporting to ./pdf/'+recipe_name+'.temp.pdf')
             run('cd ./recipes && pandoc '+pandoc_pdf_opts+' --dpi 70 ./'+recipe_name+'.temp.md -o ../pdf/'+recipe_name+'.temp.pdf')
@@ -237,6 +290,14 @@ html, body { margin: 0; padding: 0; background: white; }
 .welcome { position: absolute; left: 6.4mm; top: 119.5mm; font-size: 22pt; line-height: 1; color: #151515; }
 .copyright { position: absolute; left: 0; right: 0; bottom: 12.3mm; text-align: center;
              font-size: 18pt; line-height: 1; color: #00ffff; }
+.band-top, .band-bottom { position: absolute; left: 0; right: 0; height: 9mm; }
+.band-top { top: 0; background: #00abeb; }
+.band-bottom { bottom: 0; background: #065979; }
+.rule { position: absolute; left: 85mm; right: 85mm; top: 162mm; border-top: 2px solid #00abeb; }
+.count { position: absolute; left: 0; right: 0; top: 168mm; text-align: center; color: #065979;
+         font-size: 20pt; letter-spacing: .2em; text-transform: uppercase; }
+.names { position: absolute; left: 30mm; right: 30mm; top: 190mm; text-align: center; color: #4f6672;
+         font-size: 11pt; line-height: 1.9; }
 '''
 
 def text_outline(text, size):
@@ -279,21 +340,30 @@ static_page('0_2_blank', '<div class="page"></div>')
 static_page('zzzzz_cover', '<div class="page gradient"><div class="copyright">&copy; gitFOOD '+
             str(datetime.datetime.now().year)+'</div></div>', dark=True)
 used_categories = sorted({f.name[0] for f in Path('./pdf').glob('[0-9]_[a-z]*.pdf')})
-for num in used_categories:
-    name = category_names.get(num, 'other')
-    static_page(num+'__'+name.split()[0], '<div class="page">'+divider_svg(name)+'</div>')
-
 def recipe_title(part):
     md = Path('./recipes')/(part.split('_', 1)[1][:-4]+'.md')
     if md.exists():
-        for line in md.read_text().splitlines():
+        for line in md.read_text(encoding='utf-8').splitlines():
             if line.startswith('# '):
                 return line[2:].strip()
     return md.stem
 
+def divider_names(num, cap=12):
+    #the recipes in the section, long lists are cut
+    titles = [recipe_title(f.name) for f in sorted(Path('./pdf').glob(num+'_[a-z]*.pdf'))]
+    shown = titles if len(titles) <= cap else titles[:cap]+['and %d more' % (len(titles)-cap)]
+    count = '%d recipe%s' % (len(titles), '' if len(titles) == 1 else 's')
+    return count, ' &middot; '.join(html.escape(t) for t in shown)
+
+for num in used_categories:
+    name = category_names.get(num, 'other')
+    count, names = divider_names(num)
+    static_page(num+'__'+name.split()[0], '<div class="page"><div class="band-top"></div><div class="band-bottom"></div>'+
+                divider_svg(name)+'<div class="rule"></div><div class="count">'+count+'</div><div class="names">'+names+'</div></div>')
+
 def layout():
     """first page of each part, pages to number and the category/recipe outline, all as book page numbers"""
-    start, page, numbered, sections = {}, 1, set(), []
+    start, page, numbered, sections, labels = {}, 1, set(), [], {}
     for part in book_parts():
         n = page_count(Path('./pdf')/part)
         start[part] = page
@@ -304,10 +374,11 @@ def layout():
             numbered.update(range(page, page+n))
             if sections:
                 sections[-1][2].append((recipe_title(part), page))
+                labels.update({p: (sections[-1][0], recipe_title(part)) for p in range(page, page+n)})
         elif part == '0_2_blank.pdf' or part.startswith('zzzzz_blank'):
             numbered.update(range(page, page+n))
         page += n
-    return start, numbered, sections
+    return start, numbered, sections, labels
 
 def build_contents(sections):
     rows = ['# contents', '']
@@ -326,7 +397,7 @@ def build_contents(sections):
 print("generating contents page")
 Path('./pdf/0_4_contents.pdf').unlink(missing_ok=True)
 build_contents(layout()[2])
-start, numbered, sections = layout()
+start, numbered, sections, labels = layout()
 build_contents(sections)
 if layout()[2] != sections:
     sys.exit('contents page length changed between passes')
@@ -360,16 +431,29 @@ for name, page, recipes in sections:
         marks += ['[/Title %s /Page %d /OUT pdfmark' % (ps_text(t), pg) for t, pg in recipes]
 marks.append('[/PageMode /UseOutlines /DOCVIEW pdfmark')
 Path('./bookmarks.temp.ps').write_text('\n'.join(marks)+'\n')
+def ps_string(s):
+    #ascii text in a postscript string, anything else is simplified or dropped
+    s = unicodedata.normalize('NFKD', s.replace('’', "'").replace('‘', "'")).encode('ascii', 'ignore').decode()
+    return '('+s.replace('\\', '\\\\').replace('(', '\\(').replace(')', '\\)')+')'
+
+footers = ' '.join('%d [%s %s]' % (n, ps_string('gitFOOD - '+sec), ps_string(rec)) for n, (sec, rec) in sorted(labels.items()))
+#page number in the middle, section on the left and recipe on the right, with a hairline above
 number_pages = ('/NumberedPages << '+' '.join('%d true' % n for n in sorted(numbered))+' >> def '
+    '/Footers << '+footers+' >> def '
     '<< /EndPage { exch 1 add exch 0 eq '
     '{ dup NumberedPages exch known '
-    '{ /'+font_postscript_name+' findfont 10 scalefont setfont 0.45 setgray '
-    '20 string cvs dup stringwidth pop 2 div 297.64 exch sub 22 moveto show } { pop } ifelse true } '
+    '{ /PgNum exch def /'+font_postscript_name+' findfont 10 scalefont setfont 0.45 setgray '
+    'PgNum 20 string cvs dup stringwidth pop 2 div 297.64 exch sub 22 moveto show '
+    'Footers PgNum known { Footers PgNum get aload pop /'+font_postscript_name+' findfont 8 scalefont setfont '
+    'dup stringwidth pop 552.8 exch sub 22 moveto show 42.5 22 moveto show '
+    '0.85 setgray 0.5 setlinewidth newpath 42.5 34 moveto 552.8 34 lineto stroke } if } { pop } ifelse true } '
     '{ pop false } ifelse } bind >> setpagedevice')
+Path('./numbers.temp.ps').write_text(number_pages+'\n')
 subprocess.run(['ghostscript', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.4', '-dPDFSETTINGS=/printer',
     '-dNOPAUSE', '-dQUIET', '-dBATCH', '-sFONTPATH='+str(font_dest.parent),
-    '-sOutputFile=./'+filename, '-c', number_pages, '-f', './'+tempfilename, './bookmarks.temp.ps'], check=True)
+    '-sOutputFile=./'+filename, './numbers.temp.ps', './'+tempfilename, './bookmarks.temp.ps'], check=True)
 os.remove('./bookmarks.temp.ps')
+os.remove('./numbers.temp.ps')
 
 #cleanup
 print('removing temp file '+tempfilename)
