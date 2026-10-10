@@ -257,7 +257,7 @@ def divider_svg(text):
     #and svg <text> lays out fill and stroke separately so they drift apart along the word
     path, width = text_outline(text, 74)
     return ('<svg width="210mm" height="297mm" viewBox="0 0 595 842">'
-            '<path transform="translate(%.2f 447)" d="%s" fill="#6bade9" stroke="#3a5e7a" '
+            '<path transform="translate(%.2f 447)" d="%s" fill="#00abeb" stroke="#065979" '
             'stroke-width="1.1" stroke-linejoin="round"/></svg>') % (297.6 - width/2, path)
 
 def static_page(name, body, dark=False):
