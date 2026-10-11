@@ -1,16 +1,21 @@
 #release helpers for the recipe book pipeline, run from the repo root with git and gh available
 #  precheck BUMP                 is a build and comparison worth doing, prints key=value lines
 #  next-version BUMP CHANGED     which version to release (and whether), CHANGED is true or false
-#  notes PREVIOUS [NEW]          release notes in markdown for the changes between two refs
-#  title VERSION [PREVIOUS]      release title, naming new recipes or a new layout when there are any
-import re, subprocess, sys
+#  notes [PREVIOUS]             release notes since the last release, plus those of today's releases it replaces
+#  title VERSION [PREVIOUS]      release title, naming new recipes or a new layout, and today's earlier highlights
+#  today                         today's releases, which the new release replaces
+import json, re, subprocess, sys
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 #paths that can change the book's pages, so a build and comparison is worth doing
 BOOK_INPUTS = ('recipes/', 'pdf/', 'images/', 'assets/fonts/', 'scripts/generate_pdfs.py', 'scripts/units.py', 'scripts/common.py', 'tags/groups.txt')
 #files that change how every page looks, a minor release instead of a patch
 STYLESHEET = 'pdf/book.css'
 STYLE_FILES = ('assets/fonts/nunito-regular.ttf', 'assets/fonts/nunito-extrabold.ttf', 'images/logo_sm.png', 'images/logo_md.png')
+#only the newest release of each day is kept, days in this timezone
+TIMEZONE = 'Australia/Sydney'
 
 def run(*cmd):
     return subprocess.run(cmd, capture_output=True, text=True)
@@ -123,12 +128,33 @@ def notes(prev, new='HEAD'):
         lines.append('No recipe or layout changes.')
     return f'### Changes since {prev}\n\n' + '  \n'.join(lines)
 
+def released_today():
+    #tags of the releases published today, newest first
+    zone = ZoneInfo(TIMEZONE)
+    day = lambda iso: datetime.fromisoformat(iso.replace('Z', '+00:00')).astimezone(zone).date()
+    rows = json.loads(run('gh', 'release', 'list', '--limit', '200', '--json', 'tagName,publishedAt').stdout or '[]')
+    return [r['tagName'] for r in rows if day(r['publishedAt']) == datetime.now(zone).date()]
+
+def release_field(tag, field):
+    return run('gh', 'release', 'view', tag, '--json', field, '--jq', '.' + field).stdout.strip()
+
+def day_notes(prev=''):
+    #the new changes first, then the notes of today's releases, without their build lines
+    parts = [notes(prev) if prev else 'First release.']
+    parts += [re.sub(r'^Built automatically from .*$', '', release_field(tag, 'body'), flags=re.M).strip() for tag in released_today()]
+    return '\n\n'.join(parts)
+
 def title(version, prev=''):
-    #the plain title unless recipes were added or the page style changed
+    #the plain title unless recipes were added or the page style changed, plus today's earlier highlights
     added = sorted(title_of(s, 'HEAD') for s in slugs_at('HEAD') - slugs_at(prev)) if prev else []
     news = ['new book layout'] if prev and style_changed(prev) else []
     if added:
         news.append(f'new recipe: {added[0]}' if len(added) == 1 else f'{len(added)} new recipes')
+    news += [m[1] for m in (re.search(r'\((.+)\)$', release_field(tag, 'name')) for tag in released_today()) if m]
+    news = list(dict.fromkeys(news))
+    #the generic layout note only when nothing more specific is named
+    if len(news) > 1 and 'new book layout' in news:
+        news.remove('new book layout')
     return f'v{version} - gitFOOD Recipe Book' + (' (' + ', '.join(news) + ')' if news else '')
 
 if __name__ == '__main__':
@@ -138,6 +164,8 @@ if __name__ == '__main__':
     elif command == 'next-version':
         next_version(args[0], args[1] == 'true')
     elif command == 'notes':
-        print(notes(*args))
+        print(day_notes(*args))
     elif command == 'title':
         print(title(*args))
+    elif command == 'today':
+        print(' '.join(released_today()))
