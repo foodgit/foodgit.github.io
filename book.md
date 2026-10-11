@@ -12,8 +12,8 @@ Every recipe on this site in one printable PDF, updated whenever a recipe change
 
 One recipe to a page, for reading on screen or printing one page per sheet.
 
-<p class="actions"><a class="button" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book.pdf">Metric</a>
-<a class="button secondary" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book-freedom.pdf">Freedom units</a></p>
+<p class="actions"><a class="button" download href="./downloads/gitFOOD_Recipe_Book.pdf">Metric</a>
+<a class="button secondary" download href="./downloads/gitFOOD_Recipe_Book-freedom.pdf">Freedom units</a></p>
 
 </div>
 <div markdown="1">
@@ -22,8 +22,8 @@ One recipe to a page, for reading on screen or printing one page per sheet.
 
 Larger text, made to print two pages to a side and fold into an A5 booklet.
 
-<p class="actions"><a class="button" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book-booklet.pdf">Metric</a>
-<a class="button secondary" href="https://github.com/foodgit/foodgit.github.io/releases/latest/download/gitFOOD_Recipe_Book-booklet-freedom.pdf">Freedom units</a></p>
+<p class="actions"><a class="button" download href="./downloads/gitFOOD_Recipe_Book-booklet.pdf">Metric</a>
+<a class="button secondary" download href="./downloads/gitFOOD_Recipe_Book-booklet-freedom.pdf">Freedom units</a></p>
 
 </div>
 </div>
