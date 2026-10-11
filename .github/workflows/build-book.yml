@@ -49,21 +49,16 @@ jobs:
           python-version: '3.x'
       - name: Install PDF toolchain
         if: ${{ steps.check.outputs.build == 'true' }}
+        #pandoc for the markdown, poppler-utils for compare_books.py, pango for weasyprint
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            pandoc ghostscript poppler-utils libimage-exiftool-perl \
-            fontconfig xfonts-75dpi xfonts-base
-          wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
-          sudo apt-get install -y ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
-          pip install fonttools
+          sudo apt-get install -y --no-install-recommends pandoc poppler-utils libpango-1.0-0 libpangoft2-1.0-0
+          pip install weasyprint fonttools
       - name: Build PDFs
         if: ${{ steps.check.outputs.build == 'true' }}
-        #--all: file mtimes are meaningless after a fresh checkout
-        #metric last, so the recipe pdfs left behind are the metric ones
         run: |
-          python scripts/generate_pdfs.py --all --edition freedom
-          python scripts/generate_pdfs.py --all
+          python scripts/generate_pdfs.py
+          python scripts/generate_pdfs.py --edition freedom
       - name: Compare with the last release
         id: compare
         if: ${{ steps.check.outputs.build == 'true' && steps.check.outputs.unreleased == 'false' && steps.check.outputs.prev != '' && env.BUMP == 'auto' }}
