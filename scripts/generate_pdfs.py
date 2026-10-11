@@ -1,16 +1,16 @@
-#builds the four recipe book pdfs (a4 and booklet, metric and freedom units) from recipes/*.md with weasyprint
-#run from the repo root
-#requires pandoc, and python packages weasyprint and fonttools
-import re, html, datetime, subprocess, unicodedata
+#builds the four recipe book pdfs (a4 and booklet, metric and freedom units) from recipes/*/*.recipe
+#run from the repo root, needs python packages weasyprint, fonttools and markdown-it-py
+import re, html, datetime, unicodedata
 from pathlib import Path
 import pydyf
+from markdown_it import MarkdownIt
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 from weasyprint import HTML, CSS
 from weasyprint.text.fonts import FontConfiguration
 from units import to_freedom
-from common import humanize, years, recipe_tags, tag_groups
+from common import git_dates, humanize, years, recipe_tags, tag_groups
 
 version = Path('version.txt').read_text().strip()
 font_file = Path('assets/fonts/nunito-extrabold.ttf')
@@ -21,10 +21,7 @@ sections = {'snack': 'snacks', 'breakfast': 'breakfast', 'lunch': 'lunch', 'dinn
 
 #tags in the hidden group (tags/groups.txt) stay off the book
 hidden_tags = tag_groups()[1]
-
-def md_to_html(text, prefix=''):
-    return subprocess.run(['pandoc', '-f', 'gfm', '-t', 'html5', '--id-prefix=' + prefix],
-                          input=text, capture_output=True, text=True, encoding='utf-8', check=True).stdout
+md_to_html = MarkdownIt('commonmark', {'html': True}).enable('table').render
 
 def build_fractions(text):
     #the font lacks most fraction glyphs and falls back to a lighter one, so build them from small digits
@@ -34,32 +31,48 @@ def build_fractions(text):
         return '<span class="num">' + top + '</span>⁄<span class="den">' + bottom + '</span>'
     return re.sub('[⅐-⅞↉]', build, text)
 
-def recipe_html(slug, tags, section, edition):
-    text = Path('recipes', slug + '.md').read_text(encoding='utf-8')
-    #the site's footer extras: logo, badges and view counter
-    text = '\n'.join(l for l in text.split('\n') if not re.search(r'logo_sm\.png|count\.svg|img\.shields\.io', l))
+def photo_rows(method):
+    #a step's photos go in a row under its text, each half the width, so a single photo matches a pair
+    def row(imgs):
+        return '<div class="photos">' + ''.join(imgs) + '</div>'
+    def step(m):
+        imgs = re.findall(r'<img [^>]*>', m[3])
+        if not imgs:
+            return m[0]
+        text = re.sub(r'\s*<img [^>]*>', '', m[3])
+        return m[1] + text + (row(imgs) + m[4] if m[2] == 'li' else m[4] + row(imgs))
+    method = re.sub(r'(<(li|h[2-6])>)(.*?)(</\2>)', step, method, flags=re.S)
+    #photos between steps, on lines of their own
+    return re.sub(r'(?m)^<img [^>]*>(?:\s*<img [^>]*>)*', lambda m: row(re.findall(r'<img [^>]*>', m[0])), method)
+
+def recipe_html(stub, tags, section, edition):
+    slug, text = stub.stem, stub.read_text(encoding='utf-8')
     if edition == 'freedom':
         text = ''.join(to_freedom(l) for l in text.splitlines(True))
     text = build_fractions(text)
     serves = re.search(r'^\*\*Serves:\*\*[ \t]*(.+)$', text, re.M)
     text = re.sub(r'^\*\*Serves:\*\*.*\n?', '', text, flags=re.M)
-    #the main photo becomes a banner above the title
-    hero = re.search(r'^<img[^>]*src="([^"]*/images/main\.\w+)"[^>]*>[ \t]*\n?', text, re.M)
-    if hero:
-        text = text[:hero.start()] + text[hero.end():]
+    #{photo.jpg} placeholders become images, the main photo a banner above the title
+    photos = {p.name for p in (stub.parent / 'images').glob('*.jpg')}
+    hero = '<img class="hero" src="%s/images/main.jpg">' % slug if '{main.jpg}' in text and 'main.jpg' in photos else ''
+    text = re.sub(r'\{([^{}\s]+\.jpg)\}', lambda m: '' if m[1] == 'main.jpg' else
+                  '<img src="%s/images/%s" align="right">' % (slug, m[1]) if m[1] in photos else m[0], text)
     #ingredients in a panel beside the method, which wraps under it when longer
-    text = re.sub(r'^(## Ingredients[ \t]*\n(?:(?!## ).*\n)*)(## Method[ \t]*\n(?:(?!## |<p class="recipe-dates").*\n)*)',
+    text = re.sub(r'^(## Ingredients[ \t]*\n(?:(?!## ).*\n)*)(## Method[ \t]*\n(?:(?!## ).*\n)*)',
                   lambda m: '<div class="ingredients">\n\n' + m[1] + '\n</div>\n<div class="method">\n\n' + m[2] + '\n</div>\n\n',
                   text.rstrip('\n') + '\n', flags=re.M)
     #tips in one box that moves to the next page whole
-    text = re.sub(r'^(## Tips[ \t]*\n.*?)(?=^## |^<p class="recipe-dates"|\Z)',
+    text = re.sub(r'^(## Tips[ \t]*\n.*?)(?=^## |\Z)',
                   lambda m: '<div class="tips">\n\n' + m[1].rstrip() + '\n\n</div>\n\n', text, flags=re.M | re.S)
     chips = ['<span class="fact">Serves ' + html.escape(serves[1].strip()) + '</span>'] if serves else []
     chips += ['<span class="tag">' + html.escape(t.replace('_', ' ')) + '</span>' for t in tags if t not in hidden_tags]
-    top = (('<img class="hero" src="' + html.escape(hero[1]) + '">' if hero else '') +
-           '<p class="kicker">' + section + '</p>')
-    body = md_to_html(text, slug + '-').replace('<h1', top + '<h1', 1)
+    body = md_to_html(text).replace('<h1', hero + '<p class="kicker">' + section + '</p><h1', 1)
     body = re.sub(r'(</h1>)', r'\1<p class="facts">' + ' '.join(chips) + '</p>', body, count=1)
+    body = re.sub(r'<div class="method">.*?</div>', lambda m: photo_rows(m[0]), body, count=1, flags=re.S)
+    #dates go at the end of the last line, so they can never be left alone on a page
+    updated, created = git_dates(stub)
+    dates = '<span class="recipe-dates">Created: %s · Last updated: %s</span>' % (humanize(created), humanize(updated))
+    body = re.sub(r'(.*)(</(?:li|p)>)', lambda m: m[1] + dates + m[2], body, count=1, flags=re.S)
     return '<article id="' + slug + '">' + body + '</article>'
 
 def outline(text, size):
@@ -94,11 +107,11 @@ stylesheet = CSS('pdf/book.css', font_config=fonts)
 for edition in ('metric', 'freedom'):
     #recipes grouped by section, each sorted by file name
     book = {name: [] for name in sections.values()}
-    for md in sorted(Path('recipes').glob('*.md')):
-        tags = recipe_tags(md.parent / md.stem)
+    for stub in sorted(Path('recipes').glob('*/*.recipe')):
+        tags = recipe_tags(stub.parent)
         section = sections[next((t for t in sections if t in tags), None)]
-        recipe_title = re.search(r'^# (.+)$', md.read_text(encoding='utf-8'), re.M)[1].strip()
-        book[section].append((md.stem, recipe_title, recipe_html(md.stem, tags, section, edition)))
+        recipe_title = re.search(r'^# (.+)$', stub.read_text(encoding='utf-8'), re.M)[1].strip()
+        book[section].append((stub.stem, recipe_title, recipe_html(stub, tags, section, edition)))
     contents = ''.join('<h2>%s</h2>' % name + ''.join('<a href="#%s">%s</a>' % (slug, html.escape(t)) for slug, t, _ in rs)
                        for name, rs in book.items() if rs)
     recipes = ''.join(divider_html(name, [t for _, t, _ in rs]) + ''.join(r for _, _, r in rs) for name, rs in book.items() if rs)

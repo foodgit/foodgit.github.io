@@ -76,8 +76,9 @@ h3 { font-size: 1.15em; margin: .8em 0 .3em; }
 .ingredients li { margin: 0; padding: .25em 0; border-bottom: 1px dotted #b7d9e6; }
 .ingredients img { float: none; display: block; width: 70%; margin: .4em 0; }
 .method h2 { margin-top: 0; }
-/*step photos go under their step, beside the panel there is no room for them to float*/
-.method img { float: none; display: block; width: auto; max-width: 60%; max-height: 45mm; margin: .3em 0 .6em; border-radius: 2mm; }
+/*step photos in a row under their step, sized so two fit beside the ingredients panel*/
+.photos { margin: .3em 0 .3em; line-height: 0; }
+.photos img { float: none; display: inline-block; width: 46mm; height: 34mm; margin: 0 3mm 3mm 0; object-fit: cover; border-radius: 2mm; }
 .method blockquote { margin: 0; padding: 0; border: none; color: #111; }
 /*step numbers float, so beside the panel they sit next to it rather than under it*/
 .method ol { margin: 0; padding: 0; list-style: none; counter-reset: step; }
@@ -88,5 +89,5 @@ h3 { font-size: 1.15em; margin: .8em 0 .3em; }
 .tips h2 { margin: .5em 0 .3em; }
 .tips blockquote { margin: 0; padding: 0; border: none; }
 /*dates at the foot of the recipe's last page*/
-.recipe-dates { float: footnote; margin: 0; font-size: .65em; color: #8a8a8a; text-align: center; }
+.recipe-dates { float: footnote; footnote-policy: line; margin: 0; font-size: .65em; color: #8a8a8a; text-align: center; }
 .recipe-dates::footnote-call, .recipe-dates::footnote-marker { content: none; }

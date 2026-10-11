@@ -7,7 +7,7 @@ import re, subprocess, sys
 from pathlib import Path
 
 #paths that can change the book's pages, so a build and comparison is worth doing
-BOOK_INPUTS = ('recipes/', 'pdf/', 'images/', 'assets/fonts/', 'scripts/generate_pdfs.py', 'scripts/generate_markdown_recipes.py', 'scripts/units.py', 'scripts/common.py', 'tags/groups.txt')
+BOOK_INPUTS = ('recipes/', 'pdf/', 'images/', 'assets/fonts/', 'scripts/generate_pdfs.py', 'scripts/units.py', 'scripts/common.py', 'tags/groups.txt')
 #files that change how every page looks, a minor release instead of a patch
 STYLESHEET = 'pdf/book.css'
 STYLE_FILES = ('assets/fonts/nunito-regular.ttf', 'assets/fonts/nunito-extrabold.ttf', 'images/logo_sm.png', 'images/logo_md.png')

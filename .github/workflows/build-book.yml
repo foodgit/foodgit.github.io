@@ -49,11 +49,11 @@ jobs:
           python-version: '3.x'
       - name: Install PDF toolchain
         if: ${{ steps.check.outputs.build == 'true' }}
-        #pandoc for the markdown, poppler-utils for compare_books.py, pango for weasyprint
+        #poppler-utils for compare_books.py, pango for weasyprint
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends pandoc poppler-utils libpango-1.0-0 libpangoft2-1.0-0
-          pip install weasyprint fonttools
+          sudo apt-get install -y --no-install-recommends poppler-utils libpango-1.0-0 libpangoft2-1.0-0
+          pip install weasyprint fonttools markdown-it-py
       - name: Build PDFs
         if: ${{ steps.check.outputs.build == 'true' }}
         run: python scripts/generate_pdfs.py
