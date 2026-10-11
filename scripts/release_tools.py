@@ -2,6 +2,7 @@
 #  precheck BUMP                 is a build and comparison worth doing, prints key=value lines
 #  next-version BUMP CHANGED     which version to release (and whether), CHANGED is true or false
 #  notes PREVIOUS [NEW]          release notes in markdown for the changes between two refs
+#  title VERSION [PREVIOUS]      release title, naming new recipes or a new layout when there are any
 import re, subprocess, sys
 from pathlib import Path
 
@@ -122,6 +123,14 @@ def notes(prev, new='HEAD'):
         lines.append('No recipe or layout changes.')
     return f'### Changes since {prev}\n\n' + '  \n'.join(lines)
 
+def title(version, prev=''):
+    #the plain title unless recipes were added or the page style changed
+    added = sorted(title_of(s, 'HEAD') for s in slugs_at('HEAD') - slugs_at(prev)) if prev else []
+    news = ['new book layout'] if prev and style_changed(prev) else []
+    if added:
+        news.append(f'new recipe: {added[0]}' if len(added) == 1 else f'{len(added)} new recipes')
+    return f'v{version} - gitFOOD Recipe Book' + (' (' + ', '.join(news) + ')' if news else '')
+
 if __name__ == '__main__':
     command, args = sys.argv[1], sys.argv[2:]
     if command == 'precheck':
@@ -130,3 +139,5 @@ if __name__ == '__main__':
         next_version(args[0], args[1] == 'true')
     elif command == 'notes':
         print(notes(*args))
+    elif command == 'title':
+        print(title(*args))

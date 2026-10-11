@@ -104,6 +104,6 @@ jobs:
           fi
           printf '\n\nBuilt automatically from %s on %s. A4 edition for reading and printing one page per sheet, booklet edition (-booklet) for folding into an A5 booklet, each in metric and freedom units (-freedom). How to print the booklet: https://foodgit.github.io/book.html\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
           gh release create "$VERSION" gitFOOD_Recipe_Book*.pdf \
-            --title "v${VERSION} - Printable Recipe Book" \
+            --title "$(python3 scripts/release_tools.py title "$VERSION" "$PREV")" \
             --notes-file "$RUNNER_TEMP/notes.md" \
             --target "$(git rev-parse HEAD)"
