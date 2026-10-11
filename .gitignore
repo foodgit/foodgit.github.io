@@ -1,8 +1,6 @@
 working/
 gitfood.code-workspace
-fonts/*
 html/
-scripts/build_pdfs.sh
 **.old
 **.bak
 *.temp.*
