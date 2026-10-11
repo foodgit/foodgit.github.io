@@ -4,7 +4,7 @@ import io, re, html, datetime, unicodedata, zipfile
 from functools import cache
 from pathlib import Path
 import pydyf
-from PIL import Image, ImageOps
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 from markdown_it import MarkdownIt
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -95,16 +95,37 @@ def epub_chapter(stub, edition):
     body = re.sub(r'&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[\da-fA-F]+);)\w+;', lambda m: html.unescape(m[0]), body)
     return body + '<p class="dates">' + dates + '</p>'
 
-@cache
-def epub_photo(path):
-    #small greyscale jpegs for e-ink screens
-    im = ImageOps.exif_transpose(Image.open(path)).convert('L')
-    im.thumbnail((800, 800))
+def jpeg(im, quality=70):
     out = io.BytesIO()
-    im.save(out, 'JPEG', quality=70, optimize=True)
+    im.convert('L').save(out, 'JPEG', quality=quality, optimize=True)
     return out.getvalue()
 
-EPUB_CSS = """h1 { font-size: 1.5em; margin: .6em 0 .2em; }
+@cache
+def epub_photo(path, banner=False):
+    #small greyscale jpegs for e-ink screens, the main photo cropped to the pdf's banner shape
+    im = ImageOps.exif_transpose(Image.open(path))
+    if banner:
+        im = ImageOps.fit(im, (1800, 660))
+    im.thumbnail((800, 800))
+    return jpeg(im)
+
+@cache
+def epub_cover():
+    #the pdf's front cover in greyscale, placed in mm on an a4 page
+    #the logo's greys are stretched to white letters with a dark outline, so it stands out from the gradient
+    px = 6
+    cover = Image.new('L', (210 * px, 297 * px))
+    for y in range(cover.height):
+        cover.paste(round(98 * (1 - y / cover.height)), (0, y, cover.width, y + 1))
+    logo = Image.open('images/logo_md.png').convert('RGBA')
+    logo = logo.resize((round(204.6 * px), round(logo.height * 204.6 * px / logo.width)))
+    cover.paste(logo.convert('L').point(lambda v: (v - 60) * 4), (round(3.9 * px), round(123.8 * px)), logo)
+    ImageDraw.Draw(cover).text((6.4 * px, 119.5 * px), 'welcome to', fill=220,
+                               font=ImageFont.truetype(str(font_file), round(22 * 0.3528 * px)), anchor='lt')
+    return jpeg(cover, 85)
+
+EPUB_CSS = """body { font-family: sans-serif; }
+h1 { font-size: 1.5em; margin: .6em 0 .2em; }
 h2 { font-size: 1.2em; margin: 1.2em 0 .3em; border-bottom: 1px solid; }
 h3 { font-size: 1em; margin: 1em 0 .2em; }
 img { display: block; max-width: 100%; margin: .5em auto; }
@@ -113,6 +134,9 @@ li { margin: .3em 0; }
 .serves { margin-top: 0; font-style: italic; }
 .dates { margin-top: 2em; font-size: .8em; }
 nav ol { list-style: none; padding-left: 1em; }
+.cover { margin: 0; text-align: center; }
+.cover img { height: 100%; max-height: 100%; margin: 0 auto; }
+.back { margin-top: 110%; text-align: center; font-size: .9em; }
 """
 
 def write_epub(filename, title, label, book):
@@ -121,7 +145,8 @@ def write_epub(filename, title, label, book):
         return ('<?xml version="1.0" encoding="utf-8"?>\n<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" '
                 'lang="en" xml:lang="en"><head><meta charset="utf-8"/><title>%s</title><link rel="stylesheet" href="book.css"/></head><body>%s</body></html>'
                 % (html.escape(heading), body))
-    files = {'book.css': EPUB_CSS, 'title.xhtml': page(title, (
+    files = {'book.css': EPUB_CSS, 'cover.xhtml': page(title, '<p class="cover"><img src="cover.jpg" alt="gitFOOD"/></p>'),
+             'back.xhtml': page('gitFOOD', '<p class="back">© gitFOOD %d</p>' % now.year), 'title.xhtml': page(title, (
         '<h1>gitFOOD</h1><p>awesome recipe book</p><p>version %s<br/>%s<br/>https://foodgit.github.io</p><p>Last updated on %s</p>'
         '<p>Copyright © %s fexofenadine. Recipes and photos are licensed under Creative Commons Attribution-ShareAlike 4.0 '
         '(creativecommons.org/licenses/by-sa/4.0).</p>') % (version, label, humanize(now.date().isoformat()), years(now.year)))}
@@ -143,17 +168,21 @@ def write_epub(filename, title, label, book):
     files['toc.ncx'] = ('<?xml version="1.0" encoding="utf-8"?>\n<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">'
                         '<head><meta name="dtb:uid" content="%s"/></head><docTitle><text>%s</text></docTitle><navMap>%s</navMap></ncx>'
                         % (uid, html.escape(title), ''.join(ncx)))
-    photos = sorted({m for f in files.values() for m in re.findall(r'src="(images/[^"]+)"', f)})
-    chapters = ['title.xhtml', 'nav.xhtml'] + [slug + '.xhtml' for rs in book.values() for slug, _, _, _ in rs]
+    images = {'cover.jpg': epub_cover()}
+    for f in sorted({m for f in files.values() for m in re.findall(r'src="(images/[^"]+)"', f)}):
+        slug, name = f.split('/')[1:]
+        images[f] = epub_photo(Path('recipes', slug, 'images', name), name == 'main.jpg')
+    chapters = ['cover.xhtml', 'title.xhtml', 'nav.xhtml'] + [slug + '.xhtml' for rs in book.values() for slug, _, _, _ in rs] + ['back.xhtml']
     types = {'.css': 'text/css', '.ncx': 'application/x-dtbncx+xml', '.jpg': 'image/jpeg', '.xhtml': 'application/xhtml+xml'}
-    manifest = ''.join('<item id="i%d" href="%s" media-type="%s"%s/>' % (i, f, types[Path(f).suffix], ' properties="nav"' if f == 'nav.xhtml' else '')
-                       for i, f in enumerate(list(files) + photos))
-    ids = {f: 'i%d' % i for i, f in enumerate(list(files) + photos)}
+    ids = {f: 'i%d' % i for i, f in enumerate(list(files) + list(images))}
+    properties = {'nav.xhtml': ' properties="nav"', 'cover.jpg': ' properties="cover-image"'}
+    manifest = ''.join('<item id="%s" href="%s" media-type="%s"%s/>' % (i, f, types[Path(f).suffix], properties.get(f, '')) for f, i in ids.items())
     opf = ('<?xml version="1.0" encoding="utf-8"?>\n<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">'
            '<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:identifier id="uid">%s</dc:identifier><dc:title>%s</dc:title>'
            '<dc:language>en</dc:language><dc:creator>fexofenadine</dc:creator><dc:rights>CC BY-SA 4.0</dc:rights>'
-           '<meta property="dcterms:modified">%s</meta></metadata><manifest>%s</manifest><spine toc="%s">%s</spine></package>') % (
-           uid, html.escape(title), now.strftime('%Y-%m-%dT%H:%M:%SZ'), manifest, ids['toc.ncx'],
+           '<meta property="dcterms:modified">%s</meta><meta name="cover" content="%s"/></metadata><manifest>%s</manifest>'
+           '<spine toc="%s">%s</spine></package>') % (
+           uid, html.escape(title), datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), ids['cover.jpg'], manifest, ids['toc.ncx'],
            ''.join('<itemref idref="%s"/>' % ids[c] for c in chapters))
     with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('mimetype', 'application/epub+zip', compress_type=zipfile.ZIP_STORED)
@@ -162,10 +191,9 @@ def write_epub(filename, title, label, book):
         z.writestr('OEBPS/content.opf', opf)
         for f, data in files.items():
             z.writestr('OEBPS/' + f, data)
-        for f in photos:
-            slug, name = f.split('/')[1:]
-            z.writestr('OEBPS/' + f, epub_photo(Path('recipes', slug, 'images', name)))
-    print('%s: %d recipes, %d photos' % (filename, len(chapters) - 2, len(photos)))
+        for f, data in images.items():
+            z.writestr('OEBPS/' + f, data)
+    print('%s: %d recipes, %d photos' % (filename, len(chapters) - 4, len(images) - 1))
 
 def outline(text, size):
     #svg path of text in the book font and its width, for the section title on divider pages
