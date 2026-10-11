@@ -1,4 +1,4 @@
-/*recipe book styles, used by scripts/generate_pdfs.py (weasyprint)*/
+/*recipe book styles, used by scripts/generate_books.py (weasyprint)*/
 /*nunito regular for running text, extrabold for headings, labels and the page furniture*/
 @font-face { font-family: book; src: url(../assets/fonts/nunito-regular.ttf); }
 @font-face { font-family: book; font-weight: 800; src: url(../assets/fonts/nunito-extrabold.ttf); }

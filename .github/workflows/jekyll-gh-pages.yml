@@ -11,7 +11,7 @@ on:
       - pdf/**
       - images/**
       - assets/fonts/**
-      - scripts/generate_pdfs.py
+      - scripts/generate_books.py
       - scripts/generate_markdown_recipes.py
       - scripts/units.py
       - scripts/common.py
@@ -49,7 +49,7 @@ jobs:
         #served as foodgit.github.io/downloads/, so the download links stay on the site
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release download --pattern 'gitFOOD_Recipe_Book*.pdf' --dir downloads
+        run: gh release download --pattern 'gitFOOD_Recipe_Book*' --dir downloads
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

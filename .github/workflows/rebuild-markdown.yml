@@ -14,7 +14,7 @@ on:
       - pdf/**
       - images/**
       - assets/fonts/**
-      - scripts/generate_pdfs.py
+      - scripts/generate_books.py
       - scripts/generate_markdown_recipes.py
       - scripts/units.py
       - scripts/common.py

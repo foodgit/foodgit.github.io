@@ -28,6 +28,19 @@ Larger text, made to print two pages to a side and fold into an A5 booklet.
 </div>
 </div>
 
+<div class="editions">
+<div markdown="1">
+
+## Ebook edition
+
+For e-readers, phones and tablets: plain text that fits any screen, with greyscale photos.
+
+<p class="actions"><a class="button" download href="./downloads/gitFOOD_Recipe_Book.epub">Metric</a>
+<a class="button secondary" download href="./downloads/gitFOOD_Recipe_Book-freedom.epub">Freedom units</a></p>
+
+</div>
+</div>
+
 ## Printing the booklet
 
 1. Print double-sided with your print dialog's **Booklet** option (in Adobe Acrobat Reader: Print, then Booklet).

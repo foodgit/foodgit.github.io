@@ -4,7 +4,7 @@ name: Build Recipe Book PDF
 #the comparison ignores the title page, back cover and metadata, so those never release alone
 #patch for recipe changes, minor when the page style (stylesheet, font, logos) changed
 #an unreleased version.txt (set by hand) is released as it is
-#four books are built and released: a4 and booklet, each in metric and freedom units
+#six books are built and released: a4, booklet and epub, each in metric and freedom units
 
 on:
   workflow_call:
@@ -56,7 +56,7 @@ jobs:
           pip install weasyprint fonttools markdown-it-py
       - name: Build PDFs
         if: ${{ steps.check.outputs.build == 'true' }}
-        run: python scripts/generate_pdfs.py
+        run: python scripts/generate_books.py
       - name: Compare with the last release
         id: compare
         if: ${{ steps.check.outputs.build == 'true' && steps.check.outputs.unreleased == 'false' && steps.check.outputs.prev != '' && env.BUMP == 'auto' }}
@@ -87,7 +87,7 @@ jobs:
           if [ "$VERSION" != "$current" ]; then
             #rebuild the title page and book so they carry the new version
             printf '%s' "$VERSION" > version.txt
-            python scripts/generate_pdfs.py
+            python scripts/generate_books.py
             git config user.name "GitHub Actions Bot"
             git config user.email "action@github.com"
             git add version.txt
@@ -100,8 +100,8 @@ jobs:
           #only the newest release of each day is kept, it carries the notes of the ones it replaces
           earlier="$(python3 scripts/release_tools.py today)"
           python3 scripts/release_tools.py notes "$PREV" > "$RUNNER_TEMP/notes.md"
-          printf '\n\nBuilt automatically from %s on %s. A4 edition for reading and printing one page per sheet, booklet edition (-booklet) for folding into an A5 booklet, each in metric and freedom units (-freedom). How to print the booklet: https://foodgit.github.io/book.html\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
-          gh release create "$VERSION" gitFOOD_Recipe_Book*.pdf \
+          printf '\n\nBuilt automatically from %s on %s. A4 edition for reading and printing one page per sheet, booklet edition (-booklet) for folding into an A5 booklet, and an epub for e-readers, each in metric and freedom units (-freedom). How to print the booklet: https://foodgit.github.io/book.html\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
+          gh release create "$VERSION" gitFOOD_Recipe_Book*.pdf gitFOOD_Recipe_Book*.epub \
             --title "$(python3 scripts/release_tools.py title "$VERSION" "$PREV")" \
             --notes-file "$RUNNER_TEMP/notes.md" \
             --target "$(git rev-parse HEAD)"
