@@ -16,7 +16,8 @@
 > 1. Preheat the oven at 180°C (160°C fan forced) for 5 minutes. Cook chicken for 25 minutes until cooked through.
 > 1. Meanwhile, heat oil in a frying pan over medium heat. Add carrot, potato, onion and garlic, and saute for 5 minutes. Add 2 cups water. Bring to a boil, then cover with lid and simmer for until potato softens.
 > 1. Remove from heat and crumble in curry mixture. Stir until nearly dissolved. Return to a low heat and cook for 2-3 minutes or until the sauce is smooth.
-> 1. Cook rice according to your ricecooker instructions (or in a saucepan). Slice chicken into 1½cm strips. Divide rice between serving bowls. Top with curry mixture and chicken.
+> 1. Cook rice according to your ricecooker instructions (or in a saucepan).
+> 1. Slice chicken into 1½cm strips. Divide rice between serving bowls. Top with curry mixture and chicken.
 
 ## Tips
 
@@ -30,4 +31,4 @@
 
 [![amazing](https://img.shields.io/badge/amazing-blue.svg)](https://foodgit.github.io/?tag=amazing) [![asian](https://img.shields.io/badge/asian-blue.svg)](https://foodgit.github.io/?tag=asian) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![chicken](https://img.shields.io/badge/chicken-blue.svg)](https://foodgit.github.io/?tag=chicken) [![curry](https://img.shields.io/badge/curry-blue.svg)](https://foodgit.github.io/?tag=curry) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![japanese](https://img.shields.io/badge/japanese-blue.svg)](https://foodgit.github.io/?tag=japanese) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://foodgit.github.io/?tag=rice) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](https://foodgit.github.io/?tag=rice_cooker) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) 
 
-<p class="recipe-dates"><em>Created: 28th of September 2026 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 28th of September 2026 &middot; Last updated: 11th of October 2026</em></p>

@@ -17,8 +17,10 @@
 ## Method
 
 > 1. In a small bowl, soak saffron threads in warm wine for 5 minutes while you complete step 2.
-> 1. In a large saucepan, heat peanut oil over a medium heat until it begins to shimmer, about 2 minutes. Stir in rice, mixing with a wooden spoon until all of the grains are coated with peanut oil. Fry for 1 minute, stirring constantly. Place the remaining ingredients in the pot with the rice and oil, taking care not to get caught in the napalm-like splattering that will inevitably happen. Gently stir ingredients, making sure that nothing sticks to the bottom while everything comes to a boil.
-> 11. Once liquid achieves a boil, reduce heat to low. Place lid on pot, slightly askew to allow some steam to escape. Stir occasionally to make sure rice doesn't stick to bottom of pan and the sugar in the coconut milk doesn't burn. Allow to simmer *very* gently for 15-20 minutes, or until rice is tender. You do not want the coconut milk, which is high in sugar, to burn. 4. Remove from heat and cover pot. Allow to sit for 5 minutes - it can actually sit like this for up to an hour. Fluff with a fork when you're ready to serve.
+> 1. In a large saucepan, heat peanut oil over a medium heat until it begins to shimmer, about 2 minutes. Stir in rice, mixing with a wooden spoon until all of the grains are coated with peanut oil. Fry for 1 minute, stirring constantly.
+> 1. Place the remaining ingredients in the pot with the rice and oil, taking care not to get caught in the napalm-like splattering that will inevitably happen. Gently stir ingredients, making sure that nothing sticks to the bottom while everything comes to a boil.
+> 1. Once liquid achieves a boil, reduce heat to low. Place lid on pot, slightly askew to allow some steam to escape. Stir occasionally to make sure rice doesn't stick to bottom of pan and the sugar in the coconut milk doesn't burn. Allow to simmer *very* gently for 15-20 minutes, or until rice is tender. You do not want the coconut milk, which is high in sugar, to burn.
+> 1. Remove from heat and cover pot. Allow to sit for 5 minutes - it can actually sit like this for up to an hour. Fluff with a fork when you're ready to serve.
 
 ## Tips
 
@@ -30,4 +32,4 @@
 
 [![asian](https://img.shields.io/badge/asian-blue.svg)](https://foodgit.github.io/?tag=asian) [![expensive](https://img.shields.io/badge/expensive-blue.svg)](https://foodgit.github.io/?tag=expensive) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://foodgit.github.io/?tag=rice) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![thai](https://img.shields.io/badge/thai-blue.svg)](https://foodgit.github.io/?tag=thai) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://foodgit.github.io/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

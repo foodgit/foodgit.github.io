@@ -11,9 +11,11 @@
 ## Method
 
 > 1. Preheat oven to 180°C. Grease a 6cm deep, 24cm square baking dish.
-> 1. Melt butter in a heavy-based saucepan over medium heat. Add flour. Cook, stirring constantly, for 2 minutes, or until bubbly. Remove from heat. Slowly add milk, stirring constantly until well combined. Return to heat. Cook, stirring, until sauce comes to the boil.
+> 1. Melt butter in a heavy-based saucepan over medium heat. Add flour. Cook, stirring constantly, for 2 minutes, or until bubbly.
+> 1. Remove from heat. Slowly add milk, stirring constantly until well combined. Return to heat. Cook, stirring, until sauce comes to the boil.
 > 1. Add 1 ½ cups of cheese. Stir to combine.
-> 1. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
+> 1. Arrange one-third of potatoes, overlapping slightly, over base of baking dish. Sprinkle with salt and pepper. Spoon one-third of the cheese sauce over potatoes. Repeat twice. Sprinkle with remaining cheese.
+> 1. Bake for 1 hour, or until potatoes are tender and top is golden. If top begins to brown too much, cover with foil.
 
 **Serves:** 6-8
 
@@ -21,4 +23,4 @@
 
 [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://foodgit.github.io/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![potato](https://img.shields.io/badge/potato-blue.svg)](https://foodgit.github.io/?tag=potato) [![savoury](https://img.shields.io/badge/savoury-blue.svg)](https://foodgit.github.io/?tag=savoury) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

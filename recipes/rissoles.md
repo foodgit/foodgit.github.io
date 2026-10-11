@@ -18,9 +18,12 @@ Place into a large bowl:
 > 1. Roll & pat in the flour - you can do this one at a time or do the rolling then the flouring.
 > 1. Fry in moderately hot olive oil until very brown.
 > 1. I turn them about 4 times & give them a squash just as I put them in pan.
-> 1. I also add chopped parsley & a bit of garlic but these aren’t in the original recipe.
-> 1. I reckon good ol tomato sauce is the best but do what takes your fancy.
-> 1. I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
+
+## Tips
+
+> - I also add chopped parsley & a bit of garlic but these aren’t in the original recipe.
+> - I reckon good ol tomato sauce is the best but do what takes your fancy.
+> - I reckon mashed potatoes & whatever veg you want - the spuds are great to clean your plate of sauce & bits of rissoles - yum!
 
 **Serves:** 4
 
@@ -28,4 +31,4 @@ Place into a large bowl:
 
 [![aussie](https://img.shields.io/badge/aussie-blue.svg)](https://foodgit.github.io/?tag=aussie) [![beef](https://img.shields.io/badge/beef-blue.svg)](https://foodgit.github.io/?tag=beef) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://foodgit.github.io/?tag=easy) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) 
 
-<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

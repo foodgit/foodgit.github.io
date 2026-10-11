@@ -23,7 +23,11 @@
 > 1. Mix all the batter ingredients into a thick liquid - not too runny.
 > 1. Add your choice of stuff to go in & fry a tablespoon size in a combination of olive oil & butter, on a moderate heat.
 > 1. Turn them when bubbles start to form & pop on top - they should be golden brown. 
-> 1. Once again tomato sauce is great on top!!! The butter gives a great flavour & the olive oil stops it from burning - you might have to add more of these to the pan after each batch.
+
+## Tips
+
+> - Once again tomato sauce is great on top!!!
+> - The butter gives a great flavour & the olive oil stops it from burning - you might have to add more of these to the pan after each batch.
 
 **Serves:** 4-6
 
@@ -31,4 +35,4 @@
 
 [![chicken](https://img.shields.io/badge/chicken-blue.svg)](https://foodgit.github.io/?tag=chicken) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) [![ham](https://img.shields.io/badge/ham-blue.svg)](https://foodgit.github.io/?tag=ham) [![lamb](https://img.shields.io/badge/lamb-blue.svg)](https://foodgit.github.io/?tag=lamb) [![leftovers](https://img.shields.io/badge/leftovers-blue.svg)](https://foodgit.github.io/?tag=leftovers) [![vegetables](https://img.shields.io/badge/vegetables-blue.svg)](https://foodgit.github.io/?tag=vegetables) 
 
-<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

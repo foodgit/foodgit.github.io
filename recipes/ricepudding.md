@@ -9,7 +9,6 @@
 
 ## Method
 
-> 1. Do not use the cup that comes with the rice cooker, use a regular measuring cup!
 > 1. Put the rice and milk in the rice cooker bowl and stir to combine.
 > 1. Close the cover and set for the Porridge cycle.
 > 1. When the machine switches to the "Keep Warm" cycle, open the rice cooker, and add the sugar and vanilla, and stir until combined.
@@ -17,10 +16,14 @@
 > 1. Serve warm or let cool slightly and refrigerate for at least 1 hour.
 > 1. When cold, cover with plastic wrap and store for up to 4 days.
 
+## Tips
+
+> - Do not use the cup that comes with the rice cooker, use a regular measuring cup!
+
 **Serves:** 4-6
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
 [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://foodgit.github.io/?tag=easy) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://foodgit.github.io/?tag=rice) [![rice_cooker](https://img.shields.io/badge/rice_cooker-blue.svg)](https://foodgit.github.io/?tag=rice_cooker) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

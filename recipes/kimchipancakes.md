@@ -30,7 +30,8 @@
 > 1. In a large bowl, combine the flour (or pancake mix) with the liquid from kimchi, the optional gochujang/gochugaru and egg, and water, a little bit at a time. Start with dissolving the gochujang with water, and mix everything together. Do not over mix.
 > 1. Add a little more water if the batter is too thick. The batter should flow easily from a spoon.
 > 1. Stir in the kimchi, spring onions, onion and the optional protein of your choice.
-> 1. Heat one tablespoon of oil in a non-stick pan over medium heat. Ladle the mixture into the pan, and spread it evenly into a thin round shape. Cook until the edges turn light golden brown, about 3 minutes. Turn it over, and add more oil to the sides of the pan. Gently swirl the pan to distribute the oil under the pancakes. Press the pancake down with a spatula. Cook until the other side is nicely browned and crispy, 2 to 3 minutes.
+> 1. Heat one tablespoon of oil in a non-stick pan over medium heat. Ladle the mixture into the pan, and spread it evenly into a thin round shape. Cook until the edges turn light golden brown, about 3 minutes.
+> 1. Turn it over, and add more oil to the sides of the pan. Gently swirl the pan to distribute the oil under the pancakes. Press the pancake down with a spatula. Cook until the other side is nicely browned and crispy, 2 to 3 minutes.
 > 1. Repeat the process until there is no remaining batter. Serve hot with a dipping sauce, if desired.
 
 ## Tips
@@ -48,4 +49,4 @@
 
 [![asian](https://img.shields.io/badge/asian-blue.svg)](https://foodgit.github.io/?tag=asian) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://foodgit.github.io/?tag=easy) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](https://foodgit.github.io/?tag=healthy) [![korean](https://img.shields.io/badge/korean-blue.svg)](https://foodgit.github.io/?tag=korean) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](https://foodgit.github.io/?tag=lunch) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://foodgit.github.io/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 15th of December 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 15th of December 2023 &middot; Last updated: 11th of October 2026</em></p>

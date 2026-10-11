@@ -12,7 +12,11 @@
 ## Method
 
 > 1. Mix all the wet ingredients together - you’ll have to beat hard but not for long, to blend the syrup into mix. Then add enough milk to get a thick, runny batter.
-> 1. Use butter to cook them in (all this butter!!!). A tablespoon full for each one & cook in moderately hot pan until the bubbles appear & turn, they should be golden brown. A squeeze of lemon juice & a sprinkle of sugar is delicious when hot - butter (again) or margarine spread on when cold.
+> 1. Use butter to cook them in (all this butter!!!). A tablespoon full for each one & cook in moderately hot pan until the bubbles appear & turn, they should be golden brown.
+
+## Tips
+
+> - A squeeze of lemon juice & a sprinkle of sugar is delicious when hot - butter (again) or margarine spread on when cold.
 
 **Serves:** 4-6
 
@@ -20,4 +24,4 @@
 
 [![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](https://foodgit.github.io/?tag=breakfast) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
 
-<p class="recipe-dates"><em>Created: 26th of June 2023 &middot; Last updated: 29th of September 2026</em></p>
+<p class="recipe-dates"><em>Created: 26th of June 2023 &middot; Last updated: 11th of October 2026</em></p>
