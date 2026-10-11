@@ -1,25 +1,9 @@
 @import "./github-markdown.min.css";
 
-body {
-  margin: 0;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) body {
-    background-color: #252525;
-  }
-}
-
-:root[data-theme="dark"] body {
-  background-color: #252525;
-}
-
-:root[data-theme="light"] { color-scheme: light; }
+/*the theme (light or dark) is set on the page by _includes/head-custom.html*/
+body { margin: 0; background-color: #ffffff; }
 :root[data-theme="dark"] { color-scheme: dark; }
+:root[data-theme="dark"] body { background-color: #252525; }
 
 .markdown-body {
   box-sizing: border-box;
@@ -59,9 +43,6 @@ body {
 
 /*brand colours from the logo: its blue for highlights, its deep teal outline for links and headings*/
 :root { --gf-blue: #00abeb; --gf-link: #065979; --gf-head: #065979; --gf-muted: #4f6672; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --gf-link: #33bdf2; --gf-head: #4cc9f5; --gf-muted: #8fa7b3; }
-}
 :root[data-theme="dark"] { --gf-link: #33bdf2; --gf-head: #4cc9f5; --gf-muted: #8fa7b3; }
 .markdown-body a { color: var(--gf-link); }
 /*headings take the logo's deep teal, brighter blue in dark mode*/
@@ -73,8 +54,8 @@ body {
 .theme-toggle:hover { color: var(--gf-link); border-color: var(--gf-blue); }
 .theme-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 /*the icon shows the mode a click switches to*/
-.theme-toggle .sun, .theme-toggle[data-mode="dark"] .moon { display: none; }
-.theme-toggle[data-mode="dark"] .sun { display: block; }
+.theme-toggle .sun, :root[data-theme="dark"] .theme-toggle .moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: block; }
 .site-header img { display: block; height: 48px; width: auto; }
 
 .lede { font-size: 1.2em; }
@@ -104,17 +85,6 @@ body {
   --t-cuisine-bg: #d8f5f3; --t-cuisine-fg: #0a6b66;
   --t-other-bg: #eaeef2; --t-other-fg: #424a53;
   --gf-line: #d0d7de;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --t-meal-bg: #1f3a52; --t-meal-fg: #8fd0ff;
-    --t-diet-bg: #1f3d2b; --t-diet-fg: #8fe0a8;
-    --t-main-bg: #3d2f1f; --t-main-fg: #f0c38a;
-    --t-cooking-bg: #342a45; --t-cooking-fg: #cdb4f5;
-    --t-cuisine-bg: #1f3d3d; --t-cuisine-fg: #8fe0e0;
-    --t-other-bg: #30363d; --t-other-fg: #b1bac4;
-    --gf-line: #30363d;
-  }
 }
 :root[data-theme="dark"] {
   --t-meal-bg: #1f3a52; --t-meal-fg: #8fd0ff;

@@ -24,8 +24,6 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
-      - name: Install dependencies
-        run: pip install requests
       - name: Call python issue submission parser
         env:
           #passed via env and a file, never interpolated into the shell command

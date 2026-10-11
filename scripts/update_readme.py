@@ -1,131 +1,51 @@
+#writes README.md (recipe table for github), index.md (the site's recipe browser) and _data/recipes.json
+import datetime, html, json, random, re
 from pathlib import Path
-import datetime
-import html
-import json
-import random
-import re
-import subprocess
-from collections import defaultdict
-#from loguru import logger
+from common import SITE_URL, git_dates, humanize, years, recipe_tags, tag_groups
 
 random.seed(0)
-
-def get_dates(stub_path):
-    """returns (last_updated, created) iso dates from the stub's git history"""
-    try:
-        result = subprocess.run(
-            ["git", "log", "--format=%as", "--", str(stub_path)],
-            capture_output=True, text=True, check=True
-        )
-        dates = result.stdout.strip().splitlines()
-        if not dates:
-            return "", ""
-        return dates[0], dates[-1]
-    except Exception:
-        return "", ""
-
-def badges2kv(text):
-    testpat = r'\/([a-zA-Z_]+-[a-zA-Z]+).svg'
-    badges = re.findall(testpat, text)
-    return [("tag", b.split('-')[0].split('.')[0]) for b in badges]
-
-SITE_URL = 'https://foodgit.github.io/'
-FIRST_YEAR = 2023  #first commit
-THIS_YEAR = datetime.date.today().year
-COPYRIGHT_YEARS = str(FIRST_YEAR) if THIS_YEAR == FIRST_YEAR else f'{FIRST_YEAR}–{THIS_YEAR}'
 
 def make_badge(label, prefix='tag', color='lightgrey'):
     #links to the site's homepage filtered by the tag (works from github too)
     return f'<a href="{SITE_URL}?tag={label}"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
 
-def random_hex_colour():
-    """generates a string for a random hex color"""
-    r = lambda: random.randint(0,255)
-    return  f"{r():02x}{r():02x}{r():02x}"
-
 def get_tag_hex_colour(tag_name):
-    tag_file = Path('./tags/colours/'+tag_name+'.hex')
-    try:
-        with open(tag_file) as f:
-            tag_hex=f.readline()
-    except:
-        tag_hex=random_hex_colour()
+    #each tag keeps the random colour it was first given
+    tag_file = Path('tags/colours', tag_name + '.hex')
+    if not tag_file.exists():
         tag_file.parent.mkdir(exist_ok=True, parents=True)
-        tag_file.write_text(tag_hex)
-    return tag_hex
+        tag_file.write_text('%06x' % random.randint(0, 0xffffff))
+    return tag_file.read_text().strip()
 
-md_files = Path('./recipes').glob('*.md')
 TOC = []
-unq_tags = defaultdict(list)
-for fpath in list(md_files):
-    if fpath.name == 'README.md':
+for fpath in Path('recipes').glob('*.md'):
+    text = fpath.read_text(encoding='utf-8')
+    title = re.search(r'^# (.+)$', text, re.M)
+    if not title:
         continue
-    with open(fpath) as f:
-        for line in f:
-             if line.startswith('# '):
-                header=line
-                text = f.read()
-                badge_meta = badges2kv(text)
-                d_ = {'fpath':fpath}
-                d_['title'] = header[2:].strip()
-                stub_path = Path('recipes')/fpath.stem/f"{fpath.stem}.recipe"
-                d_['last_updated'], d_['created'] = get_dates(stub_path)
-                d_['n_char'] = len(text)
-                d_['text'] = text
-                d_['tags'] = [v for k,v in badge_meta if k =='tag']
-                d_['tags'].sort()
-                #unq_tags.update(d_['tags'])
-                for tag in d_['tags']:
-                    unq_tags[tag].append(d_)
-                TOC.append(d_)
-                break
+    d = {'fpath': fpath, 'slug': fpath.stem, 'title': title[1].strip(), 'text': text,
+         'tags': recipe_tags(Path('recipes', fpath.stem))}
+    d['last_updated'], d['created'] = git_dates(Path('recipes', fpath.stem, fpath.stem + '.recipe'))
+    TOC.append(d)
+TOC.sort(key=lambda d: d['title'])
+unq_tags = sorted({t for d in TOC for t in d['tags']})
+tag_badges_map = {tag: make_badge(label=tag, color=get_tag_hex_colour(tag)) for tag in unq_tags}
 
-tag_badges_map = {tag_name:make_badge(label=tag_name, color = get_tag_hex_colour(tag_name)) for tag_name in unq_tags}
-
-def make_badges(unq_tags, sep=' '):
-    return sep.join([tag_badges_map[tag] for tag in unq_tags])
-    
-try:
-    TOC = sorted(TOC, key=lambda x:x['title'])
-except:
-    pass
+def make_badges(tags, sep=' '):
+    return sep.join(tag_badges_map[tag] for tag in tags)
 
 header= "|Recipe Title|Tags|Created|Last Updated|\n|:---|:---|:---|:---|\n"
 recs = [f"|[{d['title']}]({ (Path('.')/d['fpath']).as_posix() })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
-readme = None
-if Path('README.stub').exists():
-    with open('README.stub') as f:
-        readme_stub = f.read()
-    readme = readme_stub.replace('{TOC}', toc_str)
-    readme = readme.replace('{tags}', make_badges(unq_tags))
-    readme = readme.replace('{years}', COPYRIGHT_YEARS)
-    readme = readme.strip()
-if not readme:
-    with open('empty.stub') as f:
-        readme = f.read()
+readme = Path('README.stub').read_text(encoding='utf-8')
+readme = readme.replace('{TOC}', toc_str).replace('{tags}', make_badges(unq_tags))
+Path('README.md').write_text(readme.replace('{years}', years(datetime.date.today().year)).strip(), encoding='utf-8', newline='\n')
 
-with open('README.md','w') as f:
-    f.write(readme)
-       
 #below is for the website, README.md above keeps image badges (github strips inline styles)
 #tag grouping, colours and hidden tags come from tags/groups.txt
 
-def load_groups(path='tags/groups.txt'):
-    groups, hidden = {}, set()
-    for line in open(path):
-        line = line.split('#')[0].strip()
-        if ':' not in line:
-            continue
-        name, tags = line.split(':', 1)
-        if name.strip() == 'hidden':
-            hidden.update(tags.split())
-        else:
-            groups[name.strip()] = tags.split()
-    return groups, hidden
-
-GROUPS, HIDDEN = load_groups()
+GROUPS, HIDDEN = tag_groups()
 group_of = {}
 for g, tags in GROUPS.items():
     for t in tags:
@@ -146,21 +66,9 @@ def make_label(tag):
     group = 'meal' if tag == 'other' else group_of.get(tag, 'other')
     return f'<a class="tag t-{group}" href="./?tag={tag}">{tag.replace("_", " ")}</a>'
 
-def suffix(day):
-    return {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 20, 'th')
-
-def humanize(iso):
-    if not iso:
-        return ''
-    y, m, d = (int(x) for x in iso.split('-'))
-    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
-              'August', 'September', 'October', 'November', 'December']
-    return f'{d}{suffix(d)} of {months[m-1]} {y}'
-
 for d in TOC:
     serves = re.search(r'\*\*Serves:\*\*\s*([^\n<]+)', d['text'])
     d['serves'] = serves.group(1).strip() if serves else ''
-    d['slug'] = d['fpath'].stem
     d['meaningful'] = {t for t in d['tags'] if t not in HIDDEN}
 
 def related(d, n=4):
@@ -185,8 +93,7 @@ recipe_data = {d['slug']: {
     'related': [{'title': o['title'], 'slug': o['slug'], 'meals': [m for m in meals(o) if m != 'other']}
                 for o in related(d)],
 } for d in TOC}
-with open('_data/recipes.json', 'w') as f:
-    json.dump(recipe_data, f, indent=1, sort_keys=True)
+Path('_data/recipes.json').write_text(json.dumps(recipe_data, indent=1, sort_keys=True), encoding='utf-8', newline='\n')
 
 def recipe_browser(rows):
     """homepage: sidebar filters + recipe list, driven by assets/js/recipes.js"""
@@ -221,7 +128,5 @@ def recipe_browser(rows):
             '<div class="active-filters"></div><p class="results-status"></p>'
             f'<ul class="recipe-list">{"".join(lis)}</ul></div></div>')
 
-with open('index.stub') as f:
-    index_stub = f.read()
-with open('index.md', 'w') as f:
-    f.write(index_stub.replace('{TOC}', recipe_browser(TOC)))
+index = Path('index.stub').read_text(encoding='utf-8').replace('{TOC}', recipe_browser(TOC))
+Path('index.md').write_text(index, encoding='utf-8', newline='\n')

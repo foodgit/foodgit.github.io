@@ -1,112 +1,36 @@
-import shutil, filecmp, subprocess, datetime, html
+#builds recipes/<name>.md from each recipes/<name>/<name>.recipe stub (and the template)
+#{photo.jpg} placeholders become images, and the site logo, tag badges and dates are added at the end
+import html
 from pathlib import Path
+from common import SITE_URL, git_dates, humanize, recipe_tags
 
-def get_dates(stub_path):
-    """returns (last_updated, created) iso dates from the stub's git history"""
-    try:
-        result = subprocess.run(
-            ["git", "log", "--format=%as", "--", str(stub_path)],
-            capture_output=True, text=True, check=True
-        )
-        dates = result.stdout.strip().splitlines()
-        if not dates:
-            return "", ""
-        return dates[0], dates[-1]
-    except Exception:
-        return "", ""
-
-def suffix(d):
-    return {1:'st',2:'nd',3:'rd'}.get(d%20, 'th')
-
-def humanize_date(iso_date):
-    if not iso_date:
-        return ""
-    d = datetime.datetime.strptime(iso_date, "%Y-%m-%d")
-    return d.strftime('{S} of %B %Y').replace('{S}', str(d.day)+suffix(d.day))
-
-content_dir = Path("recipes")
-all_recipe_stubs = [Path("template/template/template.recipe")]
-for recipe_dir in sorted(p for p in content_dir.iterdir() if p.is_dir()):
-    all_recipe_stubs += sorted(recipe_dir.glob("*.recipe"))
-print("Recipe stub(s) found: \""+str(all_recipe_stubs)+"\"")
-
-for recipe_stub in all_recipe_stubs:
-    recipe_body = recipe_stub.read_text()
-    recipe_dir = recipe_stub.parent
-    content_root = recipe_dir.parent
-
-    last_updated_iso, created_iso = get_dates(recipe_stub)
-    #class lets the website's recipe layout restyle it (github and the pdf ignore it)
-    dates_line = ('<p class="recipe-dates"><em>Created: '+humanize_date(created_iso)+
-                  ' &middot; Last updated: '+humanize_date(last_updated_iso)+'</em></p>')
-
-    lines = recipe_body.splitlines()
-    title_idx = next((i for i, l in enumerate(lines) if l.startswith("# ")), None)
-    title = lines[title_idx][2:].strip() if title_idx is not None else recipe_stub.stem
-    main_idx = next((i for i, l in enumerate(lines) if l.strip() == "{main.jpg}"), None)
+stubs = [Path('template/template/template.recipe')] + sorted(Path('recipes').glob('*/*.recipe'))
+for stub in stubs:
+    lines = stub.read_text(encoding='utf-8').splitlines()
+    title_idx = next((i for i, l in enumerate(lines) if l.startswith('# ')), None)
+    title = lines[title_idx][2:].strip() if title_idx is not None else stub.stem
     #title must be the first line for jekyll-titles-from-headings to name the page
+    main_idx = next((i for i, l in enumerate(lines) if l.strip() == '{main.jpg}'), None)
     if main_idx is not None and title_idx is not None and main_idx < title_idx:
         lines.pop(main_idx)
-        title_idx -= 1
-        lines[title_idx+1:title_idx+1] = ["", "{main.jpg}"]
-    recipe_body = "\n".join(lines).lstrip("\n")
+        lines[title_idx:title_idx] = ['', '{main.jpg}']
+    body = '\n'.join(lines).lstrip('\n')
 
-    image_dir = recipe_dir/"images"
-    image_files = sorted(image_dir.glob("*.jpg"))
-    print("Image(s) found: "+str(image_files))
-    for image_file in image_files:
-        image_path = recipe_dir.name+"/images/"+image_file.name
-        if image_file.name == "main.jpg":
-            image_width="55%"
-            image_alt=title
-        else:
-            image_width="35%"
-            image_alt=title+" - photo "+image_file.stem
-        recipe_body = recipe_body.replace("{"+image_file.name+"}", "<img src=\""+image_path+"\" alt=\""+html.escape(image_alt)+"\" width=\""+image_width+"\" align=\"right\" />")
-    tag_file = recipe_dir/"tags.txt"
-    tags=list()
-    formatted_tags=list()
-    try:
-        if tag_file.is_file():
-            with open(tag_file) as f:
-                tags = f.read().splitlines()
-                if not tags:
-                    tags=[ "none" ]
-                else:
-                    tags.sort()
-        else:
-            tags=[ "none" ]
-    except:
-        tags=[ "none" ]
-    finally:
-        f.close()
-    #link to the site's homepage filtered by the tag, absolute so it also works on github
-    taglinks=""
-    for tag in list(tags):
-        taglinks=taglinks+'[![' + tag + '](https://img.shields.io/badge/'+tag+'-blue.svg)](https://foodgit.github.io/?tag='+tag+') '
-    temp_file_name = Path("working")/recipe_stub.with_suffix(".md").name
-    recipe_file_name = content_root/recipe_stub.with_suffix(".md").name
+    for image in sorted((stub.parent / 'images').glob('*.jpg')):
+        main = image.name == 'main.jpg'
+        alt = title if main else title + ' - photo ' + image.stem
+        body = body.replace('{' + image.name + '}', '<img src="%s/images/%s" alt="%s" width="%s" align="right" />'
+                            % (stub.parent.name, image.name, html.escape(alt), '55%' if main else '35%'))
 
-    output_file = temp_file_name
-    output_file.parent.mkdir(exist_ok=True, parents=True)
-    output_file.write_text(recipe_body)
+    #badges link to the site's homepage filtered by the tag, absolute so they also work on github
+    tags = recipe_tags(stub.parent)
+    badges = ' '.join('[![%s](https://img.shields.io/badge/%s-blue.svg)](%s?tag=%s)' % (t, t, SITE_URL, t) for t in tags)
+    updated, created = git_dates(stub)
+    #class lets the website's recipe layout restyle it (github and the pdf ignore it)
+    dates = ('<p class="recipe-dates"><em>Created: %s &middot; Last updated: %s</em></p>' % (humanize(created), humanize(updated)))
+    body += '\n\n<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />\n\n' + badges + ' \n\n' + dates
 
-    with open(temp_file_name, "a") as f:
-        f.write('\n\n<img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />')
-        f.write('\n\n'+taglinks)
-        f.write('\n\n'+dates_line)
-
-    try:
-        identical=filecmp.cmp(temp_file_name,recipe_file_name)
-    except FileNotFoundError:
-        print("New recipe found! Creating "+str(recipe_file_name))
-        identical=False
-    except:
-        print("something went wrong comparing temp file with destination")
-        identical=False
-    if not identical:
-        print(str(recipe_file_name)+" has been updated. Replacing with new version.")
-        shutil.copyfile(temp_file_name, recipe_file_name)
-    else:
-        print(str(recipe_file_name)+" has not been modified.")
-shutil.rmtree("working")
+    output = stub.parent.parent / (stub.stem + '.md')
+    if not output.exists() or output.read_text(encoding='utf-8') != body:
+        print('updating ' + str(output))
+        output.write_text(body, encoding='utf-8', newline='\n')

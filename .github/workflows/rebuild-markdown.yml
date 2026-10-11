@@ -17,6 +17,7 @@ on:
       - scripts/generate_pdfs.py
       - scripts/generate_markdown_recipes.py
       - scripts/units.py
+      - scripts/common.py
       - scripts/update_readme.py
       - README.stub
       - index.stub
@@ -47,8 +48,6 @@ jobs:
     concurrency:
       group: recipe-update
       cancel-in-progress: false
-    outputs:
-      release: ${{ steps.version.outputs.release }}
     steps:
       - uses: actions/checkout@v7
         with:

@@ -1,9 +1,8 @@
 #one group per line, as "name: tag tag tag"
 #groups show as homepage filters in this order, each with its own tag colour
 #meal is special: recipes with none of its tags are listed under "other"
-#hidden tags stay off the homepage and out of "more like this" matching
+#hidden tags stay off the homepage, the book and out of "more like this" matching
 #tags not listed here land in an automatic "other tags" filter group
-#changes here only affect the website, not the pdf book
 
 meal:    breakfast lunch dinner dessert snack sides
 diet:    vegetarian vegan

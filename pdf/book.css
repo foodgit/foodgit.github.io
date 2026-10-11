@@ -1,0 +1,85 @@
+/*recipe book styles, used by scripts/generate_pdfs.py (weasyprint)*/
+@font-face { font-family: book; src: url(../assets/fonts/nunito-extrabold.ttf); }
+
+/*pages: faint corner ticks keep e-reader auto-crop the same on every page*/
+/*the background is placed from the page area, so it is shifted back by the margin*/
+@page {
+  size: A4;
+  margin: 15mm 15mm 18mm;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 210 297'><path d='M4 6V4h2M204 4h2v2M4 291v2h2M204 293h2v-2' fill='none' stroke='%23b3b3b3' stroke-width='.15'/></svg>") no-repeat -15mm -15mm / 210mm 297mm;
+}
+@page front { margin: 0; background: linear-gradient(#3366cc, #000); }
+@page divider { margin: 0; }
+/*recipe pages: section, page number and recipe name along the foot*/
+@page recipe {
+  font-family: book; font-size: 8pt; color: #737373;
+  @bottom-left { content: "gitFOOD · " string(section); width: 40%; vertical-align: top; padding-top: 3mm; border-top: .5pt solid #d9d9d9; }
+  @bottom-center { content: counter(page); width: 20%; font-size: 10pt; vertical-align: top; padding-top: 2.5mm; border-top: .5pt solid #d9d9d9; }
+  @bottom-right { content: string(recipe); width: 40%; text-align: right; vertical-align: top; padding-top: 3mm; border-top: .5pt solid #d9d9d9; }
+}
+
+html { font-family: book; font-size: 14pt; line-height: 1.45; color: #111; }
+body { margin: 0; }
+section, article { break-before: page; }
+h1, h2, h3, h4, h5, h6 { color: #065979; bookmark-level: none; break-after: avoid; }
+a { color: #065979; text-decoration: none; }
+img { max-width: 100%; }
+img[align="right"] { float: right; clear: right; width: 35%; margin: 0 0 .6em 1em; }
+ul, ol { padding-left: 1.4em; }
+li { margin: .15em 0; }
+blockquote { margin: .6em 0 .6em .4em; padding-left: .8em; border-left: 3px solid #00abeb; color: #222; }
+.num { font-size: .75em; vertical-align: .4em; line-height: 0; }
+.den { font-size: .75em; vertical-align: -.1em; line-height: 0; }
+
+/*covers, title page and contents*/
+.front, .back { page: front; position: relative; height: 297mm; }
+.front img { position: absolute; left: 3.9mm; top: 123.8mm; width: 204.6mm; }
+.front p { position: absolute; left: 6.4mm; top: 119.5mm; margin: 0; font-size: 22pt; line-height: 1; color: #151515; }
+.back p { position: absolute; left: 0; right: 0; bottom: 12mm; margin: 0; text-align: center; font-size: 18pt; color: #00ffff; }
+.title-page { position: relative; height: 264mm; }
+.contents h1 { bookmark-level: 1; }
+.contents h2 { margin: .9em 0 .2em; }
+.contents a { display: block; padding: .2em 0; border-bottom: 1px dotted #c8c8c8; color: #111; }
+.contents a::after { content: target-counter(attr(href), page); float: right; }
+
+/*section dividers*/
+.divider { page: divider; position: relative; height: 297mm; bookmark-level: 1; bookmark-state: closed; }
+.divider svg { position: absolute; left: 0; top: 0; }
+.band { position: absolute; left: 0; right: 0; top: 0; height: 9mm; background: #00abeb; }
+.band.bottom { top: auto; bottom: 0; background: #065979; }
+.count { position: absolute; left: 0; right: 0; top: 162mm; margin: 0; padding-top: 4mm; text-align: center; font-size: 20pt;
+         letter-spacing: .2em; text-transform: uppercase; color: #065979; }
+.names { position: absolute; left: 30mm; right: 30mm; top: 190mm; margin: 0; text-align: center; font-size: 11pt; line-height: 1.9; color: #4f6672; }
+
+/*recipes*/
+article { page: recipe; }
+article h1 { font-size: 2.7em; line-height: 1.1; margin: 0 0 .25em; bookmark-level: 2; string-set: recipe content(); }
+h2 { font-size: 1.45em; margin: 1em 0 .4em; }
+h3 { font-size: 1.15em; margin: .8em 0 .3em; }
+.hero { display: block; width: 100%; height: 66mm; object-fit: cover; border-radius: 3mm; margin-bottom: 5mm; }
+.kicker { margin: 0 0 .2em; font-size: .62em; letter-spacing: .18em; text-transform: uppercase; color: #00abeb; string-set: section content(); }
+.facts { margin: 0 0 .9em; }
+.fact, .tag { display: inline-block; margin: 0 .3em .3em 0; padding: 0 .7em; border-radius: .8em; font-size: .68em; line-height: 1.7; }
+.fact { background: #00abeb; color: #06283a; }
+.tag { background: #e3f4fb; color: #065979; }
+
+/*ingredients in a panel on the left, the method beside it and then under it*/
+.ingredients { float: left; width: 36%; margin: 0 6mm 4mm 0; padding: 4mm 5mm; border-radius: 3mm; background: #f0f9fd; }
+.ingredients h2 { margin: 0 0 .4em; padding-bottom: .15em; border-bottom: 2px solid #00abeb; }
+.ingredients h3 { margin: .8em 0 .2em; font-size: .85em; letter-spacing: .08em; text-transform: uppercase; }
+.ingredients ul { margin: 0; padding: 0; list-style: none; font-size: .86em; }
+.ingredients li { margin: 0; padding: .25em 0; border-bottom: 1px dotted #b7d9e6; }
+.ingredients img { float: none; display: block; width: 70%; margin: .4em 0; }
+.method h2 { margin-top: 0; }
+/*step photos go under their step, beside the panel there is no room for them to float*/
+.method img { float: none; display: block; width: auto; max-width: 60%; max-height: 45mm; margin: .3em 0 .6em; border-radius: 2mm; }
+.method blockquote { margin: 0; padding: 0; border: none; color: #111; }
+/*step numbers float, so beside the panel they sit next to it rather than under it*/
+.method ol { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+.method ol li { margin: 0; padding: 0 0 .6em; counter-increment: step; break-inside: avoid; }
+.method ol li::before { content: counter(step); float: left; margin: .1em .6em 0 0; width: 1.5em; height: 1.5em; border-radius: .75em;
+                        background: #00abeb; color: #06283a; text-align: center; line-height: 1.5em; font-size: .8em; }
+.tips { clear: both; break-inside: avoid; margin: .8em 0; padding: .1em 1em .3em; border-radius: 6px; background: #e3f4fb; }
+.tips h2 { margin: .5em 0 .3em; }
+.tips blockquote { margin: 0; padding: 0; border: none; }
+.recipe-dates { clear: both; break-before: avoid; }

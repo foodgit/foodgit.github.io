@@ -26,8 +26,7 @@ permissions:
 
 jobs:
   book:
-    #pinned: the wkhtmltopdf .deb below is built for this ubuntu generation
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     concurrency:
       group: recipe-book
       cancel-in-progress: false
@@ -95,8 +94,8 @@ jobs:
           if [ "$VERSION" != "$current" ]; then
             #rebuild the title page and book so they carry the new version
             printf '%s' "$VERSION" > version.txt
-            python scripts/generate_pdfs.py --book-only
-            python scripts/generate_pdfs.py --book-only --edition freedom
+            python scripts/generate_pdfs.py
+            python scripts/generate_pdfs.py --edition freedom
             git config user.name "GitHub Actions Bot"
             git config user.email "action@github.com"
             git add version.txt
