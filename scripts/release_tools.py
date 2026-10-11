@@ -136,13 +136,13 @@ def released_today():
     return [r['tagName'] for r in rows if day(r['publishedAt']) == datetime.now(zone).date()]
 
 def release_field(tag, field):
-    return run('gh', 'release', 'view', tag, '--json', field, '--jq', '.' + field).stdout.strip()
+    return run('gh', 'release', 'view', tag, '--json', field, '--jq', '.' + field).stdout.replace('\r\n', '\n').strip()
 
 def day_notes(prev=''):
     #the new changes first, then the notes of today's releases, without their build lines
     parts = [notes(prev) if prev else 'First release.']
     parts += [re.sub(r'^Built automatically from .*$', '', release_field(tag, 'body'), flags=re.M).strip() for tag in released_today()]
-    return '\n\n'.join(parts)
+    return re.sub(r'\n{3,}', '\n\n', '\n\n'.join(parts))
 
 def title(version, prev=''):
     #the plain title unless recipes were added or the page style changed, plus today's earlier highlights
