@@ -9,7 +9,7 @@ from pathlib import Path
 BOOK_INPUTS = ('recipes/', 'pdf/', 'images/', 'assets/fonts/', 'scripts/generate_pdfs.py', 'scripts/generate_markdown_recipes.py', 'scripts/units.py', 'scripts/common.py', 'tags/groups.txt')
 #files that change how every page looks, a minor release instead of a patch
 STYLESHEET = 'pdf/book.css'
-STYLE_FILES = ('assets/fonts/nunito-extrabold.ttf', 'images/logo_sm.png', 'images/logo_md.png')
+STYLE_FILES = ('assets/fonts/nunito-regular.ttf', 'assets/fonts/nunito-extrabold.ttf', 'images/logo_sm.png', 'images/logo_md.png')
 
 def run(*cmd):
     return subprocess.run(cmd, capture_output=True, text=True)

@@ -20,6 +20,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![breakfast](https://img.shields.io/badge/breakfast-blue.svg)](https://foodgit.github.io/?tag=breakfast) [![fast](https://img.shields.io/badge/fast-blue.svg)](https://foodgit.github.io/?tag=fast) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) [![healthy](https://img.shields.io/badge/healthy-blue.svg)](https://foodgit.github.io/?tag=healthy) [![simple](https://img.shields.io/badge/simple-blue.svg)](https://foodgit.github.io/?tag=simple) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![breakfast](https://img.shields.io/badge/breakfast-006b9e)](https://foodgit.github.io/?tag=breakfast) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![fried](https://img.shields.io/badge/fried-6e519d)](https://foodgit.github.io/?tag=fried) [![stovetop](https://img.shields.io/badge/stovetop-6e519d)](https://foodgit.github.io/?tag=stovetop) [![healthy](https://img.shields.io/badge/healthy-4f6776)](https://foodgit.github.io/?tag=healthy) 
 
 <p class="recipe-dates"><em>Created: 2nd of January 2024 &middot; Last updated: 29th of September 2026</em></p>

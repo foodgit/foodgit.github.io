@@ -27,6 +27,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![amazing](https://img.shields.io/badge/amazing-blue.svg)](https://foodgit.github.io/?tag=amazing) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![chocolate](https://img.shields.io/badge/chocolate-blue.svg)](https://foodgit.github.io/?tag=chocolate) [![coffee](https://img.shields.io/badge/coffee-blue.svg)](https://foodgit.github.io/?tag=coffee) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![snack](https://img.shields.io/badge/snack-blue.svg)](https://foodgit.github.io/?tag=snack) 
+[![snack](https://img.shields.io/badge/snack-006b9e)](https://foodgit.github.io/?tag=snack) [![chocolate](https://img.shields.io/badge/chocolate-9b4630)](https://foodgit.github.io/?tag=chocolate) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![coffee](https://img.shields.io/badge/coffee-4f6776)](https://foodgit.github.io/?tag=coffee) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

@@ -23,6 +23,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![beef](https://img.shields.io/badge/beef-blue.svg)](https://foodgit.github.io/?tag=beef) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://foodgit.github.io/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](https://foodgit.github.io/?tag=pasta) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) 
+[![sides](https://img.shields.io/badge/sides-006b9e)](https://foodgit.github.io/?tag=sides) [![beef](https://img.shields.io/badge/beef-9b4630)](https://foodgit.github.io/?tag=beef) [![pasta](https://img.shields.io/badge/pasta-9b4630)](https://foodgit.github.io/?tag=pasta) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-4f6776)](https://foodgit.github.io/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

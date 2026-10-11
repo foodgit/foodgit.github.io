@@ -4,7 +4,7 @@
 
 ### version {version_number}
 
-### {edition} edition
+### {edition}
 
 #### https://foodgit.github.io
 

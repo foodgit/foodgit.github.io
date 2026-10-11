@@ -4,7 +4,7 @@ name: Build Recipe Book PDF
 #the comparison ignores the title page, back cover and metadata, so those never release alone
 #patch for recipe changes, minor when the page style (stylesheet, font, logos) changed
 #an unreleased version.txt (set by hand) is released as it is
-#two books are built and released, metric and freedom units
+#four books are built and released: a4 and booklet, each in metric and freedom units
 
 on:
   workflow_call:
@@ -56,9 +56,7 @@ jobs:
           pip install weasyprint fonttools
       - name: Build PDFs
         if: ${{ steps.check.outputs.build == 'true' }}
-        run: |
-          python scripts/generate_pdfs.py
-          python scripts/generate_pdfs.py --edition freedom
+        run: python scripts/generate_pdfs.py
       - name: Compare with the last release
         id: compare
         if: ${{ steps.check.outputs.build == 'true' && steps.check.outputs.unreleased == 'false' && steps.check.outputs.prev != '' && env.BUMP == 'auto' }}
@@ -68,7 +66,7 @@ jobs:
           changed=false
           gh release download "$PREV" -p gitFOOD_Recipe_Book.pdf -O "$RUNNER_TEMP/previous.pdf"
           python scripts/compare_books.py "$RUNNER_TEMP/previous.pdf" gitFOOD_Recipe_Book.pdf || changed=true
-          #the freedom book too, once the previous release has one
+          #the a4 freedom book too, the booklets have the same content
           if gh release download "$PREV" -p gitFOOD_Recipe_Book-freedom.pdf -O "$RUNNER_TEMP/previous-freedom.pdf" 2>/dev/null; then
             python scripts/compare_books.py "$RUNNER_TEMP/previous-freedom.pdf" gitFOOD_Recipe_Book-freedom.pdf || changed=true
           fi
@@ -90,7 +88,6 @@ jobs:
             #rebuild the title page and book so they carry the new version
             printf '%s' "$VERSION" > version.txt
             python scripts/generate_pdfs.py
-            python scripts/generate_pdfs.py --edition freedom
             git config user.name "GitHub Actions Bot"
             git config user.email "action@github.com"
             git add version.txt
@@ -105,8 +102,8 @@ jobs:
           else
             echo "First release." > "$RUNNER_TEMP/notes.md"
           fi
-          printf '\n\nBuilt automatically from %s on %s. Formatted and optimized for A4 page size printing. Booklet-printing friendly. Two editions: metric, and freedom units (-freedom).\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
-          gh release create "$VERSION" gitFOOD_Recipe_Book.pdf gitFOOD_Recipe_Book-freedom.pdf \
-            --title "v${VERSION} - A4 Printable Version" \
+          printf '\n\nBuilt automatically from %s on %s. A4 edition for reading and printing one page per sheet, booklet edition (-booklet) for folding into an A5 booklet, each in metric and freedom units (-freedom). How to print the booklet: https://foodgit.github.io/book.html\n' "$(git rev-parse --short HEAD)" "$(date -u +%Y-%m-%d)" >> "$RUNNER_TEMP/notes.md"
+          gh release create "$VERSION" gitFOOD_Recipe_Book*.pdf \
+            --title "v${VERSION} - Printable Recipe Book" \
             --notes-file "$RUNNER_TEMP/notes.md" \
             --target "$(git rev-parse HEAD)"

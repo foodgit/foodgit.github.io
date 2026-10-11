@@ -26,6 +26,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![snack](https://img.shields.io/badge/snack-blue.svg)](https://foodgit.github.io/?tag=snack) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![snack](https://img.shields.io/badge/snack-006b9e)](https://foodgit.github.io/?tag=snack) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

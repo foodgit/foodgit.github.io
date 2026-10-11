@@ -21,6 +21,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-blue.svg)](https://foodgit.github.io/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![potato](https://img.shields.io/badge/potato-blue.svg)](https://foodgit.github.io/?tag=potato) [![savoury](https://img.shields.io/badge/savoury-blue.svg)](https://foodgit.github.io/?tag=savoury) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![sides](https://img.shields.io/badge/sides-006b9e)](https://foodgit.github.io/?tag=sides) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![potato](https://img.shields.io/badge/potato-9b4630)](https://foodgit.github.io/?tag=potato) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![cheesey](https://img.shields.io/badge/cheesey-4f6776)](https://foodgit.github.io/?tag=cheesey) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

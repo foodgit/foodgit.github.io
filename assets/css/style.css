@@ -75,24 +75,28 @@ body { margin: 0; background-color: #ffffff; }
   box-shadow: inset 0 0 0 2px var(--gf-blue);
 }
 .markdown-body a.button:hover { filter: brightness(1.08); }
+.markdown-body .editions-link { margin: -16px 0 24px; font-size: 0.9em; }
+/*book page: one box per edition*/
+.editions { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.editions > div { padding: 0 18px; border: 1px solid var(--gf-line); border-radius: 10px; }
 
-/*tag colours, one per group in tags/groups.txt*/
+/*tag colours, one per group in tags/groups.txt, the readme badges match (scripts/common.py)*/
 :root {
-  --t-meal-bg: #ddf4ff; --t-meal-fg: #0550ae;
-  --t-diet-bg: #dafbe1; --t-diet-fg: #116329;
-  --t-main-bg: #fff1e5; --t-main-fg: #953800;
-  --t-cooking-bg: #fbefff; --t-cooking-fg: #6639ba;
-  --t-cuisine-bg: #d8f5f3; --t-cuisine-fg: #0a6b66;
-  --t-other-bg: #eaeef2; --t-other-fg: #424a53;
+  --t-meal-bg: #d6f3ff; --t-meal-fg: #005481;
+  --t-diet-bg: #dcf7e1; --t-diet-fg: #0b5d2a;
+  --t-main-bg: #ffe6dd; --t-main-fg: #7e321f;
+  --t-cooking-bg: #f2e9ff; --t-cooking-fg: #573c7f;
+  --t-cuisine-bg: #ffebd2; --t-cuisine-fg: #6f4200;
+  --t-other-bg: #e8eef2; --t-other-fg: #3f4f59;
   --gf-line: #d0d7de;
 }
 :root[data-theme="dark"] {
-  --t-meal-bg: #1f3a52; --t-meal-fg: #8fd0ff;
-  --t-diet-bg: #1f3d2b; --t-diet-fg: #8fe0a8;
-  --t-main-bg: #3d2f1f; --t-main-fg: #f0c38a;
-  --t-cooking-bg: #342a45; --t-cooking-fg: #cdb4f5;
-  --t-cuisine-bg: #1f3d3d; --t-cuisine-fg: #8fe0e0;
-  --t-other-bg: #30363d; --t-other-fg: #b1bac4;
+  --t-meal-bg: #0e425d; --t-meal-fg: #a5e0ff;
+  --t-diet-bg: #1e4729; --t-diet-fg: #b2e7bc;
+  --t-main-bg: #5c2e23; --t-main-fg: #ffc5b4;
+  --t-cooking-bg: #43345c; --t-cooking-fg: #dfccff;
+  --t-cuisine-bg: #523709; --t-cuisine-fg: #f7d19c;
+  --t-other-bg: #313f49; --t-other-fg: #c9dae6;
   --gf-line: #30363d;
 }
 .markdown-body .tag { display: inline-block; padding: 0 8px; margin: 1px 3px 1px 0; border-radius: 10px;

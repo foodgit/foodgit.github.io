@@ -43,6 +43,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![amazing](https://img.shields.io/badge/amazing-blue.svg)](https://foodgit.github.io/?tag=amazing) [![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![british](https://img.shields.io/badge/british-blue.svg)](https://foodgit.github.io/?tag=british) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![dessert](https://img.shields.io/badge/dessert-006b9e)](https://foodgit.github.io/?tag=dessert) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![stovetop](https://img.shields.io/badge/stovetop-6e519d)](https://foodgit.github.io/?tag=stovetop) [![british](https://img.shields.io/badge/british-8a5700)](https://foodgit.github.io/?tag=british) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 10th of December 2023 &middot; Last updated: 2nd of October 2026</em></p>

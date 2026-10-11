@@ -1,21 +1,7 @@
 #writes README.md (recipe table for github), index.md (the site's recipe browser) and _data/recipes.json
-import datetime, html, json, random, re
+import datetime, html, json, re
 from pathlib import Path
-from common import SITE_URL, git_dates, humanize, years, recipe_tags, tag_groups
-
-random.seed(0)
-
-def make_badge(label, prefix='tag', color='lightgrey'):
-    #links to the site's homepage filtered by the tag (works from github too)
-    return f'<a href="{SITE_URL}?tag={label}"><img src="https://img.shields.io/badge/{prefix}-{label}-{color}" alt="{label}" /></a>'
-
-def get_tag_hex_colour(tag_name):
-    #each tag keeps the random colour it was first given
-    tag_file = Path('tags/colours', tag_name + '.hex')
-    if not tag_file.exists():
-        tag_file.parent.mkdir(exist_ok=True, parents=True)
-        tag_file.write_text('%06x' % random.randint(0, 0xffffff))
-    return tag_file.read_text().strip()
+from common import badges, git_dates, humanize, years, recipe_tags, tag_groups
 
 TOC = []
 for fpath in Path('recipes').glob('*.md'):
@@ -28,18 +14,12 @@ for fpath in Path('recipes').glob('*.md'):
     d['last_updated'], d['created'] = git_dates(Path('recipes', fpath.stem, fpath.stem + '.recipe'))
     TOC.append(d)
 TOC.sort(key=lambda d: d['title'])
-unq_tags = sorted({t for d in TOC for t in d['tags']})
-tag_badges_map = {tag: make_badge(label=tag, color=get_tag_hex_colour(tag)) for tag in unq_tags}
-
-def make_badges(tags, sep=' '):
-    return sep.join(tag_badges_map[tag] for tag in tags)
-
 header= "|Recipe Title|Tags|Created|Last Updated|\n|:---|:---|:---|:---|\n"
-recs = [f"|[{d['title']}]({ (Path('.')/d['fpath']).as_posix() })|{make_badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
+recs = [f"|[{d['title']}]({ (Path('.')/d['fpath']).as_posix() })|{badges(d['tags'])}|{d['created']}|{d['last_updated']}|" for d in TOC]
 toc_str= header + '\n'.join(recs)
 
 readme = Path('README.stub').read_text(encoding='utf-8')
-readme = readme.replace('{TOC}', toc_str).replace('{tags}', make_badges(unq_tags))
+readme = readme.replace('{TOC}', toc_str)
 Path('README.md').write_text(readme.replace('{years}', years(datetime.date.today().year)).strip(), encoding='utf-8', newline='\n')
 
 #below is for the website, README.md above keeps image badges (github strips inline styles)

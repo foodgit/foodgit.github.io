@@ -27,6 +27,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![boiled](https://img.shields.io/badge/boiled-blue.svg)](https://foodgit.github.io/?tag=boiled) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![italian](https://img.shields.io/badge/italian-blue.svg)](https://foodgit.github.io/?tag=italian) [![lunch](https://img.shields.io/badge/lunch-blue.svg)](https://foodgit.github.io/?tag=lunch) [![pasta](https://img.shields.io/badge/pasta-blue.svg)](https://foodgit.github.io/?tag=pasta) [![sides](https://img.shields.io/badge/sides-blue.svg)](https://foodgit.github.io/?tag=sides) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) 
+[![lunch](https://img.shields.io/badge/lunch-006b9e)](https://foodgit.github.io/?tag=lunch) [![sides](https://img.shields.io/badge/sides-006b9e)](https://foodgit.github.io/?tag=sides) [![pasta](https://img.shields.io/badge/pasta-9b4630)](https://foodgit.github.io/?tag=pasta) [![boiled](https://img.shields.io/badge/boiled-6e519d)](https://foodgit.github.io/?tag=boiled) [![stovetop](https://img.shields.io/badge/stovetop-6e519d)](https://foodgit.github.io/?tag=stovetop) [![italian](https://img.shields.io/badge/italian-8a5700)](https://foodgit.github.io/?tag=italian) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of October 2023 &middot; Last updated: 29th of September 2026</em></p>

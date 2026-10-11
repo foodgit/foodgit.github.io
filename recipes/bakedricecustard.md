@@ -23,6 +23,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![dairy](https://img.shields.io/badge/dairy-blue.svg)](https://foodgit.github.io/?tag=dairy) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![rice](https://img.shields.io/badge/rice-blue.svg)](https://foodgit.github.io/?tag=rice) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![dessert](https://img.shields.io/badge/dessert-006b9e)](https://foodgit.github.io/?tag=dessert) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![rice](https://img.shields.io/badge/rice-9b4630)](https://foodgit.github.io/?tag=rice) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![dairy](https://img.shields.io/badge/dairy-4f6776)](https://foodgit.github.io/?tag=dairy) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 29th of September 2026</em></p>

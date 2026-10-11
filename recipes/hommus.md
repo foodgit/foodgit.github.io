@@ -29,6 +29,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![healthy](https://img.shields.io/badge/healthy-blue.svg)](https://foodgit.github.io/?tag=healthy) [![messy](https://img.shields.io/badge/messy-blue.svg)](https://foodgit.github.io/?tag=messy) [![protein](https://img.shields.io/badge/protein-blue.svg)](https://foodgit.github.io/?tag=protein) [![tricky](https://img.shields.io/badge/tricky-blue.svg)](https://foodgit.github.io/?tag=tricky) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://foodgit.github.io/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![vegan](https://img.shields.io/badge/vegan-21763c)](https://foodgit.github.io/?tag=vegan) [![healthy](https://img.shields.io/badge/healthy-4f6776)](https://foodgit.github.io/?tag=healthy) [![protein](https://img.shields.io/badge/protein-4f6776)](https://foodgit.github.io/?tag=protein) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>

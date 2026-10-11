@@ -37,6 +37,6 @@
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![baked](https://img.shields.io/badge/baked-blue.svg)](https://foodgit.github.io/?tag=baked) [![dessert](https://img.shields.io/badge/dessert-blue.svg)](https://foodgit.github.io/?tag=dessert) [![stovetop](https://img.shields.io/badge/stovetop-blue.svg)](https://foodgit.github.io/?tag=stovetop) [![vegan](https://img.shields.io/badge/vegan-blue.svg)](https://foodgit.github.io/?tag=vegan) [![vegetarian](https://img.shields.io/badge/vegetarian-blue.svg)](https://foodgit.github.io/?tag=vegetarian) 
+[![dessert](https://img.shields.io/badge/dessert-006b9e)](https://foodgit.github.io/?tag=dessert) [![vegetarian](https://img.shields.io/badge/vegetarian-21763c)](https://foodgit.github.io/?tag=vegetarian) [![vegan](https://img.shields.io/badge/vegan-21763c)](https://foodgit.github.io/?tag=vegan) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![stovetop](https://img.shields.io/badge/stovetop-6e519d)](https://foodgit.github.io/?tag=stovetop) 
 
 <p class="recipe-dates"><em>Created: 6th of October 2023 &middot; Last updated: 29th of September 2026</em></p>

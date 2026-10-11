@@ -40,3 +40,15 @@ def tag_groups():
             else:
                 groups[name] = tags.split()
     return groups, hidden
+
+#badge colour per tag group, the same hues as the site's tags in assets/css/style.css
+BADGE_COLOURS = {'meal': '006b9e', 'diet': '21763c', 'main': '9b4630', 'cooking': '6e519d', 'cuisine': '8a5700', 'other': '4f6776'}
+
+def badges(tags):
+    """markdown badges for the shown tags in group order, each linking to the homepage filtered by it"""
+    groups, hidden = tag_groups()
+    group_of = {t: g for g, ts in groups.items() for t in ts}
+    order = list(group_of)
+    shown = sorted((t for t in tags if t not in hidden), key=lambda t: (order.index(t) if t in group_of else len(order), t))
+    return ' '.join('[![%s](https://img.shields.io/badge/%s-%s)](%s?tag=%s)' % (
+        t, t, BADGE_COLOURS.get(group_of.get(t), BADGE_COLOURS['other']), SITE_URL, t) for t in shown)

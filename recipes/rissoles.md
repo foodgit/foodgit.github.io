@@ -29,6 +29,6 @@ Place into a large bowl:
 
 <img src="../images/logo_sm.png" alt="gitFOOD logo" width="40%" />
 
-[![aussie](https://img.shields.io/badge/aussie-blue.svg)](https://foodgit.github.io/?tag=aussie) [![beef](https://img.shields.io/badge/beef-blue.svg)](https://foodgit.github.io/?tag=beef) [![dinner](https://img.shields.io/badge/dinner-blue.svg)](https://foodgit.github.io/?tag=dinner) [![easy](https://img.shields.io/badge/easy-blue.svg)](https://foodgit.github.io/?tag=easy) [![family](https://img.shields.io/badge/family-blue.svg)](https://foodgit.github.io/?tag=family) [![fried](https://img.shields.io/badge/fried-blue.svg)](https://foodgit.github.io/?tag=fried) 
+[![dinner](https://img.shields.io/badge/dinner-006b9e)](https://foodgit.github.io/?tag=dinner) [![beef](https://img.shields.io/badge/beef-9b4630)](https://foodgit.github.io/?tag=beef) [![fried](https://img.shields.io/badge/fried-6e519d)](https://foodgit.github.io/?tag=fried) [![aussie](https://img.shields.io/badge/aussie-8a5700)](https://foodgit.github.io/?tag=aussie) 
 
 <p class="recipe-dates"><em>Created: 25th of June 2023 &middot; Last updated: 11th of October 2026</em></p>
