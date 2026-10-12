@@ -16,6 +16,7 @@ on:
       - assets/fonts/**
       - scripts/generate_books.py
       - scripts/generate_markdown_recipes.py
+      - scripts/tidy_images.py
       - scripts/units.py
       - scripts/common.py
       - scripts/update_readme.py
@@ -58,6 +59,9 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
+      - name: Tidy images
+        #drops .gitkeep files beside other files, shrinks photos to print resolution
+        run: pip install -q pillow && python scripts/tidy_images.py
       - name: Strip photo metadata
         #lossless, keeps only the orientation and colour profile
         run: |

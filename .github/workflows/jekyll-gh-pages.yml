@@ -13,6 +13,7 @@ on:
       - assets/fonts/**
       - scripts/generate_books.py
       - scripts/generate_markdown_recipes.py
+      - scripts/tidy_images.py
       - scripts/units.py
       - scripts/common.py
       - scripts/update_readme.py
