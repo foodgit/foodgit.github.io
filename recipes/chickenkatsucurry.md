@@ -1,5 +1,7 @@
 # Chicken Katsu Curry
 
+<img src="chickenkatsucurry/images/main.jpg" alt="Chicken Katsu Curry" width="55%" align="right" />
+
 ## Ingredients
 
 - 440g crumbed chicken schnitzels or tenders
@@ -31,4 +33,4 @@
 
 [![dinner](https://img.shields.io/badge/dinner-006b9e)](https://foodgit.github.io/?tag=dinner) [![chicken](https://img.shields.io/badge/chicken-9b4630)](https://foodgit.github.io/?tag=chicken) [![rice](https://img.shields.io/badge/rice-9b4630)](https://foodgit.github.io/?tag=rice) [![baked](https://img.shields.io/badge/baked-6e519d)](https://foodgit.github.io/?tag=baked) [![rice_cooker](https://img.shields.io/badge/rice_cooker-6e519d)](https://foodgit.github.io/?tag=rice_cooker) [![stovetop](https://img.shields.io/badge/stovetop-6e519d)](https://foodgit.github.io/?tag=stovetop) [![asian](https://img.shields.io/badge/asian-8a5700)](https://foodgit.github.io/?tag=asian) [![japanese](https://img.shields.io/badge/japanese-8a5700)](https://foodgit.github.io/?tag=japanese) [![curry](https://img.shields.io/badge/curry-4f6776)](https://foodgit.github.io/?tag=curry) 
 
-<p class="recipe-dates"><em>Created: 28th of September 2026 &middot; Last updated: 11th of October 2026</em></p>
+<p class="recipe-dates"><em>Created: 28th of September 2026 &middot; Last updated: 12th of October 2026</em></p>
