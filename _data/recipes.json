@@ -1031,10 +1031,6 @@
   "serves": "2-3",
   "tags": [
    {
-    "group": "other",
-    "name": "amazing"
-   },
-   {
     "group": "cuisine",
     "name": "asian"
    },
