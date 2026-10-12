@@ -58,6 +58,11 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.x'
+      - name: Strip photo metadata
+        #lossless, keeps only the orientation and colour profile
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends libimage-exiftool-perl > /dev/null
+          exiftool -q -q -m -r -overwrite_original -all= -tagsfromfile @ -Orientation -ICC_Profile -ext jpg -ext jpeg -ext png recipes images template
       - name: Rebuild markdown recipes
         run: python scripts/generate_markdown_recipes.py
       - name: Recreate README.md TOC
@@ -66,12 +71,12 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "action@github.com"
-          git add -A recipes template README.md index.md tags _data version.txt
+          git add -A recipes images template README.md index.md tags _data version.txt
           if git diff --cached --quiet; then
             echo "Nothing to commit"
             exit 0
           fi
-          git commit -m "Regenerated recipe pages and README TOC"
+          git commit -m "Regenerated recipe pages and README TOC, stripped photo metadata"
           git pull --rebase origin "${{ github.ref_name }}"
           git push origin "HEAD:${{ github.ref_name }}"
 
