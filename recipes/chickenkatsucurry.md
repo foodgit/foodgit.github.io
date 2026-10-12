@@ -10,7 +10,7 @@
 - 2 medium potatoes, peeled, diced into 1½cm cubes
 - 1 brown onion, coarsely chopped
 - 1 clove garlic, crushed
-- 92g S&B golden curry mild sauce mix
+- 92g S&B golden curry (hot) sauce mix
 - 250g (1 cup) white rice
 
 ## Method
