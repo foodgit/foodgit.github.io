@@ -9,7 +9,7 @@
 - ½ tsp vanilla extract
 - 2 cups (500ml) milk
 - 300ml cream
-- ⅓ cup (50g) raisins
+- [optional] ⅓ cup (50g) raisins
 - 1 ½ cups cold, cooked, white medium-grain rice
 - 1 tsp ground cinnamon
 
