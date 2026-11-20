@@ -1,4 +1,4 @@
-<img src="images/logo_lg.png" width="100%" align="center" />
+<img src="images/logo_lg.png" width="100%" align="center"  />
 
 gitFOOD is a personal recipe repository framework built around Markdown-based recipe documents
 
